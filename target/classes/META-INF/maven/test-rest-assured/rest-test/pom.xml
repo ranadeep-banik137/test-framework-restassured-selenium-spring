@@ -42,9 +42,15 @@
 <dependency>
 	  <groupId>org.testng</groupId>
 	  <artifactId>testng</artifactId>
-	  <version>6.9.13.6</version>
+	  <version>6.10</version>
 	  <scope>compile</scope>
 	</dependency>
+	<!-- <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>compile</scope>
+    </dependency> -->
 	<dependency>
 	    <groupId>org.hamcrest</groupId>
 	    <artifactId>hamcrest-core</artifactId>
@@ -191,7 +197,7 @@
 	      		<source>${java-version}</source>
 	          	<target>${java-version}</target>
 	      		<suiteXmlFiles>
-	      			<suiteXmlFile>${resource-file}/${api}/${link}/${test-runner}.xml</suiteXmlFile>
+	      			<suiteXmlFile>${resource-file}/${api}/uiData/${test-runner}.xml</suiteXmlFile>
 	      			<suiteXmlFile>batch-runner.xml</suiteXmlFile>
 	      		</suiteXmlFiles>
 	      	</configuration>
@@ -206,8 +212,17 @@
       <activeByDefault>true</activeByDefault>
      </activation>
      <build>
-       <plugins>
-         <plugin>
+  	<plugins>
+  		<plugin>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>${maven-compiler-version}</version>
+          <configuration>
+            <fork>true</fork>
+            <source>${java-version}</source>
+          <target>${java-version}</target>
+        </configuration>
+        </plugin>
+  		<plugin>
 	      <groupId>org.apache.maven.plugins</groupId>
 	      <artifactId>maven-surefire-plugin</artifactId>
 	      <version>${maven-surefire-version}</version>
@@ -217,11 +232,12 @@
 	          	<target>${java-version}</target>
 	      		<suiteXmlFiles>
 	      			<suiteXmlFile>${resource-file}/${api}/uiData/${test-runner}.xml</suiteXmlFile>
+	      			<!-- <suiteXmlFile>batch-runner.xml</suiteXmlFile> -->
 	      		</suiteXmlFiles>
 	      	</configuration>
-        </plugin>
-       </plugins>
-     </build>
+      </plugin>
+  	</plugins>
+  </build>
    </profile>
    <profile>
      <id>api</id>
@@ -229,8 +245,17 @@
       <activeByDefault>true</activeByDefault>
      </activation>
      <build>
-       <plugins>
-         <plugin>
+  	<plugins>
+  		<plugin>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>${maven-compiler-version}</version>
+          <configuration>
+            <fork>true</fork>
+            <source>${java-version}</source>
+          <target>${java-version}</target>
+        </configuration>
+        </plugin>
+  		<plugin>
 	      <groupId>org.apache.maven.plugins</groupId>
 	      <artifactId>maven-surefire-plugin</artifactId>
 	      <version>${maven-surefire-version}</version>
@@ -242,10 +267,10 @@
 	      			<suiteXmlFile>${resource-file}/${api}/${link}/${test-runner}.xml</suiteXmlFile>
 	      		</suiteXmlFiles>
 	      	</configuration>
-        </plugin>
-       </plugins>
-     </build>
+      </plugin>
+  	</plugins>
+  </build>
    </profile>
    </profiles>
-  
+
 </project>

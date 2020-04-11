@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="1" total="4" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Covid19IndiaTestReport" duration-ms="69510" started-at="2020-04-11T21:30:59Z" finished-at="2020-04-11T21:32:09Z">
+    <groups>
+    </groups>
+    <test name="Test_Framework-Basic_Tests" duration-ms="69510" started-at="2020-04-11T21:30:59Z" finished-at="2020-04-11T21:32:09Z">
+      <class name="com.ui.testautomation.CovidIndiaUITest">
+        <test-method status="PASS" signature="initiateMethod(java.lang.reflect.Method)[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@4f1bfe23]" name="initiateMethod" is-config="true" duration-ms="1523" started-at="2020-04-12T03:00:59Z" finished-at="2020-04-12T03:01:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.ui.testautomation.CovidIndiaUITest.checkCaseCalculationsForAllStates()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateMethod -->
+        <test-method status="PASS" signature="checkCaseCalculationsForAllStates()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@4f1bfe23]" name="checkCaseCalculationsForAllStates" duration-ms="58648" started-at="2020-04-12T03:01:01Z" finished-at="2020-04-12T03:02:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkCaseCalculationsForAllStates -->
+        <test-method status="PASS" signature="initiateMethod(java.lang.reflect.Method)[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@4f1bfe23]" name="initiateMethod" is-config="true" duration-ms="759" started-at="2020-04-12T03:02:00Z" finished-at="2020-04-12T03:02:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.ui.testautomation.CovidIndiaUITest.checkCaseCalculationsForChandigarh()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateMethod -->
+        <test-method status="PASS" signature="checkCaseCalculationsForChandigarh()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@4f1bfe23]" name="checkCaseCalculationsForChandigarh" duration-ms="3778" started-at="2020-04-12T03:02:00Z" finished-at="2020-04-12T03:02:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkCaseCalculationsForChandigarh -->
+        <test-method status="PASS" signature="initiateMethod(java.lang.reflect.Method)[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@4f1bfe23]" name="initiateMethod" is-config="true" duration-ms="517" started-at="2020-04-12T03:02:04Z" finished-at="2020-04-12T03:02:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.ui.testautomation.CovidIndiaUITest.checkCaseCalculationsForMaharashtra()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateMethod -->
+        <test-method status="PASS" signature="checkCaseCalculationsForMaharashtra()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@4f1bfe23]" name="checkCaseCalculationsForMaharashtra" duration-ms="3627" started-at="2020-04-12T03:02:05Z" finished-at="2020-04-12T03:02:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkCaseCalculationsForMaharashtra -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@4f1bfe23]" name="quit" is-config="true" duration-ms="642" started-at="2020-04-12T03:02:08Z" finished-at="2020-04-12T03:02:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.ui.testautomation.CovidIndiaUITest -->
+    </test> <!-- Test_Framework-Basic_Tests -->
+  </suite> <!-- Covid19IndiaTestReport -->
+</testng-results>

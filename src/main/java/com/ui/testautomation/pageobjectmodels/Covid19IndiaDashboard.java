@@ -33,7 +33,7 @@ public class Covid19IndiaDashboard {
 	@FindBy(xpath = "//div[@class = 'level-item is-cherry fadeInUp']/h5/following-sibling::h1")
 	private WebElement noOfConfirmedCases;
 	
-	@FindBy(xpath = "//tr[@class='state']")
+	@FindBy(css = "tr.state")
 	private List<WebElement> stateRows;
 	
 	@FindBy(xpath = "//thead//th")
@@ -52,36 +52,38 @@ public class Covid19IndiaDashboard {
 	 
 	public WebDriver getDriver() { return driver; }
 	 
-	
-	public int getColumnNumber(String ColumnName) {
+	public int getColumnNumber(String columnName) {
 		this.explicitWait.until(ExpectedConditions.visibilityOfAllElements(stickyHeads));
 		List<String> columnNameList = new ArrayList<>();
-		stickyHeads.forEach(x-> {
-			columnNameList.add(x.getText().trim());
-		});
-		return columnNameList.indexOf(ColumnName) + 1;
+		Iterator<WebElement> iterator = stickyHeads.listIterator();
+		while (iterator.hasNext()) {
+			columnNameList.add(iterator.next().getText().trim());
+		}
+		return columnNameList.indexOf(columnName) + 1;
 	}
 	
 	public WebElement getStateRowElement(String state) {
 		this.explicitWait.until(ExpectedConditions.visibilityOfAllElements(stateRows));
-		return stateRows.stream().filter(x-> webElementModifier.appendWebElement(x, By.cssSelector("div.table__title-wrapper")).getText().equals(state)).collect(Collectors.toList()).get(0);
+		List<WebElement> requiredWebElement = stateRows.stream().filter(x-> webElementModifier.appendWebElement(x, By.xpath(".//div[@class='table__title-wrapper']")).getText().trim().equalsIgnoreCase(state)).collect(Collectors.toList());
+		return requiredWebElement.get(0);
 	}
 	
-	public void BrowseToDashboard() {
+	public void browseToDashboard() {
 		getDriver().navigate().to("http://www.covid19India.org");
 	}
 	
 	public int getTotalConfirmedCasesCount() {
-		return Integer.parseInt(noOfConfirmedCases.getText().trim());
+		return Integer.parseInt(noOfConfirmedCases.getText().replace(",", "").trim());
 	}
 	
 	public void validateStateCalculation(String state) {
 		WebElement stateRow = getStateRowElement(state);
-		String parsedElement = "//td[%s]";
-		int confirmedCases = Integer.parseInt(webElementModifier.appendWebElement(stateRow, By.xpath(String.format(parsedElement, getColumnNumber("CONFIRMED")) + "//span[@class='table__count-text']")).getText());
-		int activeCases = Integer.parseInt(webElementModifier.appendWebElement(stateRow, By.xpath(String.format(parsedElement, getColumnNumber("ACTIVE")))).getText());
-		int recoveredCases = Integer.parseInt(webElementModifier.appendWebElement(stateRow, By.xpath(String.format(parsedElement, getColumnNumber("RECOVERED")) + "//span[@class='table__count-text']")).getText());
-		int deceasedCases = Integer.parseInt(webElementModifier.appendWebElement(stateRow, By.xpath(String.format(parsedElement, getColumnNumber("DECEASED")) + "//span[@class='table__count-text']")).getText());
+		String parsedElement = ".//td[%s]";
+		String spanTag = "//span[@class='table__count-text']";
+		int confirmedCases = Integer.parseInt(webElementModifier.appendWebElement(stateRow, By.xpath(String.format(parsedElement, getColumnNumber("CONFIRMED")) + spanTag)).getText().replace(",", ""));
+		int activeCases = Integer.parseInt(webElementModifier.appendWebElement(stateRow, By.xpath(String.format(parsedElement, getColumnNumber("ACTIVE")))).getText().replace(",", "").replace("-", "0"));
+		int recoveredCases = Integer.parseInt(webElementModifier.appendWebElement(stateRow, By.xpath(String.format(parsedElement, getColumnNumber("RECOVERED")) + spanTag)).getText().replace(",", "").replace("-", "0"));
+		int deceasedCases = Integer.parseInt(webElementModifier.appendWebElement(stateRow, By.xpath(String.format(parsedElement, getColumnNumber("DECEASED")) + spanTag)).getText().replace(",", "").replace("-", "0"));
 		System.out.println("State :" + state);
 		System.out.println("Confirmed : " + confirmedCases + ", Active : " + activeCases +", Recovered : " + recoveredCases + ", Deceased : " + deceasedCases);
 		System.out.println("Verified Active Cases : Confirmed - Recovered + deceased");
@@ -93,7 +95,7 @@ public class Covid19IndiaDashboard {
 	public void validateAllStatesCaseCalculation() {
 		Iterator<WebElement> iterator = stateRows.iterator();
 		while (iterator.hasNext()) {
-			validateStateCalculation(iterator.next().findElement(By.xpath(String.format("//td[%s]", getColumnNumber("STATE/UT")))).getText());
+			validateStateCalculation(iterator.next().findElement(By.xpath(String.format(".//td[%s]", getColumnNumber("STATE/UT")))).getText());
 		}
 	}
 	

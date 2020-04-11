@@ -61,8 +61,8 @@ public class MainTest01 {
 		  ApplicationContextInitiator init = ApplicationContextInitiator.getDefaultApplicationContextInitiator();
 		  System.out.println(getValue("webdriver.chrome.driver"));
 		  Covid19IndiaDashboard fac = (Covid19IndiaDashboard) init.getContext().getBean("covid19Dashboard");
-		  fac.BrowseToDashboard();
-		  System.out.println(fac.getColumnNumber("CONFIRMED"));
+		  fac.browseToDashboard();
+		  //System.out.println(fac.getColumnNumber("CONFIRMED"));
 		  //fac.validateAllStatesCaseCalculation();
 		  fac.validateStateCalculation("MAHARASHTRA");
 		  fac.viewPatientDataBasePage();
