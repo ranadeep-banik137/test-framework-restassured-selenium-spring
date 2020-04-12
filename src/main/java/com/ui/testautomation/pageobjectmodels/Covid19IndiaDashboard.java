@@ -5,6 +5,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -24,8 +25,9 @@ import com.app.testautomation.utilities.WebElementModifier;
 public class Covid19IndiaDashboard {
 	
 	private WebDriver driver;
-	WebDriverWait explicitWait;
-	JavascriptExecutor executor;
+	private WebDriverWait explicitWait;
+	private JavascriptExecutor executor;
+	private static final Logger LOGGER = Logger.getLogger(Covid19IndiaDashboard.class);
 	
 	@Autowired
 	private WebElementModifier webElementModifier;
@@ -53,13 +55,16 @@ public class Covid19IndiaDashboard {
 	public WebDriver getDriver() { return driver; }
 	 
 	public int getColumnNumber(String columnName) {
+		int columnNumber = 0;
 		this.explicitWait.until(ExpectedConditions.visibilityOfAllElements(stickyHeads));
 		List<String> columnNameList = new ArrayList<>();
 		Iterator<WebElement> iterator = stickyHeads.listIterator();
 		while (iterator.hasNext()) {
 			columnNameList.add(iterator.next().getText().trim());
 		}
-		return columnNameList.indexOf(columnName) + 1;
+		columnNumber = columnNameList.indexOf(columnName) + 1;
+		LOGGER.info("Column number with header " + columnName + " : " + columnNumber);
+		return columnNumber;
 	}
 	
 	public WebElement getStateRowElement(String state) {
@@ -69,11 +74,15 @@ public class Covid19IndiaDashboard {
 	}
 	
 	public void browseToDashboard() {
-		getDriver().navigate().to("http://www.covid19India.org");
+		String url = "http://www.covid19India.org";
+		getDriver().navigate().to(url);
+		LOGGER.info("Navigated to : " + url);
 	}
 	
 	public int getTotalConfirmedCasesCount() {
-		return Integer.parseInt(noOfConfirmedCases.getText().replace(",", "").trim());
+		int totalNumberOfConfirmedCases = Integer.parseInt(noOfConfirmedCases.getText().replace(",", "").trim());
+		LOGGER.info("Total number of confirmed COVID19 cases in India : " + totalNumberOfConfirmedCases);
+		return totalNumberOfConfirmedCases;
 	}
 	
 	public void validateStateCalculation(String state) {
@@ -84,10 +93,10 @@ public class Covid19IndiaDashboard {
 		int activeCases = Integer.parseInt(webElementModifier.appendWebElement(stateRow, By.xpath(String.format(parsedElement, getColumnNumber("ACTIVE")))).getText().replace(",", "").replace("-", "0"));
 		int recoveredCases = Integer.parseInt(webElementModifier.appendWebElement(stateRow, By.xpath(String.format(parsedElement, getColumnNumber("RECOVERED")) + spanTag)).getText().replace(",", "").replace("-", "0"));
 		int deceasedCases = Integer.parseInt(webElementModifier.appendWebElement(stateRow, By.xpath(String.format(parsedElement, getColumnNumber("DECEASED")) + spanTag)).getText().replace(",", "").replace("-", "0"));
-		System.out.println("State :" + state);
-		System.out.println("Confirmed : " + confirmedCases + ", Active : " + activeCases +", Recovered : " + recoveredCases + ", Deceased : " + deceasedCases);
-		System.out.println("Verified Active Cases : Confirmed - Recovered + deceased");
-		System.out.println(confirmedCases + " - " + recoveredCases + " + " + deceasedCases + " = " + (confirmedCases - recoveredCases - deceasedCases));
+		LOGGER.info("State :" + state);
+		LOGGER.info("Confirmed : " + confirmedCases + ", Active : " + activeCases +", Recovered : " + recoveredCases + ", Deceased : " + deceasedCases);
+		LOGGER.info("Verified Active Cases : Confirmed - Recovered + deceased");
+		LOGGER.info(confirmedCases + " - " + recoveredCases + " + " + deceasedCases + " = " + (confirmedCases - recoveredCases - deceasedCases));
 		Assert.assertTrue(activeCases == (confirmedCases - recoveredCases - deceasedCases), "Case calculations are not matching");
 	}
 	
@@ -101,6 +110,7 @@ public class Covid19IndiaDashboard {
 	
 	public void viewPatientDataBasePage() {
 		executor.executeScript("arguments[0].scrollIntoView(true);", patientDatabaseProviderButton);
+		LOGGER.info("Clicking on " + patientDatabaseProviderButton.getText() + " button");
 		patientDatabaseProviderButton.click();
 	}
 

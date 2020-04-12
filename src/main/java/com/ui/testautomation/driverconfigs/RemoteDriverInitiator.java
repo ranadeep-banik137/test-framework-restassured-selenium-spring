@@ -1,10 +1,11 @@
 package com.ui.testautomation.driverconfigs;
 
-import static com.app.testautomation.initiators.SystemVariables.getValue;
+import static com.app.testautomation.initiators.SystemVariables.*;
 
 import java.net.MalformedURLException;
 import java.net.URL;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -13,21 +14,27 @@ import org.springframework.stereotype.Component;
 
 import com.app.testautomation.exceptions.BrowserCapabilitiesNotInitiatedException;
 import com.app.testautomation.factory.DriverFactory;
-import com.app.testautomation.initiators.SystemVariables;
 
 @Component(value = "remote")
 public class RemoteDriverInitiator implements DriverFactory {
 
+	private static final Logger LOGGER = Logger.getLogger(RemoteDriverInitiator.class);
+	
 	private DesiredCapabilities capabilities;
 	private URL url;
 	
 	public RemoteDriverInitiator() throws MalformedURLException {
-		String urlProvided = (getValue(SystemVariables.BROWSERSTACK_USERNAME) == null && getValue(SystemVariables.BROWSERSTACK_PASSKEY) == null) ? 
-				getValue(SystemVariables.GRID_URL) : String.format("https://%s:%s@hub-cloud.browserstack.com/wd/hub", getValue(SystemVariables.BROWSERSTACK_USERNAME), getValue(SystemVariables.BROWSERSTACK_PASSKEY));
+		String urlProvided = (getValue(BROWSERSTACK_USERNAME) == null && getValue(BROWSERSTACK_PASSKEY) == null) ? 
+				getValue(GRID_URL) : String.format("https://%s:%s@hub-cloud.browserstack.com/wd/hub", getValue(BROWSERSTACK_USERNAME), getValue(BROWSERSTACK_PASSKEY));
 		if (urlProvided != null) {
+			LOGGER.info(urlProvided.contains("browserstack")
+					? "Browserstack driver to start with credentials USERNAME : "
+							+ getValue(BROWSERSTACK_USERNAME) + ", PASSKEY : "
+							+ getValue(BROWSERSTACK_PASSKEY)
+					: "Grid Run to initiate. Grid Node : " + getValue(GRID_URL));
 			this.setUrl(new URL(urlProvided));
 			setDefaultBrowserSettings();
-		}		
+		}	
 	}
 	
 
@@ -64,29 +71,32 @@ public class RemoteDriverInitiator implements DriverFactory {
 		setCapabilities(new DesiredCapabilities());
 		this.capabilities.setVersion(getValue("os.version"));
 		this.capabilities.setPlatform(Platform.WIN10);
-		this.capabilities.setBrowserName(SystemVariables.BROWSER);
+		this.capabilities.setBrowserName(BROWSER);
 		if (getUrl() != null) {
-			switch (getValue(SystemVariables.BROWSER)) {
+			switch (getValue(BROWSER)) {
 			
-			case "chrome" : {
+			case "chrome" :
 				this.capabilities.merge(DesiredCapabilities.chrome());
+				LOGGER.info("Browser : GOOGLE CHROME");
 				break;
-			}
 			
-			case "firefox" : {
+			case "firefox" :
 				this.capabilities.merge(DesiredCapabilities.firefox());
+				LOGGER.info("Browser : MOZILLA FIREFOX");
 				break;
-			}
 			
-			case "ie" : {
+			case "ie" :
 				this.capabilities.merge(DesiredCapabilities.internetExplorer());
+				LOGGER.info("Browser : INTERNET EXPLORER");
 				break;
-			}
 			
-			case "opera" : {
+			case "opera" :
 				this.capabilities.merge(DesiredCapabilities.operaBlink());
+				LOGGER.info("Browser : OPERA");
 				break;
-			}
+			
+			default :
+				//throw new NoBrowserInitiatedException();
 			
 			}
 		}

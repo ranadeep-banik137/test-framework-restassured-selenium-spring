@@ -2,6 +2,7 @@ package com.ui.testautomation;
 
 import java.lang.reflect.Method;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.NoSuchSessionException;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -13,9 +14,12 @@ import com.app.testautomation.initiators.BaseSteps;
 
 public class CovidIndiaUITest extends BaseSteps {
 	
+	private static final Logger LOGGER = Logger.getLogger(CovidIndiaUITest.class);
+	
 	@BeforeMethod
 	public void initiateMethod(Method method) {
-		//initiateDriver();
+		initiateDriver();
+		LOGGER.info("Initiating Method : " + method.getName());
 		getCovid19Dashboard().browseToDashboard();
 	}
 	
@@ -37,14 +41,17 @@ public class CovidIndiaUITest extends BaseSteps {
 		getCovid19Dashboard().validateStateCalculation("CHANDIGARH");
 	}
 	
-	@Test
+	@Test(enabled = true)
 	public void checkCaseCalculationsForAllStates() {
 		getCovid19Dashboard().validateAllStatesCaseCalculation();
 	}
 	
-	@AfterMethod(enabled = false)
-	public void finish() {
+	@AfterMethod(enabled = true)
+	public void finish(Method method) {
+		LOGGER.info(method.getName() + " executed.");
 		getDriver().close();
+		LOGGER.info("Driver Called Off");
+		LOGGER.warn("Driver called off");
 	}
 	
 	@AfterTest
@@ -55,7 +62,10 @@ public class CovidIndiaUITest extends BaseSteps {
 		} catch(NoSuchSessionException session) {
 			windowHandle = null;
 		}
-		if (windowHandle != null)
+		if (windowHandle != null) {
 			getDriver().quit();
+			LOGGER.info("Driver Called Off");
+			LOGGER.warn("Driver called off");
+		}
 	}
 }

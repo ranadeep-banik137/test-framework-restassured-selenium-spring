@@ -1,8 +1,8 @@
 package com.ui.testautomation.driverconfigs;
 
-import static com.app.testautomation.initiators.SystemVariables.getValue;
-import static com.app.testautomation.initiators.SystemVariables.setValue;
+import static com.app.testautomation.initiators.SystemVariables.*;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.ie.InternetExplorerDriverService;
@@ -16,12 +16,14 @@ import com.app.testautomation.factory.DriverFactory;
 @Component(value = "ie")
 public class IEDriverInitiator implements DriverFactory {
 
+	private static final Logger LOGGER = Logger.getLogger(IEDriverInitiator.class);
+	
 	private DesiredCapabilities capabilities;
 	private InternetExplorerOptions options;
 	
 	
 	{
-		setValue("webdriver.ie.driver", getValue("user.dir") + "\\src\\main\\resources\\drivers\\IEDriverServer.exe");
+		setValue("webdriver.ie.driver", getValue(USER_DIR) + "\\src\\main\\resources\\drivers\\IEDriverServer.exe");
 		setDefaultBrowserSettings();
 	}
 
@@ -70,11 +72,12 @@ public class IEDriverInitiator implements DriverFactory {
 		//this.capabilities.setAcceptInsecureCerts(true);
 		this.options.destructivelyEnsureCleanSession();
 		this.options.merge(getCapabilities());
-		
+		LOGGER.info("Default properties/capabilities initiated for INTERNET EXPLORER driver");
 	}
 
 	@Override
 	public WebDriver initiateDriver() {
+		LOGGER.info("Starting INTERNET EXPLORER Driver....");
 		return new InternetExplorerDriver(InternetExplorerDriverService.createDefaultService(), getOptions());
 	}
 

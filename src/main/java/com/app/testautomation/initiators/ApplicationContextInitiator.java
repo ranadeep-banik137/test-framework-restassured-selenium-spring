@@ -1,17 +1,17 @@
 package com.app.testautomation.initiators;
 
+import org.apache.log4j.Logger;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 
 public class ApplicationContextInitiator {
 	
-	private WebdriverInitiator factory;
+	private static final Logger LOGGER = Logger.getLogger(ApplicationContextInitiator.class);
 	private ApplicationContext context;
 
 	private ApplicationContextInitiator() {
 		setInProjectContext();
-		//setDefaultFactory();
 	}
 
 	
@@ -20,6 +20,7 @@ public class ApplicationContextInitiator {
 	}
 	
 	private void setInProjectContext() {
+		LOGGER.info("Application context created and initiated all the beans in Spring bean container");
 		this.context = new AnnotationConfigApplicationContext(ContextInitiators.class);
 	}
 
@@ -28,18 +29,8 @@ public class ApplicationContextInitiator {
 	}
 	
 	public static ApplicationContextInitiator getDefaultApplicationContextInitiator() {
+		LOGGER.info("return new ApplicationContextInitiator()");
 		return new ApplicationContextInitiator();
 	}
 
-	public WebdriverInitiator startFactory() {
-		return factory;
-	}
-	
-	public void setDefaultFactory() {
-		this.factory = (WebdriverInitiator) this.context.getBean("initiate");
-	}
-
-	public void setFactory(WebdriverInitiator factory) {
-		this.factory = factory;
-	}
 }

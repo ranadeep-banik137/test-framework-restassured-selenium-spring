@@ -1,10 +1,10 @@
 package com.ui.testautomation.driverconfigs;
 
-import static com.app.testautomation.initiators.SystemVariables.getValue;
-import static com.app.testautomation.initiators.SystemVariables.setValue;
+import static com.app.testautomation.initiators.SystemVariables.*;
 
 import java.io.File;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
@@ -18,11 +18,13 @@ import com.app.testautomation.factory.DriverFactory;
 @Component(value = "firefox")
 public class FirefoxDriverInitiator implements DriverFactory {
 	
+	private static final Logger LOGGER = Logger.getLogger(FirefoxDriverInitiator.class);
+	
 	private DesiredCapabilities capabilities;
 	private FirefoxProfile profile;
 
 	{
-		setValue("webdriver.gecko.driver", getValue("user.dir") + "\\src\\main\\resources\\drivers\\geckodriver.exe");
+		setValue("webdriver.gecko.driver", getValue(USER_DIR) + "\\src\\main\\resources\\drivers\\geckodriver.exe");
 		setDefaultBrowserSettings();
 	}
 	
@@ -68,18 +70,20 @@ public class FirefoxDriverInitiator implements DriverFactory {
 	public void setDefaultBrowserSettings() {
 		setCapabilities(new DesiredCapabilities());
 		setProfile(new FirefoxProfile());
-		this.profile.addExtension(new File(getValue("user.dir") + "/src/main/resources/drivers/firebug-2.0.19.xpi"));
-		this.profile.addExtension(new File(getValue("user.dir") + "/src/main/resources/drivers/firepath-0.9.7.1-fx.xpi"));
+		this.profile.addExtension(new File(getValue(USER_DIR) + "/src/main/resources/drivers/firebug-2.0.19.xpi"));
+		this.profile.addExtension(new File(getValue(USER_DIR) + "/src/main/resources/drivers/firepath-0.9.7.1-fx.xpi"));
 		this.profile.setPreference("javascript.enabled", true);
 		this.profile.setAcceptUntrustedCertificates(true);
 		this.profile.setAssumeUntrustedCertificateIssuer(true);
 		this.capabilities.setCapability(FirefoxDriver.PROFILE, profile);
+		LOGGER.info("Default properties/capabilities initiated for FIREFOX driver");
 	}
 
 
 	@SuppressWarnings("deprecation")
 	@Override
 	public WebDriver initiateDriver() {
+		LOGGER.info("Starting MOZILLA FIREFOX Driver....");
 		return new FirefoxDriver(GeckoDriverService.createDefaultService(), getCapabilities());
 	}
 

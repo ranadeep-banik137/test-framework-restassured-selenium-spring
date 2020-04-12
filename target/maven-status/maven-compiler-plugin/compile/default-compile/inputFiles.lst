@@ -1,4 +1,5 @@
 C:\Users\ranad\git\test-framework-restassured-selenium-spring\src\main\java\com\app\testautomation\utilities\ConfigReader.java
+C:\Users\ranad\git\test-framework-restassured-selenium-spring\src\main\java\com\app\testautomation\exceptions\NoBrowserInitiatedException.java
 C:\Users\ranad\git\test-framework-restassured-selenium-spring\src\main\java\com\app\testautomation\factory\DriverFactory.java
 C:\Users\ranad\git\test-framework-restassured-selenium-spring\src\main\java\com\ui\testautomation\driverconfigs\ChromeDriverInitiator.java
 C:\Users\ranad\git\test-framework-restassured-selenium-spring\src\main\java\com\ui\testautomation\driverconfigs\RemoteDriverInitiator.java
@@ -19,4 +20,5 @@ C:\Users\ranad\git\test-framework-restassured-selenium-spring\src\main\java\com\
 C:\Users\ranad\git\test-framework-restassured-selenium-spring\src\main\java\com\app\testautomation\exceptions\BrowserCapabilitiesNotInitiatedException.java
 C:\Users\ranad\git\test-framework-restassured-selenium-spring\src\main\java\com\ui\testautomation\driverconfigs\FirefoxDriverInitiator.java
 C:\Users\ranad\git\test-framework-restassured-selenium-spring\src\main\java\com\app\testautomation\initiators\WebdriverInitiator.java
+C:\Users\ranad\git\test-framework-restassured-selenium-spring\src\main\java\com\app\testautomation\configurations\Log4jConfiguration.java
 C:\Users\ranad\git\test-framework-restassured-selenium-spring\src\main\java\com\ui\testautomation\pageobjectmodels\Covid19IndiaDashboard.java

@@ -5,6 +5,7 @@ import static com.app.testautomation.initiators.SystemVariables.getValue;
 
 import java.util.concurrent.TimeUnit;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +16,8 @@ import com.app.testautomation.factory.DriverFactory;
 @Component(value = "initiate")
 public class WebdriverInitiator {
 
+	private static final Logger LOGGER = Logger.getLogger(WebdriverInitiator.class);
+	
 	private WebDriver driver;
 	
 	private DriverFactory factory;
@@ -48,11 +51,13 @@ public class WebdriverInitiator {
 	
 	public WebdriverInitiator initiate() {
 		setDriverBasedOnDriverName(getValue(SystemVariables.BROWSER));
+		LOGGER.info("Browser key provided : " + getValue(SystemVariables.BROWSER));
 		return this;
 	}
 
 	public WebdriverInitiator startDriver() {
 		setDriver(getDriverFactory().initiateDriver());
+		LOGGER.info(getValue(SystemVariables.BROWSER) + " browser initiated");
 		return this;
 	}
 	
@@ -76,6 +81,7 @@ public class WebdriverInitiator {
 	
 	public WebdriverInitiator changeDriver(String driver) {
 		setDriverBasedOnDriverName(driver);
+		LOGGER.info("Change driver requested. Driver : " + driver.toUpperCase());
 		return this;
 	}
 	
@@ -118,11 +124,13 @@ public class WebdriverInitiator {
 	
 	public WebdriverInitiator setImplicitTimeLimit(int time, TimeUnit unit) {
 		this.driver.manage().timeouts().implicitlyWait(time, unit);
+		LOGGER.info("Driver implicit wait initiated for " + time + " " + unit);
 		return this;
 	}
 	
 	public WebdriverInitiator maximizeWindowAtStart() {
 		this.driver.manage().window().maximize();
+		LOGGER.info("Browser window maximized");
 		return this;
 	}
 }

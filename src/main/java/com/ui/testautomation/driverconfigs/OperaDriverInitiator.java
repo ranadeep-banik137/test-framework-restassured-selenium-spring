@@ -1,8 +1,8 @@
 package com.ui.testautomation.driverconfigs;
 
-import static com.app.testautomation.initiators.SystemVariables.getValue;
-import static com.app.testautomation.initiators.SystemVariables.setValue;
+import static com.app.testautomation.initiators.SystemVariables.*;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.opera.OperaDriverService;
@@ -16,11 +16,13 @@ import com.app.testautomation.factory.DriverFactory;
 @Component(value = "opera")
 public class OperaDriverInitiator implements DriverFactory {
 
+	private static final Logger LOGGER = Logger.getLogger(OperaDriverInitiator.class);
+	
 	private DesiredCapabilities capabilities;
 	private OperaOptions options;
 
 	{
-		setValue("webdriver.opera.driver", getValue("user.dir") + "\\src\\main\\resources\\drivers\\operadriver.exe");
+		setValue("webdriver.opera.driver", getValue(USER_DIR) + "\\src\\main\\resources\\drivers\\operadriver.exe");
 		setDefaultBrowserSettings();
 	}
 	
@@ -68,10 +70,12 @@ public class OperaDriverInitiator implements DriverFactory {
 		this.capabilities.setJavascriptEnabled(true);
 		this.capabilities.setAcceptInsecureCerts(true);
 		this.options.merge(getCapabilities());
+		LOGGER.info("Default properties/capabilities initiated for FIREFOX driver");
 	}
 
 	@Override
 	public WebDriver initiateDriver() {
+		LOGGER.info("Starting OPERA Driver....");
 		return new OperaDriver(OperaDriverService.createDefaultService(), getOptions());
 	}
 

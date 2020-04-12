@@ -1,8 +1,8 @@
 package com.ui.testautomation.driverconfigs;
 
-import static com.app.testautomation.initiators.SystemVariables.getValue;
-import static com.app.testautomation.initiators.SystemVariables.setValue;
+import static com.app.testautomation.initiators.SystemVariables.*;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeDriverService;
@@ -16,11 +16,12 @@ import com.app.testautomation.factory.DriverFactory;
 @Component(value = "chrome")
 public class ChromeDriverInitiator implements DriverFactory {
 
+	private static final Logger LOGGER = Logger.getLogger(ChromeDriverInitiator.class);
 	private ChromeOptions options;
 	private DesiredCapabilities capabilities;
 
 	{
-		setValue("webdriver.chrome.driver", getValue("user.dir") + "\\src\\main\\resources\\drivers\\chromedriver.exe");
+		setValue("webdriver.chrome.driver", getValue(USER_DIR) + "\\src\\main\\resources\\drivers\\chromedriver.exe");
 		setDefaultBrowserSettings();
 	}
 
@@ -76,10 +77,12 @@ public class ChromeDriverInitiator implements DriverFactory {
 		this.capabilities.setJavascriptEnabled(true);
 		this.capabilities.setAcceptInsecureCerts(true);
 		this.options.merge(getCapabilities());
+		LOGGER.info("Default properties/capabilities initiated for CHROME driver");
 	}
 
 	@Override
 	public WebDriver initiateDriver() {
+		LOGGER.info("Starting GOOGLE CHROME Driver....");
 		return new ChromeDriver(ChromeDriverService.createDefaultService(), getOptions());
 	}
 	

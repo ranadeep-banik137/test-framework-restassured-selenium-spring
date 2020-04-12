@@ -3,6 +3,10 @@ package com.app.testautomation.exceptions;
 import org.apache.log4j.Logger;
 import org.apache.log4j.Priority;
 
+/**
+ * This exception is created when client does not initiate/replace empty browser
+ * capabilities. Which turns in not initiating any remote web driver.
+ */
 public class BrowserCapabilitiesNotInitiatedException extends Exception {
 
 	/**
