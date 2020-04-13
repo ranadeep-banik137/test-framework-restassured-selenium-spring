@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 102.415 s - in TestSuite
+Tests run: 9, Failures: 1, Errors: 0, Skipped: 5, Time elapsed: 697.599 s <<< FAILURE! - in TestSuite
+checkNoOfConfirmedCasesIsGreaterThan6000(com.ui.testautomation.CovidIndiaUITest)  Time elapsed: 79.89 s  <<< FAILURE!
+java.lang.NumberFormatException: For input string: ""
+	at com.ui.testautomation.CovidIndiaUITest.checkNoOfConfirmedCasesIsGreaterThan6000(CovidIndiaUITest.java:31)
+

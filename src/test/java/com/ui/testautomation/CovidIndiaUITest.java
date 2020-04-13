@@ -8,10 +8,13 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.app.testautomation.initiators.BaseSteps;
+import com.app.testautomation.listeners.BasicTestListeners;
 
+@Listeners({BasicTestListeners.class})
 public class CovidIndiaUITest extends BaseSteps {
 	
 	private static final Logger LOGGER = Logger.getLogger(CovidIndiaUITest.class);
@@ -23,7 +26,7 @@ public class CovidIndiaUITest extends BaseSteps {
 		getCovid19Dashboard().browseToDashboard();
 	}
 	
-	@Test(enabled = false)
+	@Test(enabled = true, description = "validate the number of total confirmed case is greater than 6000 in India")
 	public void checkNoOfConfirmedCasesIsGreaterThan6000() {
 		int numberOfCases = getCovid19Dashboard().getTotalConfirmedCasesCount();
 		if (numberOfCases >= 6000) {
@@ -31,17 +34,17 @@ public class CovidIndiaUITest extends BaseSteps {
 		}
 	}
 	
-	@Test(enabled = true)
+	@Test(enabled = true, description = "Checks & verify the total case calculation after recovered and death for Maharashtra")
 	public void checkCaseCalculationsForMaharashtra() {
 		getCovid19Dashboard().validateStateCalculation("DELHI");
 	}
 	
-	@Test
+	@Test(description = "Checks & verify the total case calculation after recovered and death for Chandigarh")
 	public void checkCaseCalculationsForChandigarh() {
 		getCovid19Dashboard().validateStateCalculation("CHANDIGARH");
 	}
 	
-	@Test(enabled = true)
+	@Test(enabled = true, description = "Checks & verify the total case calculation after recovered and death for all 32 states of INDIA")
 	public void checkCaseCalculationsForAllStates() {
 		getCovid19Dashboard().validateAllStatesCaseCalculation();
 	}
