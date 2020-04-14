@@ -15,7 +15,6 @@ com\app\testautomation\initiators\ApplicationContextInitiator.class
 com\ui\testautomation\pageobjectmodels\Covid19IndiaDashboard.class
 com\app\testautomation\utilities\ReportGenerator.class
 com\ui\testautomation\driverconfigs\OperaDriverInitiator.class
-com\app\testautomation\listeners\ExecutionListener.class
 com\ui\testautomation\driverconfigs\RemoteDriverInitiator.class
 com\api\testautomation\configurations\EnvironmentVariables.class
 com\app\testautomation\listeners\BasicTestListeners.class
@@ -26,4 +25,5 @@ com\app\testautomation\initiators\BaseSteps.class
 com\app\testautomation\factory\DriverFactory.class
 com\app\testautomation\initiators\Driver.class
 com\app\testautomation\listeners\AnnotationTransformerListener.class
+com\app\testautomation\listeners\MethodInterceptorListener.class
 com\app\testautomation\configurations\Log4jConfiguration.class

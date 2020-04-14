@@ -80,6 +80,7 @@ public class Covid19IndiaDashboard {
 	}
 	
 	public int getTotalConfirmedCasesCount() {
+		this.explicitWait.until(ExpectedConditions.visibilityOf(noOfConfirmedCases));
 		int totalNumberOfConfirmedCases = Integer.parseInt(noOfConfirmedCases.getText().replace(",", "").trim());
 		LOGGER.info("Total number of confirmed COVID19 cases in India : " + totalNumberOfConfirmedCases);
 		return totalNumberOfConfirmedCases;

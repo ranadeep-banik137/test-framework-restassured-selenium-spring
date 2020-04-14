@@ -26,7 +26,7 @@ public class BasicTestListeners implements ISuiteListener, ITestListener {
 	@Override
 	public void onStart(ISuite suite) {
 		this.reportGenerator.initiate().startSuiteTest(suite.getName());
-		suite.addListener(new ExecutionListener());
+		suite.addListener(new MethodInterceptorListener());
 		suite.addListener(new MethodInvokeListener());
 		suite.addListener(new AnnotationTransformerListener());
 		LOGGER.info("Suite started :" + suite.getName());
