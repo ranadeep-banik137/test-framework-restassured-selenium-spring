@@ -2,21 +2,21 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Covid19IndiaTestReport" duration-ms="125464" started-at="2020-04-14T19:16:39Z" finished-at="2020-04-14T19:18:44Z">
+  <suite name="Covid19IndiaTestReport" duration-ms="123254" started-at="2020-04-14T20:07:35Z" finished-at="2020-04-14T20:09:38Z">
     <groups>
       <group name="regression">
-        <method signature="CovidIndiaUITest.checkCaseCalculationsForAllStates()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@55562aa9]" name="checkCaseCalculationsForAllStates" class="com.ui.testautomation.CovidIndiaUITest"/>
+        <method signature="CovidIndiaUITest.checkCaseCalculationsForAllStates()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@655ef322]" name="checkCaseCalculationsForAllStates" class="com.ui.testautomation.CovidIndiaUITest"/>
       </group> <!-- regression -->
       <group name="smoke">
-        <method signature="CovidIndiaUITest.checkCaseCalculationsForAllStates()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@55562aa9]" name="checkCaseCalculationsForAllStates" class="com.ui.testautomation.CovidIndiaUITest"/>
+        <method signature="CovidIndiaUITest.checkCaseCalculationsForAllStates()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@655ef322]" name="checkCaseCalculationsForAllStates" class="com.ui.testautomation.CovidIndiaUITest"/>
       </group> <!-- smoke -->
       <group name="sanity">
-        <method signature="CovidIndiaUITest.checkCaseCalculationsForDelhi()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@55562aa9]" name="checkCaseCalculationsForDelhi" class="com.ui.testautomation.CovidIndiaUITest"/>
+        <method signature="CovidIndiaUITest.checkCaseCalculationsForDelhi()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@655ef322]" name="checkCaseCalculationsForDelhi" class="com.ui.testautomation.CovidIndiaUITest"/>
       </group> <!-- sanity -->
     </groups>
-    <test name="Test_Framework-Basic_Tests" duration-ms="125464" started-at="2020-04-14T19:16:39Z" finished-at="2020-04-14T19:18:44Z">
+    <test name="Test_Framework-Basic_Tests" duration-ms="123254" started-at="2020-04-14T20:07:35Z" finished-at="2020-04-14T20:09:38Z">
       <class name="com.ui.testautomation.CovidIndiaUITest">
-        <test-method status="PASS" signature="initiateMethod(java.lang.reflect.Method)[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@55562aa9]" name="initiateMethod" is-config="true" duration-ms="2190" started-at="2020-04-15T00:46:39Z" finished-at="2020-04-15T00:46:41Z">
+        <test-method status="PASS" signature="initiateMethod(java.lang.reflect.Method)[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@655ef322]" name="initiateMethod" is-config="true" duration-ms="2002" started-at="2020-04-15T01:37:35Z" finished-at="2020-04-15T01:37:37Z">
           <params>
             <param index="0">
               <value>
@@ -27,11 +27,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiateMethod -->
-        <test-method status="PASS" signature="checkCaseCalculationsForAllStates()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@55562aa9]" name="checkCaseCalculationsForAllStates" duration-ms="122809" started-at="2020-04-15T00:46:41Z" description="Checks &amp; verify the total case calculation after recovered and death for all 32 states of INDIA" finished-at="2020-04-15T00:48:44Z">
+        <test-method status="PASS" signature="checkCaseCalculationsForAllStates()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@655ef322]" name="checkCaseCalculationsForAllStates" duration-ms="120886" started-at="2020-04-15T01:37:37Z" description="Checks &amp; verify the total case calculation after recovered and death for all 32 states of INDIA" finished-at="2020-04-15T01:39:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkCaseCalculationsForAllStates -->
-        <test-method status="PASS" signature="finish(java.lang.reflect.Method)[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@55562aa9]" name="finish" is-config="true" duration-ms="159" started-at="2020-04-15T00:48:44Z" finished-at="2020-04-15T00:48:44Z">
+        <test-method status="PASS" signature="finish(java.lang.reflect.Method)[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@655ef322]" name="finish" is-config="true" duration-ms="160" started-at="2020-04-15T01:39:38Z" finished-at="2020-04-15T01:39:38Z">
           <params>
             <param index="0">
               <value>
@@ -42,7 +42,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- finish -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@55562aa9]" name="quit" is-config="true" duration-ms="250" started-at="2020-04-15T00:48:44Z" finished-at="2020-04-15T00:48:44Z">
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@655ef322]" name="quit" is-config="true" duration-ms="168" started-at="2020-04-15T01:39:38Z" finished-at="2020-04-15T01:39:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->

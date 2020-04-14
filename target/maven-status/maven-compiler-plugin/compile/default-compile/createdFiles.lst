@@ -12,6 +12,7 @@ com\app\testautomation\utilities\PropertiesFileReader.class
 com\api\testautomation\configurations\Headers.class
 com\app\testautomation\exceptions\NoBrowserInitiatedException.class
 com\app\testautomation\initiators\ApplicationContextInitiator.class
+com\app\testautomation\utilities\Perform.class
 com\ui\testautomation\pageobjectmodels\Covid19IndiaDashboard.class
 com\app\testautomation\utilities\ReportGenerator.class
 com\ui\testautomation\driverconfigs\OperaDriverInitiator.class

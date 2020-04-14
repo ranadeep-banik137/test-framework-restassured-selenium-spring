@@ -2,6 +2,7 @@ package com.ui.testautomation;
 
 import java.lang.reflect.Method;
 
+
 import org.apache.log4j.Logger;
 import org.openqa.selenium.NoSuchSessionException;
 import org.testng.Assert;
@@ -38,7 +39,7 @@ public class CovidIndiaUITest extends BaseSteps {
 		getCovid19Dashboard().validateStateCalculation("DELHI");
 	}
 	
-	@Test(description = "Checks & verify the total case calculation after recovered and death for Chandigarh")
+	@Test(groups = {"smoke"}, description = "Checks & verify the total case calculation after recovered and death for Chandigarh")
 	public void checkCaseCalculationsForChandigarh() {
 		getCovid19Dashboard().validateStateCalculation("CHANDIGARH");
 	}

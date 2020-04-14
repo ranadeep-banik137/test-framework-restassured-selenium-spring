@@ -13,13 +13,15 @@ import org.testng.IMethodInterceptor;
 import org.testng.ITestContext;
 import org.testng.annotations.Test;
 
+import com.app.testautomation.utilities.Perform;
+
 public class MethodInterceptorListener implements IMethodInterceptor {
 
 	private static final Logger LOGGER = Logger.getLogger(MethodInterceptorListener.class.getName());
 private String systemDefined;
 	
 	public MethodInterceptorListener() {
-		this.systemDefined = getValue(GROUPS);
+		this.systemDefined = getValue(GROUPS) == null ? "default" : getValue(GROUPS);
 	}
 
 	@Override
@@ -28,8 +30,10 @@ private String systemDefined;
 		LOGGER.info("Intercepting methods as per group name provided");
 		for (IMethodInstance method : methods) {
 			Test testMethod = method.getMethod().getConstructorOrMethod().getMethod().getAnnotation(Test.class);
+			LOGGER.info("As per requested groups : [" + this.systemDefined + "]");
 			if (isGroupAvailable(testMethod.groups())) {
 				refreshedMethods.add(method);
+				LOGGER.info(method.getMethod().getMethodName() + " to be executed");
 			}
 		}
 		return refreshedMethods;
@@ -41,9 +45,8 @@ private String systemDefined;
 		for (int index = 0; index < systemgroups.length; index++) {
 			systemDefinedGroupList.add(systemgroups[index].trim());
 		}
-		List<String> testDefinedGroupList = Arrays.asList(groups);
-		Boolean flag = testDefinedGroupList.containsAll(systemDefinedGroupList);
-		return flag;
+		List<String> testDefinedGroupList = Arrays.asList(Perform.addElement(groups, "default"));
+		return ((systemDefinedGroupList.size() == 0) || (testDefinedGroupList.size() == 0)) ? true : testDefinedGroupList.containsAll(systemDefinedGroupList);
 	}
 	
 }

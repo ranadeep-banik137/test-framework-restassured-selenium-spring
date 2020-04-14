@@ -1,327 +1,327 @@
-2020-04-15 00:46:39 INFO  PropertiesFileReader:36 - Fetched properties file on location : C:\Users\ranad\git\test-framework-restassured-selenium-spring-01/log4j.properties
-2020-04-15 00:46:39 INFO  Log4jConfiguration:30 - System value 'log4j.overwrite' : false
-2020-04-15 00:46:39 INFO  PropertiesFileReader:77 - Modified properties file with key : log4j.appender.HTML_FILE.Append, Value : false
-2020-04-15 00:46:39 INFO  PropertiesFileReader:90 - Properties file on locationC:\Users\ranad\git\test-framework-restassured-selenium-spring-01/log4j.properties updated
-2020-04-15 00:46:39 INFO  PropertiesFileReader:77 - Modified properties file with key : log4j.appender.FILE.Append, Value : false
-2020-04-15 00:46:39 INFO  PropertiesFileReader:90 - Properties file on locationC:\Users\ranad\git\test-framework-restassured-selenium-spring-01/log4j.properties updated
-2020-04-15 00:46:39 INFO  Driver:41 - Driver session is active
-2020-04-15 00:46:39 INFO  CovidIndiaUITest:26 - Initiating Method : checkCaseCalculationsForAllStates
-2020-04-15 00:46:41 INFO  Covid19IndiaDashboard:79 - Navigated to : http://www.covid19India.org
-2020-04-15 00:46:43 INFO  Covid19IndiaDashboard:66 - Column number with header STATE/UT : 1
-2020-04-15 00:46:45 INFO  Covid19IndiaDashboard:66 - Column number with header CONFIRMED : 2
-2020-04-15 00:46:46 INFO  Covid19IndiaDashboard:66 - Column number with header ACTIVE : 3
-2020-04-15 00:46:46 INFO  Covid19IndiaDashboard:66 - Column number with header RECOVERED : 4
-2020-04-15 00:46:46 INFO  Covid19IndiaDashboard:66 - Column number with header DECEASED : 5
-2020-04-15 00:46:46 INFO  Covid19IndiaDashboard:97 - State :MAHARASHTRA
-2020-04-15 00:46:46 INFO  Covid19IndiaDashboard:98 - Confirmed : 2684, Active : 2247, Recovered : 259, Deceased : 178
-2020-04-15 00:46:46 INFO  Covid19IndiaDashboard:99 - Verified Active Cases : Confirmed - Recovered + deceased
-2020-04-15 00:46:46 INFO  Covid19IndiaDashboard:100 - 2684 - 259 + 178 = 2247
-2020-04-15 00:46:47 INFO  Covid19IndiaDashboard:66 - Column number with header STATE/UT : 1
-2020-04-15 00:46:49 INFO  Covid19IndiaDashboard:66 - Column number with header CONFIRMED : 2
-2020-04-15 00:46:49 INFO  Covid19IndiaDashboard:66 - Column number with header ACTIVE : 3
-2020-04-15 00:46:50 INFO  Covid19IndiaDashboard:66 - Column number with header RECOVERED : 4
-2020-04-15 00:46:50 INFO  Covid19IndiaDashboard:66 - Column number with header DECEASED : 5
-2020-04-15 00:46:50 INFO  Covid19IndiaDashboard:97 - State :DELHI
-2020-04-15 00:46:50 INFO  Covid19IndiaDashboard:98 - Confirmed : 1561, Active : 1500, Recovered : 31, Deceased : 30
-2020-04-15 00:46:50 INFO  Covid19IndiaDashboard:99 - Verified Active Cases : Confirmed - Recovered + deceased
-2020-04-15 00:46:50 INFO  Covid19IndiaDashboard:100 - 1561 - 31 + 30 = 1500
-2020-04-15 00:46:50 INFO  Covid19IndiaDashboard:66 - Column number with header STATE/UT : 1
-2020-04-15 00:46:52 INFO  Covid19IndiaDashboard:66 - Column number with header CONFIRMED : 2
-2020-04-15 00:46:53 INFO  Covid19IndiaDashboard:66 - Column number with header ACTIVE : 3
-2020-04-15 00:46:53 INFO  Covid19IndiaDashboard:66 - Column number with header RECOVERED : 4
-2020-04-15 00:46:53 INFO  Covid19IndiaDashboard:66 - Column number with header DECEASED : 5
-2020-04-15 00:46:53 INFO  Covid19IndiaDashboard:97 - State :TAMIL NADU
-2020-04-15 00:46:53 INFO  Covid19IndiaDashboard:98 - Confirmed : 1204, Active : 1111, Recovered : 81, Deceased : 12
-2020-04-15 00:46:53 INFO  Covid19IndiaDashboard:99 - Verified Active Cases : Confirmed - Recovered + deceased
-2020-04-15 00:46:53 INFO  Covid19IndiaDashboard:100 - 1204 - 81 + 12 = 1111
-2020-04-15 00:46:54 INFO  Covid19IndiaDashboard:66 - Column number with header STATE/UT : 1
-2020-04-15 00:46:56 INFO  Covid19IndiaDashboard:66 - Column number with header CONFIRMED : 2
-2020-04-15 00:46:56 INFO  Covid19IndiaDashboard:66 - Column number with header ACTIVE : 3
-2020-04-15 00:46:56 INFO  Covid19IndiaDashboard:66 - Column number with header RECOVERED : 4
-2020-04-15 00:46:57 INFO  Covid19IndiaDashboard:66 - Column number with header DECEASED : 5
-2020-04-15 00:46:57 INFO  Covid19IndiaDashboard:97 - State :RAJASTHAN
-2020-04-15 00:46:57 INFO  Covid19IndiaDashboard:98 - Confirmed : 1005, Active : 847, Recovered : 147, Deceased : 11
-2020-04-15 00:46:57 INFO  Covid19IndiaDashboard:99 - Verified Active Cases : Confirmed - Recovered + deceased
-2020-04-15 00:46:57 INFO  Covid19IndiaDashboard:100 - 1005 - 147 + 11 = 847
-2020-04-15 00:46:57 INFO  Covid19IndiaDashboard:66 - Column number with header STATE/UT : 1
-2020-04-15 00:46:59 INFO  Covid19IndiaDashboard:66 - Column number with header CONFIRMED : 2
-2020-04-15 00:47:00 INFO  Covid19IndiaDashboard:66 - Column number with header ACTIVE : 3
-2020-04-15 00:47:00 INFO  Covid19IndiaDashboard:66 - Column number with header RECOVERED : 4
-2020-04-15 00:47:00 INFO  Covid19IndiaDashboard:66 - Column number with header DECEASED : 5
-2020-04-15 00:47:00 INFO  Covid19IndiaDashboard:97 - State :MADHYA PRADESH
-2020-04-15 00:47:00 INFO  Covid19IndiaDashboard:98 - Confirmed : 741, Active : 624, Recovered : 64, Deceased : 53
-2020-04-15 00:47:00 INFO  Covid19IndiaDashboard:99 - Verified Active Cases : Confirmed - Recovered + deceased
-2020-04-15 00:47:00 INFO  Covid19IndiaDashboard:100 - 741 - 64 + 53 = 624
-2020-04-15 00:47:00 INFO  Covid19IndiaDashboard:66 - Column number with header STATE/UT : 1
-2020-04-15 00:47:03 INFO  Covid19IndiaDashboard:66 - Column number with header CONFIRMED : 2
-2020-04-15 00:47:03 INFO  Covid19IndiaDashboard:66 - Column number with header ACTIVE : 3
-2020-04-15 00:47:04 INFO  Covid19IndiaDashboard:66 - Column number with header RECOVERED : 4
-2020-04-15 00:47:04 INFO  Covid19IndiaDashboard:66 - Column number with header DECEASED : 5
-2020-04-15 00:47:04 INFO  Covid19IndiaDashboard:97 - State :UTTAR PRADESH
-2020-04-15 00:47:04 INFO  Covid19IndiaDashboard:98 - Confirmed : 660, Active : 602, Recovered : 50, Deceased : 8
-2020-04-15 00:47:04 INFO  Covid19IndiaDashboard:99 - Verified Active Cases : Confirmed - Recovered + deceased
-2020-04-15 00:47:04 INFO  Covid19IndiaDashboard:100 - 660 - 50 + 8 = 602
-2020-04-15 00:47:04 INFO  Covid19IndiaDashboard:66 - Column number with header STATE/UT : 1
-2020-04-15 00:47:07 INFO  Covid19IndiaDashboard:66 - Column number with header CONFIRMED : 2
-2020-04-15 00:47:07 INFO  Covid19IndiaDashboard:66 - Column number with header ACTIVE : 3
-2020-04-15 00:47:07 INFO  Covid19IndiaDashboard:66 - Column number with header RECOVERED : 4
-2020-04-15 00:47:07 INFO  Covid19IndiaDashboard:66 - Column number with header DECEASED : 5
-2020-04-15 00:47:07 INFO  Covid19IndiaDashboard:97 - State :GUJARAT
-2020-04-15 00:47:07 INFO  Covid19IndiaDashboard:98 - Confirmed : 650, Active : 563, Recovered : 59, Deceased : 28
-2020-04-15 00:47:07 INFO  Covid19IndiaDashboard:99 - Verified Active Cases : Confirmed - Recovered + deceased
-2020-04-15 00:47:07 INFO  Covid19IndiaDashboard:100 - 650 - 59 + 28 = 563
-2020-04-15 00:47:08 INFO  Covid19IndiaDashboard:66 - Column number with header STATE/UT : 1
-2020-04-15 00:47:10 INFO  Covid19IndiaDashboard:66 - Column number with header CONFIRMED : 2
-2020-04-15 00:47:10 INFO  Covid19IndiaDashboard:66 - Column number with header ACTIVE : 3
-2020-04-15 00:47:10 INFO  Covid19IndiaDashboard:66 - Column number with header RECOVERED : 4
-2020-04-15 00:47:11 INFO  Covid19IndiaDashboard:66 - Column number with header DECEASED : 5
-2020-04-15 00:47:11 INFO  Covid19IndiaDashboard:97 - State :TELANGANA
-2020-04-15 00:47:11 INFO  Covid19IndiaDashboard:98 - Confirmed : 644, Active : 516, Recovered : 110, Deceased : 18
-2020-04-15 00:47:11 INFO  Covid19IndiaDashboard:99 - Verified Active Cases : Confirmed - Recovered + deceased
-2020-04-15 00:47:11 INFO  Covid19IndiaDashboard:100 - 644 - 110 + 18 = 516
-2020-04-15 00:47:11 INFO  Covid19IndiaDashboard:66 - Column number with header STATE/UT : 1
-2020-04-15 00:47:15 INFO  Covid19IndiaDashboard:66 - Column number with header CONFIRMED : 2
-2020-04-15 00:47:15 INFO  Covid19IndiaDashboard:66 - Column number with header ACTIVE : 3
-2020-04-15 00:47:16 INFO  Covid19IndiaDashboard:66 - Column number with header RECOVERED : 4
-2020-04-15 00:47:16 INFO  Covid19IndiaDashboard:66 - Column number with header DECEASED : 5
-2020-04-15 00:47:16 INFO  Covid19IndiaDashboard:97 - State :ANDHRA PRADESH
-2020-04-15 00:47:16 INFO  Covid19IndiaDashboard:98 - Confirmed : 483, Active : 458, Recovered : 16, Deceased : 9
-2020-04-15 00:47:16 INFO  Covid19IndiaDashboard:99 - Verified Active Cases : Confirmed - Recovered + deceased
-2020-04-15 00:47:16 INFO  Covid19IndiaDashboard:100 - 483 - 16 + 9 = 458
-2020-04-15 00:47:16 INFO  Covid19IndiaDashboard:66 - Column number with header STATE/UT : 1
-2020-04-15 00:47:19 INFO  Covid19IndiaDashboard:66 - Column number with header CONFIRMED : 2
-2020-04-15 00:47:19 INFO  Covid19IndiaDashboard:66 - Column number with header ACTIVE : 3
-2020-04-15 00:47:19 INFO  Covid19IndiaDashboard:66 - Column number with header RECOVERED : 4
-2020-04-15 00:47:20 INFO  Covid19IndiaDashboard:66 - Column number with header DECEASED : 5
-2020-04-15 00:47:20 INFO  Covid19IndiaDashboard:97 - State :KERALA
-2020-04-15 00:47:20 INFO  Covid19IndiaDashboard:98 - Confirmed : 386, Active : 173, Recovered : 211, Deceased : 2
-2020-04-15 00:47:20 INFO  Covid19IndiaDashboard:99 - Verified Active Cases : Confirmed - Recovered + deceased
-2020-04-15 00:47:20 INFO  Covid19IndiaDashboard:100 - 386 - 211 + 2 = 173
-2020-04-15 00:47:20 INFO  Covid19IndiaDashboard:66 - Column number with header STATE/UT : 1
-2020-04-15 00:47:22 INFO  Covid19IndiaDashboard:66 - Column number with header CONFIRMED : 2
-2020-04-15 00:47:22 INFO  Covid19IndiaDashboard:66 - Column number with header ACTIVE : 3
-2020-04-15 00:47:23 INFO  Covid19IndiaDashboard:66 - Column number with header RECOVERED : 4
-2020-04-15 00:47:23 INFO  Covid19IndiaDashboard:66 - Column number with header DECEASED : 5
-2020-04-15 00:47:23 INFO  Covid19IndiaDashboard:97 - State :JAMMU AND KASHMIR
-2020-04-15 00:47:23 INFO  Covid19IndiaDashboard:98 - Confirmed : 278, Active : 244, Recovered : 30, Deceased : 4
-2020-04-15 00:47:23 INFO  Covid19IndiaDashboard:99 - Verified Active Cases : Confirmed - Recovered + deceased
-2020-04-15 00:47:23 INFO  Covid19IndiaDashboard:100 - 278 - 30 + 4 = 244
-2020-04-15 00:47:23 INFO  Covid19IndiaDashboard:66 - Column number with header STATE/UT : 1
-2020-04-15 00:47:26 INFO  Covid19IndiaDashboard:66 - Column number with header CONFIRMED : 2
-2020-04-15 00:47:26 INFO  Covid19IndiaDashboard:66 - Column number with header ACTIVE : 3
-2020-04-15 00:47:26 INFO  Covid19IndiaDashboard:66 - Column number with header RECOVERED : 4
-2020-04-15 00:47:27 INFO  Covid19IndiaDashboard:66 - Column number with header DECEASED : 5
-2020-04-15 00:47:27 INFO  Covid19IndiaDashboard:97 - State :KARNATAKA
-2020-04-15 00:47:27 INFO  Covid19IndiaDashboard:98 - Confirmed : 260, Active : 179, Recovered : 71, Deceased : 10
-2020-04-15 00:47:27 INFO  Covid19IndiaDashboard:99 - Verified Active Cases : Confirmed - Recovered + deceased
-2020-04-15 00:47:27 INFO  Covid19IndiaDashboard:100 - 260 - 71 + 10 = 179
-2020-04-15 00:47:27 INFO  Covid19IndiaDashboard:66 - Column number with header STATE/UT : 1
-2020-04-15 00:47:29 INFO  Covid19IndiaDashboard:66 - Column number with header CONFIRMED : 2
-2020-04-15 00:47:29 INFO  Covid19IndiaDashboard:66 - Column number with header ACTIVE : 3
-2020-04-15 00:47:30 INFO  Covid19IndiaDashboard:66 - Column number with header RECOVERED : 4
-2020-04-15 00:47:30 INFO  Covid19IndiaDashboard:66 - Column number with header DECEASED : 5
-2020-04-15 00:47:30 INFO  Covid19IndiaDashboard:97 - State :HARYANA
-2020-04-15 00:47:30 INFO  Covid19IndiaDashboard:98 - Confirmed : 198, Active : 140, Recovered : 55, Deceased : 3
-2020-04-15 00:47:30 INFO  Covid19IndiaDashboard:99 - Verified Active Cases : Confirmed - Recovered + deceased
-2020-04-15 00:47:30 INFO  Covid19IndiaDashboard:100 - 198 - 55 + 3 = 140
-2020-04-15 00:47:30 INFO  Covid19IndiaDashboard:66 - Column number with header STATE/UT : 1
-2020-04-15 00:47:32 INFO  Covid19IndiaDashboard:66 - Column number with header CONFIRMED : 2
-2020-04-15 00:47:33 INFO  Covid19IndiaDashboard:66 - Column number with header ACTIVE : 3
-2020-04-15 00:47:33 INFO  Covid19IndiaDashboard:66 - Column number with header RECOVERED : 4
-2020-04-15 00:47:34 INFO  Covid19IndiaDashboard:66 - Column number with header DECEASED : 5
-2020-04-15 00:47:34 INFO  Covid19IndiaDashboard:97 - State :WEST BENGAL
-2020-04-15 00:47:34 INFO  Covid19IndiaDashboard:98 - Confirmed : 190, Active : 147, Recovered : 36, Deceased : 7
-2020-04-15 00:47:34 INFO  Covid19IndiaDashboard:99 - Verified Active Cases : Confirmed - Recovered + deceased
-2020-04-15 00:47:34 INFO  Covid19IndiaDashboard:100 - 190 - 36 + 7 = 147
-2020-04-15 00:47:34 INFO  Covid19IndiaDashboard:66 - Column number with header STATE/UT : 1
-2020-04-15 00:47:36 INFO  Covid19IndiaDashboard:66 - Column number with header CONFIRMED : 2
-2020-04-15 00:47:36 INFO  Covid19IndiaDashboard:66 - Column number with header ACTIVE : 3
-2020-04-15 00:47:37 INFO  Covid19IndiaDashboard:66 - Column number with header RECOVERED : 4
-2020-04-15 00:47:37 INFO  Covid19IndiaDashboard:66 - Column number with header DECEASED : 5
-2020-04-15 00:47:37 INFO  Covid19IndiaDashboard:97 - State :PUNJAB
-2020-04-15 00:47:37 INFO  Covid19IndiaDashboard:98 - Confirmed : 184, Active : 146, Recovered : 25, Deceased : 13
-2020-04-15 00:47:37 INFO  Covid19IndiaDashboard:99 - Verified Active Cases : Confirmed - Recovered + deceased
-2020-04-15 00:47:37 INFO  Covid19IndiaDashboard:100 - 184 - 25 + 13 = 146
-2020-04-15 00:47:37 INFO  Covid19IndiaDashboard:66 - Column number with header STATE/UT : 1
-2020-04-15 00:47:39 INFO  Covid19IndiaDashboard:66 - Column number with header CONFIRMED : 2
-2020-04-15 00:47:40 INFO  Covid19IndiaDashboard:66 - Column number with header ACTIVE : 3
-2020-04-15 00:47:40 INFO  Covid19IndiaDashboard:66 - Column number with header RECOVERED : 4
-2020-04-15 00:47:40 INFO  Covid19IndiaDashboard:66 - Column number with header DECEASED : 5
-2020-04-15 00:47:40 INFO  Covid19IndiaDashboard:97 - State :BIHAR
-2020-04-15 00:47:40 INFO  Covid19IndiaDashboard:98 - Confirmed : 66, Active : 36, Recovered : 29, Deceased : 1
-2020-04-15 00:47:40 INFO  Covid19IndiaDashboard:99 - Verified Active Cases : Confirmed - Recovered + deceased
-2020-04-15 00:47:40 INFO  Covid19IndiaDashboard:100 - 66 - 29 + 1 = 36
-2020-04-15 00:47:40 INFO  Covid19IndiaDashboard:66 - Column number with header STATE/UT : 1
-2020-04-15 00:47:43 INFO  Covid19IndiaDashboard:66 - Column number with header CONFIRMED : 2
-2020-04-15 00:47:43 INFO  Covid19IndiaDashboard:66 - Column number with header ACTIVE : 3
-2020-04-15 00:47:43 INFO  Covid19IndiaDashboard:66 - Column number with header RECOVERED : 4
-2020-04-15 00:47:44 INFO  Covid19IndiaDashboard:66 - Column number with header DECEASED : 5
-2020-04-15 00:47:44 INFO  Covid19IndiaDashboard:97 - State :ODISHA
-2020-04-15 00:47:44 INFO  Covid19IndiaDashboard:98 - Confirmed : 60, Active : 41, Recovered : 18, Deceased : 1
-2020-04-15 00:47:44 INFO  Covid19IndiaDashboard:99 - Verified Active Cases : Confirmed - Recovered + deceased
-2020-04-15 00:47:44 INFO  Covid19IndiaDashboard:100 - 60 - 18 + 1 = 41
-2020-04-15 00:47:44 INFO  Covid19IndiaDashboard:66 - Column number with header STATE/UT : 1
-2020-04-15 00:47:46 INFO  Covid19IndiaDashboard:66 - Column number with header CONFIRMED : 2
-2020-04-15 00:47:46 INFO  Covid19IndiaDashboard:66 - Column number with header ACTIVE : 3
-2020-04-15 00:47:47 INFO  Covid19IndiaDashboard:66 - Column number with header RECOVERED : 4
-2020-04-15 00:47:47 INFO  Covid19IndiaDashboard:66 - Column number with header DECEASED : 5
-2020-04-15 00:47:47 INFO  Covid19IndiaDashboard:97 - State :UTTARAKHAND
-2020-04-15 00:47:47 INFO  Covid19IndiaDashboard:98 - Confirmed : 37, Active : 28, Recovered : 9, Deceased : 0
-2020-04-15 00:47:47 INFO  Covid19IndiaDashboard:99 - Verified Active Cases : Confirmed - Recovered + deceased
-2020-04-15 00:47:47 INFO  Covid19IndiaDashboard:100 - 37 - 9 + 0 = 28
-2020-04-15 00:47:47 INFO  Covid19IndiaDashboard:66 - Column number with header STATE/UT : 1
-2020-04-15 00:47:49 INFO  Covid19IndiaDashboard:66 - Column number with header CONFIRMED : 2
-2020-04-15 00:47:49 INFO  Covid19IndiaDashboard:66 - Column number with header ACTIVE : 3
-2020-04-15 00:47:50 INFO  Covid19IndiaDashboard:66 - Column number with header RECOVERED : 4
-2020-04-15 00:47:50 INFO  Covid19IndiaDashboard:66 - Column number with header DECEASED : 5
-2020-04-15 00:47:50 INFO  Covid19IndiaDashboard:97 - State :CHHATTISGARH
-2020-04-15 00:47:50 INFO  Covid19IndiaDashboard:98 - Confirmed : 33, Active : 23, Recovered : 10, Deceased : 0
-2020-04-15 00:47:50 INFO  Covid19IndiaDashboard:99 - Verified Active Cases : Confirmed - Recovered + deceased
-2020-04-15 00:47:50 INFO  Covid19IndiaDashboard:100 - 33 - 10 + 0 = 23
-2020-04-15 00:47:50 INFO  Covid19IndiaDashboard:66 - Column number with header STATE/UT : 1
-2020-04-15 00:47:52 INFO  Covid19IndiaDashboard:66 - Column number with header CONFIRMED : 2
-2020-04-15 00:47:53 INFO  Covid19IndiaDashboard:66 - Column number with header ACTIVE : 3
-2020-04-15 00:47:53 INFO  Covid19IndiaDashboard:66 - Column number with header RECOVERED : 4
-2020-04-15 00:47:53 INFO  Covid19IndiaDashboard:66 - Column number with header DECEASED : 5
-2020-04-15 00:47:53 INFO  Covid19IndiaDashboard:97 - State :ASSAM
-2020-04-15 00:47:53 INFO  Covid19IndiaDashboard:98 - Confirmed : 32, Active : 31, Recovered : 0, Deceased : 1
-2020-04-15 00:47:53 INFO  Covid19IndiaDashboard:99 - Verified Active Cases : Confirmed - Recovered + deceased
-2020-04-15 00:47:53 INFO  Covid19IndiaDashboard:100 - 32 - 0 + 1 = 31
-2020-04-15 00:47:53 INFO  Covid19IndiaDashboard:66 - Column number with header STATE/UT : 1
-2020-04-15 00:47:56 INFO  Covid19IndiaDashboard:66 - Column number with header CONFIRMED : 2
-2020-04-15 00:47:56 INFO  Covid19IndiaDashboard:66 - Column number with header ACTIVE : 3
-2020-04-15 00:47:56 INFO  Covid19IndiaDashboard:66 - Column number with header RECOVERED : 4
-2020-04-15 00:47:56 INFO  Covid19IndiaDashboard:66 - Column number with header DECEASED : 5
-2020-04-15 00:47:57 INFO  Covid19IndiaDashboard:97 - State :HIMACHAL PRADESH
-2020-04-15 00:47:57 INFO  Covid19IndiaDashboard:98 - Confirmed : 32, Active : 18, Recovered : 12, Deceased : 2
-2020-04-15 00:47:57 INFO  Covid19IndiaDashboard:99 - Verified Active Cases : Confirmed - Recovered + deceased
-2020-04-15 00:47:57 INFO  Covid19IndiaDashboard:100 - 32 - 12 + 2 = 18
-2020-04-15 00:47:57 INFO  Covid19IndiaDashboard:66 - Column number with header STATE/UT : 1
-2020-04-15 00:47:59 INFO  Covid19IndiaDashboard:66 - Column number with header CONFIRMED : 2
-2020-04-15 00:47:59 INFO  Covid19IndiaDashboard:66 - Column number with header ACTIVE : 3
-2020-04-15 00:48:00 INFO  Covid19IndiaDashboard:66 - Column number with header RECOVERED : 4
-2020-04-15 00:48:00 INFO  Covid19IndiaDashboard:66 - Column number with header DECEASED : 5
-2020-04-15 00:48:00 INFO  Covid19IndiaDashboard:97 - State :JHARKHAND
-2020-04-15 00:48:00 INFO  Covid19IndiaDashboard:98 - Confirmed : 27, Active : 25, Recovered : 0, Deceased : 2
-2020-04-15 00:48:00 INFO  Covid19IndiaDashboard:99 - Verified Active Cases : Confirmed - Recovered + deceased
-2020-04-15 00:48:00 INFO  Covid19IndiaDashboard:100 - 27 - 0 + 2 = 25
-2020-04-15 00:48:00 INFO  Covid19IndiaDashboard:66 - Column number with header STATE/UT : 1
-2020-04-15 00:48:03 INFO  Covid19IndiaDashboard:66 - Column number with header CONFIRMED : 2
-2020-04-15 00:48:03 INFO  Covid19IndiaDashboard:66 - Column number with header ACTIVE : 3
-2020-04-15 00:48:03 INFO  Covid19IndiaDashboard:66 - Column number with header RECOVERED : 4
-2020-04-15 00:48:04 INFO  Covid19IndiaDashboard:66 - Column number with header DECEASED : 5
-2020-04-15 00:48:04 INFO  Covid19IndiaDashboard:97 - State :CHANDIGARH
-2020-04-15 00:48:04 INFO  Covid19IndiaDashboard:98 - Confirmed : 21, Active : 14, Recovered : 7, Deceased : 0
-2020-04-15 00:48:04 INFO  Covid19IndiaDashboard:99 - Verified Active Cases : Confirmed - Recovered + deceased
-2020-04-15 00:48:04 INFO  Covid19IndiaDashboard:100 - 21 - 7 + 0 = 14
-2020-04-15 00:48:04 INFO  Covid19IndiaDashboard:66 - Column number with header STATE/UT : 1
-2020-04-15 00:48:06 INFO  Covid19IndiaDashboard:66 - Column number with header CONFIRMED : 2
-2020-04-15 00:48:06 INFO  Covid19IndiaDashboard:66 - Column number with header ACTIVE : 3
-2020-04-15 00:48:07 INFO  Covid19IndiaDashboard:66 - Column number with header RECOVERED : 4
-2020-04-15 00:48:07 INFO  Covid19IndiaDashboard:66 - Column number with header DECEASED : 5
-2020-04-15 00:48:07 INFO  Covid19IndiaDashboard:97 - State :LADAKH
-2020-04-15 00:48:07 INFO  Covid19IndiaDashboard:98 - Confirmed : 17, Active : 5, Recovered : 12, Deceased : 0
-2020-04-15 00:48:07 INFO  Covid19IndiaDashboard:99 - Verified Active Cases : Confirmed - Recovered + deceased
-2020-04-15 00:48:07 INFO  Covid19IndiaDashboard:100 - 17 - 12 + 0 = 5
-2020-04-15 00:48:07 INFO  Covid19IndiaDashboard:66 - Column number with header STATE/UT : 1
-2020-04-15 00:48:09 INFO  Covid19IndiaDashboard:66 - Column number with header CONFIRMED : 2
-2020-04-15 00:48:10 INFO  Covid19IndiaDashboard:66 - Column number with header ACTIVE : 3
-2020-04-15 00:48:10 INFO  Covid19IndiaDashboard:66 - Column number with header RECOVERED : 4
-2020-04-15 00:48:10 INFO  Covid19IndiaDashboard:66 - Column number with header DECEASED : 5
-2020-04-15 00:48:10 INFO  Covid19IndiaDashboard:97 - State :ANDAMAN AND NICOBAR ISLANDS
-2020-04-15 00:48:10 INFO  Covid19IndiaDashboard:98 - Confirmed : 11, Active : 1, Recovered : 10, Deceased : 0
-2020-04-15 00:48:10 INFO  Covid19IndiaDashboard:99 - Verified Active Cases : Confirmed - Recovered + deceased
-2020-04-15 00:48:10 INFO  Covid19IndiaDashboard:100 - 11 - 10 + 0 = 1
-2020-04-15 00:48:11 INFO  Covid19IndiaDashboard:66 - Column number with header STATE/UT : 1
-2020-04-15 00:48:13 INFO  Covid19IndiaDashboard:66 - Column number with header CONFIRMED : 2
-2020-04-15 00:48:13 INFO  Covid19IndiaDashboard:66 - Column number with header ACTIVE : 3
-2020-04-15 00:48:13 INFO  Covid19IndiaDashboard:66 - Column number with header RECOVERED : 4
-2020-04-15 00:48:14 INFO  Covid19IndiaDashboard:66 - Column number with header DECEASED : 5
-2020-04-15 00:48:14 INFO  Covid19IndiaDashboard:97 - State :GOA
-2020-04-15 00:48:14 INFO  Covid19IndiaDashboard:98 - Confirmed : 7, Active : 2, Recovered : 5, Deceased : 0
-2020-04-15 00:48:14 INFO  Covid19IndiaDashboard:99 - Verified Active Cases : Confirmed - Recovered + deceased
-2020-04-15 00:48:14 INFO  Covid19IndiaDashboard:100 - 7 - 5 + 0 = 2
-2020-04-15 00:48:14 INFO  Covid19IndiaDashboard:66 - Column number with header STATE/UT : 1
-2020-04-15 00:48:16 INFO  Covid19IndiaDashboard:66 - Column number with header CONFIRMED : 2
-2020-04-15 00:48:16 INFO  Covid19IndiaDashboard:66 - Column number with header ACTIVE : 3
-2020-04-15 00:48:17 INFO  Covid19IndiaDashboard:66 - Column number with header RECOVERED : 4
-2020-04-15 00:48:17 INFO  Covid19IndiaDashboard:66 - Column number with header DECEASED : 5
-2020-04-15 00:48:17 INFO  Covid19IndiaDashboard:97 - State :PUDUCHERRY
-2020-04-15 00:48:17 INFO  Covid19IndiaDashboard:98 - Confirmed : 7, Active : 6, Recovered : 1, Deceased : 0
-2020-04-15 00:48:17 INFO  Covid19IndiaDashboard:99 - Verified Active Cases : Confirmed - Recovered + deceased
-2020-04-15 00:48:17 INFO  Covid19IndiaDashboard:100 - 7 - 1 + 0 = 6
-2020-04-15 00:48:17 INFO  Covid19IndiaDashboard:66 - Column number with header STATE/UT : 1
-2020-04-15 00:48:19 INFO  Covid19IndiaDashboard:66 - Column number with header CONFIRMED : 2
-2020-04-15 00:48:20 INFO  Covid19IndiaDashboard:66 - Column number with header ACTIVE : 3
-2020-04-15 00:48:20 INFO  Covid19IndiaDashboard:66 - Column number with header RECOVERED : 4
-2020-04-15 00:48:20 INFO  Covid19IndiaDashboard:66 - Column number with header DECEASED : 5
-2020-04-15 00:48:20 INFO  Covid19IndiaDashboard:97 - State :MANIPUR
-2020-04-15 00:48:20 INFO  Covid19IndiaDashboard:98 - Confirmed : 2, Active : 1, Recovered : 1, Deceased : 0
-2020-04-15 00:48:20 INFO  Covid19IndiaDashboard:99 - Verified Active Cases : Confirmed - Recovered + deceased
-2020-04-15 00:48:20 INFO  Covid19IndiaDashboard:100 - 2 - 1 + 0 = 1
-2020-04-15 00:48:21 INFO  Covid19IndiaDashboard:66 - Column number with header STATE/UT : 1
-2020-04-15 00:48:23 INFO  Covid19IndiaDashboard:66 - Column number with header CONFIRMED : 2
-2020-04-15 00:48:23 INFO  Covid19IndiaDashboard:66 - Column number with header ACTIVE : 3
-2020-04-15 00:48:24 INFO  Covid19IndiaDashboard:66 - Column number with header RECOVERED : 4
-2020-04-15 00:48:24 INFO  Covid19IndiaDashboard:66 - Column number with header DECEASED : 5
-2020-04-15 00:48:24 INFO  Covid19IndiaDashboard:97 - State :TRIPURA
-2020-04-15 00:48:24 INFO  Covid19IndiaDashboard:98 - Confirmed : 2, Active : 2, Recovered : 0, Deceased : 0
-2020-04-15 00:48:24 INFO  Covid19IndiaDashboard:99 - Verified Active Cases : Confirmed - Recovered + deceased
-2020-04-15 00:48:24 INFO  Covid19IndiaDashboard:100 - 2 - 0 + 0 = 2
-2020-04-15 00:48:24 INFO  Covid19IndiaDashboard:66 - Column number with header STATE/UT : 1
-2020-04-15 00:48:26 INFO  Covid19IndiaDashboard:66 - Column number with header CONFIRMED : 2
-2020-04-15 00:48:26 INFO  Covid19IndiaDashboard:66 - Column number with header ACTIVE : 3
-2020-04-15 00:48:27 INFO  Covid19IndiaDashboard:66 - Column number with header RECOVERED : 4
-2020-04-15 00:48:27 INFO  Covid19IndiaDashboard:66 - Column number with header DECEASED : 5
-2020-04-15 00:48:27 INFO  Covid19IndiaDashboard:97 - State :ARUNACHAL PRADESH
-2020-04-15 00:48:27 INFO  Covid19IndiaDashboard:98 - Confirmed : 1, Active : 1, Recovered : 0, Deceased : 0
-2020-04-15 00:48:27 INFO  Covid19IndiaDashboard:99 - Verified Active Cases : Confirmed - Recovered + deceased
-2020-04-15 00:48:27 INFO  Covid19IndiaDashboard:100 - 1 - 0 + 0 = 1
-2020-04-15 00:48:27 INFO  Covid19IndiaDashboard:66 - Column number with header STATE/UT : 1
-2020-04-15 00:48:30 INFO  Covid19IndiaDashboard:66 - Column number with header CONFIRMED : 2
-2020-04-15 00:48:30 INFO  Covid19IndiaDashboard:66 - Column number with header ACTIVE : 3
-2020-04-15 00:48:30 INFO  Covid19IndiaDashboard:66 - Column number with header RECOVERED : 4
-2020-04-15 00:48:30 INFO  Covid19IndiaDashboard:66 - Column number with header DECEASED : 5
-2020-04-15 00:48:30 INFO  Covid19IndiaDashboard:97 - State :DADRA AND NAGAR HAVELI
-2020-04-15 00:48:30 INFO  Covid19IndiaDashboard:98 - Confirmed : 1, Active : 1, Recovered : 0, Deceased : 0
-2020-04-15 00:48:30 INFO  Covid19IndiaDashboard:99 - Verified Active Cases : Confirmed - Recovered + deceased
-2020-04-15 00:48:30 INFO  Covid19IndiaDashboard:100 - 1 - 0 + 0 = 1
-2020-04-15 00:48:31 INFO  Covid19IndiaDashboard:66 - Column number with header STATE/UT : 1
-2020-04-15 00:48:33 INFO  Covid19IndiaDashboard:66 - Column number with header CONFIRMED : 2
-2020-04-15 00:48:33 INFO  Covid19IndiaDashboard:66 - Column number with header ACTIVE : 3
-2020-04-15 00:48:33 INFO  Covid19IndiaDashboard:66 - Column number with header RECOVERED : 4
-2020-04-15 00:48:34 INFO  Covid19IndiaDashboard:66 - Column number with header DECEASED : 5
-2020-04-15 00:48:34 INFO  Covid19IndiaDashboard:97 - State :MEGHALAYA
-2020-04-15 00:48:34 INFO  Covid19IndiaDashboard:98 - Confirmed : 1, Active : 1, Recovered : 0, Deceased : 0
-2020-04-15 00:48:34 INFO  Covid19IndiaDashboard:99 - Verified Active Cases : Confirmed - Recovered + deceased
-2020-04-15 00:48:34 INFO  Covid19IndiaDashboard:100 - 1 - 0 + 0 = 1
-2020-04-15 00:48:34 INFO  Covid19IndiaDashboard:66 - Column number with header STATE/UT : 1
-2020-04-15 00:48:36 INFO  Covid19IndiaDashboard:66 - Column number with header CONFIRMED : 2
-2020-04-15 00:48:36 INFO  Covid19IndiaDashboard:66 - Column number with header ACTIVE : 3
-2020-04-15 00:48:36 INFO  Covid19IndiaDashboard:66 - Column number with header RECOVERED : 4
-2020-04-15 00:48:37 INFO  Covid19IndiaDashboard:66 - Column number with header DECEASED : 5
-2020-04-15 00:48:37 INFO  Covid19IndiaDashboard:97 - State :MIZORAM
-2020-04-15 00:48:37 INFO  Covid19IndiaDashboard:98 - Confirmed : 1, Active : 1, Recovered : 0, Deceased : 0
-2020-04-15 00:48:37 INFO  Covid19IndiaDashboard:99 - Verified Active Cases : Confirmed - Recovered + deceased
-2020-04-15 00:48:37 INFO  Covid19IndiaDashboard:100 - 1 - 0 + 0 = 1
-2020-04-15 00:48:37 INFO  Covid19IndiaDashboard:66 - Column number with header STATE/UT : 1
-2020-04-15 00:48:39 INFO  Covid19IndiaDashboard:66 - Column number with header CONFIRMED : 2
-2020-04-15 00:48:40 INFO  Covid19IndiaDashboard:66 - Column number with header ACTIVE : 3
-2020-04-15 00:48:40 INFO  Covid19IndiaDashboard:66 - Column number with header RECOVERED : 4
-2020-04-15 00:48:40 INFO  Covid19IndiaDashboard:66 - Column number with header DECEASED : 5
-2020-04-15 00:48:40 INFO  Covid19IndiaDashboard:97 - State :NAGALAND
-2020-04-15 00:48:40 INFO  Covid19IndiaDashboard:98 - Confirmed : 1, Active : 1, Recovered : 0, Deceased : 0
-2020-04-15 00:48:40 INFO  Covid19IndiaDashboard:99 - Verified Active Cases : Confirmed - Recovered + deceased
-2020-04-15 00:48:40 INFO  Covid19IndiaDashboard:100 - 1 - 0 + 0 = 1
-2020-04-15 00:48:41 INFO  Covid19IndiaDashboard:66 - Column number with header STATE/UT : 1
-2020-04-15 00:48:43 INFO  Covid19IndiaDashboard:66 - Column number with header CONFIRMED : 2
-2020-04-15 00:48:43 INFO  Covid19IndiaDashboard:66 - Column number with header ACTIVE : 3
-2020-04-15 00:48:44 INFO  Covid19IndiaDashboard:66 - Column number with header RECOVERED : 4
-2020-04-15 00:48:44 INFO  Covid19IndiaDashboard:66 - Column number with header DECEASED : 5
-2020-04-15 00:48:44 INFO  Covid19IndiaDashboard:97 - State :TOTAL
-2020-04-15 00:48:44 INFO  Covid19IndiaDashboard:98 - Confirmed : 11487, Active : 9735, Recovered : 1359, Deceased : 393
-2020-04-15 00:48:44 INFO  Covid19IndiaDashboard:99 - Verified Active Cases : Confirmed - Recovered + deceased
-2020-04-15 00:48:44 INFO  Covid19IndiaDashboard:100 - 11487 - 1359 + 393 = 9735
-2020-04-15 00:48:44 INFO  CovidIndiaUITest:53 - checkCaseCalculationsForAllStates executed.
-2020-04-15 00:48:44 INFO  CovidIndiaUITest:55 - Driver is closed
-2020-04-15 00:48:44 WARN  CovidIndiaUITest:56 - Driver called off
+2020-04-15 01:37:34 INFO  PropertiesFileReader:36 - Fetched properties file on location : C:\Users\ranad\git\test-framework-restassured-selenium-spring-01/log4j.properties
+2020-04-15 01:37:34 INFO  Log4jConfiguration:30 - System value 'log4j.overwrite' : false
+2020-04-15 01:37:34 INFO  PropertiesFileReader:77 - Modified properties file with key : log4j.appender.HTML_FILE.Append, Value : false
+2020-04-15 01:37:34 INFO  PropertiesFileReader:90 - Properties file on locationC:\Users\ranad\git\test-framework-restassured-selenium-spring-01/log4j.properties updated
+2020-04-15 01:37:34 INFO  PropertiesFileReader:77 - Modified properties file with key : log4j.appender.FILE.Append, Value : false
+2020-04-15 01:37:34 INFO  PropertiesFileReader:90 - Properties file on locationC:\Users\ranad\git\test-framework-restassured-selenium-spring-01/log4j.properties updated
+2020-04-15 01:37:35 INFO  Driver:41 - Driver session is active
+2020-04-15 01:37:35 INFO  CovidIndiaUITest:27 - Initiating Method : checkCaseCalculationsForAllStates
+2020-04-15 01:37:37 INFO  Covid19IndiaDashboard:79 - Navigated to : http://www.covid19India.org
+2020-04-15 01:37:38 INFO  Covid19IndiaDashboard:66 - Column number with header STATE/UT : 1
+2020-04-15 01:37:41 INFO  Covid19IndiaDashboard:66 - Column number with header CONFIRMED : 2
+2020-04-15 01:37:41 INFO  Covid19IndiaDashboard:66 - Column number with header ACTIVE : 3
+2020-04-15 01:37:42 INFO  Covid19IndiaDashboard:66 - Column number with header RECOVERED : 4
+2020-04-15 01:37:42 INFO  Covid19IndiaDashboard:66 - Column number with header DECEASED : 5
+2020-04-15 01:37:42 INFO  Covid19IndiaDashboard:97 - State :MAHARASHTRA
+2020-04-15 01:37:42 INFO  Covid19IndiaDashboard:98 - Confirmed : 2684, Active : 2247, Recovered : 259, Deceased : 178
+2020-04-15 01:37:42 INFO  Covid19IndiaDashboard:99 - Verified Active Cases : Confirmed - Recovered + deceased
+2020-04-15 01:37:42 INFO  Covid19IndiaDashboard:100 - 2684 - 259 + 178 = 2247
+2020-04-15 01:37:42 INFO  Covid19IndiaDashboard:66 - Column number with header STATE/UT : 1
+2020-04-15 01:37:45 INFO  Covid19IndiaDashboard:66 - Column number with header CONFIRMED : 2
+2020-04-15 01:37:45 INFO  Covid19IndiaDashboard:66 - Column number with header ACTIVE : 3
+2020-04-15 01:37:46 INFO  Covid19IndiaDashboard:66 - Column number with header RECOVERED : 4
+2020-04-15 01:37:46 INFO  Covid19IndiaDashboard:66 - Column number with header DECEASED : 5
+2020-04-15 01:37:46 INFO  Covid19IndiaDashboard:97 - State :DELHI
+2020-04-15 01:37:46 INFO  Covid19IndiaDashboard:98 - Confirmed : 1561, Active : 1500, Recovered : 31, Deceased : 30
+2020-04-15 01:37:46 INFO  Covid19IndiaDashboard:99 - Verified Active Cases : Confirmed - Recovered + deceased
+2020-04-15 01:37:46 INFO  Covid19IndiaDashboard:100 - 1561 - 31 + 30 = 1500
+2020-04-15 01:37:46 INFO  Covid19IndiaDashboard:66 - Column number with header STATE/UT : 1
+2020-04-15 01:37:48 INFO  Covid19IndiaDashboard:66 - Column number with header CONFIRMED : 2
+2020-04-15 01:37:49 INFO  Covid19IndiaDashboard:66 - Column number with header ACTIVE : 3
+2020-04-15 01:37:49 INFO  Covid19IndiaDashboard:66 - Column number with header RECOVERED : 4
+2020-04-15 01:37:49 INFO  Covid19IndiaDashboard:66 - Column number with header DECEASED : 5
+2020-04-15 01:37:49 INFO  Covid19IndiaDashboard:97 - State :TAMIL NADU
+2020-04-15 01:37:49 INFO  Covid19IndiaDashboard:98 - Confirmed : 1204, Active : 1111, Recovered : 81, Deceased : 12
+2020-04-15 01:37:49 INFO  Covid19IndiaDashboard:99 - Verified Active Cases : Confirmed - Recovered + deceased
+2020-04-15 01:37:49 INFO  Covid19IndiaDashboard:100 - 1204 - 81 + 12 = 1111
+2020-04-15 01:37:49 INFO  Covid19IndiaDashboard:66 - Column number with header STATE/UT : 1
+2020-04-15 01:37:52 INFO  Covid19IndiaDashboard:66 - Column number with header CONFIRMED : 2
+2020-04-15 01:37:52 INFO  Covid19IndiaDashboard:66 - Column number with header ACTIVE : 3
+2020-04-15 01:37:53 INFO  Covid19IndiaDashboard:66 - Column number with header RECOVERED : 4
+2020-04-15 01:37:53 INFO  Covid19IndiaDashboard:66 - Column number with header DECEASED : 5
+2020-04-15 01:37:53 INFO  Covid19IndiaDashboard:97 - State :RAJASTHAN
+2020-04-15 01:37:53 INFO  Covid19IndiaDashboard:98 - Confirmed : 1005, Active : 847, Recovered : 147, Deceased : 11
+2020-04-15 01:37:53 INFO  Covid19IndiaDashboard:99 - Verified Active Cases : Confirmed - Recovered + deceased
+2020-04-15 01:37:53 INFO  Covid19IndiaDashboard:100 - 1005 - 147 + 11 = 847
+2020-04-15 01:37:53 INFO  Covid19IndiaDashboard:66 - Column number with header STATE/UT : 1
+2020-04-15 01:37:55 INFO  Covid19IndiaDashboard:66 - Column number with header CONFIRMED : 2
+2020-04-15 01:37:56 INFO  Covid19IndiaDashboard:66 - Column number with header ACTIVE : 3
+2020-04-15 01:37:56 INFO  Covid19IndiaDashboard:66 - Column number with header RECOVERED : 4
+2020-04-15 01:37:56 INFO  Covid19IndiaDashboard:66 - Column number with header DECEASED : 5
+2020-04-15 01:37:56 INFO  Covid19IndiaDashboard:97 - State :MADHYA PRADESH
+2020-04-15 01:37:56 INFO  Covid19IndiaDashboard:98 - Confirmed : 741, Active : 624, Recovered : 64, Deceased : 53
+2020-04-15 01:37:56 INFO  Covid19IndiaDashboard:99 - Verified Active Cases : Confirmed - Recovered + deceased
+2020-04-15 01:37:56 INFO  Covid19IndiaDashboard:100 - 741 - 64 + 53 = 624
+2020-04-15 01:37:56 INFO  Covid19IndiaDashboard:66 - Column number with header STATE/UT : 1
+2020-04-15 01:37:59 INFO  Covid19IndiaDashboard:66 - Column number with header CONFIRMED : 2
+2020-04-15 01:37:59 INFO  Covid19IndiaDashboard:66 - Column number with header ACTIVE : 3
+2020-04-15 01:37:59 INFO  Covid19IndiaDashboard:66 - Column number with header RECOVERED : 4
+2020-04-15 01:37:59 INFO  Covid19IndiaDashboard:66 - Column number with header DECEASED : 5
+2020-04-15 01:37:59 INFO  Covid19IndiaDashboard:97 - State :UTTAR PRADESH
+2020-04-15 01:37:59 INFO  Covid19IndiaDashboard:98 - Confirmed : 660, Active : 602, Recovered : 50, Deceased : 8
+2020-04-15 01:37:59 INFO  Covid19IndiaDashboard:99 - Verified Active Cases : Confirmed - Recovered + deceased
+2020-04-15 01:37:59 INFO  Covid19IndiaDashboard:100 - 660 - 50 + 8 = 602
+2020-04-15 01:38:00 INFO  Covid19IndiaDashboard:66 - Column number with header STATE/UT : 1
+2020-04-15 01:38:02 INFO  Covid19IndiaDashboard:66 - Column number with header CONFIRMED : 2
+2020-04-15 01:38:02 INFO  Covid19IndiaDashboard:66 - Column number with header ACTIVE : 3
+2020-04-15 01:38:03 INFO  Covid19IndiaDashboard:66 - Column number with header RECOVERED : 4
+2020-04-15 01:38:03 INFO  Covid19IndiaDashboard:66 - Column number with header DECEASED : 5
+2020-04-15 01:38:03 INFO  Covid19IndiaDashboard:97 - State :GUJARAT
+2020-04-15 01:38:03 INFO  Covid19IndiaDashboard:98 - Confirmed : 650, Active : 563, Recovered : 59, Deceased : 28
+2020-04-15 01:38:03 INFO  Covid19IndiaDashboard:99 - Verified Active Cases : Confirmed - Recovered + deceased
+2020-04-15 01:38:03 INFO  Covid19IndiaDashboard:100 - 650 - 59 + 28 = 563
+2020-04-15 01:38:03 INFO  Covid19IndiaDashboard:66 - Column number with header STATE/UT : 1
+2020-04-15 01:38:05 INFO  Covid19IndiaDashboard:66 - Column number with header CONFIRMED : 2
+2020-04-15 01:38:05 INFO  Covid19IndiaDashboard:66 - Column number with header ACTIVE : 3
+2020-04-15 01:38:06 INFO  Covid19IndiaDashboard:66 - Column number with header RECOVERED : 4
+2020-04-15 01:38:06 INFO  Covid19IndiaDashboard:66 - Column number with header DECEASED : 5
+2020-04-15 01:38:06 INFO  Covid19IndiaDashboard:97 - State :TELANGANA
+2020-04-15 01:38:06 INFO  Covid19IndiaDashboard:98 - Confirmed : 644, Active : 516, Recovered : 110, Deceased : 18
+2020-04-15 01:38:06 INFO  Covid19IndiaDashboard:99 - Verified Active Cases : Confirmed - Recovered + deceased
+2020-04-15 01:38:06 INFO  Covid19IndiaDashboard:100 - 644 - 110 + 18 = 516
+2020-04-15 01:38:06 INFO  Covid19IndiaDashboard:66 - Column number with header STATE/UT : 1
+2020-04-15 01:38:08 INFO  Covid19IndiaDashboard:66 - Column number with header CONFIRMED : 2
+2020-04-15 01:38:09 INFO  Covid19IndiaDashboard:66 - Column number with header ACTIVE : 3
+2020-04-15 01:38:09 INFO  Covid19IndiaDashboard:66 - Column number with header RECOVERED : 4
+2020-04-15 01:38:09 INFO  Covid19IndiaDashboard:66 - Column number with header DECEASED : 5
+2020-04-15 01:38:09 INFO  Covid19IndiaDashboard:97 - State :ANDHRA PRADESH
+2020-04-15 01:38:09 INFO  Covid19IndiaDashboard:98 - Confirmed : 483, Active : 458, Recovered : 16, Deceased : 9
+2020-04-15 01:38:09 INFO  Covid19IndiaDashboard:99 - Verified Active Cases : Confirmed - Recovered + deceased
+2020-04-15 01:38:09 INFO  Covid19IndiaDashboard:100 - 483 - 16 + 9 = 458
+2020-04-15 01:38:09 INFO  Covid19IndiaDashboard:66 - Column number with header STATE/UT : 1
+2020-04-15 01:38:12 INFO  Covid19IndiaDashboard:66 - Column number with header CONFIRMED : 2
+2020-04-15 01:38:12 INFO  Covid19IndiaDashboard:66 - Column number with header ACTIVE : 3
+2020-04-15 01:38:12 INFO  Covid19IndiaDashboard:66 - Column number with header RECOVERED : 4
+2020-04-15 01:38:13 INFO  Covid19IndiaDashboard:66 - Column number with header DECEASED : 5
+2020-04-15 01:38:13 INFO  Covid19IndiaDashboard:97 - State :KERALA
+2020-04-15 01:38:13 INFO  Covid19IndiaDashboard:98 - Confirmed : 386, Active : 173, Recovered : 211, Deceased : 2
+2020-04-15 01:38:13 INFO  Covid19IndiaDashboard:99 - Verified Active Cases : Confirmed - Recovered + deceased
+2020-04-15 01:38:13 INFO  Covid19IndiaDashboard:100 - 386 - 211 + 2 = 173
+2020-04-15 01:38:13 INFO  Covid19IndiaDashboard:66 - Column number with header STATE/UT : 1
+2020-04-15 01:38:15 INFO  Covid19IndiaDashboard:66 - Column number with header CONFIRMED : 2
+2020-04-15 01:38:15 INFO  Covid19IndiaDashboard:66 - Column number with header ACTIVE : 3
+2020-04-15 01:38:15 INFO  Covid19IndiaDashboard:66 - Column number with header RECOVERED : 4
+2020-04-15 01:38:16 INFO  Covid19IndiaDashboard:66 - Column number with header DECEASED : 5
+2020-04-15 01:38:16 INFO  Covid19IndiaDashboard:97 - State :JAMMU AND KASHMIR
+2020-04-15 01:38:16 INFO  Covid19IndiaDashboard:98 - Confirmed : 278, Active : 244, Recovered : 30, Deceased : 4
+2020-04-15 01:38:16 INFO  Covid19IndiaDashboard:99 - Verified Active Cases : Confirmed - Recovered + deceased
+2020-04-15 01:38:16 INFO  Covid19IndiaDashboard:100 - 278 - 30 + 4 = 244
+2020-04-15 01:38:16 INFO  Covid19IndiaDashboard:66 - Column number with header STATE/UT : 1
+2020-04-15 01:38:18 INFO  Covid19IndiaDashboard:66 - Column number with header CONFIRMED : 2
+2020-04-15 01:38:18 INFO  Covid19IndiaDashboard:66 - Column number with header ACTIVE : 3
+2020-04-15 01:38:18 INFO  Covid19IndiaDashboard:66 - Column number with header RECOVERED : 4
+2020-04-15 01:38:19 INFO  Covid19IndiaDashboard:66 - Column number with header DECEASED : 5
+2020-04-15 01:38:19 INFO  Covid19IndiaDashboard:97 - State :KARNATAKA
+2020-04-15 01:38:19 INFO  Covid19IndiaDashboard:98 - Confirmed : 260, Active : 179, Recovered : 71, Deceased : 10
+2020-04-15 01:38:19 INFO  Covid19IndiaDashboard:99 - Verified Active Cases : Confirmed - Recovered + deceased
+2020-04-15 01:38:19 INFO  Covid19IndiaDashboard:100 - 260 - 71 + 10 = 179
+2020-04-15 01:38:19 INFO  Covid19IndiaDashboard:66 - Column number with header STATE/UT : 1
+2020-04-15 01:38:21 INFO  Covid19IndiaDashboard:66 - Column number with header CONFIRMED : 2
+2020-04-15 01:38:21 INFO  Covid19IndiaDashboard:66 - Column number with header ACTIVE : 3
+2020-04-15 01:38:22 INFO  Covid19IndiaDashboard:66 - Column number with header RECOVERED : 4
+2020-04-15 01:38:22 INFO  Covid19IndiaDashboard:66 - Column number with header DECEASED : 5
+2020-04-15 01:38:22 INFO  Covid19IndiaDashboard:97 - State :HARYANA
+2020-04-15 01:38:22 INFO  Covid19IndiaDashboard:98 - Confirmed : 198, Active : 140, Recovered : 55, Deceased : 3
+2020-04-15 01:38:22 INFO  Covid19IndiaDashboard:99 - Verified Active Cases : Confirmed - Recovered + deceased
+2020-04-15 01:38:22 INFO  Covid19IndiaDashboard:100 - 198 - 55 + 3 = 140
+2020-04-15 01:38:22 INFO  Covid19IndiaDashboard:66 - Column number with header STATE/UT : 1
+2020-04-15 01:38:24 INFO  Covid19IndiaDashboard:66 - Column number with header CONFIRMED : 2
+2020-04-15 01:38:25 INFO  Covid19IndiaDashboard:66 - Column number with header ACTIVE : 3
+2020-04-15 01:38:25 INFO  Covid19IndiaDashboard:66 - Column number with header RECOVERED : 4
+2020-04-15 01:38:25 INFO  Covid19IndiaDashboard:66 - Column number with header DECEASED : 5
+2020-04-15 01:38:25 INFO  Covid19IndiaDashboard:97 - State :WEST BENGAL
+2020-04-15 01:38:25 INFO  Covid19IndiaDashboard:98 - Confirmed : 190, Active : 147, Recovered : 36, Deceased : 7
+2020-04-15 01:38:25 INFO  Covid19IndiaDashboard:99 - Verified Active Cases : Confirmed - Recovered + deceased
+2020-04-15 01:38:25 INFO  Covid19IndiaDashboard:100 - 190 - 36 + 7 = 147
+2020-04-15 01:38:25 INFO  Covid19IndiaDashboard:66 - Column number with header STATE/UT : 1
+2020-04-15 01:38:28 INFO  Covid19IndiaDashboard:66 - Column number with header CONFIRMED : 2
+2020-04-15 01:38:28 INFO  Covid19IndiaDashboard:66 - Column number with header ACTIVE : 3
+2020-04-15 01:38:28 INFO  Covid19IndiaDashboard:66 - Column number with header RECOVERED : 4
+2020-04-15 01:38:28 INFO  Covid19IndiaDashboard:66 - Column number with header DECEASED : 5
+2020-04-15 01:38:29 INFO  Covid19IndiaDashboard:97 - State :PUNJAB
+2020-04-15 01:38:29 INFO  Covid19IndiaDashboard:98 - Confirmed : 184, Active : 144, Recovered : 27, Deceased : 13
+2020-04-15 01:38:29 INFO  Covid19IndiaDashboard:99 - Verified Active Cases : Confirmed - Recovered + deceased
+2020-04-15 01:38:29 INFO  Covid19IndiaDashboard:100 - 184 - 27 + 13 = 144
+2020-04-15 01:38:29 INFO  Covid19IndiaDashboard:66 - Column number with header STATE/UT : 1
+2020-04-15 01:38:31 INFO  Covid19IndiaDashboard:66 - Column number with header CONFIRMED : 2
+2020-04-15 01:38:31 INFO  Covid19IndiaDashboard:66 - Column number with header ACTIVE : 3
+2020-04-15 01:38:31 INFO  Covid19IndiaDashboard:66 - Column number with header RECOVERED : 4
+2020-04-15 01:38:32 INFO  Covid19IndiaDashboard:66 - Column number with header DECEASED : 5
+2020-04-15 01:38:32 INFO  Covid19IndiaDashboard:97 - State :BIHAR
+2020-04-15 01:38:32 INFO  Covid19IndiaDashboard:98 - Confirmed : 66, Active : 36, Recovered : 29, Deceased : 1
+2020-04-15 01:38:32 INFO  Covid19IndiaDashboard:99 - Verified Active Cases : Confirmed - Recovered + deceased
+2020-04-15 01:38:32 INFO  Covid19IndiaDashboard:100 - 66 - 29 + 1 = 36
+2020-04-15 01:38:32 INFO  Covid19IndiaDashboard:66 - Column number with header STATE/UT : 1
+2020-04-15 01:38:34 INFO  Covid19IndiaDashboard:66 - Column number with header CONFIRMED : 2
+2020-04-15 01:38:34 INFO  Covid19IndiaDashboard:66 - Column number with header ACTIVE : 3
+2020-04-15 01:38:35 INFO  Covid19IndiaDashboard:66 - Column number with header RECOVERED : 4
+2020-04-15 01:38:35 INFO  Covid19IndiaDashboard:66 - Column number with header DECEASED : 5
+2020-04-15 01:38:35 INFO  Covid19IndiaDashboard:97 - State :ODISHA
+2020-04-15 01:38:35 INFO  Covid19IndiaDashboard:98 - Confirmed : 60, Active : 41, Recovered : 18, Deceased : 1
+2020-04-15 01:38:35 INFO  Covid19IndiaDashboard:99 - Verified Active Cases : Confirmed - Recovered + deceased
+2020-04-15 01:38:35 INFO  Covid19IndiaDashboard:100 - 60 - 18 + 1 = 41
+2020-04-15 01:38:35 INFO  Covid19IndiaDashboard:66 - Column number with header STATE/UT : 1
+2020-04-15 01:38:37 INFO  Covid19IndiaDashboard:66 - Column number with header CONFIRMED : 2
+2020-04-15 01:38:38 INFO  Covid19IndiaDashboard:66 - Column number with header ACTIVE : 3
+2020-04-15 01:38:38 INFO  Covid19IndiaDashboard:66 - Column number with header RECOVERED : 4
+2020-04-15 01:38:38 INFO  Covid19IndiaDashboard:66 - Column number with header DECEASED : 5
+2020-04-15 01:38:38 INFO  Covid19IndiaDashboard:97 - State :UTTARAKHAND
+2020-04-15 01:38:38 INFO  Covid19IndiaDashboard:98 - Confirmed : 37, Active : 28, Recovered : 9, Deceased : 0
+2020-04-15 01:38:38 INFO  Covid19IndiaDashboard:99 - Verified Active Cases : Confirmed - Recovered + deceased
+2020-04-15 01:38:38 INFO  Covid19IndiaDashboard:100 - 37 - 9 + 0 = 28
+2020-04-15 01:38:38 INFO  Covid19IndiaDashboard:66 - Column number with header STATE/UT : 1
+2020-04-15 01:38:41 INFO  Covid19IndiaDashboard:66 - Column number with header CONFIRMED : 2
+2020-04-15 01:38:41 INFO  Covid19IndiaDashboard:66 - Column number with header ACTIVE : 3
+2020-04-15 01:38:41 INFO  Covid19IndiaDashboard:66 - Column number with header RECOVERED : 4
+2020-04-15 01:38:42 INFO  Covid19IndiaDashboard:66 - Column number with header DECEASED : 5
+2020-04-15 01:38:42 INFO  Covid19IndiaDashboard:97 - State :CHHATTISGARH
+2020-04-15 01:38:42 INFO  Covid19IndiaDashboard:98 - Confirmed : 33, Active : 23, Recovered : 10, Deceased : 0
+2020-04-15 01:38:42 INFO  Covid19IndiaDashboard:99 - Verified Active Cases : Confirmed - Recovered + deceased
+2020-04-15 01:38:42 INFO  Covid19IndiaDashboard:100 - 33 - 10 + 0 = 23
+2020-04-15 01:38:42 INFO  Covid19IndiaDashboard:66 - Column number with header STATE/UT : 1
+2020-04-15 01:38:44 INFO  Covid19IndiaDashboard:66 - Column number with header CONFIRMED : 2
+2020-04-15 01:38:45 INFO  Covid19IndiaDashboard:66 - Column number with header ACTIVE : 3
+2020-04-15 01:38:45 INFO  Covid19IndiaDashboard:66 - Column number with header RECOVERED : 4
+2020-04-15 01:38:45 INFO  Covid19IndiaDashboard:66 - Column number with header DECEASED : 5
+2020-04-15 01:38:45 INFO  Covid19IndiaDashboard:97 - State :ASSAM
+2020-04-15 01:38:45 INFO  Covid19IndiaDashboard:98 - Confirmed : 32, Active : 31, Recovered : 0, Deceased : 1
+2020-04-15 01:38:45 INFO  Covid19IndiaDashboard:99 - Verified Active Cases : Confirmed - Recovered + deceased
+2020-04-15 01:38:45 INFO  Covid19IndiaDashboard:100 - 32 - 0 + 1 = 31
+2020-04-15 01:38:45 INFO  Covid19IndiaDashboard:66 - Column number with header STATE/UT : 1
+2020-04-15 01:38:48 INFO  Covid19IndiaDashboard:66 - Column number with header CONFIRMED : 2
+2020-04-15 01:38:48 INFO  Covid19IndiaDashboard:66 - Column number with header ACTIVE : 3
+2020-04-15 01:38:48 INFO  Covid19IndiaDashboard:66 - Column number with header RECOVERED : 4
+2020-04-15 01:38:49 INFO  Covid19IndiaDashboard:66 - Column number with header DECEASED : 5
+2020-04-15 01:38:49 INFO  Covid19IndiaDashboard:97 - State :HIMACHAL PRADESH
+2020-04-15 01:38:49 INFO  Covid19IndiaDashboard:98 - Confirmed : 32, Active : 18, Recovered : 12, Deceased : 2
+2020-04-15 01:38:49 INFO  Covid19IndiaDashboard:99 - Verified Active Cases : Confirmed - Recovered + deceased
+2020-04-15 01:38:49 INFO  Covid19IndiaDashboard:100 - 32 - 12 + 2 = 18
+2020-04-15 01:38:49 INFO  Covid19IndiaDashboard:66 - Column number with header STATE/UT : 1
+2020-04-15 01:38:52 INFO  Covid19IndiaDashboard:66 - Column number with header CONFIRMED : 2
+2020-04-15 01:38:52 INFO  Covid19IndiaDashboard:66 - Column number with header ACTIVE : 3
+2020-04-15 01:38:52 INFO  Covid19IndiaDashboard:66 - Column number with header RECOVERED : 4
+2020-04-15 01:38:52 INFO  Covid19IndiaDashboard:66 - Column number with header DECEASED : 5
+2020-04-15 01:38:52 INFO  Covid19IndiaDashboard:97 - State :JHARKHAND
+2020-04-15 01:38:52 INFO  Covid19IndiaDashboard:98 - Confirmed : 27, Active : 25, Recovered : 0, Deceased : 2
+2020-04-15 01:38:52 INFO  Covid19IndiaDashboard:99 - Verified Active Cases : Confirmed - Recovered + deceased
+2020-04-15 01:38:52 INFO  Covid19IndiaDashboard:100 - 27 - 0 + 2 = 25
+2020-04-15 01:38:53 INFO  Covid19IndiaDashboard:66 - Column number with header STATE/UT : 1
+2020-04-15 01:38:55 INFO  Covid19IndiaDashboard:66 - Column number with header CONFIRMED : 2
+2020-04-15 01:38:55 INFO  Covid19IndiaDashboard:66 - Column number with header ACTIVE : 3
+2020-04-15 01:38:56 INFO  Covid19IndiaDashboard:66 - Column number with header RECOVERED : 4
+2020-04-15 01:38:56 INFO  Covid19IndiaDashboard:66 - Column number with header DECEASED : 5
+2020-04-15 01:38:56 INFO  Covid19IndiaDashboard:97 - State :CHANDIGARH
+2020-04-15 01:38:56 INFO  Covid19IndiaDashboard:98 - Confirmed : 21, Active : 14, Recovered : 7, Deceased : 0
+2020-04-15 01:38:56 INFO  Covid19IndiaDashboard:99 - Verified Active Cases : Confirmed - Recovered + deceased
+2020-04-15 01:38:56 INFO  Covid19IndiaDashboard:100 - 21 - 7 + 0 = 14
+2020-04-15 01:38:56 INFO  Covid19IndiaDashboard:66 - Column number with header STATE/UT : 1
+2020-04-15 01:38:58 INFO  Covid19IndiaDashboard:66 - Column number with header CONFIRMED : 2
+2020-04-15 01:38:59 INFO  Covid19IndiaDashboard:66 - Column number with header ACTIVE : 3
+2020-04-15 01:38:59 INFO  Covid19IndiaDashboard:66 - Column number with header RECOVERED : 4
+2020-04-15 01:38:59 INFO  Covid19IndiaDashboard:66 - Column number with header DECEASED : 5
+2020-04-15 01:38:59 INFO  Covid19IndiaDashboard:97 - State :LADAKH
+2020-04-15 01:38:59 INFO  Covid19IndiaDashboard:98 - Confirmed : 17, Active : 5, Recovered : 12, Deceased : 0
+2020-04-15 01:38:59 INFO  Covid19IndiaDashboard:99 - Verified Active Cases : Confirmed - Recovered + deceased
+2020-04-15 01:38:59 INFO  Covid19IndiaDashboard:100 - 17 - 12 + 0 = 5
+2020-04-15 01:38:59 INFO  Covid19IndiaDashboard:66 - Column number with header STATE/UT : 1
+2020-04-15 01:39:02 INFO  Covid19IndiaDashboard:66 - Column number with header CONFIRMED : 2
+2020-04-15 01:39:02 INFO  Covid19IndiaDashboard:66 - Column number with header ACTIVE : 3
+2020-04-15 01:39:03 INFO  Covid19IndiaDashboard:66 - Column number with header RECOVERED : 4
+2020-04-15 01:39:03 INFO  Covid19IndiaDashboard:66 - Column number with header DECEASED : 5
+2020-04-15 01:39:03 INFO  Covid19IndiaDashboard:97 - State :ANDAMAN AND NICOBAR ISLANDS
+2020-04-15 01:39:03 INFO  Covid19IndiaDashboard:98 - Confirmed : 11, Active : 1, Recovered : 10, Deceased : 0
+2020-04-15 01:39:03 INFO  Covid19IndiaDashboard:99 - Verified Active Cases : Confirmed - Recovered + deceased
+2020-04-15 01:39:03 INFO  Covid19IndiaDashboard:100 - 11 - 10 + 0 = 1
+2020-04-15 01:39:03 INFO  Covid19IndiaDashboard:66 - Column number with header STATE/UT : 1
+2020-04-15 01:39:05 INFO  Covid19IndiaDashboard:66 - Column number with header CONFIRMED : 2
+2020-04-15 01:39:06 INFO  Covid19IndiaDashboard:66 - Column number with header ACTIVE : 3
+2020-04-15 01:39:06 INFO  Covid19IndiaDashboard:66 - Column number with header RECOVERED : 4
+2020-04-15 01:39:06 INFO  Covid19IndiaDashboard:66 - Column number with header DECEASED : 5
+2020-04-15 01:39:06 INFO  Covid19IndiaDashboard:97 - State :GOA
+2020-04-15 01:39:06 INFO  Covid19IndiaDashboard:98 - Confirmed : 7, Active : 2, Recovered : 5, Deceased : 0
+2020-04-15 01:39:06 INFO  Covid19IndiaDashboard:99 - Verified Active Cases : Confirmed - Recovered + deceased
+2020-04-15 01:39:06 INFO  Covid19IndiaDashboard:100 - 7 - 5 + 0 = 2
+2020-04-15 01:39:06 INFO  Covid19IndiaDashboard:66 - Column number with header STATE/UT : 1
+2020-04-15 01:39:09 INFO  Covid19IndiaDashboard:66 - Column number with header CONFIRMED : 2
+2020-04-15 01:39:09 INFO  Covid19IndiaDashboard:66 - Column number with header ACTIVE : 3
+2020-04-15 01:39:09 INFO  Covid19IndiaDashboard:66 - Column number with header RECOVERED : 4
+2020-04-15 01:39:10 INFO  Covid19IndiaDashboard:66 - Column number with header DECEASED : 5
+2020-04-15 01:39:10 INFO  Covid19IndiaDashboard:97 - State :PUDUCHERRY
+2020-04-15 01:39:10 INFO  Covid19IndiaDashboard:98 - Confirmed : 7, Active : 6, Recovered : 1, Deceased : 0
+2020-04-15 01:39:10 INFO  Covid19IndiaDashboard:99 - Verified Active Cases : Confirmed - Recovered + deceased
+2020-04-15 01:39:10 INFO  Covid19IndiaDashboard:100 - 7 - 1 + 0 = 6
+2020-04-15 01:39:10 INFO  Covid19IndiaDashboard:66 - Column number with header STATE/UT : 1
+2020-04-15 01:39:12 INFO  Covid19IndiaDashboard:66 - Column number with header CONFIRMED : 2
+2020-04-15 01:39:13 INFO  Covid19IndiaDashboard:66 - Column number with header ACTIVE : 3
+2020-04-15 01:39:13 INFO  Covid19IndiaDashboard:66 - Column number with header RECOVERED : 4
+2020-04-15 01:39:13 INFO  Covid19IndiaDashboard:66 - Column number with header DECEASED : 5
+2020-04-15 01:39:13 INFO  Covid19IndiaDashboard:97 - State :MANIPUR
+2020-04-15 01:39:13 INFO  Covid19IndiaDashboard:98 - Confirmed : 2, Active : 1, Recovered : 1, Deceased : 0
+2020-04-15 01:39:13 INFO  Covid19IndiaDashboard:99 - Verified Active Cases : Confirmed - Recovered + deceased
+2020-04-15 01:39:13 INFO  Covid19IndiaDashboard:100 - 2 - 1 + 0 = 1
+2020-04-15 01:39:13 INFO  Covid19IndiaDashboard:66 - Column number with header STATE/UT : 1
+2020-04-15 01:39:16 INFO  Covid19IndiaDashboard:66 - Column number with header CONFIRMED : 2
+2020-04-15 01:39:16 INFO  Covid19IndiaDashboard:66 - Column number with header ACTIVE : 3
+2020-04-15 01:39:16 INFO  Covid19IndiaDashboard:66 - Column number with header RECOVERED : 4
+2020-04-15 01:39:17 INFO  Covid19IndiaDashboard:66 - Column number with header DECEASED : 5
+2020-04-15 01:39:17 INFO  Covid19IndiaDashboard:97 - State :TRIPURA
+2020-04-15 01:39:17 INFO  Covid19IndiaDashboard:98 - Confirmed : 2, Active : 2, Recovered : 0, Deceased : 0
+2020-04-15 01:39:17 INFO  Covid19IndiaDashboard:99 - Verified Active Cases : Confirmed - Recovered + deceased
+2020-04-15 01:39:17 INFO  Covid19IndiaDashboard:100 - 2 - 0 + 0 = 2
+2020-04-15 01:39:17 INFO  Covid19IndiaDashboard:66 - Column number with header STATE/UT : 1
+2020-04-15 01:39:19 INFO  Covid19IndiaDashboard:66 - Column number with header CONFIRMED : 2
+2020-04-15 01:39:20 INFO  Covid19IndiaDashboard:66 - Column number with header ACTIVE : 3
+2020-04-15 01:39:20 INFO  Covid19IndiaDashboard:66 - Column number with header RECOVERED : 4
+2020-04-15 01:39:21 INFO  Covid19IndiaDashboard:66 - Column number with header DECEASED : 5
+2020-04-15 01:39:21 INFO  Covid19IndiaDashboard:97 - State :ARUNACHAL PRADESH
+2020-04-15 01:39:21 INFO  Covid19IndiaDashboard:98 - Confirmed : 1, Active : 1, Recovered : 0, Deceased : 0
+2020-04-15 01:39:21 INFO  Covid19IndiaDashboard:99 - Verified Active Cases : Confirmed - Recovered + deceased
+2020-04-15 01:39:21 INFO  Covid19IndiaDashboard:100 - 1 - 0 + 0 = 1
+2020-04-15 01:39:21 INFO  Covid19IndiaDashboard:66 - Column number with header STATE/UT : 1
+2020-04-15 01:39:23 INFO  Covid19IndiaDashboard:66 - Column number with header CONFIRMED : 2
+2020-04-15 01:39:24 INFO  Covid19IndiaDashboard:66 - Column number with header ACTIVE : 3
+2020-04-15 01:39:24 INFO  Covid19IndiaDashboard:66 - Column number with header RECOVERED : 4
+2020-04-15 01:39:24 INFO  Covid19IndiaDashboard:66 - Column number with header DECEASED : 5
+2020-04-15 01:39:24 INFO  Covid19IndiaDashboard:97 - State :DADRA AND NAGAR HAVELI
+2020-04-15 01:39:24 INFO  Covid19IndiaDashboard:98 - Confirmed : 1, Active : 1, Recovered : 0, Deceased : 0
+2020-04-15 01:39:24 INFO  Covid19IndiaDashboard:99 - Verified Active Cases : Confirmed - Recovered + deceased
+2020-04-15 01:39:24 INFO  Covid19IndiaDashboard:100 - 1 - 0 + 0 = 1
+2020-04-15 01:39:24 INFO  Covid19IndiaDashboard:66 - Column number with header STATE/UT : 1
+2020-04-15 01:39:27 INFO  Covid19IndiaDashboard:66 - Column number with header CONFIRMED : 2
+2020-04-15 01:39:27 INFO  Covid19IndiaDashboard:66 - Column number with header ACTIVE : 3
+2020-04-15 01:39:27 INFO  Covid19IndiaDashboard:66 - Column number with header RECOVERED : 4
+2020-04-15 01:39:27 INFO  Covid19IndiaDashboard:66 - Column number with header DECEASED : 5
+2020-04-15 01:39:27 INFO  Covid19IndiaDashboard:97 - State :MEGHALAYA
+2020-04-15 01:39:27 INFO  Covid19IndiaDashboard:98 - Confirmed : 1, Active : 1, Recovered : 0, Deceased : 0
+2020-04-15 01:39:27 INFO  Covid19IndiaDashboard:99 - Verified Active Cases : Confirmed - Recovered + deceased
+2020-04-15 01:39:27 INFO  Covid19IndiaDashboard:100 - 1 - 0 + 0 = 1
+2020-04-15 01:39:28 INFO  Covid19IndiaDashboard:66 - Column number with header STATE/UT : 1
+2020-04-15 01:39:30 INFO  Covid19IndiaDashboard:66 - Column number with header CONFIRMED : 2
+2020-04-15 01:39:30 INFO  Covid19IndiaDashboard:66 - Column number with header ACTIVE : 3
+2020-04-15 01:39:30 INFO  Covid19IndiaDashboard:66 - Column number with header RECOVERED : 4
+2020-04-15 01:39:31 INFO  Covid19IndiaDashboard:66 - Column number with header DECEASED : 5
+2020-04-15 01:39:31 INFO  Covid19IndiaDashboard:97 - State :MIZORAM
+2020-04-15 01:39:31 INFO  Covid19IndiaDashboard:98 - Confirmed : 1, Active : 1, Recovered : 0, Deceased : 0
+2020-04-15 01:39:31 INFO  Covid19IndiaDashboard:99 - Verified Active Cases : Confirmed - Recovered + deceased
+2020-04-15 01:39:31 INFO  Covid19IndiaDashboard:100 - 1 - 0 + 0 = 1
+2020-04-15 01:39:31 INFO  Covid19IndiaDashboard:66 - Column number with header STATE/UT : 1
+2020-04-15 01:39:33 INFO  Covid19IndiaDashboard:66 - Column number with header CONFIRMED : 2
+2020-04-15 01:39:34 INFO  Covid19IndiaDashboard:66 - Column number with header ACTIVE : 3
+2020-04-15 01:39:34 INFO  Covid19IndiaDashboard:66 - Column number with header RECOVERED : 4
+2020-04-15 01:39:34 INFO  Covid19IndiaDashboard:66 - Column number with header DECEASED : 5
+2020-04-15 01:39:34 INFO  Covid19IndiaDashboard:97 - State :NAGALAND
+2020-04-15 01:39:34 INFO  Covid19IndiaDashboard:98 - Confirmed : 1, Active : 1, Recovered : 0, Deceased : 0
+2020-04-15 01:39:34 INFO  Covid19IndiaDashboard:99 - Verified Active Cases : Confirmed - Recovered + deceased
+2020-04-15 01:39:34 INFO  Covid19IndiaDashboard:100 - 1 - 0 + 0 = 1
+2020-04-15 01:39:34 INFO  Covid19IndiaDashboard:66 - Column number with header STATE/UT : 1
+2020-04-15 01:39:37 INFO  Covid19IndiaDashboard:66 - Column number with header CONFIRMED : 2
+2020-04-15 01:39:37 INFO  Covid19IndiaDashboard:66 - Column number with header ACTIVE : 3
+2020-04-15 01:39:37 INFO  Covid19IndiaDashboard:66 - Column number with header RECOVERED : 4
+2020-04-15 01:39:37 INFO  Covid19IndiaDashboard:66 - Column number with header DECEASED : 5
+2020-04-15 01:39:38 INFO  Covid19IndiaDashboard:97 - State :TOTAL
+2020-04-15 01:39:38 INFO  Covid19IndiaDashboard:98 - Confirmed : 11487, Active : 9733, Recovered : 1361, Deceased : 393
+2020-04-15 01:39:38 INFO  Covid19IndiaDashboard:99 - Verified Active Cases : Confirmed - Recovered + deceased
+2020-04-15 01:39:38 INFO  Covid19IndiaDashboard:100 - 11487 - 1361 + 393 = 9733
+2020-04-15 01:39:38 INFO  CovidIndiaUITest:54 - checkCaseCalculationsForAllStates executed.
+2020-04-15 01:39:38 INFO  CovidIndiaUITest:56 - Driver is closed
+2020-04-15 01:39:38 WARN  CovidIndiaUITest:57 - Driver called off

@@ -2,6 +2,7 @@ C:\Users\ranad\git\test-framework-restassured-selenium-spring-01\src\main\java\c
 C:\Users\ranad\git\test-framework-restassured-selenium-spring-01\src\main\java\com\app\testautomation\utilities\ConfigReader.java
 C:\Users\ranad\git\test-framework-restassured-selenium-spring-01\src\main\java\com\ui\testautomation\driverconfigs\IEDriverInitiator.java
 C:\Users\ranad\git\test-framework-restassured-selenium-spring-01\src\main\java\com\app\testautomation\initiators\BaseSteps.java
+C:\Users\ranad\git\test-framework-restassured-selenium-spring-01\src\main\java\com\app\testautomation\utilities\Perform.java
 C:\Users\ranad\git\test-framework-restassured-selenium-spring-01\src\main\java\com\app\testautomation\exceptions\BrowserCapabilitiesNotInitiatedException.java
 C:\Users\ranad\git\test-framework-restassured-selenium-spring-01\src\main\java\com\app\testautomation\listeners\AnnotationTransformerListener.java
 C:\Users\ranad\git\test-framework-restassured-selenium-spring-01\src\main\java\com\app\testautomation\listeners\BasicTestListeners.java
