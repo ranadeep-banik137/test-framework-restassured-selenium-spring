@@ -38,7 +38,7 @@ public class Driver {
 	public void initiateDriver() {
 		if (!isDriverInitiated()) {
 			this.driver = initiator.initiate().startDriver().setImplicitTimeLimit(30, TimeUnit.SECONDS).maximizeWindowAtStart().getDriver();
-			setScreenshotTaker((TakesScreenshot) this.driver);
+			setScreenshotTaker(this.initiator.getScreenshotTaker());
 			LOGGER.info("WebDriver initiated");
 		}
 	}
@@ -67,13 +67,13 @@ public class Driver {
 	public void takeScreenShot(String pageSource) {
 		try {
 			File screenShot = this.screenshotTaker.getScreenshotAs(OutputType.FILE);
-			String screenShotName =  getValue("api") + "_" + pageSource + "_00" + screenShotCount + ".jpg";
+			String screenShotName =  "RDB_" + (screenShotCount < 10 ? "0" : "") + screenShotCount + "_" + getValue("api") + "_" + pageSource + ".jpg";
 			FileHandler.copy(screenShot, new File(getValue(USER_DIR) + "/src/test/resources/" + getValue("api") + "/shots/" + screenShotName));
 			screenShotCount++;
 			LOGGER.info("Screen shot captured at " + pageSource + " page");
 			LOGGER.info("Find the screen shot at : src/test/resources/shots/" + screenShotName);
 		} catch (IOException exception) {
-			LOGGER.info("");
+			LOGGER.info(exception.getMessage());
 		}
 	}
 

@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Covid19IndiaTestReport">
-              <span class="suite-name border-passed">Covid19IndiaTestReport</span>
+              <span class="suite-name border-failed">Covid19IndiaTestReport</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Covid19IndiaTestReport">
-                    <span>C:\Users\ranad\git\test-framework-restassured-selenium-spring - 00\src\test\resources\Covid19India\uiData\testRunner.xml</span>
+                    <span>C:\Users\ranad\git\test-framework-restassured-selenium-spring-02\src\test\resources\Covid19India\uiData\testRunner.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -59,7 +59,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="group-Covid19IndiaTestReport">
-                    <span>2 groups</span>
+                    <span>4 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,35 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">6 methods, 1 failed,  1 skipped,  4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Covid19IndiaTestReport" class="hide-methods failed suite-Covid19IndiaTestReport"> (hide)</a> <!-- hide-methods failed suite-Covid19IndiaTestReport -->
+                      <a href="#" panel-name="suite-Covid19IndiaTestReport" class="show-methods failed suite-Covid19IndiaTestReport"> (show)</a> <!-- show-methods failed suite-Covid19IndiaTestReport -->
+                    </span>
+                    <div class="method-list-content failed suite-Covid19IndiaTestReport">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Covid19IndiaTestReport" title="com.ui.testautomation.CovidIndiaUITest" hash-for-method="checkCaseCalculationsOfTripuraIsGreaterThan10">checkCaseCalculationsOfTripuraIsGreaterThan10</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Covid19IndiaTestReport -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Covid19IndiaTestReport" class="hide-methods skipped suite-Covid19IndiaTestReport"> (hide)</a> <!-- hide-methods skipped suite-Covid19IndiaTestReport -->
+                      <a href="#" panel-name="suite-Covid19IndiaTestReport" class="show-methods skipped suite-Covid19IndiaTestReport"> (show)</a> <!-- show-methods skipped suite-Covid19IndiaTestReport -->
+                    </span>
+                    <div class="method-list-content skipped suite-Covid19IndiaTestReport">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Covid19IndiaTestReport" title="com.ui.testautomation.CovidIndiaUITest" hash-for-method="checkCaseCalculationsOfTripuraIsGreaterThan10">checkCaseCalculationsOfTripuraIsGreaterThan10</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Covid19IndiaTestReport -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,6 +131,21 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Covid19IndiaTestReport" title="com.ui.testautomation.CovidIndiaUITest" hash-for-method="checkCaseCalculationsForAllStates">checkCaseCalculationsForAllStates</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Covid19IndiaTestReport" title="com.ui.testautomation.CovidIndiaUITest" hash-for-method="checkCaseCalculationsForChandigarh">checkCaseCalculationsForChandigarh</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Covid19IndiaTestReport" title="com.ui.testautomation.CovidIndiaUITest" hash-for-method="checkCaseCalculationsForDelhi">checkCaseCalculationsForDelhi</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Covid19IndiaTestReport" title="com.ui.testautomation.CovidIndiaUITest" hash-for-method="checkNoOfConfirmedCasesIsGreaterThan6000">checkNoOfConfirmedCasesIsGreaterThan6000</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Covid19IndiaTestReport -->
@@ -117,6 +160,50 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Covid19IndiaTestReport" class="panel Covid19IndiaTestReport">
+          <div class="suite-Covid19IndiaTestReport-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.ui.testautomation.CovidIndiaUITest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkCaseCalculationsOfTripuraIsGreaterThan10">
+                  </a> <!-- checkCaseCalculationsOfTripuraIsGreaterThan10 -->
+                  <span class="method-name">checkCaseCalculationsOfTripuraIsGreaterThan10</span>
+                  <div class="stack-trace">java.lang.AssertionError: Case count is not greater than 10 expected [true] but found [false]
+	at com.app.testautomation.utilities.Assertions.assertTrue(Assertions.java:24)
+	at com.ui.testautomation.CovidIndiaUITest.checkCaseCalculationsOfTripuraIsGreaterThan10(CovidIndiaUITest.java:55)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(check case count of Tripura is more than 10)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Covid19IndiaTestReport-class-failed -->
+          <div class="suite-Covid19IndiaTestReport-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.ui.testautomation.CovidIndiaUITest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkCaseCalculationsOfTripuraIsGreaterThan10">
+                  </a> <!-- checkCaseCalculationsOfTripuraIsGreaterThan10 -->
+                  <span class="method-name">checkCaseCalculationsOfTripuraIsGreaterThan10</span>
+                  <div class="stack-trace">java.lang.AssertionError: Case count is not greater than 10 expected [true] but found [false]
+	at com.app.testautomation.utilities.Assertions.assertTrue(Assertions.java:24)
+	at com.ui.testautomation.CovidIndiaUITest.checkCaseCalculationsOfTripuraIsGreaterThan10(CovidIndiaUITest.java:55)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(check case count of Tripura is more than 10)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Covid19IndiaTestReport-class-skipped -->
           <div class="suite-Covid19IndiaTestReport-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -132,12 +219,39 @@
 (Checks & verify the total case calculation after recovered and death for all 32 states of INDIA)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkCaseCalculationsForChandigarh">
+                  </a> <!-- checkCaseCalculationsForChandigarh -->
+                  <span class="method-name">checkCaseCalculationsForChandigarh</span>
+                  <em>
+(Checks & verify the total case calculation after recovered and death for Chandigarh)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkCaseCalculationsForDelhi">
+                  </a> <!-- checkCaseCalculationsForDelhi -->
+                  <span class="method-name">checkCaseCalculationsForDelhi</span>
+                  <em>
+(Checks & verify the total case calculation after recovered and death for Maharashtra)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkNoOfConfirmedCasesIsGreaterThan6000">
+                  </a> <!-- checkNoOfConfirmedCasesIsGreaterThan6000 -->
+                  <span class="method-name">checkNoOfConfirmedCasesIsGreaterThan6000</span>
+                  <em>
+(validate the number of total confirmed case is greater than 6000 in India)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Covid19IndiaTestReport-class-passed -->
         </div> <!-- panel Covid19IndiaTestReport -->
         <div panel-name="test-xml-Covid19IndiaTestReport" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\ranad\git\test-framework-restassured-selenium-spring - 00\src\test\resources\Covid19India\uiData\testRunner.xml</span>
+            <span class="header-content">C:\Users\ranad\git\test-framework-restassured-selenium-spring-02\src\test\resources\Covid19India\uiData\testRunner.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -171,6 +285,14 @@
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="test-group">
+              <span class="test-group-name">failed</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">checkCaseCalculationsOfTripuraIsGreaterThan10</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
               <span class="test-group-name">regression</span>
               <br/>
               <div class="method-in-group">
@@ -179,10 +301,22 @@
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
             <div class="test-group">
+              <span class="test-group-name">sanity</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">checkCaseCalculationsForDelhi</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
               <span class="test-group-name">smoke</span>
               <br/>
               <div class="method-in-group">
                 <span class="method-in-group-name">checkCaseCalculationsForAllStates</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">checkCaseCalculationsForChandigarh</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -202,16 +336,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'checkCaseCalculationsForAllStates')
 data.setCell(0, 2, 'com.ui.testautomation.CovidIndiaUITest')
-data.setCell(0, 3, 80054);
+data.setCell(0, 3, 81562);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'checkCaseCalculationsOfTripuraIsGreaterThan10')
+data.setCell(1, 2, 'com.ui.testautomation.CovidIndiaUITest')
+data.setCell(1, 3, 34910);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'checkCaseCalculationsOfTripuraIsGreaterThan10')
+data.setCell(2, 2, 'com.ui.testautomation.CovidIndiaUITest')
+data.setCell(2, 3, 34486);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'checkCaseCalculationsForDelhi')
+data.setCell(3, 2, 'com.ui.testautomation.CovidIndiaUITest')
+data.setCell(3, 3, 4310);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'checkCaseCalculationsForChandigarh')
+data.setCell(4, 2, 'com.ui.testautomation.CovidIndiaUITest')
+data.setCell(4, 3, 4185);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'checkNoOfConfirmedCasesIsGreaterThan6000')
+data.setCell(5, 2, 'com.ui.testautomation.CovidIndiaUITest')
+data.setCell(5, 3, 177);
 window.suiteTableData['Covid19IndiaTestReport']= { tableData: data, tableDiv: 'times-div-Covid19IndiaTestReport'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Covid19IndiaTestReport">
               </div> <!-- times-div-Covid19IndiaTestReport -->
             </div> <!-- times-div -->
@@ -244,15 +398,77 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">checkCaseCalculationsForAllStates</span>
-                <span class="method-start">1536 ms</span>
+                <span class="method-start">1788 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">finish(public void com.ui.testautomation.CovidIndiaUITest.checkCaseCalculationsForAllStates())</span>
-                <span class="method-start">81593 ms</span>
+                <span class="method-start">83353 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initiateMethod(public void com.ui.testautomation.CovidIndiaUITest.checkCaseCalculationsForChandigarh())</span>
+                <span class="method-start">89380 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkCaseCalculationsForChandigarh</span>
+                <span class="method-start">100848 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">finish(public void com.ui.testautomation.CovidIndiaUITest.checkCaseCalculationsForChandigarh())</span>
+                <span class="method-start">105034 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initiateMethod(public void com.ui.testautomation.CovidIndiaUITest.checkCaseCalculationsForDelhi())</span>
+                <span class="method-start">105308 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkCaseCalculationsForDelhi</span>
+                <span class="method-start">116582 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">finish(public void com.ui.testautomation.CovidIndiaUITest.checkCaseCalculationsForDelhi())</span>
+                <span class="method-start">120893 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initiateMethod(public void com.ui.testautomation.CovidIndiaUITest.checkCaseCalculationsOfTripuraIsGreaterThan10())</span>
+                <span class="method-start">121056 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkCaseCalculationsOfTripuraIsGreaterThan10</span>
+                <span class="method-start">132185 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">finish(public void com.ui.testautomation.CovidIndiaUITest.checkCaseCalculationsOfTripuraIsGreaterThan10())</span>
+                <span class="method-start">166673 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initiateMethod(public void com.ui.testautomation.CovidIndiaUITest.checkCaseCalculationsOfTripuraIsGreaterThan10())</span>
+                <span class="method-start">167087 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">checkCaseCalculationsOfTripuraIsGreaterThan10</span>
+                <span class="method-start">182169 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">finish(public void com.ui.testautomation.CovidIndiaUITest.checkCaseCalculationsOfTripuraIsGreaterThan10())</span>
+                <span class="method-start">217104 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initiateMethod(public void com.ui.testautomation.CovidIndiaUITest.checkNoOfConfirmedCasesIsGreaterThan6000())</span>
+                <span class="method-start">217455 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkNoOfConfirmedCasesIsGreaterThan6000</span>
+                <span class="method-start">231305 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">finish(public void com.ui.testautomation.CovidIndiaUITest.checkNoOfConfirmedCasesIsGreaterThan6000())</span>
+                <span class="method-start">231483 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">quit</span>
-                <span class="method-start">85919 ms</span>
+                <span class="method-start">231782 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

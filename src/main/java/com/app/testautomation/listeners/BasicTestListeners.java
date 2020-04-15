@@ -1,15 +1,26 @@
 package com.app.testautomation.listeners;
 
+import static com.app.testautomation.initiators.SystemVariables.GROUPS;
+import static com.app.testautomation.initiators.SystemVariables.USER_DIR;
+import static com.app.testautomation.initiators.SystemVariables.getValue;
+
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
 import java.util.logging.Logger;
+import java.util.stream.Collectors;
 
 import org.springframework.stereotype.Component;
 import org.testng.ISuite;
 import org.testng.ISuiteListener;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
+import org.testng.ITestNGMethod;
 import org.testng.ITestResult;
 
+import com.app.testautomation.utilities.FileUtils;
 import com.app.testautomation.utilities.ReportGenerator;
 import com.relevantcodes.extentreports.LogStatus;
 
@@ -34,6 +45,17 @@ public class BasicTestListeners implements ISuiteListener, ITestListener {
 
 	@Override
 	public void onFinish(ISuite suite) {
+		List<ITestNGMethod> invokedMethods = getValue(GROUPS) == null ? suite.getAllMethods() : suite.getMethodsByGroups().get(getValue(GROUPS)).stream().collect(Collectors.toList());
+		Iterator<ITestNGMethod> iterator = invokedMethods.iterator();
+		List<String> methods = new ArrayList<>();
+		while (iterator.hasNext()) {
+			methods.add(iterator.next().getMethodName());
+		}
+		Map<String, String> fileMapper = FileUtils.getFilesMatching(getValue(USER_DIR) + "/src/test/resources/"+ getValue("api") + "/videos", methods);
+		fileMapper.forEach((x,y)-> {
+			this.reportGenerator.logWithVideo(this.reportGenerator.getExtentTest(), LogStatus.INFO, y, "Video clip of execution method " + x);
+		});
+		//this.reportGenerator.logWithVideo(this.reportGenerator.getExtentTest(), LogStatus.INFO, getValue(USER_DIR) + "/src/main/resources/video001.mp4", "Video of the test");
 		this.reportGenerator.endReport(suite);
 		LOGGER.info("Suite execution ended" + suite.getName());
 		LOGGER.info("Total Methods :" + (suite.getAllMethods().size() + suite.getExcludedMethods().size()));

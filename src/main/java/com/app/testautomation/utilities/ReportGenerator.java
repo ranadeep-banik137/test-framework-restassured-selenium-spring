@@ -80,8 +80,12 @@ public class ReportGenerator {
 	
 	public ReportGenerator log(ExtentTest test, LogStatus status, String details) {
 		if (status.equals(LogStatus.FAIL)) {
-			test.log(status, test.addScreenCapture("D:/Docs/Press/BigTitsBoss - Sophia Lomeli/pic.jpg"), "Adding the screen capture where the test failed");
-			test.log(status, test.addScreencast("D:/Docs/Press/BigTitsBoss - Sophia Lomeli/business_boner_big.wmv"), "Adding the screen capture where the test failed");
+			String[] failedScreens = FileUtils.getFilesMatching(getValue(USER_DIR) + "/src/test/resources/" + getValue("api") + "/shots", "_failed");
+			if (failedScreens.length > 0) {
+				for (String screen : failedScreens) {
+					test.log(status, test.addScreenCapture(getValue(USER_DIR) + "/src/test/resources/" + getValue("api") + "/shots/" + screen), "Adding the screenshot " + screen + " as the test failed");
+				}
+			}
 		}
 		test.log(status, "Method Name : " + test.getDescription(), details);
 		return this;

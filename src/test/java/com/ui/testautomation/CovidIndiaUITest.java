@@ -49,8 +49,15 @@ public class CovidIndiaUITest extends BaseSteps {
 		getCovid19Dashboard().validateAllStatesCaseCalculation();
 	}
 	
+	@Test(enabled = true, groups = {"failed"}, description = "check case count of Tripura is more than 10")
+	public void checkCaseCalculationsOfTripuraIsGreaterThan10() {
+		int cases = getCovid19Dashboard().getTotalConfirmedCountOf("TRIPURA");
+		Assert().assertTrue(cases > 10, "Case count is not greater than 10");
+	}
+	
 	@AfterMethod(enabled = true)
 	public void finish(Method method) {
+		getConverter().appendVideoFileName("_" + method.getName()).convert();
 		LOGGER.info(method.getName() + " executed.");
 		getDriver().close();
 		LOGGER.info("Driver is closed");

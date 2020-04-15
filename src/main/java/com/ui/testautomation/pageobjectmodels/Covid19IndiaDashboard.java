@@ -41,7 +41,7 @@ public class Covid19IndiaDashboard {
 	@FindBy(css = "tr.state")
 	private List<WebElement> stateRows;
 	
-	@FindBy(xpath = "//thead//th")
+	@FindBy(xpath = "//thead//th//abbr")
 	private List<WebElement> stickyHeads;
 	
 	@FindBy(xpath = "//a[@class='button excel']")
@@ -80,10 +80,15 @@ public class Covid19IndiaDashboard {
 	}
 	
 	public void browseToDashboard() {
+		try {
 		String url = "http://www.covid19India.org";
 		getDriver().navigate().to(url);
 		LOGGER.info("Navigated to : " + url);
 		this.webDriverInitiator.takeScreenShot(PAGE_SOURCE);
+		} catch (Exception exception) {
+			this.webDriverInitiator.takeScreenShot(PAGE_SOURCE + "_failed");
+			LOGGER.error(exception.getMessage());
+		}
 	}
 	
 	public int getTotalConfirmedCasesCount() {
@@ -94,33 +99,57 @@ public class Covid19IndiaDashboard {
 	}
 	
 	public void validateStateCalculation(String state) {
+		try {
 		WebElement stateRow = getStateRowElement(state);
 		String parsedElement = ".//td[%s]";
 		String spanTag = "//span[@class='table__count-text']";
-		int confirmedCases = Integer.parseInt(webElementModifier.appendWebElement(stateRow, By.xpath(String.format(parsedElement, getColumnNumber("CONFIRMED")) + spanTag)).getText().replace(",", ""));
-		int activeCases = Integer.parseInt(webElementModifier.appendWebElement(stateRow, By.xpath(String.format(parsedElement, getColumnNumber("ACTIVE")))).getText().replace(",", "").replace("-", "0"));
-		int recoveredCases = Integer.parseInt(webElementModifier.appendWebElement(stateRow, By.xpath(String.format(parsedElement, getColumnNumber("RECOVERED")) + spanTag)).getText().replace(",", "").replace("-", "0"));
-		int deceasedCases = Integer.parseInt(webElementModifier.appendWebElement(stateRow, By.xpath(String.format(parsedElement, getColumnNumber("DECEASED")) + spanTag)).getText().replace(",", "").replace("-", "0"));
+		int confirmedCases = Integer.parseInt(webElementModifier.appendWebElement(stateRow, By.xpath(String.format(parsedElement, getColumnNumber("Confirmed")) + spanTag)).getText().replace(",", ""));
+		int activeCases = Integer.parseInt(webElementModifier.appendWebElement(stateRow, By.xpath(String.format(parsedElement, getColumnNumber("Active")))).getText().replace(",", "").replace("-", "0"));
+		int recoveredCases = Integer.parseInt(webElementModifier.appendWebElement(stateRow, By.xpath(String.format(parsedElement, getColumnNumber("Recovered")) + spanTag)).getText().replace(",", "").replace("-", "0"));
+		int deceasedCases = Integer.parseInt(webElementModifier.appendWebElement(stateRow, By.xpath(String.format(parsedElement, getColumnNumber("Deceased")) + spanTag)).getText().replace(",", "").replace("-", "0"));
 		LOGGER.info("State :" + state);
 		LOGGER.info("Confirmed : " + confirmedCases + ", Active : " + activeCases +", Recovered : " + recoveredCases + ", Deceased : " + deceasedCases);
 		LOGGER.info("Verified Active Cases : Confirmed - Recovered + deceased");
 		LOGGER.info(confirmedCases + " - " + recoveredCases + " + " + deceasedCases + " = " + (confirmedCases - recoveredCases - deceasedCases));
 		Assert.assertTrue(activeCases == (confirmedCases - recoveredCases - deceasedCases), "Case calculations are not matching");
 		this.webDriverInitiator.takeScreenShot(PAGE_SOURCE + "_" + state + "_StateScenario");
+		} catch (Exception exception) {
+			this.webDriverInitiator.takeScreenShot(PAGE_SOURCE + "_failed");
+			LOGGER.error(exception.getMessage());
+		}
+	}
+	
+	public int getTotalConfirmedCountOf(String state) {
+		int confirmedCases = 0;
+		try {
+			WebElement stateRow = getStateRowElement(state);
+			String parsedElement = ".//td[%s]";
+			String spanTag = "//span[@class='table__count-text']";
+			confirmedCases = Integer.parseInt(webElementModifier.appendWebElement(stateRow, By.xpath(String.format(parsedElement, getColumnNumber("Confirmed")) + spanTag)).getText().replace(",", ""));
+		} catch (Exception exception) {
+			this.webDriverInitiator.takeScreenShot(PAGE_SOURCE + "_failed");
+			LOGGER.error(exception.getMessage());
+		}
+		return confirmedCases;
 	}
 	
 	
 	public void validateAllStatesCaseCalculation() {
 		Iterator<WebElement> iterator = stateRows.iterator();
 		while (iterator.hasNext()) {
-			validateStateCalculation(iterator.next().findElement(By.xpath(String.format(".//td[%s]", getColumnNumber("STATE/UT")))).getText());
+			validateStateCalculation(iterator.next().findElement(By.xpath(String.format(".//td[%s]", getColumnNumber("State/UT")))).getText());
 		}
 	}
 	
 	public void viewPatientDataBasePage() {
+		try {
 		executor.executeScript("arguments[0].scrollIntoView(true);", patientDatabaseProviderButton);
 		LOGGER.info("Clicking on " + patientDatabaseProviderButton.getText() + " button");
 		patientDatabaseProviderButton.click();
+		} catch (Exception exception) {
+			this.webDriverInitiator.takeScreenShot(PAGE_SOURCE + "_failed");
+			LOGGER.error(exception.getMessage());
+		}
 	}
 
 }

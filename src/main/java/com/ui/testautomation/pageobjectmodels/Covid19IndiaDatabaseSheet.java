@@ -37,12 +37,18 @@ public class Covid19IndiaDatabaseSheet {
 	}
 	
 	public void verifyPageUrl() {
+		try {
 		LOGGER.info("Current URL : " + getDriver().getCurrentUrl());
 		Assert.assertTrue(getDriver().getCurrentUrl().equals("https://docs.google.com/spreadsheets/d/e/2PACX-1vSc_2y5N0I67wDU38DjDh35IZSIS30rQf7_NYZhtYYGU1jJYT6_kDx4YpF-qw0LSlGsBYP8pqM_a1Pd/pubhtml"));
 		this.webDriverInitiator.takeScreenShot(PAGE_SOURCE);
+		} catch (Exception exception) {
+			this.webDriverInitiator.takeScreenShot(PAGE_SOURCE + "_failed");
+			LOGGER.error(exception.getMessage());
+		}
 	}
 	
 	public void switchToDatabaseWindow() {
+		try {
 		Set<String> windowHandles = getDriver().getWindowHandles();
 		Iterator<String> windowIterator = windowHandles.iterator();
 		String currentHandle;
@@ -57,6 +63,10 @@ public class Covid19IndiaDatabaseSheet {
 			}
 		}
 		this.webDriverInitiator.takeScreenShot(PAGE_SOURCE);
+		} catch (Exception exception) {
+			this.webDriverInitiator.takeScreenShot(PAGE_SOURCE + "_failed");
+			LOGGER.error(exception.getMessage());
+		}
 	}
 
 }

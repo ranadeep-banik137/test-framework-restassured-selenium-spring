@@ -174,7 +174,12 @@
 	    <artifactId>log4j</artifactId>
 	    <version>1.2.17</version>
 	</dependency>
-	
+	<!-- Video converter Dependencies -->
+	<dependency>   
+   		<groupId>org.bytedeco</groupId>   
+	    <artifactId>javacv</artifactId>   
+	    <version>1.0</version>   
+    </dependency>  
   </dependencies>
   
   <!-- <build>
@@ -273,7 +278,7 @@
    </profile>
    </profiles>
 
-	<reporting>
+	<!-- <reporting>
 			<excludeDefaults>true</excludeDefaults>
 			<plugins>
 				<plugin>
@@ -282,5 +287,5 @@
 					<version>2.9</version>
 				</plugin>
 			</plugins>
-	</reporting>
+	</reporting> -->
 </project>

@@ -8,7 +8,7 @@ import org.testng.ITestResult;
 public class MethodRerunListener implements IRetryAnalyzer {
 
 	private static final Logger LOGGER = Logger.getLogger(MethodRerunListener.class.getName());
-	private static final int RETRY_COUNT = 2;
+	private static final int RETRY_COUNT = 1;
 	private static int initialCount = 0;
 	
 	/**

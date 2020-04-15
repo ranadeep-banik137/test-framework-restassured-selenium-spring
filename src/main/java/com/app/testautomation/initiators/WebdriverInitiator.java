@@ -1,12 +1,17 @@
 package com.app.testautomation.initiators;
 
 
-import static com.app.testautomation.initiators.SystemVariables.getValue;
+import static com.app.testautomation.initiators.SystemVariables.*;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.io.FileHandler;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -40,6 +45,8 @@ public class WebdriverInitiator {
 	@Autowired
 	private DriverFactory remote;
 	
+	private TakesScreenshot screenshotTaker;
+	
 	
 	public WebDriver getDriver() {
 		return this.driver;
@@ -57,6 +64,7 @@ public class WebdriverInitiator {
 
 	public WebdriverInitiator startDriver() {
 		setDriver(getDriverFactory().initiateDriver());
+		setScreenshotTaker((TakesScreenshot) getDriver());
 		LOGGER.info(getValue(SystemVariables.BROWSER) + " browser initiated");
 		return this;
 	}
@@ -129,8 +137,30 @@ public class WebdriverInitiator {
 	}
 	
 	public WebdriverInitiator maximizeWindowAtStart() {
+		this.takeScreenShot(0);
 		this.driver.manage().window().maximize();
+		this.takeScreenShot(1);
 		LOGGER.info("Browser window maximized");
 		return this;
+	}
+	
+	public void takeScreenShot(int count) {
+		try {
+			File screenShot = this.getScreenshotTaker().getScreenshotAs(OutputType.FILE);
+			String screenShotName =  "Abosulute-Driver_" + count + "_" + getValue(BROWSER) + ".jpg";
+			FileHandler.copy(screenShot, new File(getValue(USER_DIR) + "/src/test/resources/" + getValue("api") + "/shots/" + screenShotName));
+			LOGGER.info("Screen shot captured while driver initiation");
+			LOGGER.info("Find the screen shot at : src/test/resources/shots/" + screenShotName);
+		} catch (IOException exception) {
+			LOGGER.info(exception.getMessage());
+		}
+	}
+
+	public TakesScreenshot getScreenshotTaker() {
+		return screenshotTaker;
+	}
+
+	public void setScreenshotTaker(TakesScreenshot screenshotTaker) {
+		this.screenshotTaker = screenshotTaker;
 	}
 }

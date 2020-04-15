@@ -1,5 +1,6 @@
 package com.app.testautomation.listeners;
 
+import java.util.Date;
 import java.util.logging.Logger;
 
 import org.testng.IInvokedMethod;
@@ -20,7 +21,7 @@ public class MethodInvokeListener implements IInvokedMethodListener {
 		setMethodName(method.getTestMethod().getMethodName());
 		if (getIsTestMethod() && getIsMethodEnabled()) {
 			method.getTestMethod().setRetryAnalyzer(new MethodRerunListener());
-			LOGGER.info("Method " + getMethodName() + " execution starts on : " + method.getDate());
+			LOGGER.info("Method " + getMethodName() + " execution starts on : " + new Date(method.getDate()).toString());
 		} else {
 			LOGGER.info("Method " + getMethodName() + " is not enabled");
 		}
@@ -30,7 +31,7 @@ public class MethodInvokeListener implements IInvokedMethodListener {
 	@Override
 	public void afterInvocation(IInvokedMethod method, ITestResult testResult) {
 		if (getIsTestMethod() && getIsMethodEnabled()) {
-			LOGGER.info("Method" + getMethodName() + " execution completed on : " + method.getDate());
+			LOGGER.info("Method" + getMethodName() + " execution completed on : " + new Date(method.getDate()).toString());
 		}
 	}
 

@@ -6,7 +6,7 @@ public class Perform {
 
 	public static String[] toStringArray(List<String> stringList) {
 		int listSize = stringList.size();
-		String[] stringArray = new String[listSize - 1];
+		String[] stringArray = new String[listSize];
 		for (int index = 0; index < listSize; index ++) {
 			stringArray[index] = stringList.get(index);
 		}
