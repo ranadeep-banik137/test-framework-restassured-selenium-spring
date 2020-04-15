@@ -24,10 +24,13 @@ import com.app.testautomation.utilities.WebElementModifier;
 @Component(value = "covid19Dashboard")
 public class Covid19IndiaDashboard {
 	
+	private static final Logger LOGGER = Logger.getLogger(Covid19IndiaDashboard.class);
+	private static final String PAGE_SOURCE = "Covid19IndiaDashboard";
+	
+	private Driver webDriverInitiator;
 	private WebDriver driver;
 	private WebDriverWait explicitWait;
 	private JavascriptExecutor executor;
-	private static final Logger LOGGER = Logger.getLogger(Covid19IndiaDashboard.class);
 	
 	@Autowired
 	private WebElementModifier webElementModifier;
@@ -46,6 +49,7 @@ public class Covid19IndiaDashboard {
 	
 	@Autowired 
 	public Covid19IndiaDashboard(Driver webDriver) { 
+		this.webDriverInitiator = webDriver;
 		this.driver = webDriver.getDriver();
 		PageFactory.initElements(getDriver(), this);
 		this.explicitWait = new WebDriverWait(getDriver(), 15);
@@ -69,14 +73,17 @@ public class Covid19IndiaDashboard {
 	
 	public WebElement getStateRowElement(String state) {
 		this.explicitWait.until(ExpectedConditions.visibilityOfAllElements(stateRows));
-		List<WebElement> requiredWebElement = stateRows.stream().filter(x-> webElementModifier.appendWebElement(x, By.xpath(".//div[@class='table__title-wrapper']")).getText().trim().equalsIgnoreCase(state)).collect(Collectors.toList());
-		return requiredWebElement.get(0);
+		List<WebElement> requiredWebElementList = stateRows.stream().filter(x-> webElementModifier.appendWebElement(x, By.xpath(".//div[@class='table__title-wrapper']")).getText().trim().equalsIgnoreCase(state)).collect(Collectors.toList());
+		WebElement requiredWebElement = requiredWebElementList.get(0);
+		this.executor.executeScript("arguments[0].scrollIntoView(true);", requiredWebElement);
+		return requiredWebElement;
 	}
 	
 	public void browseToDashboard() {
 		String url = "http://www.covid19India.org";
 		getDriver().navigate().to(url);
 		LOGGER.info("Navigated to : " + url);
+		this.webDriverInitiator.takeScreenShot(PAGE_SOURCE);
 	}
 	
 	public int getTotalConfirmedCasesCount() {
@@ -99,6 +106,7 @@ public class Covid19IndiaDashboard {
 		LOGGER.info("Verified Active Cases : Confirmed - Recovered + deceased");
 		LOGGER.info(confirmedCases + " - " + recoveredCases + " + " + deceasedCases + " = " + (confirmedCases - recoveredCases - deceasedCases));
 		Assert.assertTrue(activeCases == (confirmedCases - recoveredCases - deceasedCases), "Case calculations are not matching");
+		this.webDriverInitiator.takeScreenShot(PAGE_SOURCE + "_" + state + "_StateScenario");
 	}
 	
 	

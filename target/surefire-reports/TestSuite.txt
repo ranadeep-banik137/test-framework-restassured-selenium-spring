@@ -1,8 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 1, Errors: 0, Skipped: 2, Time elapsed: 78.06 s <<< FAILURE! - in TestSuite
-failedTest(com.ui.testautomation.CovidIndiaUITest)  Time elapsed: 11.64 s  <<< FAILURE!
-java.lang.AssertionError: Test failed
-	at com.ui.testautomation.CovidIndiaUITest.failedTest(CovidIndiaUITest.java:55)
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 97.383 s - in TestSuite
