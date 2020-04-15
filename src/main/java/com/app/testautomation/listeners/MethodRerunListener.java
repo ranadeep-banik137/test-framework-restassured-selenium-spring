@@ -9,15 +9,18 @@ public class MethodRerunListener implements IRetryAnalyzer {
 
 	private static final Logger LOGGER = Logger.getLogger(MethodRerunListener.class.getName());
 	private static final int RETRY_COUNT = 2;
-	private int initialCount = 0;
+	private static int initialCount = 0;
 	
+	/**
+	 * Idea by PRITAM MONDAL (static member initiation of initial count variable)
+	 */
 	@Override
 	public boolean retry(ITestResult result) {
 		if (!result.isSuccess()) { 
 			if (initialCount < RETRY_COUNT) {
             	initialCount++;
                 result.setStatus(ITestResult.FAILURE);
-                LOGGER.info("Re-executing the method : " + result.getName());
+                LOGGER.info("Re-executing the method : " + result.getName() + "With count : " + initialCount);
                 return true;
             } else {
             	result.setStatus(ITestResult.FAILURE);
