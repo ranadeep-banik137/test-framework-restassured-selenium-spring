@@ -1,6 +1,7 @@
 com\app\testautomation\utilities\ConfigReader.class
 com\ui\testautomation\driverconfigs\ChromeDriverInitiator.class
 com\app\testautomation\listeners\MethodRerunListener.class
+com\app\testautomation\utilities\ReportGenerator2.class
 com\app\testautomation\utilities\WebElementModifier.class
 com\app\testautomation\exceptions\BrowserCapabilitiesNotInitiatedException.class
 com\app\testautomation\initiators\SystemVariables.class

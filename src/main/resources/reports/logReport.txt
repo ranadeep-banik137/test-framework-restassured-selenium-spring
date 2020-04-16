@@ -1,14 +1,16 @@
-2020-04-16 05:04:39 INFO  PropertiesFileReader:36 - Fetched properties file on location : C:\Users\ranad\git\test-framework-restassured-selenium-spring-02/log4j.properties
-2020-04-16 05:04:39 INFO  Log4jConfiguration:30 - System value 'log4j.overwrite' : false
-2020-04-16 05:04:39 INFO  PropertiesFileReader:77 - Modified properties file with key : log4j.appender.HTML_FILE.Append, Value : false
-2020-04-16 05:04:39 INFO  PropertiesFileReader:90 - Properties file on locationC:\Users\ranad\git\test-framework-restassured-selenium-spring-02/log4j.properties updated
-2020-04-16 05:04:39 INFO  PropertiesFileReader:77 - Modified properties file with key : log4j.appender.FILE.Append, Value : false
-2020-04-16 05:04:39 INFO  PropertiesFileReader:90 - Properties file on locationC:\Users\ranad\git\test-framework-restassured-selenium-spring-02/log4j.properties updated
-2020-04-16 05:04:39 INFO  CovidIndiaUITest:27 - Initiating Method : checkNoOfConfirmedCasesIsGreaterThan6000
-2020-04-16 05:04:41 INFO  Covid19IndiaDashboard:86 - Navigated to : http://www.covid19India.org
-2020-04-16 05:04:42 INFO  Driver:73 - Screen shot captured at Covid19IndiaDashboard page
-2020-04-16 05:04:42 INFO  Driver:74 - Find the screen shot at : src/test/resources/shots/RDB_46_Covid19India_Covid19IndiaDashboard.jpg
-2020-04-16 05:04:42 INFO  Covid19IndiaDashboard:97 - Total number of confirmed COVID19 cases in India : 12370
-2020-04-16 05:04:43 INFO  CovidIndiaUITest:61 - checkNoOfConfirmedCasesIsGreaterThan6000 executed.
-2020-04-16 05:04:43 INFO  CovidIndiaUITest:63 - Driver is closed
-2020-04-16 05:04:43 WARN  CovidIndiaUITest:64 - Driver called off
+2020-04-17 00:09:14 INFO  PropertiesFileReader:36 - Fetched properties file on location : D:\git\test-framework-restassured-selenium-spring-00/log4j.properties
+2020-04-17 00:09:14 INFO  Log4jConfiguration:30 - System value 'log4j.overwrite' : false
+2020-04-17 00:09:14 INFO  PropertiesFileReader:77 - Modified properties file with key : log4j.appender.HTML_FILE.Append, Value : false
+2020-04-17 00:09:14 INFO  PropertiesFileReader:90 - Properties file on locationD:\git\test-framework-restassured-selenium-spring-00/log4j.properties updated
+2020-04-17 00:09:14 INFO  PropertiesFileReader:77 - Modified properties file with key : log4j.appender.FILE.Append, Value : false
+2020-04-17 00:09:14 INFO  PropertiesFileReader:90 - Properties file on locationD:\git\test-framework-restassured-selenium-spring-00/log4j.properties updated
+2020-04-17 00:09:14 INFO  CovidIndiaUITest:27 - Initiating Method : checkCaseCalculationsOfTripuraIsGreaterThan10
+2020-04-17 00:09:15 INFO  Covid19IndiaDashboard:86 - Navigated to : http://www.covid19India.org
+2020-04-17 00:09:15 INFO  Driver:73 - Screen shot captured at Covid19IndiaDashboard page
+2020-04-17 00:09:15 INFO  Driver:74 - Find the screen shot at : src/test/resources/shots/RDB_02_Covid19India_Covid19IndiaDashboard.jpg
+2020-04-17 00:09:19 INFO  Covid19IndiaDashboard:70 - Column number with header Confirmed : 2
+2020-04-17 00:09:19 INFO  Driver:73 - Screen shot captured at explicit_failed page
+2020-04-17 00:09:19 INFO  Driver:74 - Find the screen shot at : src/test/resources/shots/RDB_03_Covid19India_explicit_failed.jpg
+2020-04-17 00:09:19 INFO  CovidIndiaUITest:61 - checkCaseCalculationsOfTripuraIsGreaterThan10 executed.
+2020-04-17 00:09:23 INFO  CovidIndiaUITest:63 - Driver is closed
+2020-04-17 00:09:23 WARN  CovidIndiaUITest:64 - Driver called off
