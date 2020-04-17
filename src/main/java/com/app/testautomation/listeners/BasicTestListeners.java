@@ -75,13 +75,13 @@ public class BasicTestListeners implements ISuiteListener, ITestListener {
 	public void onTestStart(ITestResult result) {
 		this.reportGenerator.setSuiteTestCategories(result.getMethod().getGroups());
 		this.reportGenerator.startMethodTest(new Date(result.getMethod().getDate()), result.getName(), result.getMethod().getId().replace("main@", "Method Id - ") + " : " + result.getMethod().getDescription());
+		this.reportGenerator2.startSuiteTest(result.getName(), result.getMethod().getId().replace("main@", "Method Id - ") + " : " + result.getMethod().getDescription());
 		if (getValue(GROUPS) != null) {
 			String category = Arrays.asList(result.getMethod().getGroups()).contains(getValue(GROUPS)) ? getValue(GROUPS) : null;
 			if (category != null) {
 				this.reportGenerator2.setSuiteTestCategory(category);
 			}
 		}
-		this.reportGenerator2.startSuiteTest(result.getName(), result.getMethod().getId().replace("main@", "Method Id - ") + " : " + result.getMethod().getDescription());
 		LOGGER.info("Executiing method : " + result.getName());
 	}
 

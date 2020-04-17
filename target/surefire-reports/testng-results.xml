@@ -1,26 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="1" ignored="0" total="2" passed="0">
+<testng-results skipped="1" failed="1" ignored="0" total="6" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Covid19IndiaTestReport" duration-ms="33352" started-at="2020-04-16T18:38:50Z" finished-at="2020-04-16T18:39:23Z">
+  <suite name="Covid19IndiaTestReport" duration-ms="172673" started-at="2020-04-17T20:46:25Z" finished-at="2020-04-17T20:49:18Z">
     <groups>
       <group name="regression">
-        <method signature="CovidIndiaUITest.checkCaseCalculationsForAllStates()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@38f116f6]" name="checkCaseCalculationsForAllStates" class="com.ui.testautomation.CovidIndiaUITest"/>
+        <method signature="CovidIndiaUITest.checkCaseCalculationsForAllStates()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@6e6d5d29]" name="checkCaseCalculationsForAllStates" class="com.ui.testautomation.CovidIndiaUITest"/>
       </group> <!-- regression -->
       <group name="smoke">
-        <method signature="CovidIndiaUITest.checkCaseCalculationsForAllStates()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@38f116f6]" name="checkCaseCalculationsForAllStates" class="com.ui.testautomation.CovidIndiaUITest"/>
-        <method signature="CovidIndiaUITest.checkCaseCalculationsForChandigarh()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@38f116f6]" name="checkCaseCalculationsForChandigarh" class="com.ui.testautomation.CovidIndiaUITest"/>
+        <method signature="CovidIndiaUITest.checkCaseCalculationsForAllStates()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@6e6d5d29]" name="checkCaseCalculationsForAllStates" class="com.ui.testautomation.CovidIndiaUITest"/>
+        <method signature="CovidIndiaUITest.checkCaseCalculationsForChandigarh()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@6e6d5d29]" name="checkCaseCalculationsForChandigarh" class="com.ui.testautomation.CovidIndiaUITest"/>
       </group> <!-- smoke -->
       <group name="sanity">
-        <method signature="CovidIndiaUITest.checkCaseCalculationsForDelhi()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@38f116f6]" name="checkCaseCalculationsForDelhi" class="com.ui.testautomation.CovidIndiaUITest"/>
+        <method signature="CovidIndiaUITest.checkCaseCalculationsForDelhi()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@6e6d5d29]" name="checkCaseCalculationsForDelhi" class="com.ui.testautomation.CovidIndiaUITest"/>
       </group> <!-- sanity -->
       <group name="failed">
-        <method signature="CovidIndiaUITest.checkCaseCalculationsOfTripuraIsGreaterThan10()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@38f116f6]" name="checkCaseCalculationsOfTripuraIsGreaterThan10" class="com.ui.testautomation.CovidIndiaUITest"/>
+        <method signature="CovidIndiaUITest.checkCaseCalculationsOfTripuraIsGreaterThan10()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@6e6d5d29]" name="checkCaseCalculationsOfTripuraIsGreaterThan10" class="com.ui.testautomation.CovidIndiaUITest"/>
       </group> <!-- failed -->
     </groups>
-    <test name="Test_Framework-Basic_Tests" duration-ms="33352" started-at="2020-04-16T18:38:50Z" finished-at="2020-04-16T18:39:23Z">
+    <test name="Test_Framework-Basic_Tests" duration-ms="172673" started-at="2020-04-17T20:46:25Z" finished-at="2020-04-17T20:49:18Z">
       <class name="com.ui.testautomation.CovidIndiaUITest">
-        <test-method status="PASS" signature="initiateMethod(java.lang.reflect.Method)[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@38f116f6]" name="initiateMethod" is-config="true" duration-ms="1519" started-at="2020-04-17T00:08:50Z" finished-at="2020-04-17T00:08:52Z">
+        <test-method status="PASS" signature="initiateMethod(java.lang.reflect.Method)[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@6e6d5d29]" name="initiateMethod" is-config="true" duration-ms="1583" started-at="2020-04-18T02:16:25Z" finished-at="2020-04-18T02:16:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.ui.testautomation.CovidIndiaUITest.checkCaseCalculationsForAllStates()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateMethod -->
+        <test-method status="PASS" signature="checkCaseCalculationsForAllStates()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@6e6d5d29]" name="checkCaseCalculationsForAllStates" duration-ms="81359" started-at="2020-04-18T02:16:27Z" description="Checks &amp; verify the total case calculation after recovered and death for all 32 states of INDIA" finished-at="2020-04-18T02:17:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkCaseCalculationsForAllStates -->
+        <test-method status="PASS" signature="finish(java.lang.reflect.Method)[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@6e6d5d29]" name="finish" is-config="true" duration-ms="10935" started-at="2020-04-18T02:17:48Z" finished-at="2020-04-18T02:17:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.ui.testautomation.CovidIndiaUITest.checkCaseCalculationsForAllStates()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finish -->
+        <test-method status="PASS" signature="initiateMethod(java.lang.reflect.Method)[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@6e6d5d29]" name="initiateMethod" is-config="true" duration-ms="11688" started-at="2020-04-18T02:17:59Z" finished-at="2020-04-18T02:18:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.ui.testautomation.CovidIndiaUITest.checkCaseCalculationsForChandigarh()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateMethod -->
+        <test-method status="PASS" signature="checkCaseCalculationsForChandigarh()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@6e6d5d29]" name="checkCaseCalculationsForChandigarh" duration-ms="4329" started-at="2020-04-18T02:18:11Z" description="Checks &amp; verify the total case calculation after recovered and death for Chandigarh" finished-at="2020-04-18T02:18:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkCaseCalculationsForChandigarh -->
+        <test-method status="PASS" signature="finish(java.lang.reflect.Method)[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@6e6d5d29]" name="finish" is-config="true" duration-ms="4464" started-at="2020-04-18T02:18:15Z" finished-at="2020-04-18T02:18:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.ui.testautomation.CovidIndiaUITest.checkCaseCalculationsForChandigarh()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finish -->
+        <test-method status="PASS" signature="initiateMethod(java.lang.reflect.Method)[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@6e6d5d29]" name="initiateMethod" is-config="true" duration-ms="11382" started-at="2020-04-18T02:18:20Z" finished-at="2020-04-18T02:18:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.ui.testautomation.CovidIndiaUITest.checkCaseCalculationsForDelhi()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateMethod -->
+        <test-method status="PASS" signature="checkCaseCalculationsForDelhi()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@6e6d5d29]" name="checkCaseCalculationsForDelhi" duration-ms="4323" started-at="2020-04-18T02:18:31Z" description="Checks &amp; verify the total case calculation after recovered and death for Maharashtra" finished-at="2020-04-18T02:18:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkCaseCalculationsForDelhi -->
+        <test-method status="PASS" signature="finish(java.lang.reflect.Method)[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@6e6d5d29]" name="finish" is-config="true" duration-ms="169" started-at="2020-04-18T02:18:35Z" finished-at="2020-04-18T02:18:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.ui.testautomation.CovidIndiaUITest.checkCaseCalculationsForDelhi()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finish -->
+        <test-method status="PASS" signature="initiateMethod(java.lang.reflect.Method)[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@6e6d5d29]" name="initiateMethod" is-config="true" duration-ms="11231" started-at="2020-04-18T02:18:36Z" finished-at="2020-04-18T02:18:47Z">
           <params>
             <param index="0">
               <value>
@@ -31,7 +109,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiateMethod -->
-        <test-method status="SKIP" signature="checkCaseCalculationsOfTripuraIsGreaterThan10()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@38f116f6]" name="checkCaseCalculationsOfTripuraIsGreaterThan10" duration-ms="3240" started-at="2020-04-17T00:08:52Z" description="check case count of Tripura is more than 10" finished-at="2020-04-17T00:08:55Z">
+        <test-method status="SKIP" signature="checkCaseCalculationsOfTripuraIsGreaterThan10()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@6e6d5d29]" name="checkCaseCalculationsOfTripuraIsGreaterThan10" duration-ms="3843" started-at="2020-04-18T02:18:47Z" description="check case count of Tripura is more than 10" finished-at="2020-04-18T02:18:51Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Case count is not greater than 10 expected [true] but found [false]]]>
@@ -78,7 +156,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkCaseCalculationsOfTripuraIsGreaterThan10 -->
-        <test-method status="PASS" signature="finish(java.lang.reflect.Method)[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@38f116f6]" name="finish" is-config="true" duration-ms="9152" started-at="2020-04-17T00:08:55Z" finished-at="2020-04-17T00:09:04Z">
+        <test-method status="PASS" signature="finish(java.lang.reflect.Method)[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@6e6d5d29]" name="finish" is-config="true" duration-ms="190" started-at="2020-04-18T02:18:51Z" finished-at="2020-04-18T02:18:51Z">
           <params>
             <param index="0">
               <value>
@@ -89,7 +167,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- finish -->
-        <test-method status="PASS" signature="initiateMethod(java.lang.reflect.Method)[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@38f116f6]" name="initiateMethod" is-config="true" duration-ms="11250" started-at="2020-04-17T00:09:04Z" finished-at="2020-04-17T00:09:15Z">
+        <test-method status="PASS" signature="initiateMethod(java.lang.reflect.Method)[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@6e6d5d29]" name="initiateMethod" is-config="true" duration-ms="11492" started-at="2020-04-18T02:18:51Z" finished-at="2020-04-18T02:19:02Z">
           <params>
             <param index="0">
               <value>
@@ -100,7 +178,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiateMethod -->
-        <test-method status="FAIL" signature="checkCaseCalculationsOfTripuraIsGreaterThan10()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@38f116f6]" name="checkCaseCalculationsOfTripuraIsGreaterThan10" duration-ms="3651" started-at="2020-04-17T00:09:15Z" description="check case count of Tripura is more than 10" finished-at="2020-04-17T00:09:19Z">
+        <test-method status="FAIL" signature="checkCaseCalculationsOfTripuraIsGreaterThan10()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@6e6d5d29]" name="checkCaseCalculationsOfTripuraIsGreaterThan10" duration-ms="3272" started-at="2020-04-18T02:19:02Z" description="check case count of Tripura is more than 10" finished-at="2020-04-18T02:19:06Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Case count is not greater than 10 expected [true] but found [false]]]>
@@ -147,7 +225,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkCaseCalculationsOfTripuraIsGreaterThan10 -->
-        <test-method status="PASS" signature="finish(java.lang.reflect.Method)[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@38f116f6]" name="finish" is-config="true" duration-ms="4451" started-at="2020-04-17T00:09:19Z" finished-at="2020-04-17T00:09:23Z">
+        <test-method status="PASS" signature="finish(java.lang.reflect.Method)[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@6e6d5d29]" name="finish" is-config="true" duration-ms="201" started-at="2020-04-18T02:19:06Z" finished-at="2020-04-18T02:19:06Z">
           <params>
             <param index="0">
               <value>
@@ -158,7 +236,33 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- finish -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@38f116f6]" name="quit" is-config="true" duration-ms="51" started-at="2020-04-17T00:09:23Z" finished-at="2020-04-17T00:09:23Z">
+        <test-method status="PASS" signature="initiateMethod(java.lang.reflect.Method)[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@6e6d5d29]" name="initiateMethod" is-config="true" duration-ms="11383" started-at="2020-04-18T02:19:06Z" finished-at="2020-04-18T02:19:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.ui.testautomation.CovidIndiaUITest.checkNoOfConfirmedCasesIsGreaterThan6000()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateMethod -->
+        <test-method status="PASS" signature="checkNoOfConfirmedCasesIsGreaterThan6000()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@6e6d5d29]" name="checkNoOfConfirmedCasesIsGreaterThan6000" duration-ms="586" started-at="2020-04-18T02:19:17Z" description="validate the number of total confirmed case is greater than 6000 in India" finished-at="2020-04-18T02:19:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkNoOfConfirmedCasesIsGreaterThan6000 -->
+        <test-method status="PASS" signature="finish(java.lang.reflect.Method)[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@6e6d5d29]" name="finish" is-config="true" duration-ms="138" started-at="2020-04-18T02:19:18Z" finished-at="2020-04-18T02:19:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.ui.testautomation.CovidIndiaUITest.checkNoOfConfirmedCasesIsGreaterThan6000()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finish -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@6e6d5d29]" name="quit" is-config="true" duration-ms="57" started-at="2020-04-18T02:19:18Z" finished-at="2020-04-18T02:19:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->

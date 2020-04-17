@@ -41,7 +41,13 @@ public class ReportGenerator2 {
 	
 	public ReportGenerator2 initiate() {
 		setExtentReport(new ExtentReports());
-		getExtentReport().attachReporter(getReporter());
+		try {
+			
+		
+			getExtentReport().attachReporter(getReporter());
+		} catch (Exception e) {
+			LOGGER.warn(e.getMessage());
+		}
 		this.extentReport.setSystemInfo("Browser", getValue(BROWSER));
 		this.extentReport.setSystemInfo("Admin name", "Ranadeep Banik");
 		return this;
@@ -92,7 +98,6 @@ public class ReportGenerator2 {
 	
 	public void endReport(ISuite suite) {
 		this.extentReport.flush();
-		this.extentReport.close();
 		LOGGER.info("Suite execution ended" + suite.getName());
 		LOGGER.info("Total Methods :" + suite.getAllMethods().size());
 		LOGGER.info("Executed Successfully : " + suite.getAllInvokedMethods().size());

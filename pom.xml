@@ -137,7 +137,7 @@
 	<dependency>
 	    <groupId>com.aventstack</groupId>
 	    <artifactId>extentreports</artifactId>
-	    <version>3.0.0</version>
+	    <version>4.0.9</version>
 	</dependency>
 	<!-- Spring -->
 	<!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
