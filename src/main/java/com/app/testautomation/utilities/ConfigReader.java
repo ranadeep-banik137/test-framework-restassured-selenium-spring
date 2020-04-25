@@ -1,11 +1,12 @@
 package com.app.testautomation.utilities;
 
+import static com.app.testautomation.initiators.SystemVariables.*;
+
 import java.util.Map;
 
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Component;
 
-import com.api.testautomation.configurations.EnvironmentVariables;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.typesafe.config.Config;
 import com.typesafe.config.ConfigFactory;
@@ -17,13 +18,6 @@ public class ConfigReader {
 	private static final Logger LOGGER = Logger.getLogger(ConfigReader.class);
 	
 	public Config configInstance;
-	public String apiName;
-	EnvironmentVariables env;
-	
-	public ConfigReader() {
-		this.env = new EnvironmentVariables();
-		apiName = env.getApiName();
-	}
 
 	public ConfigReader initiateConfig() {
 		this.configInstance =  ConfigFactory.load(fileName);
@@ -32,7 +26,7 @@ public class ConfigReader {
 	}
 	
 	public Config getApiConfigDetails() {
-		return this.configInstance.getConfig(apiName);
+		return this.configInstance.getConfig(getValue(API));
 	}
 	
 	@SuppressWarnings("unchecked")
@@ -44,6 +38,6 @@ public class ConfigReader {
 	@SuppressWarnings("unchecked")
 	public Map<String, Object> readLinkData(String link) {
 		LOGGER.info("Fetching config property of : " + link);
-		return new ObjectMapper().convertValue(this.configInstance.getConfig(apiName).getAnyRef(link), Map.class);
+		return new ObjectMapper().convertValue(this.configInstance.getConfig(getValue(API)).getAnyRef(link), Map.class);
 	}
 }

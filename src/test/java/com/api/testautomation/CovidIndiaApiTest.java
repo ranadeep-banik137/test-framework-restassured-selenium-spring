@@ -1,5 +1,7 @@
 package com.api.testautomation;
 
+import static com.app.testautomation.initiators.SystemVariables.*;
+
 import java.lang.reflect.Method;
 import java.util.List;
 
@@ -11,7 +13,6 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.api.testautomation.configurations.EnvironmentVariables;
 import com.api.testautomation.configurations.Headers;
 import com.app.testautomation.utilities.ConfigReader;
 import com.app.testautomation.utilities.PropertiesFileReader;
@@ -25,13 +26,11 @@ public class CovidIndiaApiTest {
 	
 	public ConfigReader configInstance;
 	Headers headers;
-	EnvironmentVariables env;
 	
 	@BeforeMethod(firstTimeOnly = true)
 	public void initiation(Method method) {
 		configInstance = new ConfigReader().initiateConfig();
-		this.env = new EnvironmentVariables();
-		RestAssured.baseURI = String.valueOf(configInstance.getMapper(env.getApiName()).get("base-uri"));
+		RestAssured.baseURI = String.valueOf(configInstance.getMapper(getValue(API)).get("base-uri"));
 		RestAssured.useRelaxedHTTPSValidation();
 	}
 	
@@ -42,7 +41,7 @@ public class CovidIndiaApiTest {
 	
 	//@Test
 	public void TestCovidDataReportTest() {
-		RestAssured.basePath = String.valueOf(configInstance.readLinkData(env.getLinkName()).get("base-path"));
+		RestAssured.basePath = String.valueOf(configInstance.readLinkData(getValue(LINK)).get("base-path"));
 		RestAssured.given().
 			accept(ContentType.JSON).
 			headers(new Headers().getHeaders()).
@@ -56,7 +55,7 @@ public class CovidIndiaApiTest {
 	
 	@Test(dataProvider = "testKarle")
 	public void TestStateDistrictWiseReportTest(int i, int j, int k) {
-		RestAssured.basePath = String.valueOf(configInstance.readLinkData(env.getLinkName()).get("base-path"));
+		RestAssured.basePath = String.valueOf(configInstance.readLinkData(getValue(LINK)).get("base-path"));
 		Response response = RestAssured.given().
 			accept(ContentType.JSON).
 			headers(new Headers().getHeaders()).
@@ -79,7 +78,7 @@ public class CovidIndiaApiTest {
 	
 	@Test
 	public void testJson() {
-		JsonPath json = JsonPath.from(System.getProperty("user.dir") + "\\src\\test\\resources\\" + env.getApiName() + "\\" + env.getLinkName() + "\\" + "Request.properties");
+		JsonPath json = JsonPath.from(System.getProperty("user.dir") + "\\src\\test\\resources\\" + getValue(API) + "\\" + getValue(LINK) + "\\" + "Request.properties");
 		
 	}
 	

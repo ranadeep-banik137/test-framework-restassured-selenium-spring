@@ -11,6 +11,8 @@ public class SystemVariables {
 	public static final String OVERWRITE_LOG4J_FILE = "log4j.overwrite";
 	public static final String USER_DIR = "user.dir";
 	public static final String GROUPS = "groups.include";
+	public static final String API = "api";
+	public static final String LINK = "link";
 	
 	public static String getValue(String key) {
 		return System.getenv(key) == null ? System.getProperty(key) : System.getenv(key);

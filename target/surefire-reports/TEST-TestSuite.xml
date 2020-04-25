@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="185.497" tests="6" errors="0" skipped="1" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="108.064" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -21,7 +21,7 @@
     <property name="user.country" value="IN"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_241\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\ranad\AppData\Local\Temp\surefire5671068006304409022\surefirebooter1415601474537085997.jar C:\Users\ranad\AppData\Local\Temp\surefire5671068006304409022 2020-04-18T02-16-12_874-jvmRun1 surefire2247239276840534502tmp surefire_05477441885121784409tmp"/>
+    <property name="sun.java.command" value="C:\Users\ranad\AppData\Local\Temp\surefire2164919996085747492\surefirebooter4286361680053710685.jar C:\Users\ranad\AppData\Local\Temp\surefire2164919996085747492 2020-04-20T17-37-30_558-jvmRun1 surefire5277260922021398663tmp surefire_05454556523054066413tmp"/>
     <property name="surefire.test.class.path" value="D:\git\test-framework-restassured-selenium-spring-00\target\test-classes;D:\git\test-framework-restassured-selenium-spring-00\target\classes;C:\Users\ranad\.m2\repository\io\rest-assured\rest-assured\4.3.0\rest-assured-4.3.0.jar;C:\Users\ranad\.m2\repository\org\codehaus\groovy\groovy\3.0.2\groovy-3.0.2.jar;C:\Users\ranad\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.2\groovy-xml-3.0.2.jar;C:\Users\ranad\.m2\repository\org\apache\httpcomponents\httpclient\4.5.3\httpclient-4.5.3.jar;C:\Users\ranad\.m2\repository\org\apache\httpcomponents\httpmime\4.5.3\httpmime-4.5.3.jar;C:\Users\ranad\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\ranad\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\ranad\.m2\repository\io\rest-assured\json-path\4.3.0\json-path-4.3.0.jar;C:\Users\ranad\.m2\repository\org\codehaus\groovy\groovy-json\3.0.2\groovy-json-3.0.2.jar;C:\Users\ranad\.m2\repository\io\rest-assured\rest-assured-common\4.3.0\rest-assured-common-4.3.0.jar;C:\Users\ranad\.m2\repository\io\rest-assured\xml-path\4.3.0\xml-path-4.3.0.jar;C:\Users\ranad\.m2\repository\org\apache\commons\commons-lang3\3.4\commons-lang3-3.4.jar;C:\Users\ranad\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.2\jakarta.xml.bind-api-2.3.2.jar;C:\Users\ranad\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.1\jakarta.activation-api-1.2.1.jar;C:\Users\ranad\.m2\repository\com\sun\xml\bind\jaxb-osgi\2.3.0.1\jaxb-osgi-2.3.0.1.jar;C:\Users\ranad\.m2\repository\org\apache\sling\org.apache.sling.javax.activation\0.1.0\org.apache.sling.javax.activation-0.1.0.jar;C:\Users\ranad\.m2\repository\javax\activation\activation\1.1.1\activation-1.1.1.jar;C:\Users\ranad\.m2\repository\io\rest-assured\json-schema-validator\4.3.0\json-schema-validator-4.3.0.jar;C:\Users\ranad\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.10\json-schema-validator-2.2.10.jar;C:\Users\ranad\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.10\json-schema-core-1.2.10.jar;C:\Users\ranad\.m2\repository\com\github\java-json-tools\jackson-coreutils\1.9\jackson-coreutils-1.9.jar;C:\Users\ranad\.m2\repository\com\github\fge\msg-simple\1.1\msg-simple-1.1.jar;C:\Users\ranad\.m2\repository\com\github\fge\btf\1.2\btf-1.2.jar;C:\Users\ranad\.m2\repository\com\github\fge\uri-template\0.9\uri-template-0.9.jar;C:\Users\ranad\.m2\repository\org\mozilla\rhino\1.7.7.1\rhino-1.7.7.1.jar;C:\Users\ranad\.m2\repository\javax\mail\mailapi\1.4.3\mailapi-1.4.3.jar;C:\Users\ranad\.m2\repository\joda-time\joda-time\2.9.7\joda-time-2.9.7.jar;C:\Users\ranad\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.0.0\libphonenumber-8.0.0.jar;C:\Users\ranad\.m2\repository\com\google\code\findbugs\jsr305\3.0.1\jsr305-3.0.1.jar;C:\Users\ranad\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.3\jopt-simple-5.0.3.jar;C:\Users\ranad\.m2\repository\org\testng\testng\6.10\testng-6.10.jar;C:\Users\ranad\.m2\repository\com\beust\jcommander\1.48\jcommander-1.48.jar;C:\Users\ranad\.m2\repository\org\hamcrest\hamcrest-core\2.1\hamcrest-core-2.1.jar;C:\Users\ranad\.m2\repository\org\hamcrest\hamcrest-all\1.3\hamcrest-all-1.3.jar;C:\Users\ranad\.m2\repository\com\typesafe\config\1.2.1\config-1.2.1.jar;C:\Users\ranad\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.9.8\jackson-databind-2.9.8.jar;C:\Users\ranad\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.9.0\jackson-annotations-2.9.0.jar;C:\Users\ranad\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.9.8\jackson-core-2.9.8.jar;C:\Users\ranad\.m2\repository\org\seleniumhq\selenium\selenium-java\3.11.0\selenium-java-3.11.0.jar;C:\Users\ranad\.m2\repository\org\seleniumhq\selenium\selenium-api\3.11.0\selenium-api-3.11.0.jar;C:\Users\ranad\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.11.0\selenium-chrome-driver-3.11.0.jar;C:\Users\ranad\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.11.0\selenium-edge-driver-3.11.0.jar;C:\Users\ranad\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.11.0\selenium-firefox-driver-3.11.0.jar;C:\Users\ranad\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.11.0\selenium-ie-driver-3.11.0.jar;C:\Users\ranad\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.11.0\selenium-opera-driver-3.11.0.jar;C:\Users\ranad\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.11.0\selenium-remote-driver-3.11.0.jar;C:\Users\ranad\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.11.0\selenium-safari-driver-3.11.0.jar;C:\Users\ranad\.m2\repository\org\seleniumhq\selenium\selenium-support\3.11.0\selenium-support-3.11.0.jar;C:\Users\ranad\.m2\repository\net\bytebuddy\byte-buddy\1.7.9\byte-buddy-1.7.9.jar;C:\Users\ranad\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\ranad\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\Users\ranad\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\ranad\.m2\repository\com\google\code\gson\gson\2.8.2\gson-2.8.2.jar;C:\Users\ranad\.m2\repository\com\google\guava\guava\23.6-jre\guava-23.6-jre.jar;C:\Users\ranad\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\ranad\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\ranad\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\ranad\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\ranad\.m2\repository\org\apache\httpcomponents\httpcore\4.4.6\httpcore-4.4.6.jar;C:\Users\ranad\.m2\repository\com\squareup\okhttp3\okhttp\3.9.1\okhttp-3.9.1.jar;C:\Users\ranad\.m2\repository\com\squareup\okio\okio\1.13.0\okio-1.13.0.jar;C:\Users\ranad\.m2\repository\com\relevantcodes\extentreports\2.41.2\extentreports-2.41.2.jar;C:\Users\ranad\.m2\repository\org\jsoup\jsoup\1.8.3\jsoup-1.8.3.jar;C:\Users\ranad\.m2\repository\org\xerial\sqlite-jdbc\3.8.11.1\sqlite-jdbc-3.8.11.1.jar;C:\Users\ranad\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\ranad\.m2\repository\org\mongodb\mongodb-driver\3.0.4\mongodb-driver-3.0.4.jar;C:\Users\ranad\.m2\repository\org\mongodb\mongodb-driver-core\3.0.4\mongodb-driver-core-3.0.4.jar;C:\Users\ranad\.m2\repository\com\aventstack\extentreports\4.0.9\extentreports-4.0.9.jar;C:\Users\ranad\.m2\repository\org\mongodb\bson\3.3.0\bson-3.3.0.jar;C:\Users\ranad\.m2\repository\org\springframework\spring-core\5.1.3.RELEASE\spring-core-5.1.3.RELEASE.jar;C:\Users\ranad\.m2\repository\org\springframework\spring-jcl\5.1.3.RELEASE\spring-jcl-5.1.3.RELEASE.jar;C:\Users\ranad\.m2\repository\org\springframework\spring-context\5.1.3.RELEASE\spring-context-5.1.3.RELEASE.jar;C:\Users\ranad\.m2\repository\org\springframework\spring-aop\5.1.3.RELEASE\spring-aop-5.1.3.RELEASE.jar;C:\Users\ranad\.m2\repository\org\springframework\spring-beans\5.1.3.RELEASE\spring-beans-5.1.3.RELEASE.jar;C:\Users\ranad\.m2\repository\org\springframework\spring-expression\5.1.3.RELEASE\spring-expression-5.1.3.RELEASE.jar;C:\Users\ranad\.m2\repository\org\apache\poi\poi-ooxml\4.0.1\poi-ooxml-4.0.1.jar;C:\Users\ranad\.m2\repository\org\apache\poi\poi\4.0.1\poi-4.0.1.jar;C:\Users\ranad\.m2\repository\org\apache\commons\commons-collections4\4.2\commons-collections4-4.2.jar;C:\Users\ranad\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\ranad\.m2\repository\org\apache\poi\poi-ooxml-schemas\4.0.1\poi-ooxml-schemas-4.0.1.jar;C:\Users\ranad\.m2\repository\org\apache\xmlbeans\xmlbeans\3.0.2\xmlbeans-3.0.2.jar;C:\Users\ranad\.m2\repository\org\apache\commons\commons-compress\1.18\commons-compress-1.18.jar;C:\Users\ranad\.m2\repository\com\github\virtuald\curvesapi\1.05\curvesapi-1.05.jar;C:\Users\ranad\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacv\1.0\javacv-1.0.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp\1.0\javacpp-1.0.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\opencv\3.0.0-1.0\opencv-3.0.0-1.0.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\opencv\3.0.0-1.0\opencv-3.0.0-1.0-windows-x86_64.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\ffmpeg\2.7.1-1.0\ffmpeg-2.7.1-1.0.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\ffmpeg\2.7.1-1.0\ffmpeg-2.7.1-1.0-windows-x86_64.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\flycapture\2.7.3.19-1.0\flycapture-2.7.3.19-1.0.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\flycapture\2.7.3.19-1.0\flycapture-2.7.3.19-1.0-windows-x86_64.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\libdc1394\2.2.3-1.0\libdc1394-2.2.3-1.0.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\libdc1394\2.2.3-1.0\libdc1394-2.2.3-1.0-windows-x86_64.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\libfreenect\0.5.2-1.0\libfreenect-0.5.2-1.0.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\libfreenect\0.5.2-1.0\libfreenect-0.5.2-1.0-windows-x86_64.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\videoinput\0.200-1.0\videoinput-0.200-1.0.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\videoinput\0.200-1.0\videoinput-0.200-1.0-windows-x86_64.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\artoolkitplus\2.3.1-1.0\artoolkitplus-2.3.1-1.0.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\artoolkitplus\2.3.1-1.0\artoolkitplus-2.3.1-1.0-windows-x86_64.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\flandmark\1.07-1.0\flandmark-1.07-1.0.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\flandmark\1.07-1.0\flandmark-1.07-1.0-windows-x86_64.jar;C:\Users\ranad\.m2\repository\org\apache\maven\surefire\surefire-testng-utils\2.20.1\surefire-testng-utils-2.20.1.jar;C:\Users\ranad\.m2\repository\org\apache\maven\surefire\surefire-grouper\2.20.1\surefire-grouper-2.20.1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\ranad"/>
@@ -35,13 +35,14 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\ranad\AppData\Local\Temp\surefire5671068006304409022\surefirebooter1415601474537085997.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\ranad\AppData\Local\Temp\surefire2164919996085747492\surefirebooter4286361680053710685.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_241\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_241\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="1.8.0_241-b07"/>
     <property name="user.name" value="ranad"/>
     <property name="path.separator" value=";"/>
+    <property name="groups.include" value="regression"/>
     <property name="os.version" value="10.0"/>
     <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_241\jre\lib\endorsed"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -65,146 +66,5 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="checkCaseCalculationsForAllStates" classname="com.ui.testautomation.CovidIndiaUITest" time="81.361"/>
-  <testcase name="checkCaseCalculationsForChandigarh" classname="com.ui.testautomation.CovidIndiaUITest" time="4.33"/>
-  <testcase name="checkCaseCalculationsForDelhi" classname="com.ui.testautomation.CovidIndiaUITest" time="4.323"/>
-  <testcase name="checkCaseCalculationsOfTripuraIsGreaterThan10" classname="com.ui.testautomation.CovidIndiaUITest" time="0">
-    <skipped message="Case count is not greater than 10 expected [true] but found [false]"/>
-    <system-out><![CDATA[checkCaseCalculationsForDelhi executed.
-Driver is closed
-Driver called off
-Driver session is not active
-invalid session id
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'RANADEEP_BANIK', ip: '192.168.1.75', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\ranad\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56333}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: d0723d75fc965e371b994a19a380b271
-return new ApplicationContextInitiator()
-Application context created and initiated all the beans in Spring bean container
-Default properties/capabilities initiated for CHROME driver
-Default properties/capabilities initiated for FIREFOX driver
-Default properties/capabilities initiated for INTERNET EXPLORER driver
-Default properties/capabilities initiated for FIREFOX driver
-Driver instance is null
-Browser key provided : chrome
-Starting GOOGLE CHROME Driver....
-chrome browser initiated
-Driver implicit wait initiated for 30 SECONDS
-Screen shot captured while driver initiation
-Find the screen shot at : src/test/resources/shots/Abosulute-Driver_0_chrome.jpg
-Screen shot captured while driver initiation
-Find the screen shot at : src/test/resources/shots/Abosulute-Driver_1_chrome.jpg
-Browser window maximized
-WebDriver initiated
-Fetched properties file on location : D:\git\test-framework-restassured-selenium-spring-00/log4j.properties
-System value 'log4j.overwrite' : false
-Modified properties file with key : log4j.appender.HTML_FILE.Append, Value : false
-Properties file on locationD:\git\test-framework-restassured-selenium-spring-00/log4j.properties updated
-Modified properties file with key : log4j.appender.FILE.Append, Value : false
-Properties file on locationD:\git\test-framework-restassured-selenium-spring-00/log4j.properties updated
-Initiating Method : checkCaseCalculationsOfTripuraIsGreaterThan10
-Navigated to : http://www.covid19India.org
-Screen shot captured at Covid19IndiaDashboard page
-Find the screen shot at : src/test/resources/shots/RDB_39_Covid19India_Covid19IndiaDashboard.jpg
-Column number with header Confirmed : 2
-Screen shot captured at explicit_failed page
-Find the screen shot at : src/test/resources/shots/RDB_40_Covid19India_explicit_failed.jpg
-]]></system-out>
-    <system-err><![CDATA[Apr 18, 2020 2:18:35 AM com.app.testautomation.listeners.MethodInvokeListener beforeInvocation
-INFO: Method finish is not enabled
-Apr 18, 2020 2:18:36 AM com.app.testautomation.listeners.MethodInvokeListener beforeInvocation
-INFO: Method initiateMethod is not enabled
-Starting ChromeDriver 80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}) on port 44193
-Only local connections are allowed.
-Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-[1587156519.146][WARNING]: Timed out connecting to Chrome, retrying...
-[1587156523.158][WARNING]: Timed out connecting to Chrome, retrying...
-Apr 18, 2020 2:18:45 AM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-log4j:WARN No such property [maxFileSize] in org.apache.log4j.FileAppender.
-log4j:WARN No such property [maxBackupIndex] in org.apache.log4j.FileAppender.
-[1587156526.110][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587156526.392][SEVERE]: Timed out receiving message from renderer: 0.100
-Apr 18, 2020 2:18:47 AM com.app.testautomation.listeners.BasicTestListeners onTestStart
-INFO: Executiing method : checkCaseCalculationsOfTripuraIsGreaterThan10
-Apr 18, 2020 2:18:47 AM com.app.testautomation.listeners.MethodInvokeListener beforeInvocation
-INFO: Method checkCaseCalculationsOfTripuraIsGreaterThan10 execution starts on : Sat Apr 18 02:18:47 IST 2020
-Apr 18, 2020 2:18:51 AM com.app.testautomation.listeners.MethodRerunListener retry
-INFO: Re-executing the method : checkCaseCalculationsOfTripuraIsGreaterThan10With count : 1
-Apr 18, 2020 2:18:51 AM com.app.testautomation.listeners.MethodInvokeListener afterInvocation
-INFO: MethodcheckCaseCalculationsOfTripuraIsGreaterThan10 execution completed on : Sat Apr 18 02:18:47 IST 2020
-]]></system-err>
-  </testcase>
-  <testcase name="checkCaseCalculationsOfTripuraIsGreaterThan10" classname="com.ui.testautomation.CovidIndiaUITest" time="3.284">
-    <failure message="Case count is not greater than 10 expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: Case count is not greater than 10 expected [true] but found [false]
-	at com.ui.testautomation.CovidIndiaUITest.checkCaseCalculationsOfTripuraIsGreaterThan10(CovidIndiaUITest.java:55)
-</failure>
-    <system-out><![CDATA[checkCaseCalculationsOfTripuraIsGreaterThan10 executed.
-Driver is closed
-Driver called off
-Driver session is not active
-invalid session id
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
-System info: host: 'RANADEEP_BANIK', ip: '192.168.1.75', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\ranad\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56361}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 7e31613f4197234c84cecf6cb7ffd862
-return new ApplicationContextInitiator()
-Application context created and initiated all the beans in Spring bean container
-Default properties/capabilities initiated for CHROME driver
-Default properties/capabilities initiated for FIREFOX driver
-Default properties/capabilities initiated for INTERNET EXPLORER driver
-Default properties/capabilities initiated for FIREFOX driver
-Driver instance is null
-Browser key provided : chrome
-Starting GOOGLE CHROME Driver....
-chrome browser initiated
-Driver implicit wait initiated for 30 SECONDS
-Screen shot captured while driver initiation
-Find the screen shot at : src/test/resources/shots/Abosulute-Driver_0_chrome.jpg
-Screen shot captured while driver initiation
-Find the screen shot at : src/test/resources/shots/Abosulute-Driver_1_chrome.jpg
-Browser window maximized
-WebDriver initiated
-Fetched properties file on location : D:\git\test-framework-restassured-selenium-spring-00/log4j.properties
-System value 'log4j.overwrite' : false
-Modified properties file with key : log4j.appender.HTML_FILE.Append, Value : false
-Properties file on locationD:\git\test-framework-restassured-selenium-spring-00/log4j.properties updated
-Modified properties file with key : log4j.appender.FILE.Append, Value : false
-Properties file on locationD:\git\test-framework-restassured-selenium-spring-00/log4j.properties updated
-Initiating Method : checkCaseCalculationsOfTripuraIsGreaterThan10
-Navigated to : http://www.covid19India.org
-Screen shot captured at Covid19IndiaDashboard page
-Find the screen shot at : src/test/resources/shots/RDB_41_Covid19India_Covid19IndiaDashboard.jpg
-Column number with header Confirmed : 2
-Screen shot captured at explicit_failed page
-Find the screen shot at : src/test/resources/shots/RDB_42_Covid19India_explicit_failed.jpg
-]]></system-out>
-    <system-err><![CDATA[Apr 18, 2020 2:18:51 AM com.app.testautomation.listeners.MethodInvokeListener beforeInvocation
-INFO: Method finish is not enabled
-Apr 18, 2020 2:18:51 AM com.app.testautomation.listeners.MethodInvokeListener beforeInvocation
-INFO: Method initiateMethod is not enabled
-Starting ChromeDriver 80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}) on port 38256
-Only local connections are allowed.
-Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-[1587156534.495][WARNING]: Timed out connecting to Chrome, retrying...
-[1587156538.504][WARNING]: Timed out connecting to Chrome, retrying...
-Apr 18, 2020 2:19:00 AM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-log4j:WARN No such property [maxFileSize] in org.apache.log4j.FileAppender.
-log4j:WARN No such property [maxBackupIndex] in org.apache.log4j.FileAppender.
-[1587156541.517][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587156541.873][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587156542.222][SEVERE]: Timed out receiving message from renderer: 0.100
-[1587156542.423][SEVERE]: Timed out receiving message from renderer: 0.100
-Apr 18, 2020 2:19:02 AM com.app.testautomation.listeners.BasicTestListeners onTestStart
-INFO: Executiing method : checkCaseCalculationsOfTripuraIsGreaterThan10
-Apr 18, 2020 2:19:02 AM com.app.testautomation.listeners.MethodInvokeListener beforeInvocation
-INFO: Method checkCaseCalculationsOfTripuraIsGreaterThan10 execution starts on : Sat Apr 18 02:19:02 IST 2020
-Apr 18, 2020 2:19:06 AM com.app.testautomation.listeners.MethodInvokeListener afterInvocation
-INFO: MethodcheckCaseCalculationsOfTripuraIsGreaterThan10 execution completed on : Sat Apr 18 02:19:02 IST 2020
-]]></system-err>
-  </testcase>
-  <testcase name="checkNoOfConfirmedCasesIsGreaterThan6000" classname="com.ui.testautomation.CovidIndiaUITest" time="0.585"/>
+  <testcase name="checkCaseCalculationsForAllStates" classname="com.ui.testautomation.CovidIndiaUITest" time="81.307"/>
 </testsuite>
