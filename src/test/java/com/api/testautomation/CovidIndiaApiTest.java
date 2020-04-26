@@ -44,7 +44,7 @@ public class CovidIndiaApiTest {
 		RestAssured.basePath = String.valueOf(configInstance.readLinkData(getValue(LINK)).get("base-path"));
 		RestAssured.given().
 			accept(ContentType.JSON).
-			headers(new Headers().getHeaders()).
+			headers(new Headers().setDefaultHeaders().getHeaders()).
 			get().
 			then().
 			assertThat().
@@ -58,7 +58,7 @@ public class CovidIndiaApiTest {
 		RestAssured.basePath = String.valueOf(configInstance.readLinkData(getValue(LINK)).get("base-path"));
 		Response response = RestAssured.given().
 			accept(ContentType.JSON).
-			headers(new Headers().getHeaders()).
+			headers(new Headers().setDefaultHeaders().getHeaders()).
 			get().
 			then().
 			assertThat().

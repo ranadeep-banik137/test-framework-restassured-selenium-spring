@@ -12,7 +12,9 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+import com.api.testautomation.configurations.Links;
 import com.app.testautomation.initiators.BaseSteps;
+import com.app.testautomation.initiators.RestCall;
 import com.app.testautomation.listeners.BasicTestListeners;
 import com.app.testautomation.listeners.MethodInterceptorListener;
 
@@ -37,6 +39,8 @@ public class CovidIndiaUITest extends BaseSteps {
 	@Test(enabled = true, groups = {"sanity"}, description = "Checks & verify the total case calculation after recovered and death for Maharashtra")
 	public void checkCaseCalculationsForDelhi() {
 		getCovid19Dashboard().validateStateCalculation("DELHI");
+		String apiCallResponse = getRestCall().link(Links.STATE_DISTRICT).getResponse();
+		System.out.println(apiCallResponse);
 	}
 	
 	@Test(groups = {"smoke"}, description = "Checks & verify the total case calculation after recovered and death for Chandigarh")

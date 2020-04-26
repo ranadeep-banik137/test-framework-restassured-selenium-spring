@@ -3,6 +3,7 @@ package com.app.testautomation.initiators;
 import static com.app.testautomation.initiators.SystemVariables.*;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
+import org.springframework.context.ApplicationContext;
 
 import com.app.testautomation.configurations.Log4jConfiguration;
 import com.app.testautomation.utilities.Assertions;
@@ -15,7 +16,7 @@ public class BaseSteps {
 
 	private static final Logger LOGGER = Logger.getLogger(BaseSteps.class);
 
-	private ApplicationContextInitiator init;
+	private ApplicationContext context;
 	private Covid19IndiaDashboard covid19Dashboard;
 	private Covid19IndiaDatabaseSheet covid19Datasheet;
 	private Driver driver;
@@ -24,6 +25,7 @@ public class BaseSteps {
 	private Assertions assertion;
 	@SuppressWarnings("unused")
 	private Log4jConfiguration log4j;
+	private RestCall restCall;
 		
 	protected BaseSteps() {
 		LOGGER.info("Base steps initiated");
@@ -54,13 +56,14 @@ public class BaseSteps {
 	
 	private void construct() {
 		FileUtils.flushFilesFromClassPath("src/test/resources/" + getValue("api") + "/shots");
-		this.init = ApplicationContextInitiator.getDefaultApplicationContextInitiator();
-		this.covid19Dashboard = (Covid19IndiaDashboard) this.init.getContext().getBean("covid19Dashboard");
-		this.covid19Datasheet = (Covid19IndiaDatabaseSheet) this.init.getContext().getBean("covid19Datasheet");
-		this.driver = (Driver) this.init.getContext().getBean("webDriver");
-		this.log4j = (Log4jConfiguration) this.init.getContext().getBean("log4j");
-		this.converter = (ImageConverterUtility) this.init.getContext().getBean("converter");
-		this.assertion = (Assertions) this.init.getContext().getBean("assert");
+		this.context = ApplicationContextInitiator.getDefaultApplicationContextInitiator().getContext();
+		this.covid19Dashboard = (Covid19IndiaDashboard) this.context.getBean("covid19Dashboard");
+		this.covid19Datasheet = (Covid19IndiaDatabaseSheet) this.context.getBean("covid19Datasheet");
+		this.driver = (Driver) this.context.getBean("webDriver");
+		this.log4j = (Log4jConfiguration) this.context.getBean("log4j");
+		this.converter = (ImageConverterUtility) this.context.getBean("converter");
+		this.assertion = (Assertions) this.context.getBean("assert");
+		this.restCall = (RestCall) this.context.getBean("rest");
 		setWebDriver(this.driver.getDriver());
 		setDefaultConverter();
 	}
@@ -79,5 +82,9 @@ public class BaseSteps {
 
 	protected Assertions Assert() {
 		return assertion;
+	}
+
+	public RestCall getRestCall() {
+		return restCall;
 	}
 }
