@@ -98,7 +98,7 @@ public class Covid19IndiaDashboard {
 		return totalNumberOfConfirmedCases;
 	}
 	
-	public void validateStateCalculation(String state) {
+	public void validateStateUICalculation(String state) {
 		try {
 		WebElement stateRow = getStateRowElement(state);
 		String parsedElement = ".//td[%s]";
@@ -133,11 +133,53 @@ public class Covid19IndiaDashboard {
 		return confirmedCases;
 	}
 	
+	public int getTotalActiveCountOf(String state) {
+		int activeCases = 0;
+		try {
+			WebElement stateRow = getStateRowElement(state);
+			String parsedElement = ".//td[%s]";
+			activeCases = Integer.parseInt(webElementModifier.appendWebElement(stateRow, By.xpath(String.format(parsedElement, getColumnNumber("Active")))).getText().replace(",", "").replace("-", "0"));
+		} catch (Exception exception) {
+			this.webDriverInitiator.takeScreenShot(PAGE_SOURCE + "_failed");
+			LOGGER.error(exception.getMessage());
+		}
+		return activeCases;
+	}
+	
+	
+	public int getTotalDeceasedCountOf(String state) {
+		int deceasedCases = 0;
+		try {
+			WebElement stateRow = getStateRowElement(state);
+			String parsedElement = ".//td[%s]";
+			String spanTag = "//span[@class='table__count-text']";
+			deceasedCases = Integer.parseInt(webElementModifier.appendWebElement(stateRow, By.xpath(String.format(parsedElement, getColumnNumber("Deceased")) + spanTag)).getText().replace(",", "").replace("-", "0"));
+		} catch (Exception exception) {
+			this.webDriverInitiator.takeScreenShot(PAGE_SOURCE + "_failed");
+			LOGGER.error(exception.getMessage());
+		}
+		return deceasedCases;
+	}
+	
+	public int getTotalRecoveredCountOf(String state) {
+		int recoveredCases = 0;
+		try {
+			WebElement stateRow = getStateRowElement(state);
+			String parsedElement = ".//td[%s]";
+			String spanTag = "//span[@class='table__count-text']";
+			recoveredCases = Integer.parseInt(webElementModifier.appendWebElement(stateRow, By.xpath(String.format(parsedElement, getColumnNumber("Recovered")) + spanTag)).getText().replace(",", "").replace("-", "0"));
+		} catch (Exception exception) {
+			this.webDriverInitiator.takeScreenShot(PAGE_SOURCE + "_failed");
+			LOGGER.error(exception.getMessage());
+		}
+		return recoveredCases;
+	}
+	
 	
 	public void validateAllStatesCaseCalculation() {
 		Iterator<WebElement> iterator = stateRows.iterator();
 		while (iterator.hasNext()) {
-			validateStateCalculation(iterator.next().findElement(By.xpath(String.format(".//td[%s]", getColumnNumber("State/UT")))).getText());
+			validateStateUICalculation(iterator.next().findElement(By.xpath(String.format(".//td[%s]", getColumnNumber("State/UT")))).getText());
 		}
 	}
 	

@@ -1,21 +1,13 @@
-import com.app.testautomation.factory.DriverFactory;
-import com.app.testautomation.initiators.WebdriverInitiator;
-import com.app.testautomation.initiators.ApplicationContextInitiator;
-import com.app.testautomation.initiators.SystemVariables;
-import com.ui.testautomation.CovidIndiaUITest;
-import com.ui.testautomation.driverconfigs.OperaDriverInitiator;
-import com.ui.testautomation.pageobjectmodels.Covid19IndiaDashboard;
-import com.ui.testautomation.pageobjectmodels.Covid19IndiaDatabaseSheet;
+import static com.app.testautomation.initiators.SystemVariables.BROWSER;
+import static com.app.testautomation.initiators.SystemVariables.getValue;
+import static com.app.testautomation.initiators.SystemVariables.setValue;
 
-import static com.app.testautomation.initiators.SystemVariables.*;
-
-import java.net.URL;
-
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebDriverException;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
+
+import com.app.testautomation.initiators.ApplicationContextInitiator;
+import com.ui.testautomation.pageobjectmodels.Covid19IndiaDashboard;
+import com.ui.testautomation.pageobjectmodels.Covid19IndiaDatabaseSheet;
 
 public class MainTest01 {
 	
@@ -64,7 +56,7 @@ public class MainTest01 {
 		  fac.browseToDashboard();
 		  //System.out.println(fac.getColumnNumber("CONFIRMED"));
 		  //fac.validateAllStatesCaseCalculation();
-		  fac.validateStateCalculation("MAHARASHTRA");
+		  fac.validateStateUICalculation("MAHARASHTRA");
 		  fac.viewPatientDataBasePage();
 		  Covid19IndiaDatabaseSheet data = (Covid19IndiaDatabaseSheet) init.getContext().getBean("covid19Datasheet");
 		  data.switchToDatabaseWindow();

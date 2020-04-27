@@ -1,7 +1,9 @@
 package com.ui.testautomation;
 
-import java.lang.reflect.Method;
+import static com.app.testautomation.utilities.Perform.getCount;
+import static com.app.testautomation.utilities.Perform.sumOf;
 
+import java.lang.reflect.Method;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.NoSuchSessionException;
@@ -14,9 +16,10 @@ import org.testng.annotations.Test;
 
 import com.api.testautomation.configurations.Links;
 import com.app.testautomation.initiators.BaseSteps;
-import com.app.testautomation.initiators.RestCall;
 import com.app.testautomation.listeners.BasicTestListeners;
 import com.app.testautomation.listeners.MethodInterceptorListener;
+
+import io.restassured.path.json.JsonPath;
 
 @Listeners({BasicTestListeners.class, MethodInterceptorListener.class})
 public class CovidIndiaUITest extends BaseSteps {
@@ -31,21 +34,50 @@ public class CovidIndiaUITest extends BaseSteps {
 	}
 	
 	@Test(enabled = true, description = "validate the number of total confirmed case is greater than 6000 in India")
-	public void checkNoOfConfirmedCasesIsGreaterThan6000() {
+	public void checkNoOfConfirmedCasesIsGreaterThan26000() {
 		int numberOfCases = getCovid19Dashboard().getTotalConfirmedCasesCount();
-		Assert.assertTrue(numberOfCases >= 6000, "Number of cases not greater than 6k");
+		Assert.assertTrue(numberOfCases >= 26000, "Number of cases not greater than 6k");
 	}
 	
 	@Test(enabled = true, groups = {"sanity"}, description = "Checks & verify the total case calculation after recovered and death for Maharashtra")
 	public void checkCaseCalculationsForDelhi() {
-		getCovid19Dashboard().validateStateCalculation("DELHI");
-		String apiCallResponse = getRestCall().link(Links.STATE_DISTRICT).getResponse();
-		System.out.println(apiCallResponse);
+		String state = "DELHI";
+		getCovid19Dashboard().validateStateUICalculation(state);
+		int confirmedCaseCount = getCovid19Dashboard().getTotalConfirmedCountOf(state);
+		int activeCaseCount = getCovid19Dashboard().getTotalActiveCountOf(state);
+		int recoveredCaseCount = getCovid19Dashboard().getTotalRecoveredCountOf(state);
+		int deceasedCaseCount = getCovid19Dashboard().getTotalDeceasedCountOf(state);
+		String apiCallResponse = restCall().link(Links.STATE_DISTRICT_V2).getResponse();
+		sumOf(JsonPath.from(apiCallResponse).getList("find { it.state == 'Delhi'}.districtData*.confirmed"));
+		int apiConfirmedCount = getCount();
+		sumOf(JsonPath.from(apiCallResponse).getList("find { it.state == 'Delhi'}.districtData*.active"));
+		int apiActiveCount = getCount();
+		sumOf(JsonPath.from(apiCallResponse).getList("find { it.state == 'Delhi'}.districtData*.recovered"));
+		int apiRecoveredCount = getCount();
+		sumOf(JsonPath.from(apiCallResponse).getList("find { it.state == 'Delhi'}.districtData*.deceased"));
+		int apiDeceasedCount = getCount();
+		Assert().assertTrue((confirmedCaseCount == apiConfirmedCount) && (activeCaseCount == apiActiveCount) && (recoveredCaseCount == apiRecoveredCount) && (deceasedCaseCount == apiDeceasedCount), "Data on UI & API doesnot match");
 	}
 	
 	@Test(groups = {"smoke"}, description = "Checks & verify the total case calculation after recovered and death for Chandigarh")
 	public void checkCaseCalculationsForChandigarh() {
-		getCovid19Dashboard().validateStateCalculation("CHANDIGARH");
+		String state = "CHANDIGARH";
+		getCovid19Dashboard().validateStateUICalculation(state);
+		int confirmedCaseCount = getCovid19Dashboard().getTotalConfirmedCountOf(state);
+		int activeCaseCount = getCovid19Dashboard().getTotalActiveCountOf(state);
+		int recoveredCaseCount = getCovid19Dashboard().getTotalRecoveredCountOf(state);
+		int deceasedCaseCount = getCovid19Dashboard().getTotalDeceasedCountOf(state);
+		String apiCallResponse = restCall().link(Links.STATE_DISTRICT_V2).getResponse();
+		sumOf(JsonPath.from(apiCallResponse).getList("find { it.state == 'Chandigarh'}.districtData*.confirmed"));
+		int apiConfirmedCount = getCount();
+		sumOf(JsonPath.from(apiCallResponse).getList("find { it.state == 'Chandigarh'}.districtData*.active"));
+		int apiActiveCount = getCount();
+		sumOf(JsonPath.from(apiCallResponse).getList("find { it.state == 'Chandigarh'}.districtData*.recovered"));
+		int apiRecoveredCount = getCount();
+		sumOf(JsonPath.from(apiCallResponse).getList("find { it.state == 'Chandigarh'}.districtData*.deceased"));
+		int apiDeceasedCount = getCount();
+		Assert().assertTrue((confirmedCaseCount == apiConfirmedCount) && (activeCaseCount == apiActiveCount) && (recoveredCaseCount == apiRecoveredCount) && (deceasedCaseCount == apiDeceasedCount), "Data on UI & API doesnot match");
+
 	}
 	
 	@Test(enabled = true, groups = {"smoke", "regression"}, description = "Checks & verify the total case calculation after recovered and death for all 32 states of INDIA")

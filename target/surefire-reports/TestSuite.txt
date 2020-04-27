@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 22.94 s - in TestSuite
+Tests run: 6, Failures: 1, Errors: 0, Skipped: 1, Time elapsed: 186.494 s <<< FAILURE! - in TestSuite
+checkCaseCalculationsOfTripuraIsGreaterThan10(com.ui.testautomation.CovidIndiaUITest)  Time elapsed: 2.58 s  <<< FAILURE!
+java.lang.AssertionError: Case count is not greater than 10 expected [true] but found [false]
+	at com.ui.testautomation.CovidIndiaUITest.checkCaseCalculationsOfTripuraIsGreaterThan10(CovidIndiaUITest.java:91)
+

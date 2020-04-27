@@ -68,7 +68,7 @@ public class ImageConverterUtility {
 		OpenCVFrameConverter.ToIplImage grabberConverter = new OpenCVFrameConverter.ToIplImage();
 		FFmpegFrameRecorder recorder = new FFmpegFrameRecorder(getVideoLocation() + "/" + getVideoFileName(), getWidthResolution(), getHeightResolution());
 		try {
-			recorder.setFrameRate(Double.valueOf(29.97));
+			recorder.setFrameRate(Double.valueOf(2));
 			recorder.setVideoCodec(avcodec.AV_CODEC_ID_MPEG4);
 			recorder.setVideoBitrate(9000);
 			recorder.setFormat(getVideoFormat() == null ? defaultVideoFormat : getVideoFormat());

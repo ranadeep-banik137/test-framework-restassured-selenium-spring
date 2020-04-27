@@ -13,6 +13,8 @@ public class SystemVariables {
 	public static final String GROUPS = "groups.include";
 	public static final String API = "api";
 	public static final String LINK = "link";
+	public static final String RETRY_COUNT = "retry-count";
+	public static final String RETRY_IF_FAILED = "retryIfFailed";
 	
 	public static String getValue(String key) {
 		return System.getenv(key) == null ? System.getProperty(key) : System.getenv(key);

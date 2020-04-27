@@ -84,7 +84,7 @@ public class BaseSteps {
 		return assertion;
 	}
 
-	public RestCall getRestCall() {
+	public RestCall restCall() {
 		return restCall;
 	}
 }

@@ -1,29 +1,15 @@
-2020-04-26 21:08:47 INFO  PropertiesFileReader:36 - Fetched properties file on location : D:\git\test-framework-restassured-selenium-spring-00/log4j.properties
-2020-04-26 21:08:47 INFO  Log4jConfiguration:30 - System value 'log4j.overwrite' : false
-2020-04-26 21:08:47 INFO  PropertiesFileReader:77 - Modified properties file with key : log4j.appender.HTML_FILE.Append, Value : false
-2020-04-26 21:08:47 INFO  PropertiesFileReader:90 - Properties file on locationD:\git\test-framework-restassured-selenium-spring-00/log4j.properties updated
-2020-04-26 21:08:47 INFO  PropertiesFileReader:77 - Modified properties file with key : log4j.appender.FILE.Append, Value : false
-2020-04-26 21:08:47 INFO  PropertiesFileReader:90 - Properties file on locationD:\git\test-framework-restassured-selenium-spring-00/log4j.properties updated
-2020-04-26 21:08:47 INFO  RestCall:33 - Spring Bean initiation of Rest Call class
-2020-04-26 21:08:47 INFO  Driver:51 - Driver session is active
-2020-04-26 21:08:47 INFO  CovidIndiaUITest:29 - Initiating Method : checkCaseCalculationsForDelhi
-2020-04-26 21:08:49 INFO  Covid19IndiaDashboard:86 - Navigated to : http://www.covid19India.org
-2020-04-26 21:08:50 INFO  Driver:73 - Screen shot captured at Covid19IndiaDashboard page
-2020-04-26 21:08:50 INFO  Driver:74 - Find the screen shot at : src/test/resources/shots/RDB_00_Covid19India_Covid19IndiaDashboard.jpg
-2020-04-26 21:08:52 INFO  Covid19IndiaDashboard:70 - Column number with header Confirmed : 2
-2020-04-26 21:08:53 INFO  Covid19IndiaDashboard:70 - Column number with header Active : 3
-2020-04-26 21:08:53 INFO  Covid19IndiaDashboard:70 - Column number with header Recovered : 4
-2020-04-26 21:08:53 INFO  Covid19IndiaDashboard:70 - Column number with header Deceased : 5
-2020-04-26 21:08:53 INFO  Covid19IndiaDashboard:110 - State :DELHI
-2020-04-26 21:08:53 INFO  Covid19IndiaDashboard:111 - Confirmed : 2625, Active : 1702, Recovered : 869, Deceased : 54
-2020-04-26 21:08:53 INFO  Covid19IndiaDashboard:112 - Verified Active Cases : Confirmed - Recovered + deceased
-2020-04-26 21:08:53 INFO  Covid19IndiaDashboard:113 - 2625 - 869 + 54 = 1702
-2020-04-26 21:08:53 INFO  Driver:73 - Screen shot captured at Covid19IndiaDashboard_DELHI_StateScenario page
-2020-04-26 21:08:53 INFO  Driver:74 - Find the screen shot at : src/test/resources/shots/RDB_01_Covid19India_Covid19IndiaDashboard_DELHI_StateScenario.jpg
-2020-04-26 21:08:53 INFO  PropertiesFileReader:36 - Fetched properties file on location : D:\git\test-framework-restassured-selenium-spring-00\src\test\resources\Covid19India\state-district\Headers.properties
-2020-04-26 21:08:53 INFO  ConfigReader:24 - Config file initiated
-2020-04-26 21:08:53 INFO  ConfigReader:34 - Fetching config property of : Covid19India
-2020-04-26 21:08:54 INFO  ConfigReader:40 - Fetching config property of : state-district
-2020-04-26 21:08:58 INFO  CovidIndiaUITest:65 - checkCaseCalculationsForDelhi executed.
-2020-04-26 21:08:58 INFO  CovidIndiaUITest:67 - Driver is closed
-2020-04-26 21:08:58 WARN  CovidIndiaUITest:68 - Driver called off
+2020-04-28 02:07:07 INFO  PropertiesFileReader:38 - Fetched properties file on location : D:\git\test-framework-restassured-selenium-spring-00/log4j.properties
+2020-04-28 02:07:07 INFO  Log4jConfiguration:30 - System value 'log4j.overwrite' : false
+2020-04-28 02:07:07 INFO  PropertiesFileReader:84 - Modified properties file with key : log4j.appender.HTML_FILE.Append, Value : false
+2020-04-28 02:07:07 INFO  PropertiesFileReader:97 - Properties file on locationD:\git\test-framework-restassured-selenium-spring-00/log4j.properties updated
+2020-04-28 02:07:07 INFO  PropertiesFileReader:84 - Modified properties file with key : log4j.appender.FILE.Append, Value : false
+2020-04-28 02:07:07 INFO  PropertiesFileReader:97 - Properties file on locationD:\git\test-framework-restassured-selenium-spring-00/log4j.properties updated
+2020-04-28 02:07:07 INFO  RestCall:33 - Spring Bean initiation of Rest Call class
+2020-04-28 02:07:07 INFO  CovidIndiaUITest:32 - Initiating Method : checkNoOfConfirmedCasesIsGreaterThan26000
+2020-04-28 02:07:09 INFO  Covid19IndiaDashboard:86 - Navigated to : http://www.covid19India.org
+2020-04-28 02:07:09 INFO  Driver:73 - Screen shot captured at Covid19IndiaDashboard page
+2020-04-28 02:07:09 INFO  Driver:74 - Find the screen shot at : src/test/resources/shots/RDB_42_Covid19India_Covid19IndiaDashboard.jpg
+2020-04-28 02:07:09 INFO  Covid19IndiaDashboard:97 - Total number of confirmed COVID19 cases in India : 29451
+2020-04-28 02:07:09 INFO  CovidIndiaUITest:97 - checkNoOfConfirmedCasesIsGreaterThan26000 executed.
+2020-04-28 02:07:10 INFO  CovidIndiaUITest:99 - Driver is closed
+2020-04-28 02:07:10 WARN  CovidIndiaUITest:100 - Driver called off

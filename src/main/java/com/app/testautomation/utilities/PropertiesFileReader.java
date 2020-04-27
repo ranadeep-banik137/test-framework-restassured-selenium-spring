@@ -28,17 +28,24 @@ public class PropertiesFileReader {
 	}
 
 	public PropertiesFileReader fetchPropertyFile(final String location) {
+		this.properties.clear();
 		this.setPath(location);
-		this.setFile(new File(this.getPath()));
 		try {
-			this.setInputStream(new FileInputStream(this.getFile()));
-			this.properties.load(this.getInputStream());
-			LOGGER.info("Fetched properties file on location : " + location);
-			this.inputStream.close();
+			this.setFile(new File(this.getPath()));
+			if (getFile().isFile()) {
+				this.setInputStream(new FileInputStream(this.getFile()));
+				this.properties.load(this.getInputStream());
+				LOGGER.info("Fetched properties file on location : " + location);
+				this.inputStream.close();
+			} else {
+				LOGGER.info("No such file found " + location);
+			}
 		} catch (FileNotFoundException fileNotFoundException) {
 			Logger.getLogger(fileNotFoundException.getCause().getMessage());
 		} catch (IOException ioException) {
 			Logger.getLogger(ioException.getCause().getMessage());
+		} catch (Exception exception) {
+			Logger.getLogger(exception.getCause().getMessage());
 		}
 		return this;
 	}
