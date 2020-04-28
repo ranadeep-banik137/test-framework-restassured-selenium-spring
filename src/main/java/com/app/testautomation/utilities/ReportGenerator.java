@@ -83,7 +83,7 @@ public class ReportGenerator {
 			String[] failedScreens = FileUtils.getFilesMatching(getValue(USER_DIR) + "/src/test/resources/" + getValue("api") + "/shots", "_failed");
 			if (failedScreens.length > 0) {
 				for (String screen : failedScreens) {
-					test.log(status, test.addScreenCapture(getValue(USER_DIR) + "/src/test/resources/" + getValue("api") + "/shots/" + screen), "Adding the screenshot " + screen + " as the test failed");
+					test.log(status, test.addScreenCapture(screen), "Adding the screenshot " + screen + " as the test failed");
 				}
 			}
 		}

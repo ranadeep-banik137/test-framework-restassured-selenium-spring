@@ -15,14 +15,14 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.api.testautomation.configurations.Links;
-import com.app.testautomation.initiators.BaseSteps;
 import com.app.testautomation.listeners.BasicTestListeners;
 import com.app.testautomation.listeners.MethodInterceptorListener;
+import com.ui.testautomation.pageobjectmodels.PageInitiator;
 
 import io.restassured.path.json.JsonPath;
 
 @Listeners({BasicTestListeners.class, MethodInterceptorListener.class})
-public class CovidIndiaUITest extends BaseSteps {
+public class CovidIndiaUITest extends PageInitiator {
 	
 	private static final Logger LOGGER = Logger.getLogger(CovidIndiaUITest.class);
 	

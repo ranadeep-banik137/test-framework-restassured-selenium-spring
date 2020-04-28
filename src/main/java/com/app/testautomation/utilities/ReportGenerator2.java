@@ -82,7 +82,7 @@ public class ReportGenerator2 {
 			if (failedScreens.length > 0) {
 				for (String screen : failedScreens) {
 					try {
-						test.addScreenCaptureFromPath(getValue(USER_DIR) + "/src/test/resources/" + getValue("api") + "/shots/" + screen);
+						test.addScreenCaptureFromPath(screen);
 					} catch (IOException exception) {
 						LOGGER.fatal(exception.getMessage());
 					}
@@ -93,6 +93,15 @@ public class ReportGenerator2 {
 			description = details + "," + "/n STATUS : SKIPPED";
 		}
 		test.log(status, MarkupHelper.createLabel(description, color));
+		return this;
+	}
+	
+	public ReportGenerator2 logWithVideo(ExtentTest test, Status status, String filePath) {
+		try {
+			test.addScreencastFromPath(filePath).info(filePath);
+		} catch (IOException exception) {
+			LOGGER.info(exception.getMessage());
+		}
 		return this;
 	}
 	

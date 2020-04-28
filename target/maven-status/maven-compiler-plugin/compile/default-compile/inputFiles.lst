@@ -17,6 +17,8 @@ D:\git\test-framework-restassured-selenium-spring-00\src\main\java\com\ui\testau
 D:\git\test-framework-restassured-selenium-spring-00\src\main\java\com\app\testautomation\utilities\FileUtils.java
 D:\git\test-framework-restassured-selenium-spring-00\src\main\java\com\app\testautomation\utilities\ReportGenerator.java
 D:\git\test-framework-restassured-selenium-spring-00\src\main\java\com\app\testautomation\listeners\MethodRerunListener.java
+D:\git\test-framework-restassured-selenium-spring-00\src\main\java\com\ui\testautomation\pageobjectmodels\PageInitiator.java
+D:\git\test-framework-restassured-selenium-spring-00\src\main\java\com\app\testautomation\initiators\TestBaseSteps.java
 D:\git\test-framework-restassured-selenium-spring-00\src\main\java\com\ui\testautomation\driverconfigs\FirefoxDriverInitiator.java
 D:\git\test-framework-restassured-selenium-spring-00\src\main\java\com\app\testautomation\utilities\Assertions.java
 D:\git\test-framework-restassured-selenium-spring-00\src\main\java\com\app\testautomation\initiators\WebdriverInitiator.java
@@ -31,6 +33,5 @@ D:\git\test-framework-restassured-selenium-spring-00\src\main\java\com\ui\testau
 D:\git\test-framework-restassured-selenium-spring-00\src\main\java\com\app\testautomation\initiators\RestCall.java
 D:\git\test-framework-restassured-selenium-spring-00\src\main\java\com\app\testautomation\utilities\Perform.java
 D:\git\test-framework-restassured-selenium-spring-00\src\main\java\com\app\testautomation\initiators\ApplicationContextInitiator.java
-D:\git\test-framework-restassured-selenium-spring-00\src\main\java\com\app\testautomation\initiators\BaseSteps.java
 D:\git\test-framework-restassured-selenium-spring-00\src\main\java\com\app\testautomation\listeners\BasicTestListeners.java
 D:\git\test-framework-restassured-selenium-spring-00\src\main\java\com\app\testautomation\listeners\AnnotationTransformerListener.java

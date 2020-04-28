@@ -89,18 +89,30 @@ public class BasicTestListeners implements ISuiteListener, ITestListener {
 	public void onTestSuccess(ITestResult result) {
 		this.reportGenerator.log(this.reportGenerator.getMethodTest(), LogStatus.PASS, result.getMethod().getDescription()).endTest(result);
 		this.reportGenerator2.log(this.reportGenerator2.getExtentTest(), Status.PASS, result.getMethod().getMethodName() + " : " +result.getMethod().getDescription());
+		String[] videoFiles = FileUtils.getFilesMatching(getValue(USER_DIR) + "/src/test/resources/"+ getValue("api") + "/videos", result.getMethod().getMethodName());
+		for (String file : videoFiles) {
+			this.reportGenerator2.logWithVideo(this.reportGenerator2.getExtentTest(), Status.INFO, file);
+		}
 	}
 
 	@Override
 	public void onTestFailure(ITestResult result) {
 		this.reportGenerator.log(this.reportGenerator.getMethodTest(), LogStatus.FAIL, result.getMethod().getDescription()).endTest(result);
 		this.reportGenerator2.log(this.reportGenerator2.getExtentTest(), Status.FAIL, result.getMethod().getMethodName() + " : " +result.getMethod().getDescription());
+		String[] videoFiles = FileUtils.getFilesMatching(getValue(USER_DIR) + "/src/test/resources/"+ getValue("api") + "/videos", result.getMethod().getMethodName());
+		for (String file : videoFiles) {
+			this.reportGenerator2.logWithVideo(this.reportGenerator2.getExtentTest(), Status.INFO, file);
+		}
 	}
 
 	@Override
 	public void onTestSkipped(ITestResult result) {
 		this.reportGenerator.log(this.reportGenerator.getMethodTest(), LogStatus.SKIP, result.getMethod().getDescription()).endTest(result);
 		this.reportGenerator2.log(this.reportGenerator2.getExtentTest(), Status.SKIP, result.getMethod().getMethodName() + " : " +result.getMethod().getDescription());
+		String[] videoFiles = FileUtils.getFilesMatching(getValue(USER_DIR) + "/src/test/resources/"+ getValue("api") + "/videos", result.getMethod().getMethodName());
+		for (String file : videoFiles) {
+			this.reportGenerator2.logWithVideo(this.reportGenerator2.getExtentTest(), Status.INFO, file);
+		}
 	}
 
 	@Override

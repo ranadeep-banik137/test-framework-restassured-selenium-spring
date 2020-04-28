@@ -1,6 +1,8 @@
 package com.app.testautomation.initiators;
 
-import static com.app.testautomation.initiators.SystemVariables.*;
+import static com.app.testautomation.initiators.SystemVariables.USER_DIR;
+import static com.app.testautomation.initiators.SystemVariables.getValue;
+
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.springframework.context.ApplicationContext;
@@ -9,16 +11,12 @@ import com.app.testautomation.configurations.Log4jConfiguration;
 import com.app.testautomation.utilities.Assertions;
 import com.app.testautomation.utilities.FileUtils;
 import com.app.testautomation.utilities.ImageConverterUtility;
-import com.ui.testautomation.pageobjectmodels.Covid19IndiaDashboard;
-import com.ui.testautomation.pageobjectmodels.Covid19IndiaDatabaseSheet;
 
-public class BaseSteps {
+public class TestBaseSteps {
 
-	private static final Logger LOGGER = Logger.getLogger(BaseSteps.class);
+	private static final Logger LOGGER = Logger.getLogger(TestBaseSteps.class);
 
 	private ApplicationContext context;
-	private Covid19IndiaDashboard covid19Dashboard;
-	private Covid19IndiaDatabaseSheet covid19Datasheet;
 	private Driver driver;
 	private WebDriver webDriver;
 	private ImageConverterUtility converter;
@@ -27,51 +25,35 @@ public class BaseSteps {
 	private Log4jConfiguration log4j;
 	private RestCall restCall;
 		
-	protected BaseSteps() {
+	protected TestBaseSteps() {
 		LOGGER.info("Base steps initiated");
 		construct();
 	}
 
-	protected Covid19IndiaDashboard getCovid19Dashboard() {
-		return covid19Dashboard;
-	}
-
-	protected Covid19IndiaDatabaseSheet getCovid19Datasheet() {
-		return covid19Datasheet;
-	}
-	
 	protected WebDriver getDriver() {
 		return this.webDriver;
 	}
 	
-	protected void initiateDriver() {
-		if (!driver.isDriverInitiated()) {
-			construct();
-		}
+	protected Driver getDriverInitiator() {
+		return this.driver;
 	}
-
+	
 	public void setWebDriver(WebDriver webDriver) {
 		this.webDriver = webDriver;
 	}
 	
-	private void construct() {
+	protected void construct() {
 		FileUtils.flushFilesFromClassPath("src/test/resources/" + getValue("api") + "/shots");
 		this.context = ApplicationContextInitiator.getDefaultApplicationContextInitiator().getContext();
-		this.covid19Dashboard = (Covid19IndiaDashboard) this.context.getBean("covid19Dashboard");
-		this.covid19Datasheet = (Covid19IndiaDatabaseSheet) this.context.getBean("covid19Datasheet");
-		this.driver = (Driver) this.context.getBean("webDriver");
-		this.log4j = (Log4jConfiguration) this.context.getBean("log4j");
-		this.converter = (ImageConverterUtility) this.context.getBean("converter");
-		this.assertion = (Assertions) this.context.getBean("assert");
-		this.restCall = (RestCall) this.context.getBean("rest");
+		this.driver = (Driver) this.getContext().getBean("webDriver");
+		this.log4j = (Log4jConfiguration) this.getContext().getBean("log4j");
+		this.converter = (ImageConverterUtility) this.getContext().getBean("converter");
+		this.assertion = (Assertions) this.getContext().getBean("assert");
+		this.restCall = (RestCall) this.getContext().getBean("rest");
 		setWebDriver(this.driver.getDriver());
 		setDefaultConverter();
 	}
 
-	protected ImageConverterUtility getConverter() {
-		return converter;
-	}
-	
 	private void setDefaultConverter() {
 		this.converter.setHeightResolution(720);
 		this.converter.setWidthResolution(1280);
@@ -84,7 +66,15 @@ public class BaseSteps {
 		return assertion;
 	}
 
-	public RestCall restCall() {
+	protected RestCall restCall() {
 		return restCall;
+	}
+
+	protected ApplicationContext getContext() {
+		return context;
+	}
+	
+	protected ImageConverterUtility getConverter() {
+		return converter;
 	}
 }
