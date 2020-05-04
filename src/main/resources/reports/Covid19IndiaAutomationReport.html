@@ -54,7 +54,7 @@
 					<i class='mdi-hardware-desktop-windows'></i>
 				</li>
 				<li>
-					<span class='suite-started-time'>2020-04-28 18:55:31</span>
+					<span class='suite-started-time'>2020-05-05 05:00:38</span>
 				</li>
 				<li>
 					<span>v2.41.1</span>
@@ -84,25 +84,25 @@
 					<div class='col l2 m4 s12'>
 						<div class='card suite-total-time-current'> 
 							<span class='panel-name'>Total Time Taken (Current Run)</span> 
-							<span class='suite-total-time-current-value panel-lead'>0h 0m 29s+119ms</span> 
+							<span class='suite-total-time-current-value panel-lead'>0h 6m 33s+140ms</span> 
 						</div> 
 					</div>
 					<div class='col l2 m4 s12'>
 						<div class='card suite-total-time-overall'> 
 							<span class='panel-name'>Total Time Taken (Overall)</span> 
-							<span class='suite-total-time-overall-value panel-lead'>0h 0m 29s+119ms</span> 
+							<span class='suite-total-time-overall-value panel-lead'>0h 6m 33s+140ms</span> 
 						</div> 
 					</div>
 					<div class='col l2 m4 s6 suite-start-time'>
 						<div class='card accent green-accent'> 
 							<span class='panel-name'>Start</span> 
-							<span class='panel-lead suite-started-time'>2020-04-28 18:55:01</span> 
+							<span class='panel-lead suite-started-time'>2020-05-05 04:54:05</span> 
 						</div> 
 					</div>
 					<div class='col l2 m4 s6 suite-end-time'>
 						<div class='card accent pink-accent'> 
 							<span class='panel-name'>End</span> 
-							<span class='panel-lead suite-ended-time'>2020-04-28 18:55:31</span> 
+							<span class='panel-lead suite-ended-time'>2020-05-05 05:00:38</span> 
 						</div> 
 					</div>
 				</div>
@@ -205,7 +205,12 @@
 									<tbody>
 											<tr>
 												<td>
-													failed
+													regression
+												</td>
+											</tr>
+											<tr>
+												<td>
+													smoke
 												</td>
 											</tr>
 									</tbody>
@@ -241,7 +246,8 @@
 										<i class='mdi-maps-local-offer'></i>
 									</a>
 									<ul id='category-toggle' class='dropdown-content'>
-											<li class='failed'><a href='#!'>failed</a></li>
+											<li class='regression'><a href='#!'>regression</a></li>
+											<li class='smoke'><a href='#!'>smoke</a></li>
 										<li class='divider'></li>
 										<li class='clear'><a href='#!'>Clear Filters</a></li>
 									</ul>
@@ -273,23 +279,27 @@
 						<div class='card-panel no-padding-h no-padding-v no-margin-v'>
 							<div class='wrapper'>
 								<ul id='test-collection' class='test-collection'>
-										<li class='collection-item test displayed active skip hasChildren' extentid='2b5a1631-a6d2-483e-9482-35bce758623a'>
+										<li class='collection-item test displayed active fail hasChildren' extentid='843d72e1-4c6f-4879-8d78-92e3213c9271'>
 											<div class='test-head'>
 												<span class='test-name'>Covid19India UI Test </span>
-												<span class='test-status label right outline capitalize skip'>skip</span>
-												<span class='category-assigned hide  failed failed'></span>
+												<span class='test-status label right outline capitalize fail'>fail</span>
+												<span class='category-assigned hide  regression smoke regression regression regression regression'></span>
 											</div>
 											<div class='test-body'>
 												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2020-04-28 18:55:01</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2020-04-28 18:55:08</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 6s+138ms</span>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2020-05-05 04:54:05</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2020-05-05 04:54:35</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 29s+860ms</span>
 												</div>
 												<div class='test-desc'>Covid19IndiaTestReport</div>
 												<div class='test-attributes'>
 														<div class='categories'>
-																<span class='category text-white'>failed</span>
-																<span class='category text-white'>failed</span>
+																<span class='category text-white'>regression</span>
+																<span class='category text-white'>smoke</span>
+																<span class='category text-white'>regression</span>
+																<span class='category text-white'>regression</span>
+																<span class='category text-white'>regression</span>
+																<span class='category text-white'>regression</span>
 														</div>
 														<div class='authors'>
 																<span class='author text-white'>ranad</span>
@@ -308,23 +318,47 @@
 														<tbody>
 																<tr>
 																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>18:55:30</td>
-																		<td class='step-name'><video id='video' width='50%' controls><source src='file:///D:\git\test-framework-restassured-selenium-spring-00\src\test\resources\Covid19India\videos\Covid19IndiaUITest_checkCaseCalculationsOfTripuraIsGreaterThan10.mp4'>Your browser does not support the video tag.</video></td>
-																	<td class='step-details'>Video clip of execution method checkCaseCalculationsOfTripuraIsGreaterThan10</td>
+																	<td class='timestamp'>05:00:38</td>
+																		<td class='step-name'><video id='video' width='50%' controls><source src='file:///D:\git\test-framework-restassured-selenium-spring-00\src\test\resources\Covid19India\videos\Covid19IndiaUITest_verifyUnknownWhiteZonesOfMaharashtra.mp4'>Your browser does not support the video tag.</video></td>
+																	<td class='step-details'>Video clip of execution method verifyUnknownWhiteZonesOfMaharashtra</td>
+																</tr>
+																<tr>
+																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+																	<td class='timestamp'>05:00:38</td>
+																		<td class='step-name'><video id='video' width='50%' controls><source src='file:///D:\git\test-framework-restassured-selenium-spring-00\src\test\resources\Covid19India\videos\Covid19IndiaUITest_verifyOrangeZonesOfMaharashtra.mp4'>Your browser does not support the video tag.</video></td>
+																	<td class='step-details'>Video clip of execution method verifyOrangeZonesOfMaharashtra</td>
+																</tr>
+																<tr>
+																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+																	<td class='timestamp'>05:00:38</td>
+																		<td class='step-name'><video id='video' width='50%' controls><source src='file:///D:\git\test-framework-restassured-selenium-spring-00\src\test\resources\Covid19India\videos\Covid19IndiaUITest_checkCaseCalculationsForAllStates.mp4'>Your browser does not support the video tag.</video></td>
+																	<td class='step-details'>Video clip of execution method checkCaseCalculationsForAllStates</td>
+																</tr>
+																<tr>
+																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+																	<td class='timestamp'>05:00:38</td>
+																		<td class='step-name'><video id='video' width='50%' controls><source src='file:///D:\git\test-framework-restassured-selenium-spring-00\src\test\resources\Covid19India\videos\Covid19IndiaUITest_verifyRedZonesOfMaharashtra.mp4'>Your browser does not support the video tag.</video></td>
+																	<td class='step-details'>Video clip of execution method verifyRedZonesOfMaharashtra</td>
+																</tr>
+																<tr>
+																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+																	<td class='timestamp'>05:00:38</td>
+																		<td class='step-name'><video id='video' width='50%' controls><source src='file:///D:\git\test-framework-restassured-selenium-spring-00\src\test\resources\Covid19India\videos\Covid19IndiaUITest_verifyGreenZonesOfMaharashtra.mp4'>Your browser does not support the video tag.</video></td>
+																	<td class='step-details'>Video clip of execution method verifyGreenZonesOfMaharashtra</td>
 																</tr>
 														</tbody>
 													</table>
 													<ul class='collapsible node-list' data-collapsible='accordion'>
-																	<li class='displayed skip node-1x'>
-																		<div class='collapsible-header test-node skip'>
+																	<li class='displayed fail node-1x'>
+																		<div class='collapsible-header test-node fail'>
 																			<div class='right test-info'>
 																				<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-2 text-white'>1970-01-01 05:29:59</span>
-																				<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-2 text-white'>2020-04-28 18:55:04</span>
-																				<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-2 text-white'>441133h 25m 4s+875ms</span>
-																				<span class='test-status label outline capitalize skip'>skip</span>
+																				<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-2 text-white'>2020-05-05 04:54:08</span>
+																				<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-2 text-white'>441287h 24m 8s+938ms</span>
+																				<span class='test-status label outline capitalize fail'>fail</span>
 																			</div>
-																			<div class='test-node-name'>checkCaseCalculationsOfTripuraIsGreaterThan10</div>
-																				<div class='test-node-desc'>Method Id - 1936670366 : check case count of Tripura is more than 10</div>
+																			<div class='test-node-name'>checkCaseCalculationsForAllStates</div>
+																				<div class='test-node-desc'>Method Id - 1632497828 : Checks & verify the total case calculation after recovered and death for all 32 states of INDIA</div>
 																		</div>
 																		<div class='collapsible-body'>
 																			<div class='test-steps'>
@@ -339,10 +373,112 @@
 																					</thead>
 																					<tbody>
 																							<tr>
-																								<td class='status skip' title='skip' alt='skip'><i class='mdi-content-redo'></i></td>
-																								<td class='timestamp'>18:55:08</td>
-																									<td class='step-name'>Method Name : Method Id - 1936670366 : check case count of Tripura is more than 10</td>
-																								<td class='step-details'>check case count of Tripura is more than 10</td>
+																								<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+																								<td class='timestamp'>04:54:35</td>
+																									<td class='step-name'>Method Name : Method Id - 1632497828 : Checks & verify the total case calculation after recovered and death for all 32 states of INDIA</td>
+																								<td class='step-details'>Checks & verify the total case calculation after recovered and death for all 32 states of INDIA</td>
+																							</tr>
+																					</tbody>
+																				</table>
+																			</div>
+																		</div>
+																	</li>
+																	<li class='displayed pass node-1x'>
+																		<div class='collapsible-header test-node pass'>
+																			<div class='right test-info'>
+																				<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-2 text-white'>1970-01-01 05:29:59</span>
+																				<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-2 text-white'>2020-05-05 04:54:57</span>
+																				<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-2 text-white'>441287h 24m 57s+622ms</span>
+																				<span class='test-status label outline capitalize pass'>pass</span>
+																			</div>
+																			<div class='test-node-name'>verifyGreenZonesOfMaharashtra</div>
+																				<div class='test-node-desc'>Method Id - 1632497828 : Check the Green zones of state Maharashtra</div>
+																		</div>
+																		<div class='collapsible-body'>
+																			<div class='test-steps'>
+																				<table class='bordered table-results'>
+																					<thead>
+																						<tr>
+																							<th>Status</th>
+																							<th>Timestamp</th>
+																								<th>StepName</th>
+																							<th>Details</th>
+																						</tr>
+																					</thead>
+																					<tbody>
+																							<tr>
+																								<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																								<td class='timestamp'>04:56:24</td>
+																									<td class='step-name'>Method Name : Method Id - 1632497828 : Check the Green zones of state Maharashtra</td>
+																								<td class='step-details'>Check the Green zones of state Maharashtra</td>
+																							</tr>
+																					</tbody>
+																				</table>
+																			</div>
+																		</div>
+																	</li>
+																	<li class='displayed pass node-1x'>
+																		<div class='collapsible-header test-node pass'>
+																			<div class='right test-info'>
+																				<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-2 text-white'>1970-01-01 05:29:59</span>
+																				<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-2 text-white'>2020-05-05 04:56:45</span>
+																				<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-2 text-white'>441287h 26m 45s+719ms</span>
+																				<span class='test-status label outline capitalize pass'>pass</span>
+																			</div>
+																			<div class='test-node-name'>verifyOrangeZonesOfMaharashtra</div>
+																				<div class='test-node-desc'>Method Id - 1632497828 : Check the Orange zones of state Maharashtra</div>
+																		</div>
+																		<div class='collapsible-body'>
+																			<div class='test-steps'>
+																				<table class='bordered table-results'>
+																					<thead>
+																						<tr>
+																							<th>Status</th>
+																							<th>Timestamp</th>
+																								<th>StepName</th>
+																							<th>Details</th>
+																						</tr>
+																					</thead>
+																					<tbody>
+																							<tr>
+																								<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																								<td class='timestamp'>04:58:19</td>
+																									<td class='step-name'>Method Name : Method Id - 1632497828 : Check the Orange zones of state Maharashtra</td>
+																								<td class='step-details'>Check the Orange zones of state Maharashtra</td>
+																							</tr>
+																					</tbody>
+																				</table>
+																			</div>
+																		</div>
+																	</li>
+																	<li class='displayed pass node-1x'>
+																		<div class='collapsible-header test-node pass'>
+																			<div class='right test-info'>
+																				<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-2 text-white'>1970-01-01 05:29:59</span>
+																				<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-2 text-white'>2020-05-05 04:58:40</span>
+																				<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-2 text-white'>441287h 28m 40s+610ms</span>
+																				<span class='test-status label outline capitalize pass'>pass</span>
+																			</div>
+																			<div class='test-node-name'>verifyRedZonesOfMaharashtra</div>
+																				<div class='test-node-desc'>Method Id - 1632497828 : Check the Red zones of state Maharashtra</div>
+																		</div>
+																		<div class='collapsible-body'>
+																			<div class='test-steps'>
+																				<table class='bordered table-results'>
+																					<thead>
+																						<tr>
+																							<th>Status</th>
+																							<th>Timestamp</th>
+																								<th>StepName</th>
+																							<th>Details</th>
+																						</tr>
+																					</thead>
+																					<tbody>
+																							<tr>
+																								<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																								<td class='timestamp'>05:00:09</td>
+																									<td class='step-name'>Method Name : Method Id - 1632497828 : Check the Red zones of state Maharashtra</td>
+																								<td class='step-details'>Check the Red zones of state Maharashtra</td>
 																							</tr>
 																					</tbody>
 																				</table>
@@ -353,12 +489,12 @@
 																		<div class='collapsible-header test-node fail'>
 																			<div class='right test-info'>
 																				<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-2 text-white'>1970-01-01 05:29:59</span>
-																				<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-2 text-white'>2020-04-28 18:55:27</span>
-																				<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-2 text-white'>441133h 25m 27s+286ms</span>
+																				<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-2 text-white'>2020-05-05 05:00:31</span>
+																				<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-2 text-white'>441287h 30m 31s+868ms</span>
 																				<span class='test-status label outline capitalize fail'>fail</span>
 																			</div>
-																			<div class='test-node-name'>checkCaseCalculationsOfTripuraIsGreaterThan10</div>
-																				<div class='test-node-desc'>Method Id - 1936670366 : check case count of Tripura is more than 10</div>
+																			<div class='test-node-name'>verifyUnknownWhiteZonesOfMaharashtra</div>
+																				<div class='test-node-desc'>Method Id - 1632497828 : Check the White unknown zones of state Maharashtra</div>
 																		</div>
 																		<div class='collapsible-body'>
 																			<div class='test-steps'>
@@ -374,15 +510,9 @@
 																					<tbody>
 																							<tr>
 																								<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
-																								<td class='timestamp'>18:55:30</td>
-																									<td class='step-name'><a href='D:\git\test-framework-restassured-selenium-spring-00\src\test\resources\Covid19India\shots\RDB_03_Covid19India_explicit_failed.jpg' data-featherlight='image'><img class='report-img' src='file:///D:\git\test-framework-restassured-selenium-spring-00\src\test\resources\Covid19India\shots\RDB_03_Covid19India_explicit_failed.jpg' /></a></td>
-																								<td class='step-details'>Adding the screenshot D:\git\test-framework-restassured-selenium-spring-00\src\test\resources\Covid19India\shots\RDB_03_Covid19India_explicit_failed.jpg as the test failed</td>
-																							</tr>
-																							<tr>
-																								<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
-																								<td class='timestamp'>18:55:30</td>
-																									<td class='step-name'>Method Name : Method Id - 1936670366 : check case count of Tripura is more than 10</td>
-																								<td class='step-details'>check case count of Tripura is more than 10</td>
+																								<td class='timestamp'>05:00:37</td>
+																									<td class='step-name'>Method Name : Method Id - 1632497828 : Check the White unknown zones of state Maharashtra</td>
+																								<td class='step-details'>Check the White unknown zones of state Maharashtra</td>
 																							</tr>
 																					</tbody>
 																				</table>
@@ -442,17 +572,17 @@
 									<ul id='cat-collection' class='cat-collection'>
 											<li class='category-item displayed'>
 												<div class='cat-head'>
-													<span class='category-name'>failed</span>
+													<span class='category-name'>regression</span>
 												</div>
 												<div class='category-status-counts'>
-														<span class='other label dot'>Others: 1</span>
+														<span class='fail label dot'>Fail: 1</span>
 												</div>
 												<div class='cat-body'>
 													<div class='category-status-counts'>
 														<div class='button-group'>
 															<a href='#!' class='pass label filter'>Pass <span class='icon'>0</span></a>
-															<a href='#!' class='fail label filter'>Fail <span class='icon'>0</span></a>
-															<a href='#!' class='other label filter'>Others <span class='icon'>1</span></a>
+															<a href='#!' class='fail label filter'>Fail <span class='icon'>1</span></a>
+															<a href='#!' class='other label filter'>Others <span class='icon'>0</span></a>
 														</div>
 													</div>
 													<div class='cat-tests'>
@@ -465,10 +595,45 @@
 																</tr>
 															</thead>
 															<tbody>
-																	<tr class='skip'>
-																		<td>2020-04-28 18:55:01</td>
-																		<td><span class='category-link linked' extentid='2b5a1631-a6d2-483e-9482-35bce758623a'>Covid19India UI Test</span></td>
-																		<td><div class='status label capitalize skip'>skip</div></td>
+																	<tr class='fail'>
+																		<td>2020-05-05 04:54:05</td>
+																		<td><span class='category-link linked' extentid='843d72e1-4c6f-4879-8d78-92e3213c9271'>Covid19India UI Test</span></td>
+																		<td><div class='status label capitalize fail'>fail</div></td>
+																	</tr>
+															<tbody>
+														</table>
+													</div>
+												</div> 
+											</li>
+											<li class='category-item displayed'>
+												<div class='cat-head'>
+													<span class='category-name'>smoke</span>
+												</div>
+												<div class='category-status-counts'>
+														<span class='fail label dot'>Fail: 1</span>
+												</div>
+												<div class='cat-body'>
+													<div class='category-status-counts'>
+														<div class='button-group'>
+															<a href='#!' class='pass label filter'>Pass <span class='icon'>0</span></a>
+															<a href='#!' class='fail label filter'>Fail <span class='icon'>1</span></a>
+															<a href='#!' class='other label filter'>Others <span class='icon'>0</span></a>
+														</div>
+													</div>
+													<div class='cat-tests'>
+														<table class='bordered'>
+															<thead>
+																<tr>
+																	<th>RunDate</th>
+																	<th>Test Name</th>
+																	<th>Status</th>
+																</tr>
+															</thead>
+															<tbody>
+																	<tr class='fail'>
+																		<td>2020-05-05 04:54:05</td>
+																		<td><span class='category-link linked' extentid='843d72e1-4c6f-4879-8d78-92e3213c9271'>Covid19India UI Test</span></td>
+																		<td><div class='status label capitalize fail'>fail</div></td>
 																	</tr>
 															<tbody>
 														</table>

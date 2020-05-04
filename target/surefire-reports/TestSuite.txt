@@ -1,8 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 1, Time elapsed: 41.305 s <<< FAILURE! - in TestSuite
-checkCaseCalculationsOfTripuraIsGreaterThan10(com.ui.testautomation.CovidIndiaUITest)  Time elapsed: 3.172 s  <<< FAILURE!
-java.lang.AssertionError: Case count is not greater than 10 expected [true] but found [false]
-	at com.ui.testautomation.CovidIndiaUITest.checkCaseCalculationsOfTripuraIsGreaterThan10(CovidIndiaUITest.java:91)
+Tests run: 5, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 405.428 s <<< FAILURE! - in TestSuite
+checkCaseCalculationsForAllStates(com.ui.testautomation.CovidIndiaUITest)  Time elapsed: 26.352 s  <<< FAILURE!
+java.lang.AssertionError: Case calculations are not matching expected [true] but found [false]
+	at com.ui.testautomation.CovidIndiaUITest.checkCaseCalculationsForAllStates(CovidIndiaUITest.java:88)
+
+verifyUnknownWhiteZonesOfMaharashtra(com.ui.testautomation.CovidIndiaUITest)  Time elapsed: 6.065 s  <<< FAILURE!
+java.lang.StringIndexOutOfBoundsException: String index out of range: 0
+	at com.ui.testautomation.CovidIndiaUITest.verifyUnknownWhiteZonesOfMaharashtra(CovidIndiaUITest.java:131)
 

@@ -4,7 +4,10 @@ import static com.app.testautomation.utilities.Perform.getCount;
 import static com.app.testautomation.utilities.Perform.sumOf;
 
 import java.lang.reflect.Method;
+import java.util.List;
+import java.util.Map;
 
+import org.apache.commons.lang3.StringUtils;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.NoSuchSessionException;
 import org.testng.Assert;
@@ -89,6 +92,48 @@ public class CovidIndiaUITest extends PageInitiator {
 	public void checkCaseCalculationsOfTripuraIsGreaterThan10() {
 		int cases = getCovid19Dashboard().getTotalConfirmedCountOf("TRIPURA");
 		Assert().assertTrue(cases > 10, "Case count is not greater than 10");
+	}
+	
+	/** Zone testing */
+	
+	@Test(groups = {"regression"}, description = "Check the Red zones of state Maharashtra")
+	public void verifyRedZonesOfMaharashtra() {
+		Map<String, List<String>> zoneMapper = getCovid19Dashboard().getDistrictsAsPerZoneForAllStates("red");
+		String apiCallResponse = restCall().link(Links.ZONES).getResponse();
+		zoneMapper.forEach((state,list) -> {
+			List<String> apiList = JsonPath.from(apiCallResponse).getList("zones.findAll { it.state == '" + state + "' && it.zone == 'Red'}.district");
+			Assert().assertTrue(apiList.containsAll(list), "Api Red Listed District List Is Not Matching With UI List");
+		});
+	}
+	
+	@Test(groups = {"regression"}, description = "Check the Green zones of state Maharashtra")
+	public void verifyGreenZonesOfMaharashtra() {
+		Map<String, List<String>> zoneMapper = getCovid19Dashboard().getDistrictsAsPerZoneForAllStates("green");
+		String apiCallResponse = restCall().link(Links.ZONES).getResponse();
+		zoneMapper.forEach((state,list) -> {
+			List<String> apiList = JsonPath.from(apiCallResponse).getList("zones.findAll { it.state == '" + state + "' && it.zone == 'Green'}.district");
+			Assert().assertTrue(apiList.containsAll(list), "Api Green Listed District List Is Not Matching With UI List");
+		});
+	}
+	
+	@Test(groups = {"regression"}, description = "Check the Orange zones of state Maharashtra")
+	public void verifyOrangeZonesOfMaharashtra() {
+		Map<String, List<String>> zoneMapper = getCovid19Dashboard().getDistrictsAsPerZoneForAllStates("orange");
+		String apiCallResponse = restCall().link(Links.ZONES).getResponse();
+		zoneMapper.forEach((state,list) -> {
+			List<String> apiList = JsonPath.from(apiCallResponse).getList("zones.findAll { it.state == '" + state + "' && it.zone == 'Orange'}.district");
+			Assert().assertTrue(apiList.containsAll(list), "Api Orange Listed District List Is Not Matching With UI List");
+		});
+	}
+	
+	@Test(groups = {"regression"}, description = "Check the White unknown zones of state Maharashtra")
+	public void verifyUnknownWhiteZonesOfMaharashtra() {
+		Map<String, List<String>> zoneMapper = getCovid19Dashboard().getDistrictsAsPerZoneForAllStates(StringUtils.EMPTY);
+		String apiCallResponse = restCall().link(Links.ZONES).getResponse();
+		zoneMapper.forEach((state,list) -> {
+			List<String> apiList = JsonPath.from(apiCallResponse).getList("zones.findAll { it.state == '" + state + "' && it.zone == ''}.district");
+			Assert().assertTrue(apiList.containsAll(list), "Api White Listed District List Is Not Matching With UI List");
+		});
 	}
 	
 	@AfterMethod(enabled = true)

@@ -9,7 +9,8 @@ public enum Links {
 	RAW_DATA("raw-data"), 
 	STATE_DAILY_CHANGES("states-daily-changes"), 
 	DEATHS_AND_RECOVERY("deaths-and-recovery"), 
-	ESSENTIALS("essentials-resources");
+	ESSENTIALS("essentials-resources"),
+	ZONES("zones");
 	
 	private String value;
 

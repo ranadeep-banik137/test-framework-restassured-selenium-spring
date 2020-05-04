@@ -6,8 +6,9 @@
       <class name="com.ui.testautomation.CovidIndiaUITest">
         <methods>
           <include name="finish"/>
-          <include name="checkCaseCalculationsOfTripuraIsGreaterThan10"/>
+          <include name="checkCaseCalculationsForAllStates"/>
           <include name="quit"/>
+          <include name="verifyUnknownWhiteZonesOfMaharashtra"/>
           <include name="initiateMethod"/>
         </methods>
       </class> <!-- com.ui.testautomation.CovidIndiaUITest -->
