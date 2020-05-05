@@ -3,15 +3,18 @@ package com.app.testautomation.utilities;
 import static com.app.testautomation.initiators.SystemVariables.*;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
+import com.google.common.io.Files;
+
 public class FileUtils {
 
-	//private String location;
+	private static int counter = 0;
 	
 	public static String[] getFilesMatching(String location, String fileNamePart) {
 		File path = new File(location);
@@ -56,6 +59,26 @@ public class FileUtils {
 				file.delete();
 			}
 		}
+	}
+	
+	public static String copyFile(String path, String newPath) {
+		File file = new File(path);
+		File newFile = new File(newPath);
+		if (file.exists()) {
+			try {
+				Files.copy(file, newFile);
+			} catch (IOException ioexception) {
+				ioexception.printStackTrace();
+			}
+		}
+		return newFile.exists() ? newPath : null;
+	}
+	
+	public static String copyFileToTarget(String path) {
+		String fileFormat = path.split("\\.")[1];
+		String newPath = getValue(USER_DIR) + "/target/" + "Failed" + (counter < 10 ? "0" + counter : counter) + "." + fileFormat;
+		counter++;
+		return copyFile(path, newPath);
 	}
 }
 

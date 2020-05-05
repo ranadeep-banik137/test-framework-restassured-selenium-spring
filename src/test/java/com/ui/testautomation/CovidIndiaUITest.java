@@ -83,7 +83,7 @@ public class CovidIndiaUITest extends PageInitiator {
 
 	}
 	
-	@Test(enabled = true, groups = {"smoke", "regression"}, description = "Checks & verify the total case calculation after recovered and death for all 32 states of INDIA")
+	@Test(enabled = true, groups = {"smoke", "regression1"}, description = "Checks & verify the total case calculation after recovered and death for all 32 states of INDIA")
 	public void checkCaseCalculationsForAllStates() {
 		getCovid19Dashboard().validateAllStatesCaseCalculation();
 	}

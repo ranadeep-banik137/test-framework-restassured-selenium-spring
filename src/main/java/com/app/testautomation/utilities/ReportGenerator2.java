@@ -82,6 +82,7 @@ public class ReportGenerator2 {
 			if (failedScreens.length > 0) {
 				for (String screen : failedScreens) {
 					try {
+						screen = FileUtils.copyFileToTarget(screen);
 						test.addScreenCaptureFromPath(screen);
 					} catch (IOException exception) {
 						LOGGER.fatal(exception.getMessage());

@@ -6,7 +6,6 @@
       <class name="com.ui.testautomation.CovidIndiaUITest">
         <methods>
           <include name="finish"/>
-          <include name="checkCaseCalculationsForAllStates"/>
           <include name="checkCaseCalculationsForDelhi"/>
           <include name="quit"/>
           <include name="initiateMethod"/>

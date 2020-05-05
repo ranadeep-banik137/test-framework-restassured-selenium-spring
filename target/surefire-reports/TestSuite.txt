@@ -1,12 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 10, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 822.196 s <<< FAILURE! - in TestSuite
-checkCaseCalculationsForAllStates(com.ui.testautomation.CovidIndiaUITest)  Time elapsed: 33.677 s  <<< FAILURE!
-java.lang.AssertionError: Case calculations are not matching expected [true] but found [false]
-	at com.ui.testautomation.CovidIndiaUITest.checkCaseCalculationsForAllStates(CovidIndiaUITest.java:88)
-
-checkCaseCalculationsForDelhi(com.ui.testautomation.CovidIndiaUITest)  Time elapsed: 10.863 s  <<< FAILURE!
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 152.232 s <<< FAILURE! - in TestSuite
+checkCaseCalculationsForDelhi(com.ui.testautomation.CovidIndiaUITest)  Time elapsed: 12.114 s  <<< FAILURE!
 java.lang.AssertionError: Data on UI & API doesnot match expected [true] but found [false]
 	at com.ui.testautomation.CovidIndiaUITest.checkCaseCalculationsForDelhi(CovidIndiaUITest.java:62)
 
