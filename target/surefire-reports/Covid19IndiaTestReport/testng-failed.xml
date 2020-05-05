@@ -7,8 +7,8 @@
         <methods>
           <include name="finish"/>
           <include name="checkCaseCalculationsForAllStates"/>
+          <include name="checkCaseCalculationsForDelhi"/>
           <include name="quit"/>
-          <include name="verifyUnknownWhiteZonesOfMaharashtra"/>
           <include name="initiateMethod"/>
         </methods>
       </class> <!-- com.ui.testautomation.CovidIndiaUITest -->

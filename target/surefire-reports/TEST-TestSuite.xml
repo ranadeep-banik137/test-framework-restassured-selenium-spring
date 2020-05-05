@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="405.428" tests="5" errors="0" skipped="0" failures="2">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="822.196" tests="10" errors="0" skipped="0" failures="2">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -16,13 +16,13 @@
     <property name="log4j.overwrite" value="true"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="user.timezone" value=""/>
-    <property name="os.name" value="Windows 10"/>
     <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows 10"/>
     <property name="api" value="Covid19India"/>
     <property name="user.country" value="IN"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_241\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\ranad\AppData\Local\Temp\surefire1461599818683598506\surefirebooter4456201279393635348.jar C:\Users\ranad\AppData\Local\Temp\surefire1461599818683598506 2020-05-05T04-53-52_799-jvmRun1 surefire5182773393825254222tmp surefire_02151189612662521860tmp"/>
+    <property name="sun.java.command" value="C:\Users\ranad\AppData\Local\Temp\surefire7616802704884453389\surefirebooter2869018409573024353.jar C:\Users\ranad\AppData\Local\Temp\surefire7616802704884453389 2020-05-05T14-16-51_696-jvmRun1 surefire4641450848218190112tmp surefire_06016514629247380273tmp"/>
     <property name="surefire.test.class.path" value="D:\git\test-framework-restassured-selenium-spring-00\target\test-classes;D:\git\test-framework-restassured-selenium-spring-00\target\classes;C:\Users\ranad\.m2\repository\io\rest-assured\rest-assured\4.3.0\rest-assured-4.3.0.jar;C:\Users\ranad\.m2\repository\org\codehaus\groovy\groovy\3.0.2\groovy-3.0.2.jar;C:\Users\ranad\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.2\groovy-xml-3.0.2.jar;C:\Users\ranad\.m2\repository\org\apache\httpcomponents\httpclient\4.5.3\httpclient-4.5.3.jar;C:\Users\ranad\.m2\repository\org\apache\httpcomponents\httpmime\4.5.3\httpmime-4.5.3.jar;C:\Users\ranad\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\ranad\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\ranad\.m2\repository\io\rest-assured\json-path\4.3.0\json-path-4.3.0.jar;C:\Users\ranad\.m2\repository\org\codehaus\groovy\groovy-json\3.0.2\groovy-json-3.0.2.jar;C:\Users\ranad\.m2\repository\io\rest-assured\rest-assured-common\4.3.0\rest-assured-common-4.3.0.jar;C:\Users\ranad\.m2\repository\io\rest-assured\xml-path\4.3.0\xml-path-4.3.0.jar;C:\Users\ranad\.m2\repository\org\apache\commons\commons-lang3\3.4\commons-lang3-3.4.jar;C:\Users\ranad\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.2\jakarta.xml.bind-api-2.3.2.jar;C:\Users\ranad\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.1\jakarta.activation-api-1.2.1.jar;C:\Users\ranad\.m2\repository\com\sun\xml\bind\jaxb-osgi\2.3.0.1\jaxb-osgi-2.3.0.1.jar;C:\Users\ranad\.m2\repository\org\apache\sling\org.apache.sling.javax.activation\0.1.0\org.apache.sling.javax.activation-0.1.0.jar;C:\Users\ranad\.m2\repository\javax\activation\activation\1.1.1\activation-1.1.1.jar;C:\Users\ranad\.m2\repository\io\rest-assured\json-schema-validator\4.3.0\json-schema-validator-4.3.0.jar;C:\Users\ranad\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.10\json-schema-validator-2.2.10.jar;C:\Users\ranad\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.10\json-schema-core-1.2.10.jar;C:\Users\ranad\.m2\repository\com\github\java-json-tools\jackson-coreutils\1.9\jackson-coreutils-1.9.jar;C:\Users\ranad\.m2\repository\com\github\fge\msg-simple\1.1\msg-simple-1.1.jar;C:\Users\ranad\.m2\repository\com\github\fge\btf\1.2\btf-1.2.jar;C:\Users\ranad\.m2\repository\com\github\fge\uri-template\0.9\uri-template-0.9.jar;C:\Users\ranad\.m2\repository\org\mozilla\rhino\1.7.7.1\rhino-1.7.7.1.jar;C:\Users\ranad\.m2\repository\javax\mail\mailapi\1.4.3\mailapi-1.4.3.jar;C:\Users\ranad\.m2\repository\joda-time\joda-time\2.9.7\joda-time-2.9.7.jar;C:\Users\ranad\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.0.0\libphonenumber-8.0.0.jar;C:\Users\ranad\.m2\repository\com\google\code\findbugs\jsr305\3.0.1\jsr305-3.0.1.jar;C:\Users\ranad\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.3\jopt-simple-5.0.3.jar;C:\Users\ranad\.m2\repository\org\testng\testng\6.10\testng-6.10.jar;C:\Users\ranad\.m2\repository\com\beust\jcommander\1.48\jcommander-1.48.jar;C:\Users\ranad\.m2\repository\org\hamcrest\hamcrest-core\2.1\hamcrest-core-2.1.jar;C:\Users\ranad\.m2\repository\org\hamcrest\hamcrest-all\1.3\hamcrest-all-1.3.jar;C:\Users\ranad\.m2\repository\com\typesafe\config\1.2.1\config-1.2.1.jar;C:\Users\ranad\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.9.8\jackson-databind-2.9.8.jar;C:\Users\ranad\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.9.0\jackson-annotations-2.9.0.jar;C:\Users\ranad\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.9.8\jackson-core-2.9.8.jar;C:\Users\ranad\.m2\repository\org\seleniumhq\selenium\selenium-java\3.11.0\selenium-java-3.11.0.jar;C:\Users\ranad\.m2\repository\org\seleniumhq\selenium\selenium-api\3.11.0\selenium-api-3.11.0.jar;C:\Users\ranad\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.11.0\selenium-chrome-driver-3.11.0.jar;C:\Users\ranad\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.11.0\selenium-edge-driver-3.11.0.jar;C:\Users\ranad\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.11.0\selenium-firefox-driver-3.11.0.jar;C:\Users\ranad\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.11.0\selenium-ie-driver-3.11.0.jar;C:\Users\ranad\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.11.0\selenium-opera-driver-3.11.0.jar;C:\Users\ranad\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.11.0\selenium-remote-driver-3.11.0.jar;C:\Users\ranad\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.11.0\selenium-safari-driver-3.11.0.jar;C:\Users\ranad\.m2\repository\org\seleniumhq\selenium\selenium-support\3.11.0\selenium-support-3.11.0.jar;C:\Users\ranad\.m2\repository\net\bytebuddy\byte-buddy\1.7.9\byte-buddy-1.7.9.jar;C:\Users\ranad\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\ranad\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\Users\ranad\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\ranad\.m2\repository\com\google\code\gson\gson\2.8.2\gson-2.8.2.jar;C:\Users\ranad\.m2\repository\com\google\guava\guava\23.6-jre\guava-23.6-jre.jar;C:\Users\ranad\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\ranad\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\ranad\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\ranad\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\ranad\.m2\repository\org\apache\httpcomponents\httpcore\4.4.6\httpcore-4.4.6.jar;C:\Users\ranad\.m2\repository\com\squareup\okhttp3\okhttp\3.9.1\okhttp-3.9.1.jar;C:\Users\ranad\.m2\repository\com\squareup\okio\okio\1.13.0\okio-1.13.0.jar;C:\Users\ranad\.m2\repository\com\relevantcodes\extentreports\2.41.2\extentreports-2.41.2.jar;C:\Users\ranad\.m2\repository\org\jsoup\jsoup\1.8.3\jsoup-1.8.3.jar;C:\Users\ranad\.m2\repository\org\xerial\sqlite-jdbc\3.8.11.1\sqlite-jdbc-3.8.11.1.jar;C:\Users\ranad\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\ranad\.m2\repository\org\mongodb\mongodb-driver\3.0.4\mongodb-driver-3.0.4.jar;C:\Users\ranad\.m2\repository\org\mongodb\mongodb-driver-core\3.0.4\mongodb-driver-core-3.0.4.jar;C:\Users\ranad\.m2\repository\com\aventstack\extentreports\4.0.9\extentreports-4.0.9.jar;C:\Users\ranad\.m2\repository\org\mongodb\bson\3.3.0\bson-3.3.0.jar;C:\Users\ranad\.m2\repository\org\springframework\spring-core\5.1.3.RELEASE\spring-core-5.1.3.RELEASE.jar;C:\Users\ranad\.m2\repository\org\springframework\spring-jcl\5.1.3.RELEASE\spring-jcl-5.1.3.RELEASE.jar;C:\Users\ranad\.m2\repository\org\springframework\spring-context\5.1.3.RELEASE\spring-context-5.1.3.RELEASE.jar;C:\Users\ranad\.m2\repository\org\springframework\spring-aop\5.1.3.RELEASE\spring-aop-5.1.3.RELEASE.jar;C:\Users\ranad\.m2\repository\org\springframework\spring-beans\5.1.3.RELEASE\spring-beans-5.1.3.RELEASE.jar;C:\Users\ranad\.m2\repository\org\springframework\spring-expression\5.1.3.RELEASE\spring-expression-5.1.3.RELEASE.jar;C:\Users\ranad\.m2\repository\org\apache\poi\poi-ooxml\4.0.1\poi-ooxml-4.0.1.jar;C:\Users\ranad\.m2\repository\org\apache\poi\poi\4.0.1\poi-4.0.1.jar;C:\Users\ranad\.m2\repository\org\apache\commons\commons-collections4\4.2\commons-collections4-4.2.jar;C:\Users\ranad\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\ranad\.m2\repository\org\apache\poi\poi-ooxml-schemas\4.0.1\poi-ooxml-schemas-4.0.1.jar;C:\Users\ranad\.m2\repository\org\apache\xmlbeans\xmlbeans\3.0.2\xmlbeans-3.0.2.jar;C:\Users\ranad\.m2\repository\org\apache\commons\commons-compress\1.18\commons-compress-1.18.jar;C:\Users\ranad\.m2\repository\com\github\virtuald\curvesapi\1.05\curvesapi-1.05.jar;C:\Users\ranad\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacv\1.0\javacv-1.0.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp\1.0\javacpp-1.0.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\opencv\3.0.0-1.0\opencv-3.0.0-1.0.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\opencv\3.0.0-1.0\opencv-3.0.0-1.0-windows-x86_64.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\ffmpeg\2.7.1-1.0\ffmpeg-2.7.1-1.0.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\ffmpeg\2.7.1-1.0\ffmpeg-2.7.1-1.0-windows-x86_64.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\flycapture\2.7.3.19-1.0\flycapture-2.7.3.19-1.0.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\flycapture\2.7.3.19-1.0\flycapture-2.7.3.19-1.0-windows-x86_64.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\libdc1394\2.2.3-1.0\libdc1394-2.2.3-1.0.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\libdc1394\2.2.3-1.0\libdc1394-2.2.3-1.0-windows-x86_64.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\libfreenect\0.5.2-1.0\libfreenect-0.5.2-1.0.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\libfreenect\0.5.2-1.0\libfreenect-0.5.2-1.0-windows-x86_64.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\videoinput\0.200-1.0\videoinput-0.200-1.0.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\videoinput\0.200-1.0\videoinput-0.200-1.0-windows-x86_64.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\artoolkitplus\2.3.1-1.0\artoolkitplus-2.3.1-1.0.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\artoolkitplus\2.3.1-1.0\artoolkitplus-2.3.1-1.0-windows-x86_64.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\flandmark\1.07-1.0\flandmark-1.07-1.0.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\flandmark\1.07-1.0\flandmark-1.07-1.0-windows-x86_64.jar;C:\Users\ranad\.m2\repository\org\apache\maven\surefire\surefire-testng-utils\2.20.1\surefire-testng-utils-2.20.1.jar;C:\Users\ranad\.m2\repository\org\apache\maven\surefire\surefire-grouper\2.20.1\surefire-grouper-2.20.1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\ranad"/>
@@ -36,14 +36,13 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\ranad\AppData\Local\Temp\surefire1461599818683598506\surefirebooter4456201279393635348.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\ranad\AppData\Local\Temp\surefire7616802704884453389\surefirebooter2869018409573024353.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_241\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_241\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="1.8.0_241-b07"/>
     <property name="user.name" value="ranad"/>
     <property name="path.separator" value=";"/>
-    <property name="groups.include" value="regression"/>
     <property name="os.version" value="10.0"/>
     <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_241\jre\lib\endorsed"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -68,7 +67,7 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="checkCaseCalculationsForAllStates" classname="com.ui.testautomation.CovidIndiaUITest" time="26.352">
+  <testcase name="checkCaseCalculationsForAllStates" classname="com.ui.testautomation.CovidIndiaUITest" time="33.677">
     <failure message="Case calculations are not matching expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: Case calculations are not matching expected [true] but found [false]
 	at com.ui.testautomation.CovidIndiaUITest.checkCaseCalculationsForAllStates(CovidIndiaUITest.java:88)
 </failure>
@@ -113,9 +112,9 @@ Verified Active Cases : Confirmed - Recovered + deceased
 Screen shot captured at Covid19IndiaDashboard_Tamil Nadu_StateScenario page
 Find the screen shot at : src/test/resources/shots/RDB_06_Covid19India_Covid19IndiaDashboard_Tamil Nadu_StateScenario.jpg
 State :Rajasthan
-Confirmed : 3061, Active : 1546, Recovered : 1438, Deceased : 77
+Confirmed : 3099, Active : 1577, Recovered : 1440, Deceased : 82
 Verified Active Cases : Confirmed - Recovered + deceased
-3061 - 1438 + 77 = 1546
+3099 - 1440 + 82 = 1577
 Screen shot captured at Covid19IndiaDashboard_Rajasthan_StateScenario page
 Find the screen shot at : src/test/resources/shots/RDB_07_Covid19India_Covid19IndiaDashboard_Rajasthan_StateScenario.jpg
 State :Madhya Pradesh
@@ -131,9 +130,9 @@ Verified Active Cases : Confirmed - Recovered + deceased
 Screen shot captured at Covid19IndiaDashboard_Uttar Pradesh_StateScenario page
 Find the screen shot at : src/test/resources/shots/RDB_09_Covid19India_Covid19IndiaDashboard_Uttar Pradesh_StateScenario.jpg
 State :Andhra Pradesh
-Confirmed : 1650, Active : 1093, Recovered : 524, Deceased : 33
+Confirmed : 1717, Active : 1094, Recovered : 589, Deceased : 34
 Verified Active Cases : Confirmed - Recovered + deceased
-1650 - 524 + 33 = 1093
+1717 - 589 + 34 = 1094
 Screen shot captured at Covid19IndiaDashboard_Andhra Pradesh_StateScenario page
 Find the screen shot at : src/test/resources/shots/RDB_10_Covid19India_Covid19IndiaDashboard_Andhra Pradesh_StateScenario.jpg
 State :West Bengal
@@ -161,86 +160,114 @@ Verified Active Cases : Confirmed - Recovered + deceased
 Screen shot captured at Covid19IndiaDashboard_Jammu and Kashmir_StateScenario page
 Find the screen shot at : src/test/resources/shots/RDB_14_Covid19India_Covid19IndiaDashboard_Jammu and Kashmir_StateScenario.jpg
 State :Karnataka
-Confirmed : 651, Active : 302, Recovered : 321, Deceased : 27
+Confirmed : 659, Active : 310, Recovered : 321, Deceased : 27
 Verified Active Cases : Confirmed - Recovered + deceased
-651 - 321 + 27 = 303
+659 - 321 + 27 = 311
 ]]></system-out>
     <system-err><![CDATA[log4j:WARN No appenders could be found for logger (com.app.testautomation.initiators.TestBaseSteps).
 log4j:WARN Please initialize the log4j system properly.
 log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
-Starting ChromeDriver 80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}) on port 22936
+Starting ChromeDriver 80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}) on port 5896
 Only local connections are allowed.
 Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-[1588634636.491][WARNING]: This version of ChromeDriver has not been tested with Chrome version 81.
-[1588634638.495][WARNING]: Timed out connecting to Chrome, retrying...
-[1588634642.507][WARNING]: Timed out connecting to Chrome, retrying...
-May 05, 2020 4:54:04 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+[1588668417.830][WARNING]: This version of ChromeDriver has not been tested with Chrome version 81.
+[1588668419.869][WARNING]: Timed out connecting to Chrome, retrying...
+[1588668423.888][WARNING]: Timed out connecting to Chrome, retrying...
+May 05, 2020 2:17:05 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 log4j:WARN No such property [maxFileSize] in org.apache.log4j.FileAppender.
 log4j:WARN No such property [maxBackupIndex] in org.apache.log4j.FileAppender.
-May 05, 2020 4:54:05 AM com.app.testautomation.listeners.BasicTestListeners onStart
+May 05, 2020 2:17:07 PM com.app.testautomation.listeners.BasicTestListeners onStart
 INFO: Suite started :Covid19IndiaTestReport
-May 05, 2020 4:54:05 AM com.app.testautomation.listeners.BasicTestListeners onStart
-INFO: Test started at : 4 May 2020 23:24:05 GMT
-May 05, 2020 4:54:05 AM com.app.testautomation.listeners.MethodInterceptorListener intercept
+May 05, 2020 2:17:07 PM com.app.testautomation.listeners.BasicTestListeners onStart
+INFO: Test started at : 5 May 2020 08:47:07 GMT
+May 05, 2020 2:17:07 PM com.app.testautomation.listeners.MethodInterceptorListener intercept
 INFO: Intercepting methods as per group name provided
-May 05, 2020 4:54:05 AM com.app.testautomation.listeners.MethodInterceptorListener intercept
-INFO: As per requested groups : [regression]
-May 05, 2020 4:54:05 AM com.app.testautomation.listeners.MethodInterceptorListener intercept
+May 05, 2020 2:17:07 PM com.app.testautomation.listeners.MethodInterceptorListener intercept
+INFO: As per requested groups : [default]
+May 05, 2020 2:17:07 PM com.app.testautomation.listeners.MethodInterceptorListener intercept
 INFO: checkCaseCalculationsForAllStates to be executed
-May 05, 2020 4:54:05 AM com.app.testautomation.listeners.MethodInterceptorListener intercept
-INFO: As per requested groups : [regression]
-May 05, 2020 4:54:05 AM com.app.testautomation.listeners.MethodInterceptorListener intercept
-INFO: As per requested groups : [regression]
-May 05, 2020 4:54:05 AM com.app.testautomation.listeners.MethodInterceptorListener intercept
-INFO: As per requested groups : [regression]
-May 05, 2020 4:54:05 AM com.app.testautomation.listeners.MethodInterceptorListener intercept
-INFO: As per requested groups : [regression]
-May 05, 2020 4:54:05 AM com.app.testautomation.listeners.MethodInterceptorListener intercept
-INFO: As per requested groups : [regression]
-May 05, 2020 4:54:05 AM com.app.testautomation.listeners.MethodInterceptorListener intercept
-INFO: verifyGreenZonesOfMaharashtra to be executed
-May 05, 2020 4:54:05 AM com.app.testautomation.listeners.MethodInterceptorListener intercept
-INFO: As per requested groups : [regression]
-May 05, 2020 4:54:05 AM com.app.testautomation.listeners.MethodInterceptorListener intercept
-INFO: verifyOrangeZonesOfMaharashtra to be executed
-May 05, 2020 4:54:05 AM com.app.testautomation.listeners.MethodInterceptorListener intercept
-INFO: As per requested groups : [regression]
-May 05, 2020 4:54:05 AM com.app.testautomation.listeners.MethodInterceptorListener intercept
-INFO: verifyRedZonesOfMaharashtra to be executed
-May 05, 2020 4:54:05 AM com.app.testautomation.listeners.MethodInterceptorListener intercept
-INFO: As per requested groups : [regression]
-May 05, 2020 4:54:05 AM com.app.testautomation.listeners.MethodInterceptorListener intercept
-INFO: verifyUnknownWhiteZonesOfMaharashtra to be executed
-May 05, 2020 4:54:05 AM com.app.testautomation.listeners.MethodInvokeListener beforeInvocation
+May 05, 2020 2:17:07 PM com.app.testautomation.listeners.MethodInterceptorListener intercept
+INFO: As per requested groups : [default]
+May 05, 2020 2:17:07 PM com.app.testautomation.listeners.MethodInterceptorListener intercept
+INFO: checkCaseCalculationsForChandigarh to be executed
+May 05, 2020 2:17:07 PM com.app.testautomation.listeners.MethodInterceptorListener intercept
+INFO: As per requested groups : [default]
+May 05, 2020 2:17:07 PM com.app.testautomation.listeners.MethodInterceptorListener intercept
+INFO: checkCaseCalculationsForDelhi to be executed
+May 05, 2020 2:17:07 PM com.app.testautomation.listeners.MethodInterceptorListener intercept
+INFO: As per requested groups : [default]
+May 05, 2020 2:17:07 PM com.app.testautomation.listeners.MethodInterceptorListener intercept
+INFO: checkCaseCalculationsOfTripuraIsGreaterThan10 to be executed
+May 05, 2020 2:17:07 PM com.app.testautomation.listeners.MethodInterceptorListener intercept
+INFO: As per requested groups : [default]
+May 05, 2020 2:17:07 PM com.app.testautomation.listeners.MethodInterceptorListener intercept
+INFO: checkNoOfConfirmedCasesIsGreaterThan26000 to be executed
+May 05, 2020 2:17:07 PM com.app.testautomation.listeners.MethodInterceptorListener intercept
+INFO: As per requested groups : [default]
+May 05, 2020 2:17:07 PM com.app.testautomation.listeners.MethodInterceptorListener intercept
+INFO: verifyGreenZonesOfAllStates to be executed
+May 05, 2020 2:17:07 PM com.app.testautomation.listeners.MethodInterceptorListener intercept
+INFO: As per requested groups : [default]
+May 05, 2020 2:17:07 PM com.app.testautomation.listeners.MethodInterceptorListener intercept
+INFO: verifyOrangeZonesOfAllStates to be executed
+May 05, 2020 2:17:07 PM com.app.testautomation.listeners.MethodInterceptorListener intercept
+INFO: As per requested groups : [default]
+May 05, 2020 2:17:07 PM com.app.testautomation.listeners.MethodInterceptorListener intercept
+INFO: verifyRedZonesOfAllStates to be executed
+May 05, 2020 2:17:07 PM com.app.testautomation.listeners.MethodInterceptorListener intercept
+INFO: As per requested groups : [default]
+May 05, 2020 2:17:07 PM com.app.testautomation.listeners.MethodInterceptorListener intercept
+INFO: verifyUnDefinedZonesOfAllStates to be executed
+May 05, 2020 2:17:07 PM com.app.testautomation.listeners.MethodInterceptorListener intercept
+INFO: As per requested groups : [default]
+May 05, 2020 2:17:07 PM com.app.testautomation.listeners.MethodInterceptorListener intercept
+INFO: verifyUnknownWhiteZonesOfAllStates to be executed
+May 05, 2020 2:17:07 PM com.app.testautomation.listeners.MethodInvokeListener beforeInvocation
 INFO: Method initiateMethod is not enabled
-[1588634645.908][SEVERE]: Timed out receiving message from renderer: 0.100
-[1588634646.373][SEVERE]: Timed out receiving message from renderer: 0.100
-[1588634646.474][SEVERE]: Timed out receiving message from renderer: 0.100
-[1588634646.577][SEVERE]: Timed out receiving message from renderer: 0.100
-[1588634646.680][SEVERE]: Timed out receiving message from renderer: 0.100
-[1588634646.781][SEVERE]: Timed out receiving message from renderer: 0.100
-[1588634646.883][SEVERE]: Timed out receiving message from renderer: 0.100
-[1588634646.984][SEVERE]: Timed out receiving message from renderer: 0.100
-[1588634647.085][SEVERE]: Timed out receiving message from renderer: 0.100
-[1588634647.307][SEVERE]: Timed out receiving message from renderer: 0.100
-[1588634647.411][SEVERE]: Timed out receiving message from renderer: 0.100
-May 05, 2020 4:54:08 AM com.app.testautomation.listeners.BasicTestListeners onTestStart
+[1588668428.329][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588668428.433][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588668428.535][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588668428.638][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588668428.742][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588668428.844][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588668428.948][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588668429.052][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588668429.155][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588668429.257][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588668429.359][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588668429.461][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588668429.562][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588668429.663][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588668429.766][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588668429.867][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588668429.968][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588668430.070][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588668430.174][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588668430.279][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588668430.384][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588668430.489][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588668430.595][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588668430.699][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588668430.806][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588668430.908][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588668431.009][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588668431.112][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588668431.920][SEVERE]: Timed out receiving message from renderer: 0.100
+May 05, 2020 2:17:14 PM com.app.testautomation.listeners.BasicTestListeners onTestStart
 INFO: Executiing method : checkCaseCalculationsForAllStates
-May 05, 2020 4:54:08 AM com.app.testautomation.listeners.MethodInvokeListener beforeInvocation
-INFO: Method checkCaseCalculationsForAllStates execution starts on : Tue May 05 04:54:08 IST 2020
-May 05, 2020 4:54:35 AM com.app.testautomation.listeners.MethodInvokeListener afterInvocation
-INFO: MethodcheckCaseCalculationsForAllStates execution completed on : Tue May 05 04:54:08 IST 2020
+May 05, 2020 2:17:14 PM com.app.testautomation.listeners.MethodInvokeListener beforeInvocation
+INFO: Method checkCaseCalculationsForAllStates execution starts on : Tue May 05 14:17:14 IST 2020
+May 05, 2020 2:17:48 PM com.app.testautomation.listeners.MethodInvokeListener afterInvocation
+INFO: MethodcheckCaseCalculationsForAllStates execution completed on : Tue May 05 14:17:14 IST 2020
 ]]></system-err>
   </testcase>
-  <testcase name="verifyGreenZonesOfMaharashtra" classname="com.ui.testautomation.CovidIndiaUITest" time="87.185"/>
-  <testcase name="verifyOrangeZonesOfMaharashtra" classname="com.ui.testautomation.CovidIndiaUITest" time="93.569"/>
-  <testcase name="verifyRedZonesOfMaharashtra" classname="com.ui.testautomation.CovidIndiaUITest" time="88.618"/>
-  <testcase name="verifyUnknownWhiteZonesOfMaharashtra" classname="com.ui.testautomation.CovidIndiaUITest" time="6.065">
-    <failure message="String index out of range: 0" type="java.lang.StringIndexOutOfBoundsException">java.lang.StringIndexOutOfBoundsException: String index out of range: 0
-	at com.ui.testautomation.CovidIndiaUITest.verifyUnknownWhiteZonesOfMaharashtra(CovidIndiaUITest.java:131)
-</failure>
-    <system-out><![CDATA[verifyRedZonesOfMaharashtra executed.
+  <testcase name="checkCaseCalculationsForChandigarh" classname="com.ui.testautomation.CovidIndiaUITest" time="14.465"/>
+  <testcase name="checkCaseCalculationsForDelhi" classname="com.ui.testautomation.CovidIndiaUITest" time="10.863">
+    <failure message="Data on UI &amp; API doesnot match expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Data on UI & API doesnot match expected [true] but found [false]
+	at com.ui.testautomation.CovidIndiaUITest.checkCaseCalculationsForDelhi(CovidIndiaUITest.java:62)
+]]></failure>
+    <system-out><![CDATA[checkCaseCalculationsForChandigarh executed.
 Driver is closed
 Driver called off
 Driver session is not active
@@ -248,8 +275,8 @@ invalid session id
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'RANADEEP_BANIK', ip: '192.168.1.75', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 81.0.4044.129, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\ranad\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56747}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 8af3806e723a6935b915850debf793a7
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 81.0.4044.129, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\ranad\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54322}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 8ca5d3f2615aeb6225d763a4e68a9006
 return new ApplicationContextInitiator()
 Application context created and initiated all the beans in Spring bean container
 Default properties/capabilities initiated for CHROME driver
@@ -274,42 +301,81 @@ Properties file on locationD:\git\test-framework-restassured-selenium-spring-00/
 Modified properties file with key : log4j.appender.FILE.Append, Value : true
 Properties file on locationD:\git\test-framework-restassured-selenium-spring-00/log4j.properties updated
 Spring Bean initiation of Rest Call class
-Initiating Method : verifyUnknownWhiteZonesOfMaharashtra
+Initiating Method : checkCaseCalculationsForDelhi
 Screen shot captured at Covid19IndiaDashboard page
-Find the screen shot at : src/test/resources/shots/RDB_216_Covid19India_Covid19IndiaDashboard.jpg
+Find the screen shot at : src/test/resources/shots/RDB_19_Covid19India_Covid19IndiaDashboard.jpg
 Screen shot captured at Covid19IndiaDashboard page
-Find the screen shot at : src/test/resources/shots/RDB_217_Covid19India_Covid19IndiaDashboard.jpg
+Find the screen shot at : src/test/resources/shots/RDB_20_Covid19India_Covid19IndiaDashboard.jpg
 Navigated to : http://www.covid19India.org
 Screen shot captured at Covid19IndiaDashboard page
-Find the screen shot at : src/test/resources/shots/RDB_218_Covid19India_Covid19IndiaDashboard.jpg
+Find the screen shot at : src/test/resources/shots/RDB_21_Covid19India_Covid19IndiaDashboard.jpg
+State :DELHI
+Confirmed : 4898, Active : 3403, Recovered : 1431, Deceased : 64
+Verified Active Cases : Confirmed - Recovered + deceased
+4898 - 1431 + 64 = 3403
+Screen shot captured at Covid19IndiaDashboard_DELHI_StateScenario page
+Find the screen shot at : src/test/resources/shots/RDB_22_Covid19India_Covid19IndiaDashboard_DELHI_StateScenario.jpg
+Config file initiated
+No such file found D:\git\test-framework-restassured-selenium-spring-00\src\test\resources\Covid19India\state-district-v2\Headers.properties
+Headers : {sec-fetch-mode=cors, if-modified-since=Mon, 27 Apr 2020 12:41:53 GMT, referer=https://www.covid19india.org/, sec-fetch-site=same-site, accept-language=en-US,en;q=0.9, origin=https://www.covid19india.org, accept-encoding=gzip, deflate, br, accept=application/json, text/plain, */*, user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36, sec-fetch-dest=empty}
+Config file initiated
+Fetching config property of : Covid19India
+Fetching config property of : state-district-v2
+Request method:	GET
+Request URI:	https://api.covid19india.org/v2/state_district_wise.json
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		sec-fetch-mode=cors
+				if-modified-since=Mon, 27 Apr 2020 12:41:53 GMT
+				referer=https://www.covid19india.org/
+				sec-fetch-site=same-site
+				accept-language=en-US,en;q=0.9
+				origin=https://www.covid19india.org
+				accept-encoding=gzip, deflate, br
+				accept=application/json, text/plain, */*
+				user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36
+				sec-fetch-dest=empty
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Screen shot captured at explicit_failed page
+Find the screen shot at : src/test/resources/shots/RDB_23_Covid19India_explicit_failed.jpg
 ]]></system-out>
-    <system-err><![CDATA[May 05, 2020 5:00:09 AM com.app.testautomation.listeners.MethodInvokeListener beforeInvocation
+    <system-err><![CDATA[May 05, 2020 2:18:27 PM com.app.testautomation.listeners.MethodInvokeListener beforeInvocation
 INFO: Method finish is not enabled
-May 05, 2020 5:00:18 AM com.app.testautomation.listeners.MethodInvokeListener beforeInvocation
+May 05, 2020 2:18:27 PM com.app.testautomation.listeners.MethodInvokeListener beforeInvocation
 INFO: Method initiateMethod is not enabled
-Starting ChromeDriver 80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}) on port 31227
+Starting ChromeDriver 80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}) on port 2956
 Only local connections are allowed.
 Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-[1588635020.106][WARNING]: This version of ChromeDriver has not been tested with Chrome version 81.
-[1588635022.112][WARNING]: Timed out connecting to Chrome, retrying...
-[1588635026.118][WARNING]: Timed out connecting to Chrome, retrying...
-May 05, 2020 5:00:28 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+[1588668509.521][WARNING]: This version of ChromeDriver has not been tested with Chrome version 81.
+[1588668511.547][WARNING]: Timed out connecting to Chrome, retrying...
+[1588668515.552][WARNING]: Timed out connecting to Chrome, retrying...
+May 05, 2020 2:18:37 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 log4j:WARN No such property [maxFileSize] in org.apache.log4j.FileAppender.
 log4j:WARN No such property [maxBackupIndex] in org.apache.log4j.FileAppender.
-[1588635029.188][SEVERE]: Timed out receiving message from renderer: 0.100
-[1588635029.462][SEVERE]: Timed out receiving message from renderer: 0.100
-[1588635029.956][SEVERE]: Timed out receiving message from renderer: 0.100
-[1588635030.058][SEVERE]: Timed out receiving message from renderer: 0.100
-[1588635030.165][SEVERE]: Timed out receiving message from renderer: 0.100
-[1588635030.399][SEVERE]: Timed out receiving message from renderer: 0.100
-[1588635030.500][SEVERE]: Timed out receiving message from renderer: 0.100
-May 05, 2020 5:00:31 AM com.app.testautomation.listeners.BasicTestListeners onTestStart
-INFO: Executiing method : verifyUnknownWhiteZonesOfMaharashtra
-May 05, 2020 5:00:31 AM com.app.testautomation.listeners.MethodInvokeListener beforeInvocation
-INFO: Method verifyUnknownWhiteZonesOfMaharashtra execution starts on : Tue May 05 05:00:31 IST 2020
-May 05, 2020 5:00:37 AM com.app.testautomation.listeners.MethodInvokeListener afterInvocation
-INFO: MethodverifyUnknownWhiteZonesOfMaharashtra execution completed on : Tue May 05 05:00:31 IST 2020
+[1588668518.583][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588668518.864][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588668519.059][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588668519.598][SEVERE]: Timed out receiving message from renderer: 0.100
+[1588668520.097][SEVERE]: Timed out receiving message from renderer: 0.100
+May 05, 2020 2:18:42 PM com.app.testautomation.listeners.BasicTestListeners onTestStart
+INFO: Executiing method : checkCaseCalculationsForDelhi
+May 05, 2020 2:18:42 PM com.app.testautomation.listeners.MethodInvokeListener beforeInvocation
+INFO: Method checkCaseCalculationsForDelhi execution starts on : Tue May 05 14:18:42 IST 2020
+May 05, 2020 2:18:53 PM com.app.testautomation.listeners.MethodInvokeListener afterInvocation
+INFO: MethodcheckCaseCalculationsForDelhi execution completed on : Tue May 05 14:18:42 IST 2020
 ]]></system-err>
   </testcase>
+  <testcase name="checkCaseCalculationsOfTripuraIsGreaterThan10" classname="com.ui.testautomation.CovidIndiaUITest" time="2.296"/>
+  <testcase name="checkNoOfConfirmedCasesIsGreaterThan26000" classname="com.ui.testautomation.CovidIndiaUITest" time="0.059"/>
+  <testcase name="verifyGreenZonesOfAllStates" classname="com.ui.testautomation.CovidIndiaUITest" time="111.139"/>
+  <testcase name="verifyOrangeZonesOfAllStates" classname="com.ui.testautomation.CovidIndiaUITest" time="116.399"/>
+  <testcase name="verifyRedZonesOfAllStates" classname="com.ui.testautomation.CovidIndiaUITest" time="110.674"/>
+  <testcase name="verifyUnDefinedZonesOfAllStates" classname="com.ui.testautomation.CovidIndiaUITest" time="106.533"/>
+  <testcase name="verifyUnknownWhiteZonesOfAllStates" classname="com.ui.testautomation.CovidIndiaUITest" time="104.154"/>
 </testsuite>

@@ -96,8 +96,8 @@ public class CovidIndiaUITest extends PageInitiator {
 	
 	/** Zone testing */
 	
-	@Test(groups = {"regression"}, description = "Check the Red zones of state Maharashtra")
-	public void verifyRedZonesOfMaharashtra() {
+	@Test(groups = {"sanity", "smoke", "regression"}, description = "Check the Red zones of all states")
+	public void verifyRedZonesOfAllStates() {
 		Map<String, List<String>> zoneMapper = getCovid19Dashboard().getDistrictsAsPerZoneForAllStates("red");
 		String apiCallResponse = restCall().link(Links.ZONES).getResponse();
 		zoneMapper.forEach((state,list) -> {
@@ -106,8 +106,8 @@ public class CovidIndiaUITest extends PageInitiator {
 		});
 	}
 	
-	@Test(groups = {"regression"}, description = "Check the Green zones of state Maharashtra")
-	public void verifyGreenZonesOfMaharashtra() {
+	@Test(groups = {"regression"}, description = "Check the Green zones of all states")
+	public void verifyGreenZonesOfAllStates() {
 		Map<String, List<String>> zoneMapper = getCovid19Dashboard().getDistrictsAsPerZoneForAllStates("green");
 		String apiCallResponse = restCall().link(Links.ZONES).getResponse();
 		zoneMapper.forEach((state,list) -> {
@@ -116,8 +116,8 @@ public class CovidIndiaUITest extends PageInitiator {
 		});
 	}
 	
-	@Test(groups = {"regression"}, description = "Check the Orange zones of state Maharashtra")
-	public void verifyOrangeZonesOfMaharashtra() {
+	@Test(groups = {"regression"}, description = "Check the Orange zones of all states")
+	public void verifyOrangeZonesOfAllStates() {
 		Map<String, List<String>> zoneMapper = getCovid19Dashboard().getDistrictsAsPerZoneForAllStates("orange");
 		String apiCallResponse = restCall().link(Links.ZONES).getResponse();
 		zoneMapper.forEach((state,list) -> {
@@ -126,13 +126,21 @@ public class CovidIndiaUITest extends PageInitiator {
 		});
 	}
 	
-	@Test(groups = {"regression"}, description = "Check the White unknown zones of state Maharashtra")
-	public void verifyUnknownWhiteZonesOfMaharashtra() {
+	@Test(groups = {"regression"}, description = "Check the White unknown zones of all states")
+	public void verifyUnknownWhiteZonesOfAllStates() {
 		Map<String, List<String>> zoneMapper = getCovid19Dashboard().getDistrictsAsPerZoneForAllStates(StringUtils.EMPTY);
 		String apiCallResponse = restCall().link(Links.ZONES).getResponse();
 		zoneMapper.forEach((state,list) -> {
 			List<String> apiList = JsonPath.from(apiCallResponse).getList("zones.findAll { it.state == '" + state + "' && it.zone == ''}.district");
 			Assert().assertTrue(apiList.containsAll(list), "Api White Listed District List Is Not Matching With UI List");
+		});
+	}
+	
+	@Test(groups = {"regression"}, description = "Check the unknown undefined zones of all states")
+	public void verifyUnDefinedZonesOfAllStates() {
+		Map<String, List<String>> zoneMapper = getCovid19Dashboard().getDistrictsAsPerZoneForAllStates("undefined");
+		zoneMapper.forEach((state,list) -> {
+			Assert().assertTrue(list.isEmpty() ? true : list.contains("Unknown") || list.contains("Other State"), "Api White Listed District List Is Not Matching With UI List");
 		});
 	}
 	

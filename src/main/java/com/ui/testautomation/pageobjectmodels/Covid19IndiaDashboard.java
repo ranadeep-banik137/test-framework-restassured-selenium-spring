@@ -228,7 +228,7 @@ public class Covid19IndiaDashboard {
 	
 	public List<String> getDistrictsAsPerZone(String state, String zone) {
 		WebElement stateRow = getStateRowElement(state);
-		String zoneModified = zone.replaceFirst(String.valueOf(zone.charAt(0)), String.valueOf(zone.charAt(0)).toUpperCase());
+		String zoneModified = zone.isEmpty() || zone.equals("undefined") ? zone : zone.replaceFirst(String.valueOf(zone.charAt(0)), String.valueOf(zone.charAt(0)).toUpperCase());
 		List<String> districtList = new ArrayList<>();
 		WebElement clickableStateDropdown = webElementModifier.appendWebElement(stateRow, By.xpath(".//span[@class='dropdown rotateDownRight']"));
 		this.executor.executeScript("arguments[0].click();", clickableStateDropdown);

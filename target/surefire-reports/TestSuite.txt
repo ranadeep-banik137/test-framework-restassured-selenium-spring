@@ -1,12 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 405.428 s <<< FAILURE! - in TestSuite
-checkCaseCalculationsForAllStates(com.ui.testautomation.CovidIndiaUITest)  Time elapsed: 26.352 s  <<< FAILURE!
+Tests run: 10, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 822.196 s <<< FAILURE! - in TestSuite
+checkCaseCalculationsForAllStates(com.ui.testautomation.CovidIndiaUITest)  Time elapsed: 33.677 s  <<< FAILURE!
 java.lang.AssertionError: Case calculations are not matching expected [true] but found [false]
 	at com.ui.testautomation.CovidIndiaUITest.checkCaseCalculationsForAllStates(CovidIndiaUITest.java:88)
 
-verifyUnknownWhiteZonesOfMaharashtra(com.ui.testautomation.CovidIndiaUITest)  Time elapsed: 6.065 s  <<< FAILURE!
-java.lang.StringIndexOutOfBoundsException: String index out of range: 0
-	at com.ui.testautomation.CovidIndiaUITest.verifyUnknownWhiteZonesOfMaharashtra(CovidIndiaUITest.java:131)
+checkCaseCalculationsForDelhi(com.ui.testautomation.CovidIndiaUITest)  Time elapsed: 10.863 s  <<< FAILURE!
+java.lang.AssertionError: Data on UI & API doesnot match expected [true] but found [false]
+	at com.ui.testautomation.CovidIndiaUITest.checkCaseCalculationsForDelhi(CovidIndiaUITest.java:62)
 
