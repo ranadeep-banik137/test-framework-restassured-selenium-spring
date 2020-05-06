@@ -1,8 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 152.232 s <<< FAILURE! - in TestSuite
-checkCaseCalculationsForDelhi(com.ui.testautomation.CovidIndiaUITest)  Time elapsed: 12.114 s  <<< FAILURE!
-java.lang.AssertionError: Data on UI & API doesnot match expected [true] but found [false]
-	at com.ui.testautomation.CovidIndiaUITest.checkCaseCalculationsForDelhi(CovidIndiaUITest.java:62)
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 53.965 s - in TestSuite

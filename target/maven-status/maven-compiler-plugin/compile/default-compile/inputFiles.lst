@@ -4,6 +4,7 @@ D:\git\test-framework-restassured-selenium-spring-00\src\main\java\com\ui\testau
 D:\git\test-framework-restassured-selenium-spring-00\src\main\java\com\api\testautomation\configurations\Links.java
 D:\git\test-framework-restassured-selenium-spring-00\src\main\java\com\app\testautomation\utilities\PropertiesFileReader.java
 D:\git\test-framework-restassured-selenium-spring-00\src\main\java\com\app\testautomation\initiators\SystemVariables.java
+D:\git\test-framework-restassured-selenium-spring-00\src\main\java\com\ui\testautomation\pageobjectmodels\Covid19IndiaEssentialsPage.java
 D:\git\test-framework-restassured-selenium-spring-00\src\main\java\com\app\testautomation\initiators\Driver.java
 D:\git\test-framework-restassured-selenium-spring-00\src\main\java\com\app\testautomation\utilities\WebElementModifier.java
 D:\git\test-framework-restassured-selenium-spring-00\src\main\java\com\ui\testautomation\pageobjectmodels\Covid19IndiaDatabaseSheet.java

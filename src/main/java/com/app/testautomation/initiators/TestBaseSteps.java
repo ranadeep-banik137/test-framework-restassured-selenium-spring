@@ -48,7 +48,7 @@ public class TestBaseSteps {
 		this.driver = (Driver) this.getContext().getBean("webDriver");
 		this.log4j = (Log4jConfiguration) this.getContext().getBean("log4j");
 		this.converter = (ImageConverterUtility) this.getContext().getBean("converter");
-		this.assertion = (Assertions) this.getContext().getBean("assert");
+		this.assertion = (Assertions) this.getContext().getBean("assertions");
 		this.restCall = (RestCall) this.getContext().getBean("rest");
 		setWebDriver(this.driver.getDriver());
 		setDefaultConverter();

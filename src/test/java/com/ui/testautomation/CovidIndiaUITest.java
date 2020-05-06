@@ -33,11 +33,12 @@ public class CovidIndiaUITest extends PageInitiator {
 	public void initiateMethod(Method method) {
 		initiateDriver();
 		LOGGER.info("Initiating Method : " + method.getName());
-		getCovid19Dashboard().browseToDashboard();
+		browseToCovid19IndiaSite();
 	}
 	
 	@Test(enabled = true, description = "validate the number of total confirmed case is greater than 6000 in India")
 	public void checkNoOfConfirmedCasesIsGreaterThan26000() {
+		getCovid19Dashboard().browseToDashboard();
 		int numberOfCases = getCovid19Dashboard().getTotalConfirmedCasesCount();
 		Assert.assertTrue(numberOfCases >= 26000, "Number of cases not greater than 6k");
 	}
@@ -45,6 +46,7 @@ public class CovidIndiaUITest extends PageInitiator {
 	@Test(enabled = true, groups = {"sanity"}, description = "Checks & verify the total case calculation after recovered and death for Maharashtra")
 	public void checkCaseCalculationsForDelhi() {
 		String state = "DELHI";
+		getCovid19Dashboard().browseToDashboard();
 		getCovid19Dashboard().validateStateUICalculation(state);
 		int confirmedCaseCount = getCovid19Dashboard().getTotalConfirmedCountOf(state);
 		int activeCaseCount = getCovid19Dashboard().getTotalActiveCountOf(state);
@@ -65,6 +67,7 @@ public class CovidIndiaUITest extends PageInitiator {
 	@Test(groups = {"smoke"}, description = "Checks & verify the total case calculation after recovered and death for Chandigarh")
 	public void checkCaseCalculationsForChandigarh() {
 		String state = "CHANDIGARH";
+		getCovid19Dashboard().browseToDashboard();
 		getCovid19Dashboard().validateStateUICalculation(state);
 		int confirmedCaseCount = getCovid19Dashboard().getTotalConfirmedCountOf(state);
 		int activeCaseCount = getCovid19Dashboard().getTotalActiveCountOf(state);
@@ -85,11 +88,13 @@ public class CovidIndiaUITest extends PageInitiator {
 	
 	@Test(enabled = true, groups = {"smoke", "regression1"}, description = "Checks & verify the total case calculation after recovered and death for all 32 states of INDIA")
 	public void checkCaseCalculationsForAllStates() {
+		getCovid19Dashboard().browseToDashboard();
 		getCovid19Dashboard().validateAllStatesCaseCalculation();
 	}
 	
 	@Test(enabled = true, groups = {"failed"}, description = "check case count of Tripura is more than 10")
 	public void checkCaseCalculationsOfTripuraIsGreaterThan10() {
+		getCovid19Dashboard().browseToDashboard();
 		int cases = getCovid19Dashboard().getTotalConfirmedCountOf("TRIPURA");
 		Assert().assertTrue(cases > 10, "Case count is not greater than 10");
 	}
@@ -98,6 +103,7 @@ public class CovidIndiaUITest extends PageInitiator {
 	
 	@Test(groups = {"sanity", "smoke", "regression"}, description = "Check the Red zones of all states")
 	public void verifyRedZonesOfAllStates() {
+		getCovid19Dashboard().browseToDashboard();
 		Map<String, List<String>> zoneMapper = getCovid19Dashboard().getDistrictsAsPerZoneForAllStates("red");
 		String apiCallResponse = restCall().link(Links.ZONES).getResponse();
 		zoneMapper.forEach((state,list) -> {
@@ -108,6 +114,7 @@ public class CovidIndiaUITest extends PageInitiator {
 	
 	@Test(groups = {"regression"}, description = "Check the Green zones of all states")
 	public void verifyGreenZonesOfAllStates() {
+		getCovid19Dashboard().browseToDashboard();
 		Map<String, List<String>> zoneMapper = getCovid19Dashboard().getDistrictsAsPerZoneForAllStates("green");
 		String apiCallResponse = restCall().link(Links.ZONES).getResponse();
 		zoneMapper.forEach((state,list) -> {
@@ -118,6 +125,7 @@ public class CovidIndiaUITest extends PageInitiator {
 	
 	@Test(groups = {"regression"}, description = "Check the Orange zones of all states")
 	public void verifyOrangeZonesOfAllStates() {
+		getCovid19Dashboard().browseToDashboard();
 		Map<String, List<String>> zoneMapper = getCovid19Dashboard().getDistrictsAsPerZoneForAllStates("orange");
 		String apiCallResponse = restCall().link(Links.ZONES).getResponse();
 		zoneMapper.forEach((state,list) -> {
@@ -128,6 +136,7 @@ public class CovidIndiaUITest extends PageInitiator {
 	
 	@Test(groups = {"regression"}, description = "Check the White unknown zones of all states")
 	public void verifyUnknownWhiteZonesOfAllStates() {
+		getCovid19Dashboard().browseToDashboard();
 		Map<String, List<String>> zoneMapper = getCovid19Dashboard().getDistrictsAsPerZoneForAllStates(StringUtils.EMPTY);
 		String apiCallResponse = restCall().link(Links.ZONES).getResponse();
 		zoneMapper.forEach((state,list) -> {
@@ -138,10 +147,32 @@ public class CovidIndiaUITest extends PageInitiator {
 	
 	@Test(groups = {"regression"}, description = "Check the unknown undefined zones of all states")
 	public void verifyUnDefinedZonesOfAllStates() {
+		getCovid19Dashboard().browseToDashboard();
 		Map<String, List<String>> zoneMapper = getCovid19Dashboard().getDistrictsAsPerZoneForAllStates("undefined");
 		zoneMapper.forEach((state,list) -> {
 			Assert().assertTrue(list.isEmpty() ? true : list.contains("Unknown") || list.contains("Other State"), "Api White Listed District List Is Not Matching With UI List");
 		});
+	}
+	
+	
+	/** Essentials testing */
+	
+	@Test(groups = {"regression"}, description = "Verify the essentials Listed for all states with API call")
+	public void verifyEssentialsOfAllStates() {
+		getCovid19Essentials().browseToEssentials();
+		getCovid19Essentials().selectState("Maharashtra");
+		getCovid19Essentials().selectCity("Pune");
+		getCovid19Essentials().selectCategory("CoVID-19 Testing Lab");
+		getCovid19Essentials().clickSearch();
+		List<Map<String, String>> tableData = getCovid19Essentials().getTabularMappedData();
+		String apiCallResponse = restCall().link(Links.ESSENTIALS).getResponse();
+		tableData.forEach(element-> {
+			JsonPath root = JsonPath.from(apiCallResponse).setRootPath("resources.findAll {it.category == 'CoVID-19 Testing Lab' && it.city == 'Pune' && it.state == 'Maharashtra' && it.nameoftheorganisation == '" + element.get("Organisation") + "' }");
+			String description = root.getString("descriptionandorserviceprovided").replaceAll("\\[|\\]", "").trim();
+			String phoneNumber = root.getString("phonenumber").replaceAll("\\[|\\]", StringUtils.EMPTY).trim();
+			Assert().assertTrue(element.get("Description").equals(description) && element.get("Phone").equals(phoneNumber), "Api doesnot match with UI");
+		});
+		
 	}
 	
 	@AfterMethod(enabled = true)

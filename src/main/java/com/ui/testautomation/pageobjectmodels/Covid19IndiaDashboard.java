@@ -19,9 +19,9 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import org.testng.Assert;
 
 import com.app.testautomation.initiators.Driver;
+import com.app.testautomation.utilities.Assertions;
 import com.app.testautomation.utilities.WebElementModifier;
 
 @Component(value = "covid19Dashboard")
@@ -38,6 +38,8 @@ public class Covid19IndiaDashboard {
 	
 	@Autowired
 	private WebElementModifier webElementModifier;
+	@Autowired
+	private Assertions assertions;
 	
 	@FindBy(xpath = "//div[@class = 'level-item is-cherry fadeInUp']/h5/following-sibling::h1")
 	private WebElement noOfConfirmedCases;
@@ -91,8 +93,6 @@ public class Covid19IndiaDashboard {
 	
 	public void browseToDashboard() {
 		try {
-		String url = "http://www.covid19India.org";
-		getDriver().navigate().to(url);
 		this.explicitWait.until(ExpectedConditions.elementToBeClickable(navigateToHomeButton));
 		this.actions.moveToElement(navigateToHomeButton).perform();
 		this.webDriverInitiator.takeScreenShot(PAGE_SOURCE);
@@ -100,7 +100,6 @@ public class Covid19IndiaDashboard {
 		this.navigateToExpandedHomeTab.click();
 		this.webDriverInitiator.takeScreenShot(PAGE_SOURCE);
 		this.explicitWait.until(ExpectedConditions.visibilityOf(noOfConfirmedCases));
-		LOGGER.info("Navigated to : " + url);
 		this.webDriverInitiator.takeScreenShot(PAGE_SOURCE);
 		} catch (Exception exception) {
 			this.webDriverInitiator.takeScreenShot(PAGE_SOURCE + "_failed");
@@ -127,7 +126,7 @@ public class Covid19IndiaDashboard {
 		LOGGER.info("Confirmed : " + confirmedCases + ", Active : " + activeCases +", Recovered : " + recoveredCases + ", Deceased : " + deceasedCases);
 		LOGGER.info("Verified Active Cases : Confirmed - Recovered + deceased");
 		LOGGER.info(confirmedCases + " - " + recoveredCases + " + " + deceasedCases + " = " + (confirmedCases - recoveredCases - deceasedCases));
-		Assert.assertTrue(activeCases == (confirmedCases - recoveredCases - deceasedCases), "Case calculations are not matching");
+		this.assertions.assertTrue(activeCases == (confirmedCases - recoveredCases - deceasedCases), "Case calculations are not matching");
 		this.webDriverInitiator.takeScreenShot(PAGE_SOURCE + "_" + state + "_StateScenario");
 		} catch (Exception exception) {
 			this.webDriverInitiator.takeScreenShot(PAGE_SOURCE + "_failed");
@@ -207,7 +206,7 @@ public class Covid19IndiaDashboard {
 	
 	public void viewPatientDataBasePage() {
 		try {
-		executor.executeScript("arguments[0].scrollIntoView(true);", patientDatabaseProviderButton);
+		this.executor.executeScript("arguments[0].scrollIntoView(true);", patientDatabaseProviderButton);
 		LOGGER.info("Clicking on " + patientDatabaseProviderButton.getText() + " button");
 		patientDatabaseProviderButton.click();
 		} catch (Exception exception) {

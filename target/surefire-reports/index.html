@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Covid19IndiaTestReport">
-              <span class="suite-name border-failed">Covid19IndiaTestReport</span>
+              <span class="suite-name border-passed">Covid19IndiaTestReport</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -59,7 +59,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="group-Covid19IndiaTestReport">
-                    <span>3 groups</span>
+                    <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,21 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Covid19IndiaTestReport" class="hide-methods failed suite-Covid19IndiaTestReport"> (hide)</a> <!-- hide-methods failed suite-Covid19IndiaTestReport -->
-                      <a href="#" panel-name="suite-Covid19IndiaTestReport" class="show-methods failed suite-Covid19IndiaTestReport"> (show)</a> <!-- show-methods failed suite-Covid19IndiaTestReport -->
-                    </span>
-                    <div class="method-list-content failed suite-Covid19IndiaTestReport">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Covid19IndiaTestReport" title="com.ui.testautomation.CovidIndiaUITest" hash-for-method="checkCaseCalculationsForDelhi">checkCaseCalculationsForDelhi</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Covid19IndiaTestReport -->
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -116,7 +102,7 @@
                     <div class="method-list-content passed suite-Covid19IndiaTestReport">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Covid19IndiaTestReport" title="com.ui.testautomation.CovidIndiaUITest" hash-for-method="verifyRedZonesOfAllStates">verifyRedZonesOfAllStates</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Covid19IndiaTestReport" title="com.ui.testautomation.CovidIndiaUITest" hash-for-method="verifyEssentialsOfAllStates">verifyEssentialsOfAllStates</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Covid19IndiaTestReport -->
@@ -131,28 +117,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Covid19IndiaTestReport" class="panel Covid19IndiaTestReport">
-          <div class="suite-Covid19IndiaTestReport-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.ui.testautomation.CovidIndiaUITest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="checkCaseCalculationsForDelhi">
-                  </a> <!-- checkCaseCalculationsForDelhi -->
-                  <span class="method-name">checkCaseCalculationsForDelhi</span>
-                  <div class="stack-trace">java.lang.AssertionError: Data on UI &amp; API doesnot match expected [true] but found [false]
-	at com.app.testautomation.utilities.Assertions.assertTrue(Assertions.java:24)
-	at com.ui.testautomation.CovidIndiaUITest.checkCaseCalculationsForDelhi(CovidIndiaUITest.java:62)
-... Removed 32 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(Checks & verify the total case calculation after recovered and death for Maharashtra)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Covid19IndiaTestReport-class-failed -->
           <div class="suite-Covid19IndiaTestReport-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -161,11 +125,11 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyRedZonesOfAllStates">
-                  </a> <!-- verifyRedZonesOfAllStates -->
-                  <span class="method-name">verifyRedZonesOfAllStates</span>
+                  <a name="verifyEssentialsOfAllStates">
+                  </a> <!-- verifyEssentialsOfAllStates -->
+                  <span class="method-name">verifyEssentialsOfAllStates</span>
                   <em>
-(Check the Red zones of all states)                  </em>
+(Verify the essentials Listed for all states with API call)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -207,30 +171,10 @@
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="test-group">
-              <span class="test-group-name">regression</span>
+              <span class="test-group-name">essentials</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">verifyRedZonesOfAllStates</span>
-                <br/>
-              </div> <!-- method-in-group -->
-            </div> <!-- test-group -->
-            <div class="test-group">
-              <span class="test-group-name">sanity</span>
-              <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">checkCaseCalculationsForDelhi</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">verifyRedZonesOfAllStates</span>
-                <br/>
-              </div> <!-- method-in-group -->
-            </div> <!-- test-group -->
-            <div class="test-group">
-              <span class="test-group-name">smoke</span>
-              <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">verifyRedZonesOfAllStates</span>
+                <span class="method-in-group-name">verifyEssentialsOfAllStates</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -250,20 +194,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyRedZonesOfAllStates')
+data.setCell(0, 1, 'verifyEssentialsOfAllStates')
 data.setCell(0, 2, 'com.ui.testautomation.CovidIndiaUITest')
-data.setCell(0, 3, 94409);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'checkCaseCalculationsForDelhi')
-data.setCell(1, 2, 'com.ui.testautomation.CovidIndiaUITest')
-data.setCell(1, 3, 12078);
+data.setCell(0, 3, 23330);
 window.suiteTableData['Covid19IndiaTestReport']= { tableData: data, tableDiv: 'times-div-Covid19IndiaTestReport'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 23 seconds</span>
               <div id="times-div-Covid19IndiaTestReport">
               </div> <!-- times-div-Covid19IndiaTestReport -->
             </div> <!-- times-div -->
@@ -291,34 +231,20 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.ui.testautomation.CovidIndiaUITest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">initiateMethod(public void com.ui.testautomation.CovidIndiaUITest.checkCaseCalculationsForDelhi())</span>
+                <span class="method-name">initiateMethod(public void com.ui.testautomation.CovidIndiaUITest.verifyEssentialsOfAllStates())</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">checkCaseCalculationsForDelhi</span>
-                <span class="method-start">3381 ms</span>
+                <span class="method-name">verifyEssentialsOfAllStates</span>
+                <span class="method-start">6049 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">finish(public void com.ui.testautomation.CovidIndiaUITest.checkCaseCalculationsForDelhi())</span>
-                <span class="method-start">15502 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">initiateMethod(public void com.ui.testautomation.CovidIndiaUITest.verifyRedZonesOfAllStates())</span>
-                <span class="method-start">21732 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifyRedZonesOfAllStates</span>
-                <span class="method-start">35024 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">finish(public void com.ui.testautomation.CovidIndiaUITest.verifyRedZonesOfAllStates())</span>
-                <span class="method-start">129657 ms</span>
+                <span class="method-name">finish(public void com.ui.testautomation.CovidIndiaUITest.verifyEssentialsOfAllStates())</span>
+                <span class="method-start">29391 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">quit</span>
-                <span class="method-start">139196 ms</span>
+                <span class="method-start">40012 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -22,6 +22,7 @@ com\app\testautomation\configurations\Log4jConfiguration.class
 com\ui\testautomation\driverconfigs\ChromeDriverInitiator.class
 com\app\testautomation\utilities\WebElementModifier.class
 com\app\testautomation\exceptions\BrowserCapabilitiesNotInitiatedException.class
+com\ui\testautomation\pageobjectmodels\Covid19IndiaEssentialsPage.class
 com\app\testautomation\initiators\SystemVariables.class
 com\ui\testautomation\driverconfigs\IEDriverInitiator.class
 com\app\testautomation\utilities\PropertiesFileReader.class

@@ -5,7 +5,7 @@ import org.testng.Assert;
 
 import com.app.testautomation.initiators.Driver;
 
-@Component(value = "assert")
+@Component(value = "assertions")
 public class Assertions {
 	
 	private Driver webDriver;
