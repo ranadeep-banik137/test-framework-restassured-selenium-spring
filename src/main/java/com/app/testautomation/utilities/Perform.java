@@ -2,6 +2,9 @@ package com.app.testautomation.utilities;
 
 import java.util.List;
 
+import org.apache.commons.lang3.RandomStringUtils;
+import org.apache.commons.lang3.StringUtils;
+
 public class Perform {
 	
 	private static int result = 0;
@@ -46,5 +49,31 @@ public class Perform {
 		int returnResult = result;
 		flushCount();
 		return returnResult;
+	}
+	
+	public static int getRandomNumber(int startingIndex, int endIndex) {
+		if (endIndex >= startingIndex) {
+			int digit = String.valueOf(endIndex).length();
+			int random = 0;
+			do {
+				random = Integer.parseInt(RandomStringUtils.randomNumeric(digit));
+			} while (!(random <= endIndex && random >= startingIndex));
+			return random;
+		} else {
+			return endIndex;
+		}
+	}
+	
+	public static int getRandomNumber(int endIndex) {
+		return getRandomNumber(0, endIndex);
+	}
+	
+	public static String formatFirstLetterInCaps(String input) {
+		String formattedString = StringUtils.EMPTY;
+		String[] stringParts = input.split(" ");
+		for(String s : stringParts) {
+			formattedString += s.substring(0, 1).toUpperCase().concat(s.substring(1)).concat(stringParts.length > 1 ? StringUtils.SPACE : StringUtils.EMPTY);
+		}
+		return formattedString.trim();
 	}
 }

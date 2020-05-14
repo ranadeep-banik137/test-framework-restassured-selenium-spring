@@ -50,6 +50,7 @@ public class ImageConverterUtility {
 		return videoLocation;
 	}
 	public void setVideoLocation(String videoLocation) {
+		FileUtils.createDirectory(videoLocation);
 		this.videoLocation = videoLocation;
 	}
 	public String getVideoFormat() {

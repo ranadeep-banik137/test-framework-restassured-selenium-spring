@@ -49,6 +49,7 @@ public class MainTest01 {
 			 * driver2.quit();
 			 */
 		  //setValue(SystemVariables.GRID_URL, "http://192.168.1.75:4444/wd/hub");
+		  
 		  setValue(BROWSER, "chrome");
 		  ApplicationContextInitiator init = ApplicationContextInitiator.getDefaultApplicationContextInitiator();
 		  System.out.println(getValue("webdriver.chrome.driver"));
@@ -60,6 +61,12 @@ public class MainTest01 {
 		  fac.viewPatientDataBasePage();
 		  Covid19IndiaDatabaseSheet data = (Covid19IndiaDatabaseSheet) init.getContext().getBean("covid19Datasheet");
 		  data.switchToDatabaseWindow();
+		  
+		  /* String s = "NAMAAZ".toLowerCase();
+		  String s1 = "bpshi & koron";
+		  System.out.println(Perform.formatFirstLetterInCaps(s));
+		  System.out.println(Perform.formatFirstLetterInCaps(s1)); */
+		  
 	}
 
 }

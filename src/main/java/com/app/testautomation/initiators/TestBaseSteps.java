@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.springframework.context.ApplicationContext;
 
 import com.app.testautomation.configurations.Log4jConfiguration;
+import com.app.testautomation.pojos.Locations;
 import com.app.testautomation.utilities.Assertions;
 import com.app.testautomation.utilities.FileUtils;
 import com.app.testautomation.utilities.ImageConverterUtility;
@@ -24,6 +25,7 @@ public class TestBaseSteps {
 	@SuppressWarnings("unused")
 	private Log4jConfiguration log4j;
 	private RestCall restCall;
+	private Locations locations;
 		
 	protected TestBaseSteps() {
 		LOGGER.info("Base steps initiated");
@@ -52,6 +54,7 @@ public class TestBaseSteps {
 		this.restCall = (RestCall) this.getContext().getBean("rest");
 		setWebDriver(this.driver.getDriver());
 		setDefaultConverter();
+		this.locations = (Locations) this.getContext().getBean("locations");
 	}
 
 	private void setDefaultConverter() {
@@ -76,5 +79,9 @@ public class TestBaseSteps {
 	
 	protected ImageConverterUtility getConverter() {
 		return converter;
+	}
+
+	protected Locations getLocations() {
+		return locations;
 	}
 }

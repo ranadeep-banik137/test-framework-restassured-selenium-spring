@@ -80,5 +80,13 @@ public class FileUtils {
 		counter++;
 		return copyFile(path, newPath);
 	}
+	
+	
+	public static void createDirectory(String path) {
+		File newFile = new File(path);
+		if (!newFile.exists()) {
+			newFile.mkdir();
+		}
+	}
 }
 

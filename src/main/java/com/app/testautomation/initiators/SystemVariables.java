@@ -15,6 +15,7 @@ public class SystemVariables {
 	public static final String LINK = "link";
 	public static final String RETRY_COUNT = "retry-count";
 	public static final String RETRY_IF_FAILED = "retryIfFailed";
+	public static final String SCREEN_CAPTURE_FLAG = "screenCaptureFlag";
 	
 	public static String getValue(String key) {
 		return System.getenv(key) == null ? System.getProperty(key) : System.getenv(key);

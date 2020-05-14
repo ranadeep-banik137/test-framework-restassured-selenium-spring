@@ -1,5 +1,8 @@
 package com.ui.testautomation.pageobjectmodels;
 
+import static com.app.testautomation.initiators.SystemVariables.*;
+import static com.app.testautomation.utilities.Perform.*;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -20,6 +23,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import com.app.testautomation.initiators.Driver;
+import com.app.testautomation.pojos.City;
+import com.app.testautomation.pojos.Locations;
+import com.app.testautomation.pojos.State;
 import com.app.testautomation.utilities.WebElementModifier;
 
 @Component(value = "covid19Essentials")
@@ -35,6 +41,8 @@ public class Covid19IndiaEssentialsPage {
 	private Actions actions;
 	@Autowired
 	private WebElementModifier webElementModifier;
+	@Autowired
+	private Locations locations;
 	
 	
 	@FindBy(xpath = "//div[@class='navbar-right']//a[@href='/']")
@@ -92,60 +100,108 @@ public class Covid19IndiaEssentialsPage {
 		}
 	}
 	
+	public void setUIData() {
+		setValue(SCREEN_CAPTURE_FLAG, "false");
+		List<State> states = new ArrayList<>();
+		//selectStateDropdown.click();
+		List<WebElement> stateElements = this.webElementModifier.appendWebElementToList(selectStateDropdown, By.xpath(".//option"));
+		//this.explicitWait.until(ExpectedConditions.visibilityOfAllElements(stateElements));
+		stateElements.forEach(state -> {
+			State stateInstance = new State();
+			stateInstance.setStateName(selectState(state.getText()));
+			List<City> cities = new ArrayList<>();
+			List<WebElement> cityElements = this.webElementModifier.appendWebElementToList(selectCityDropdown, By.xpath(".//option"));
+			cityElements.forEach(city -> {
+				City cityInstance = new City();
+				cityInstance.setCityName(selectCity(city.getText()));
+				cities.add(cityInstance);
+				List<String> categories = new ArrayList<>();
+				List<WebElement> categoryElements = this.webElementModifier.appendWebElementToList(selectCategoryDropdown, By.xpath(".//option"));
+				categoryElements.forEach(category -> {
+					categories.add(selectCategory(category.getText()));
+				});
+				cityInstance.setCategories(categories);
+			});
+			states.add(stateInstance);
+		});
+		locations.setStates(states);
+		setValue(SCREEN_CAPTURE_FLAG, "true");
+	}
+	
+	public void setAllRandomEssentialData() {
+		final String RANDOM = "random";
+		State state = new State();
+		City city = new City();
+		state.setStateName(selectState(RANDOM));
+		city.setCityName(selectCity(RANDOM));
+		city.addCategory(selectCategory(RANDOM));
+		state.addCity(city);
+		locations.addState(state);
+	}
+	
 	public String selectState(String state) {
-		selectStateDropdown.click();
-		List<WebElement> states = this.webElementModifier.appendWebElementToList(selectStateDropdown, By.xpath(".//option"));
-		this.explicitWait.until(ExpectedConditions.visibilityOfAllElements(states));
-		this.webDriverInitiator.takeScreenShot(PAGE_SOURCE);
-		Iterator<WebElement> stateIterator = states.iterator();
-		while (stateIterator.hasNext()) {
-			WebElement stateElement = stateIterator.next();
-			this.executor.executeScript("arguments[0].scrollIntoView(true);", stateElement);
-			this.webDriverInitiator.takeScreenShot(PAGE_SOURCE);
-			if (stateElement.getText().equalsIgnoreCase(state)) {
-				stateElement.click();
-				break;
+		List<WebElement> states = getAllStateList();
+		if (state.equalsIgnoreCase("random")) {
+			WebElement randomStateElement = states.get(getRandomNumber(1, states.size()-1));
+			state = state.contains("PAN") ? "PAN India" : formatFirstLetterInCaps(randomStateElement.getText().trim().toLowerCase());
+			randomStateElement.click();
+		} else {
+			Iterator<WebElement> stateIterator = states.iterator();
+			while (stateIterator.hasNext()) {
+				WebElement stateElement = stateIterator.next();
+				this.executor.executeScript("arguments[0].scrollIntoView(true);", stateElement);
+				this.webDriverInitiator.takeScreenShot(PAGE_SOURCE);
+				if (stateElement.getText().equalsIgnoreCase(state)) {
+					stateElement.click();
+					break;
+				}
 			}
+			this.webDriverInitiator.takeScreenShot(PAGE_SOURCE);
 		}
-		this.webDriverInitiator.takeScreenShot(PAGE_SOURCE);
 		return state;
 	}
 	
 	public String selectCity(String city) {
-		selectCityDropdown.click();
-		List<WebElement> cities = this.webElementModifier.appendWebElementToList(selectCityDropdown, By.xpath(".//option"));
-		this.explicitWait.until(ExpectedConditions.visibilityOfAllElements(cities));
-		this.webDriverInitiator.takeScreenShot(PAGE_SOURCE);
-		Iterator<WebElement> cityIterator = cities.iterator();
-		while (cityIterator.hasNext()) {
-			WebElement cityElement = cityIterator.next();
-			this.executor.executeScript("arguments[0].scrollIntoView(true);", cityElement);
-			this.webDriverInitiator.takeScreenShot(PAGE_SOURCE);
-			if (cityElement.getText().equalsIgnoreCase(city)) {
-				cityElement.click();
-				break;
+		List<WebElement> cities = getAllCityList();
+		if (city.equalsIgnoreCase("random")) {
+			WebElement randomCityElement = cities.get(getRandomNumber(1, cities.size()-1));
+			city = city.contains("PAN") ? "PAN State" :formatFirstLetterInCaps(randomCityElement.getText().trim().toLowerCase());
+			randomCityElement.click();
+		} else {
+			Iterator<WebElement> cityIterator = cities.iterator();
+			while (cityIterator.hasNext()) {
+				WebElement cityElement = cityIterator.next();
+				this.executor.executeScript("arguments[0].scrollIntoView(true);", cityElement);
+				this.webDriverInitiator.takeScreenShot(PAGE_SOURCE);
+				if (cityElement.getText().equalsIgnoreCase(city)) {
+					cityElement.click();
+					break;
+				}
 			}
+			this.webDriverInitiator.takeScreenShot(PAGE_SOURCE);
 		}
-		this.webDriverInitiator.takeScreenShot(PAGE_SOURCE);
 		return city;
 	}
 	
 	public String selectCategory(String category) {
-		selectCategoryDropdown.click();
-		List<WebElement> categories = this.webElementModifier.appendWebElementToList(selectCategoryDropdown, By.xpath(".//option"));
-		this.explicitWait.until(ExpectedConditions.visibilityOfAllElements(categories));
-		this.webDriverInitiator.takeScreenShot(PAGE_SOURCE);
-		Iterator<WebElement> categoryIterator = categories.iterator();
-		while (categoryIterator.hasNext()) {
-			WebElement categoryElement = categoryIterator.next();
-			this.executor.executeScript("arguments[0].scrollIntoView(true);", categoryElement);
-			this.webDriverInitiator.takeScreenShot(PAGE_SOURCE);
-			if (categoryElement.getText().equalsIgnoreCase(category)) {
-				categoryElement.click();
-				break;
+		List<WebElement> categories = getAllCategoryList();
+		if (category.equalsIgnoreCase("random")) {
+			WebElement randomCategoryElement = categories.get(getRandomNumber(1, categories.size()-1));
+			category = formatFirstLetterInCaps(randomCategoryElement.getText().trim().toLowerCase());
+			randomCategoryElement.click();
+		} else {
+			Iterator<WebElement> categoryIterator = categories.iterator();
+			while (categoryIterator.hasNext()) {
+				WebElement categoryElement = categoryIterator.next();
+				this.executor.executeScript("arguments[0].scrollIntoView(true);", categoryElement);
+				this.webDriverInitiator.takeScreenShot(PAGE_SOURCE);
+				if (categoryElement.getText().equalsIgnoreCase(category)) {
+					categoryElement.click();
+					break;
+				}
 			}
+			this.webDriverInitiator.takeScreenShot(PAGE_SOURCE);
 		}
-		this.webDriverInitiator.takeScreenShot(PAGE_SOURCE);
 		return category;
 	}
 	
@@ -160,7 +216,9 @@ public class Covid19IndiaEssentialsPage {
 		Iterator<WebElement> tableRowIterator = this.webElementModifier.appendWebElementToList(searchResultTable, By.xpath(".//tbody/tr")).iterator();
 		List<Map<String, String>> tablularList = new ArrayList<>();
 		while (tableRowIterator.hasNext()) {
-			Iterator<WebElement> rowValues = this.webElementModifier.appendWebElementToList(tableRowIterator.next(), By.xpath(".//td")).iterator();
+			WebElement row = tableRowIterator.next();
+			this.executor.executeScript("arguments[0].scrollIntoView(true);", row);
+			Iterator<WebElement> rowValues = this.webElementModifier.appendWebElementToList(row, By.xpath(".//td")).iterator();
 			Iterator<WebElement> tableHeaderColumnElementIterator = this.webElementModifier.appendWebElementToList(searchResultTable, By.xpath(".//thead/tr/th")).iterator();
 			Map<String, String> tableMapper = new HashMap<>();
 			while (tableHeaderColumnElementIterator.hasNext() && rowValues.hasNext()) {
@@ -182,5 +240,23 @@ public class Covid19IndiaEssentialsPage {
 			columnCount += 1;
 		}
 		return columnCount;
+	}
+	
+	public List<WebElement> getAllStateList() {
+		selectStateDropdown.click();
+		this.webDriverInitiator.takeScreenShot(PAGE_SOURCE);
+		return this.webElementModifier.appendWebElementToList(selectStateDropdown, By.xpath(".//option"));
+	}
+	
+	public List<WebElement> getAllCityList() {
+		selectCityDropdown.click();
+		this.webDriverInitiator.takeScreenShot(PAGE_SOURCE);
+		return this.webElementModifier.appendWebElementToList(selectCityDropdown, By.xpath(".//option"));
+	}
+	
+	public List<WebElement> getAllCategoryList() {
+		selectCategoryDropdown.click();
+		this.webDriverInitiator.takeScreenShot(PAGE_SOURCE);
+		return this.webElementModifier.appendWebElementToList(selectCategoryDropdown, By.xpath(".//option"));
 	}
 }
