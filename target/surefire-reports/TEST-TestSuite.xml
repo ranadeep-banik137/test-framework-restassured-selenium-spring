@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="53.965" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="1,754.473" tests="16" errors="0" skipped="0" failures="3">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -8,7 +8,7 @@
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="grid.run" value="false"/>
-    <property name="java.class.path" value="D:\git\test-framework-restassured-selenium-spring-00\target\test-classes;D:\git\test-framework-restassured-selenium-spring-00\target\classes;C:\Users\ranad\.m2\repository\io\rest-assured\rest-assured\4.3.0\rest-assured-4.3.0.jar;C:\Users\ranad\.m2\repository\org\codehaus\groovy\groovy\3.0.2\groovy-3.0.2.jar;C:\Users\ranad\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.2\groovy-xml-3.0.2.jar;C:\Users\ranad\.m2\repository\org\apache\httpcomponents\httpclient\4.5.3\httpclient-4.5.3.jar;C:\Users\ranad\.m2\repository\org\apache\httpcomponents\httpmime\4.5.3\httpmime-4.5.3.jar;C:\Users\ranad\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\ranad\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\ranad\.m2\repository\io\rest-assured\json-path\4.3.0\json-path-4.3.0.jar;C:\Users\ranad\.m2\repository\org\codehaus\groovy\groovy-json\3.0.2\groovy-json-3.0.2.jar;C:\Users\ranad\.m2\repository\io\rest-assured\rest-assured-common\4.3.0\rest-assured-common-4.3.0.jar;C:\Users\ranad\.m2\repository\io\rest-assured\xml-path\4.3.0\xml-path-4.3.0.jar;C:\Users\ranad\.m2\repository\org\apache\commons\commons-lang3\3.4\commons-lang3-3.4.jar;C:\Users\ranad\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.2\jakarta.xml.bind-api-2.3.2.jar;C:\Users\ranad\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.1\jakarta.activation-api-1.2.1.jar;C:\Users\ranad\.m2\repository\com\sun\xml\bind\jaxb-osgi\2.3.0.1\jaxb-osgi-2.3.0.1.jar;C:\Users\ranad\.m2\repository\org\apache\sling\org.apache.sling.javax.activation\0.1.0\org.apache.sling.javax.activation-0.1.0.jar;C:\Users\ranad\.m2\repository\javax\activation\activation\1.1.1\activation-1.1.1.jar;C:\Users\ranad\.m2\repository\io\rest-assured\json-schema-validator\4.3.0\json-schema-validator-4.3.0.jar;C:\Users\ranad\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.10\json-schema-validator-2.2.10.jar;C:\Users\ranad\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.10\json-schema-core-1.2.10.jar;C:\Users\ranad\.m2\repository\com\github\java-json-tools\jackson-coreutils\1.9\jackson-coreutils-1.9.jar;C:\Users\ranad\.m2\repository\com\github\fge\msg-simple\1.1\msg-simple-1.1.jar;C:\Users\ranad\.m2\repository\com\github\fge\btf\1.2\btf-1.2.jar;C:\Users\ranad\.m2\repository\com\github\fge\uri-template\0.9\uri-template-0.9.jar;C:\Users\ranad\.m2\repository\org\mozilla\rhino\1.7.7.1\rhino-1.7.7.1.jar;C:\Users\ranad\.m2\repository\javax\mail\mailapi\1.4.3\mailapi-1.4.3.jar;C:\Users\ranad\.m2\repository\joda-time\joda-time\2.9.7\joda-time-2.9.7.jar;C:\Users\ranad\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.0.0\libphonenumber-8.0.0.jar;C:\Users\ranad\.m2\repository\com\google\code\findbugs\jsr305\3.0.1\jsr305-3.0.1.jar;C:\Users\ranad\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.3\jopt-simple-5.0.3.jar;C:\Users\ranad\.m2\repository\org\testng\testng\6.10\testng-6.10.jar;C:\Users\ranad\.m2\repository\com\beust\jcommander\1.48\jcommander-1.48.jar;C:\Users\ranad\.m2\repository\org\hamcrest\hamcrest-core\2.1\hamcrest-core-2.1.jar;C:\Users\ranad\.m2\repository\org\hamcrest\hamcrest-all\1.3\hamcrest-all-1.3.jar;C:\Users\ranad\.m2\repository\com\typesafe\config\1.2.1\config-1.2.1.jar;C:\Users\ranad\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.9.8\jackson-databind-2.9.8.jar;C:\Users\ranad\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.9.0\jackson-annotations-2.9.0.jar;C:\Users\ranad\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.9.8\jackson-core-2.9.8.jar;C:\Users\ranad\.m2\repository\org\seleniumhq\selenium\selenium-java\3.11.0\selenium-java-3.11.0.jar;C:\Users\ranad\.m2\repository\org\seleniumhq\selenium\selenium-api\3.11.0\selenium-api-3.11.0.jar;C:\Users\ranad\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.11.0\selenium-chrome-driver-3.11.0.jar;C:\Users\ranad\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.11.0\selenium-edge-driver-3.11.0.jar;C:\Users\ranad\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.11.0\selenium-firefox-driver-3.11.0.jar;C:\Users\ranad\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.11.0\selenium-ie-driver-3.11.0.jar;C:\Users\ranad\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.11.0\selenium-opera-driver-3.11.0.jar;C:\Users\ranad\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.11.0\selenium-remote-driver-3.11.0.jar;C:\Users\ranad\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.11.0\selenium-safari-driver-3.11.0.jar;C:\Users\ranad\.m2\repository\org\seleniumhq\selenium\selenium-support\3.11.0\selenium-support-3.11.0.jar;C:\Users\ranad\.m2\repository\net\bytebuddy\byte-buddy\1.7.9\byte-buddy-1.7.9.jar;C:\Users\ranad\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\ranad\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\Users\ranad\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\ranad\.m2\repository\com\google\code\gson\gson\2.8.2\gson-2.8.2.jar;C:\Users\ranad\.m2\repository\com\google\guava\guava\23.6-jre\guava-23.6-jre.jar;C:\Users\ranad\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\ranad\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\ranad\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\ranad\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\ranad\.m2\repository\org\apache\httpcomponents\httpcore\4.4.6\httpcore-4.4.6.jar;C:\Users\ranad\.m2\repository\com\squareup\okhttp3\okhttp\3.9.1\okhttp-3.9.1.jar;C:\Users\ranad\.m2\repository\com\squareup\okio\okio\1.13.0\okio-1.13.0.jar;C:\Users\ranad\.m2\repository\com\relevantcodes\extentreports\2.41.2\extentreports-2.41.2.jar;C:\Users\ranad\.m2\repository\org\jsoup\jsoup\1.8.3\jsoup-1.8.3.jar;C:\Users\ranad\.m2\repository\org\xerial\sqlite-jdbc\3.8.11.1\sqlite-jdbc-3.8.11.1.jar;C:\Users\ranad\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\ranad\.m2\repository\org\mongodb\mongodb-driver\3.0.4\mongodb-driver-3.0.4.jar;C:\Users\ranad\.m2\repository\org\mongodb\mongodb-driver-core\3.0.4\mongodb-driver-core-3.0.4.jar;C:\Users\ranad\.m2\repository\com\aventstack\extentreports\4.0.9\extentreports-4.0.9.jar;C:\Users\ranad\.m2\repository\org\mongodb\bson\3.3.0\bson-3.3.0.jar;C:\Users\ranad\.m2\repository\org\springframework\spring-core\5.1.3.RELEASE\spring-core-5.1.3.RELEASE.jar;C:\Users\ranad\.m2\repository\org\springframework\spring-jcl\5.1.3.RELEASE\spring-jcl-5.1.3.RELEASE.jar;C:\Users\ranad\.m2\repository\org\springframework\spring-context\5.1.3.RELEASE\spring-context-5.1.3.RELEASE.jar;C:\Users\ranad\.m2\repository\org\springframework\spring-aop\5.1.3.RELEASE\spring-aop-5.1.3.RELEASE.jar;C:\Users\ranad\.m2\repository\org\springframework\spring-beans\5.1.3.RELEASE\spring-beans-5.1.3.RELEASE.jar;C:\Users\ranad\.m2\repository\org\springframework\spring-expression\5.1.3.RELEASE\spring-expression-5.1.3.RELEASE.jar;C:\Users\ranad\.m2\repository\org\apache\poi\poi-ooxml\4.0.1\poi-ooxml-4.0.1.jar;C:\Users\ranad\.m2\repository\org\apache\poi\poi\4.0.1\poi-4.0.1.jar;C:\Users\ranad\.m2\repository\org\apache\commons\commons-collections4\4.2\commons-collections4-4.2.jar;C:\Users\ranad\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\ranad\.m2\repository\org\apache\poi\poi-ooxml-schemas\4.0.1\poi-ooxml-schemas-4.0.1.jar;C:\Users\ranad\.m2\repository\org\apache\xmlbeans\xmlbeans\3.0.2\xmlbeans-3.0.2.jar;C:\Users\ranad\.m2\repository\org\apache\commons\commons-compress\1.18\commons-compress-1.18.jar;C:\Users\ranad\.m2\repository\com\github\virtuald\curvesapi\1.05\curvesapi-1.05.jar;C:\Users\ranad\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacv\1.0\javacv-1.0.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp\1.0\javacpp-1.0.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\opencv\3.0.0-1.0\opencv-3.0.0-1.0.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\opencv\3.0.0-1.0\opencv-3.0.0-1.0-windows-x86_64.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\ffmpeg\2.7.1-1.0\ffmpeg-2.7.1-1.0.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\ffmpeg\2.7.1-1.0\ffmpeg-2.7.1-1.0-windows-x86_64.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\flycapture\2.7.3.19-1.0\flycapture-2.7.3.19-1.0.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\flycapture\2.7.3.19-1.0\flycapture-2.7.3.19-1.0-windows-x86_64.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\libdc1394\2.2.3-1.0\libdc1394-2.2.3-1.0.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\libdc1394\2.2.3-1.0\libdc1394-2.2.3-1.0-windows-x86_64.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\libfreenect\0.5.2-1.0\libfreenect-0.5.2-1.0.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\libfreenect\0.5.2-1.0\libfreenect-0.5.2-1.0-windows-x86_64.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\videoinput\0.200-1.0\videoinput-0.200-1.0.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\videoinput\0.200-1.0\videoinput-0.200-1.0-windows-x86_64.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\artoolkitplus\2.3.1-1.0\artoolkitplus-2.3.1-1.0.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\artoolkitplus\2.3.1-1.0\artoolkitplus-2.3.1-1.0-windows-x86_64.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\flandmark\1.07-1.0\flandmark-1.07-1.0.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\flandmark\1.07-1.0\flandmark-1.07-1.0-windows-x86_64.jar;C:\Users\ranad\.m2\repository\org\apache\maven\surefire\surefire-testng-utils\2.20.1\surefire-testng-utils-2.20.1.jar;C:\Users\ranad\.m2\repository\org\apache\maven\surefire\surefire-grouper\2.20.1\surefire-grouper-2.20.1.jar;"/>
+    <property name="java.class.path" value="D:\git\test-framework-restassured-selenium-spring-00\target\test-classes;D:\git\test-framework-restassured-selenium-spring-00\target\classes;C:\Users\ranad\.m2\repository\io\rest-assured\rest-assured\4.3.0\rest-assured-4.3.0.jar;C:\Users\ranad\.m2\repository\org\codehaus\groovy\groovy\3.0.2\groovy-3.0.2.jar;C:\Users\ranad\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.2\groovy-xml-3.0.2.jar;C:\Users\ranad\.m2\repository\org\apache\httpcomponents\httpclient\4.5.3\httpclient-4.5.3.jar;C:\Users\ranad\.m2\repository\org\apache\httpcomponents\httpmime\4.5.3\httpmime-4.5.3.jar;C:\Users\ranad\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\ranad\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\ranad\.m2\repository\io\rest-assured\json-path\4.3.0\json-path-4.3.0.jar;C:\Users\ranad\.m2\repository\org\codehaus\groovy\groovy-json\3.0.2\groovy-json-3.0.2.jar;C:\Users\ranad\.m2\repository\io\rest-assured\rest-assured-common\4.3.0\rest-assured-common-4.3.0.jar;C:\Users\ranad\.m2\repository\io\rest-assured\xml-path\4.3.0\xml-path-4.3.0.jar;C:\Users\ranad\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.2\jakarta.xml.bind-api-2.3.2.jar;C:\Users\ranad\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.1\jakarta.activation-api-1.2.1.jar;C:\Users\ranad\.m2\repository\com\sun\xml\bind\jaxb-osgi\2.3.0.1\jaxb-osgi-2.3.0.1.jar;C:\Users\ranad\.m2\repository\org\apache\sling\org.apache.sling.javax.activation\0.1.0\org.apache.sling.javax.activation-0.1.0.jar;C:\Users\ranad\.m2\repository\javax\activation\activation\1.1.1\activation-1.1.1.jar;C:\Users\ranad\.m2\repository\io\rest-assured\json-schema-validator\4.3.0\json-schema-validator-4.3.0.jar;C:\Users\ranad\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.10\json-schema-validator-2.2.10.jar;C:\Users\ranad\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.10\json-schema-core-1.2.10.jar;C:\Users\ranad\.m2\repository\com\github\java-json-tools\jackson-coreutils\1.9\jackson-coreutils-1.9.jar;C:\Users\ranad\.m2\repository\com\github\fge\msg-simple\1.1\msg-simple-1.1.jar;C:\Users\ranad\.m2\repository\com\github\fge\btf\1.2\btf-1.2.jar;C:\Users\ranad\.m2\repository\com\github\fge\uri-template\0.9\uri-template-0.9.jar;C:\Users\ranad\.m2\repository\org\mozilla\rhino\1.7.7.1\rhino-1.7.7.1.jar;C:\Users\ranad\.m2\repository\javax\mail\mailapi\1.4.3\mailapi-1.4.3.jar;C:\Users\ranad\.m2\repository\joda-time\joda-time\2.9.7\joda-time-2.9.7.jar;C:\Users\ranad\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.0.0\libphonenumber-8.0.0.jar;C:\Users\ranad\.m2\repository\com\google\code\findbugs\jsr305\3.0.1\jsr305-3.0.1.jar;C:\Users\ranad\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.3\jopt-simple-5.0.3.jar;C:\Users\ranad\.m2\repository\org\testng\testng\6.10\testng-6.10.jar;C:\Users\ranad\.m2\repository\com\beust\jcommander\1.48\jcommander-1.48.jar;C:\Users\ranad\.m2\repository\org\hamcrest\hamcrest-core\2.1\hamcrest-core-2.1.jar;C:\Users\ranad\.m2\repository\org\hamcrest\hamcrest-all\1.3\hamcrest-all-1.3.jar;C:\Users\ranad\.m2\repository\com\typesafe\config\1.2.1\config-1.2.1.jar;C:\Users\ranad\.m2\repository\org\apache\commons\commons-lang3\3.10\commons-lang3-3.10.jar;C:\Users\ranad\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.9.8\jackson-databind-2.9.8.jar;C:\Users\ranad\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.9.0\jackson-annotations-2.9.0.jar;C:\Users\ranad\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.9.8\jackson-core-2.9.8.jar;C:\Users\ranad\.m2\repository\org\seleniumhq\selenium\selenium-java\3.11.0\selenium-java-3.11.0.jar;C:\Users\ranad\.m2\repository\org\seleniumhq\selenium\selenium-api\3.11.0\selenium-api-3.11.0.jar;C:\Users\ranad\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.11.0\selenium-chrome-driver-3.11.0.jar;C:\Users\ranad\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.11.0\selenium-edge-driver-3.11.0.jar;C:\Users\ranad\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.11.0\selenium-firefox-driver-3.11.0.jar;C:\Users\ranad\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.11.0\selenium-ie-driver-3.11.0.jar;C:\Users\ranad\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.11.0\selenium-opera-driver-3.11.0.jar;C:\Users\ranad\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.11.0\selenium-remote-driver-3.11.0.jar;C:\Users\ranad\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.11.0\selenium-safari-driver-3.11.0.jar;C:\Users\ranad\.m2\repository\org\seleniumhq\selenium\selenium-support\3.11.0\selenium-support-3.11.0.jar;C:\Users\ranad\.m2\repository\net\bytebuddy\byte-buddy\1.7.9\byte-buddy-1.7.9.jar;C:\Users\ranad\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\ranad\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\Users\ranad\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\ranad\.m2\repository\com\google\code\gson\gson\2.8.2\gson-2.8.2.jar;C:\Users\ranad\.m2\repository\com\google\guava\guava\23.6-jre\guava-23.6-jre.jar;C:\Users\ranad\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\ranad\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\ranad\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\ranad\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\ranad\.m2\repository\org\apache\httpcomponents\httpcore\4.4.6\httpcore-4.4.6.jar;C:\Users\ranad\.m2\repository\com\squareup\okhttp3\okhttp\3.9.1\okhttp-3.9.1.jar;C:\Users\ranad\.m2\repository\com\squareup\okio\okio\1.13.0\okio-1.13.0.jar;C:\Users\ranad\.m2\repository\com\relevantcodes\extentreports\2.41.2\extentreports-2.41.2.jar;C:\Users\ranad\.m2\repository\org\jsoup\jsoup\1.8.3\jsoup-1.8.3.jar;C:\Users\ranad\.m2\repository\org\xerial\sqlite-jdbc\3.8.11.1\sqlite-jdbc-3.8.11.1.jar;C:\Users\ranad\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\ranad\.m2\repository\org\mongodb\mongodb-driver\3.0.4\mongodb-driver-3.0.4.jar;C:\Users\ranad\.m2\repository\org\mongodb\mongodb-driver-core\3.0.4\mongodb-driver-core-3.0.4.jar;C:\Users\ranad\.m2\repository\com\aventstack\extentreports\4.0.9\extentreports-4.0.9.jar;C:\Users\ranad\.m2\repository\org\mongodb\bson\3.3.0\bson-3.3.0.jar;C:\Users\ranad\.m2\repository\org\springframework\spring-core\5.1.3.RELEASE\spring-core-5.1.3.RELEASE.jar;C:\Users\ranad\.m2\repository\org\springframework\spring-jcl\5.1.3.RELEASE\spring-jcl-5.1.3.RELEASE.jar;C:\Users\ranad\.m2\repository\org\springframework\spring-context\5.1.3.RELEASE\spring-context-5.1.3.RELEASE.jar;C:\Users\ranad\.m2\repository\org\springframework\spring-aop\5.1.3.RELEASE\spring-aop-5.1.3.RELEASE.jar;C:\Users\ranad\.m2\repository\org\springframework\spring-beans\5.1.3.RELEASE\spring-beans-5.1.3.RELEASE.jar;C:\Users\ranad\.m2\repository\org\springframework\spring-expression\5.1.3.RELEASE\spring-expression-5.1.3.RELEASE.jar;C:\Users\ranad\.m2\repository\org\apache\poi\poi-ooxml\4.0.1\poi-ooxml-4.0.1.jar;C:\Users\ranad\.m2\repository\org\apache\poi\poi\4.0.1\poi-4.0.1.jar;C:\Users\ranad\.m2\repository\org\apache\commons\commons-collections4\4.2\commons-collections4-4.2.jar;C:\Users\ranad\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\ranad\.m2\repository\org\apache\poi\poi-ooxml-schemas\4.0.1\poi-ooxml-schemas-4.0.1.jar;C:\Users\ranad\.m2\repository\org\apache\xmlbeans\xmlbeans\3.0.2\xmlbeans-3.0.2.jar;C:\Users\ranad\.m2\repository\org\apache\commons\commons-compress\1.18\commons-compress-1.18.jar;C:\Users\ranad\.m2\repository\com\github\virtuald\curvesapi\1.05\curvesapi-1.05.jar;C:\Users\ranad\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacv\1.0\javacv-1.0.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp\1.0\javacpp-1.0.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\opencv\3.0.0-1.0\opencv-3.0.0-1.0.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\opencv\3.0.0-1.0\opencv-3.0.0-1.0-windows-x86_64.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\ffmpeg\2.7.1-1.0\ffmpeg-2.7.1-1.0.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\ffmpeg\2.7.1-1.0\ffmpeg-2.7.1-1.0-windows-x86_64.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\flycapture\2.7.3.19-1.0\flycapture-2.7.3.19-1.0.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\flycapture\2.7.3.19-1.0\flycapture-2.7.3.19-1.0-windows-x86_64.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\libdc1394\2.2.3-1.0\libdc1394-2.2.3-1.0.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\libdc1394\2.2.3-1.0\libdc1394-2.2.3-1.0-windows-x86_64.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\libfreenect\0.5.2-1.0\libfreenect-0.5.2-1.0.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\libfreenect\0.5.2-1.0\libfreenect-0.5.2-1.0-windows-x86_64.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\videoinput\0.200-1.0\videoinput-0.200-1.0.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\videoinput\0.200-1.0\videoinput-0.200-1.0-windows-x86_64.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\artoolkitplus\2.3.1-1.0\artoolkitplus-2.3.1-1.0.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\artoolkitplus\2.3.1-1.0\artoolkitplus-2.3.1-1.0-windows-x86_64.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\flandmark\1.07-1.0\flandmark-1.07-1.0.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\flandmark\1.07-1.0\flandmark-1.07-1.0-windows-x86_64.jar;C:\Users\ranad\.m2\repository\org\apache\maven\surefire\surefire-testng-utils\2.20.1\surefire-testng-utils-2.20.1.jar;C:\Users\ranad\.m2\repository\org\apache\maven\surefire\surefire-grouper\2.20.1\surefire-grouper-2.20.1.jar;"/>
     <property name="retryIfFailed" value="true"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
@@ -16,14 +16,14 @@
     <property name="log4j.overwrite" value="true"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="user.timezone" value=""/>
-    <property name="os.name" value="Windows 10"/>
     <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows 10"/>
     <property name="api" value="Covid19India"/>
     <property name="user.country" value="IN"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_241\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\ranad\AppData\Local\Temp\surefire6580370366473792466\surefirebooter1704351115839678266.jar C:\Users\ranad\AppData\Local\Temp\surefire6580370366473792466 2020-05-07T04-38-01_683-jvmRun1 surefire1732659083542620930tmp surefire_0201187469792965268tmp"/>
-    <property name="surefire.test.class.path" value="D:\git\test-framework-restassured-selenium-spring-00\target\test-classes;D:\git\test-framework-restassured-selenium-spring-00\target\classes;C:\Users\ranad\.m2\repository\io\rest-assured\rest-assured\4.3.0\rest-assured-4.3.0.jar;C:\Users\ranad\.m2\repository\org\codehaus\groovy\groovy\3.0.2\groovy-3.0.2.jar;C:\Users\ranad\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.2\groovy-xml-3.0.2.jar;C:\Users\ranad\.m2\repository\org\apache\httpcomponents\httpclient\4.5.3\httpclient-4.5.3.jar;C:\Users\ranad\.m2\repository\org\apache\httpcomponents\httpmime\4.5.3\httpmime-4.5.3.jar;C:\Users\ranad\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\ranad\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\ranad\.m2\repository\io\rest-assured\json-path\4.3.0\json-path-4.3.0.jar;C:\Users\ranad\.m2\repository\org\codehaus\groovy\groovy-json\3.0.2\groovy-json-3.0.2.jar;C:\Users\ranad\.m2\repository\io\rest-assured\rest-assured-common\4.3.0\rest-assured-common-4.3.0.jar;C:\Users\ranad\.m2\repository\io\rest-assured\xml-path\4.3.0\xml-path-4.3.0.jar;C:\Users\ranad\.m2\repository\org\apache\commons\commons-lang3\3.4\commons-lang3-3.4.jar;C:\Users\ranad\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.2\jakarta.xml.bind-api-2.3.2.jar;C:\Users\ranad\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.1\jakarta.activation-api-1.2.1.jar;C:\Users\ranad\.m2\repository\com\sun\xml\bind\jaxb-osgi\2.3.0.1\jaxb-osgi-2.3.0.1.jar;C:\Users\ranad\.m2\repository\org\apache\sling\org.apache.sling.javax.activation\0.1.0\org.apache.sling.javax.activation-0.1.0.jar;C:\Users\ranad\.m2\repository\javax\activation\activation\1.1.1\activation-1.1.1.jar;C:\Users\ranad\.m2\repository\io\rest-assured\json-schema-validator\4.3.0\json-schema-validator-4.3.0.jar;C:\Users\ranad\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.10\json-schema-validator-2.2.10.jar;C:\Users\ranad\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.10\json-schema-core-1.2.10.jar;C:\Users\ranad\.m2\repository\com\github\java-json-tools\jackson-coreutils\1.9\jackson-coreutils-1.9.jar;C:\Users\ranad\.m2\repository\com\github\fge\msg-simple\1.1\msg-simple-1.1.jar;C:\Users\ranad\.m2\repository\com\github\fge\btf\1.2\btf-1.2.jar;C:\Users\ranad\.m2\repository\com\github\fge\uri-template\0.9\uri-template-0.9.jar;C:\Users\ranad\.m2\repository\org\mozilla\rhino\1.7.7.1\rhino-1.7.7.1.jar;C:\Users\ranad\.m2\repository\javax\mail\mailapi\1.4.3\mailapi-1.4.3.jar;C:\Users\ranad\.m2\repository\joda-time\joda-time\2.9.7\joda-time-2.9.7.jar;C:\Users\ranad\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.0.0\libphonenumber-8.0.0.jar;C:\Users\ranad\.m2\repository\com\google\code\findbugs\jsr305\3.0.1\jsr305-3.0.1.jar;C:\Users\ranad\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.3\jopt-simple-5.0.3.jar;C:\Users\ranad\.m2\repository\org\testng\testng\6.10\testng-6.10.jar;C:\Users\ranad\.m2\repository\com\beust\jcommander\1.48\jcommander-1.48.jar;C:\Users\ranad\.m2\repository\org\hamcrest\hamcrest-core\2.1\hamcrest-core-2.1.jar;C:\Users\ranad\.m2\repository\org\hamcrest\hamcrest-all\1.3\hamcrest-all-1.3.jar;C:\Users\ranad\.m2\repository\com\typesafe\config\1.2.1\config-1.2.1.jar;C:\Users\ranad\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.9.8\jackson-databind-2.9.8.jar;C:\Users\ranad\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.9.0\jackson-annotations-2.9.0.jar;C:\Users\ranad\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.9.8\jackson-core-2.9.8.jar;C:\Users\ranad\.m2\repository\org\seleniumhq\selenium\selenium-java\3.11.0\selenium-java-3.11.0.jar;C:\Users\ranad\.m2\repository\org\seleniumhq\selenium\selenium-api\3.11.0\selenium-api-3.11.0.jar;C:\Users\ranad\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.11.0\selenium-chrome-driver-3.11.0.jar;C:\Users\ranad\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.11.0\selenium-edge-driver-3.11.0.jar;C:\Users\ranad\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.11.0\selenium-firefox-driver-3.11.0.jar;C:\Users\ranad\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.11.0\selenium-ie-driver-3.11.0.jar;C:\Users\ranad\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.11.0\selenium-opera-driver-3.11.0.jar;C:\Users\ranad\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.11.0\selenium-remote-driver-3.11.0.jar;C:\Users\ranad\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.11.0\selenium-safari-driver-3.11.0.jar;C:\Users\ranad\.m2\repository\org\seleniumhq\selenium\selenium-support\3.11.0\selenium-support-3.11.0.jar;C:\Users\ranad\.m2\repository\net\bytebuddy\byte-buddy\1.7.9\byte-buddy-1.7.9.jar;C:\Users\ranad\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\ranad\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\Users\ranad\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\ranad\.m2\repository\com\google\code\gson\gson\2.8.2\gson-2.8.2.jar;C:\Users\ranad\.m2\repository\com\google\guava\guava\23.6-jre\guava-23.6-jre.jar;C:\Users\ranad\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\ranad\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\ranad\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\ranad\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\ranad\.m2\repository\org\apache\httpcomponents\httpcore\4.4.6\httpcore-4.4.6.jar;C:\Users\ranad\.m2\repository\com\squareup\okhttp3\okhttp\3.9.1\okhttp-3.9.1.jar;C:\Users\ranad\.m2\repository\com\squareup\okio\okio\1.13.0\okio-1.13.0.jar;C:\Users\ranad\.m2\repository\com\relevantcodes\extentreports\2.41.2\extentreports-2.41.2.jar;C:\Users\ranad\.m2\repository\org\jsoup\jsoup\1.8.3\jsoup-1.8.3.jar;C:\Users\ranad\.m2\repository\org\xerial\sqlite-jdbc\3.8.11.1\sqlite-jdbc-3.8.11.1.jar;C:\Users\ranad\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\ranad\.m2\repository\org\mongodb\mongodb-driver\3.0.4\mongodb-driver-3.0.4.jar;C:\Users\ranad\.m2\repository\org\mongodb\mongodb-driver-core\3.0.4\mongodb-driver-core-3.0.4.jar;C:\Users\ranad\.m2\repository\com\aventstack\extentreports\4.0.9\extentreports-4.0.9.jar;C:\Users\ranad\.m2\repository\org\mongodb\bson\3.3.0\bson-3.3.0.jar;C:\Users\ranad\.m2\repository\org\springframework\spring-core\5.1.3.RELEASE\spring-core-5.1.3.RELEASE.jar;C:\Users\ranad\.m2\repository\org\springframework\spring-jcl\5.1.3.RELEASE\spring-jcl-5.1.3.RELEASE.jar;C:\Users\ranad\.m2\repository\org\springframework\spring-context\5.1.3.RELEASE\spring-context-5.1.3.RELEASE.jar;C:\Users\ranad\.m2\repository\org\springframework\spring-aop\5.1.3.RELEASE\spring-aop-5.1.3.RELEASE.jar;C:\Users\ranad\.m2\repository\org\springframework\spring-beans\5.1.3.RELEASE\spring-beans-5.1.3.RELEASE.jar;C:\Users\ranad\.m2\repository\org\springframework\spring-expression\5.1.3.RELEASE\spring-expression-5.1.3.RELEASE.jar;C:\Users\ranad\.m2\repository\org\apache\poi\poi-ooxml\4.0.1\poi-ooxml-4.0.1.jar;C:\Users\ranad\.m2\repository\org\apache\poi\poi\4.0.1\poi-4.0.1.jar;C:\Users\ranad\.m2\repository\org\apache\commons\commons-collections4\4.2\commons-collections4-4.2.jar;C:\Users\ranad\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\ranad\.m2\repository\org\apache\poi\poi-ooxml-schemas\4.0.1\poi-ooxml-schemas-4.0.1.jar;C:\Users\ranad\.m2\repository\org\apache\xmlbeans\xmlbeans\3.0.2\xmlbeans-3.0.2.jar;C:\Users\ranad\.m2\repository\org\apache\commons\commons-compress\1.18\commons-compress-1.18.jar;C:\Users\ranad\.m2\repository\com\github\virtuald\curvesapi\1.05\curvesapi-1.05.jar;C:\Users\ranad\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacv\1.0\javacv-1.0.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp\1.0\javacpp-1.0.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\opencv\3.0.0-1.0\opencv-3.0.0-1.0.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\opencv\3.0.0-1.0\opencv-3.0.0-1.0-windows-x86_64.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\ffmpeg\2.7.1-1.0\ffmpeg-2.7.1-1.0.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\ffmpeg\2.7.1-1.0\ffmpeg-2.7.1-1.0-windows-x86_64.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\flycapture\2.7.3.19-1.0\flycapture-2.7.3.19-1.0.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\flycapture\2.7.3.19-1.0\flycapture-2.7.3.19-1.0-windows-x86_64.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\libdc1394\2.2.3-1.0\libdc1394-2.2.3-1.0.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\libdc1394\2.2.3-1.0\libdc1394-2.2.3-1.0-windows-x86_64.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\libfreenect\0.5.2-1.0\libfreenect-0.5.2-1.0.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\libfreenect\0.5.2-1.0\libfreenect-0.5.2-1.0-windows-x86_64.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\videoinput\0.200-1.0\videoinput-0.200-1.0.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\videoinput\0.200-1.0\videoinput-0.200-1.0-windows-x86_64.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\artoolkitplus\2.3.1-1.0\artoolkitplus-2.3.1-1.0.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\artoolkitplus\2.3.1-1.0\artoolkitplus-2.3.1-1.0-windows-x86_64.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\flandmark\1.07-1.0\flandmark-1.07-1.0.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\flandmark\1.07-1.0\flandmark-1.07-1.0-windows-x86_64.jar;C:\Users\ranad\.m2\repository\org\apache\maven\surefire\surefire-testng-utils\2.20.1\surefire-testng-utils-2.20.1.jar;C:\Users\ranad\.m2\repository\org\apache\maven\surefire\surefire-grouper\2.20.1\surefire-grouper-2.20.1.jar;"/>
+    <property name="sun.java.command" value="C:\Users\ranad\AppData\Local\Temp\surefire962761376318516456\surefirebooter7236373637120731702.jar C:\Users\ranad\AppData\Local\Temp\surefire962761376318516456 2020-05-15T14-28-45_258-jvmRun1 surefire925759805295758618tmp surefire_08171249652627685674tmp"/>
+    <property name="surefire.test.class.path" value="D:\git\test-framework-restassured-selenium-spring-00\target\test-classes;D:\git\test-framework-restassured-selenium-spring-00\target\classes;C:\Users\ranad\.m2\repository\io\rest-assured\rest-assured\4.3.0\rest-assured-4.3.0.jar;C:\Users\ranad\.m2\repository\org\codehaus\groovy\groovy\3.0.2\groovy-3.0.2.jar;C:\Users\ranad\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.2\groovy-xml-3.0.2.jar;C:\Users\ranad\.m2\repository\org\apache\httpcomponents\httpclient\4.5.3\httpclient-4.5.3.jar;C:\Users\ranad\.m2\repository\org\apache\httpcomponents\httpmime\4.5.3\httpmime-4.5.3.jar;C:\Users\ranad\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\ranad\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\ranad\.m2\repository\io\rest-assured\json-path\4.3.0\json-path-4.3.0.jar;C:\Users\ranad\.m2\repository\org\codehaus\groovy\groovy-json\3.0.2\groovy-json-3.0.2.jar;C:\Users\ranad\.m2\repository\io\rest-assured\rest-assured-common\4.3.0\rest-assured-common-4.3.0.jar;C:\Users\ranad\.m2\repository\io\rest-assured\xml-path\4.3.0\xml-path-4.3.0.jar;C:\Users\ranad\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.2\jakarta.xml.bind-api-2.3.2.jar;C:\Users\ranad\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.1\jakarta.activation-api-1.2.1.jar;C:\Users\ranad\.m2\repository\com\sun\xml\bind\jaxb-osgi\2.3.0.1\jaxb-osgi-2.3.0.1.jar;C:\Users\ranad\.m2\repository\org\apache\sling\org.apache.sling.javax.activation\0.1.0\org.apache.sling.javax.activation-0.1.0.jar;C:\Users\ranad\.m2\repository\javax\activation\activation\1.1.1\activation-1.1.1.jar;C:\Users\ranad\.m2\repository\io\rest-assured\json-schema-validator\4.3.0\json-schema-validator-4.3.0.jar;C:\Users\ranad\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.10\json-schema-validator-2.2.10.jar;C:\Users\ranad\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.10\json-schema-core-1.2.10.jar;C:\Users\ranad\.m2\repository\com\github\java-json-tools\jackson-coreutils\1.9\jackson-coreutils-1.9.jar;C:\Users\ranad\.m2\repository\com\github\fge\msg-simple\1.1\msg-simple-1.1.jar;C:\Users\ranad\.m2\repository\com\github\fge\btf\1.2\btf-1.2.jar;C:\Users\ranad\.m2\repository\com\github\fge\uri-template\0.9\uri-template-0.9.jar;C:\Users\ranad\.m2\repository\org\mozilla\rhino\1.7.7.1\rhino-1.7.7.1.jar;C:\Users\ranad\.m2\repository\javax\mail\mailapi\1.4.3\mailapi-1.4.3.jar;C:\Users\ranad\.m2\repository\joda-time\joda-time\2.9.7\joda-time-2.9.7.jar;C:\Users\ranad\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.0.0\libphonenumber-8.0.0.jar;C:\Users\ranad\.m2\repository\com\google\code\findbugs\jsr305\3.0.1\jsr305-3.0.1.jar;C:\Users\ranad\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.3\jopt-simple-5.0.3.jar;C:\Users\ranad\.m2\repository\org\testng\testng\6.10\testng-6.10.jar;C:\Users\ranad\.m2\repository\com\beust\jcommander\1.48\jcommander-1.48.jar;C:\Users\ranad\.m2\repository\org\hamcrest\hamcrest-core\2.1\hamcrest-core-2.1.jar;C:\Users\ranad\.m2\repository\org\hamcrest\hamcrest-all\1.3\hamcrest-all-1.3.jar;C:\Users\ranad\.m2\repository\com\typesafe\config\1.2.1\config-1.2.1.jar;C:\Users\ranad\.m2\repository\org\apache\commons\commons-lang3\3.10\commons-lang3-3.10.jar;C:\Users\ranad\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.9.8\jackson-databind-2.9.8.jar;C:\Users\ranad\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.9.0\jackson-annotations-2.9.0.jar;C:\Users\ranad\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.9.8\jackson-core-2.9.8.jar;C:\Users\ranad\.m2\repository\org\seleniumhq\selenium\selenium-java\3.11.0\selenium-java-3.11.0.jar;C:\Users\ranad\.m2\repository\org\seleniumhq\selenium\selenium-api\3.11.0\selenium-api-3.11.0.jar;C:\Users\ranad\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.11.0\selenium-chrome-driver-3.11.0.jar;C:\Users\ranad\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.11.0\selenium-edge-driver-3.11.0.jar;C:\Users\ranad\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.11.0\selenium-firefox-driver-3.11.0.jar;C:\Users\ranad\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.11.0\selenium-ie-driver-3.11.0.jar;C:\Users\ranad\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.11.0\selenium-opera-driver-3.11.0.jar;C:\Users\ranad\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.11.0\selenium-remote-driver-3.11.0.jar;C:\Users\ranad\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.11.0\selenium-safari-driver-3.11.0.jar;C:\Users\ranad\.m2\repository\org\seleniumhq\selenium\selenium-support\3.11.0\selenium-support-3.11.0.jar;C:\Users\ranad\.m2\repository\net\bytebuddy\byte-buddy\1.7.9\byte-buddy-1.7.9.jar;C:\Users\ranad\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\ranad\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\Users\ranad\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\ranad\.m2\repository\com\google\code\gson\gson\2.8.2\gson-2.8.2.jar;C:\Users\ranad\.m2\repository\com\google\guava\guava\23.6-jre\guava-23.6-jre.jar;C:\Users\ranad\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\ranad\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\ranad\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\ranad\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\ranad\.m2\repository\org\apache\httpcomponents\httpcore\4.4.6\httpcore-4.4.6.jar;C:\Users\ranad\.m2\repository\com\squareup\okhttp3\okhttp\3.9.1\okhttp-3.9.1.jar;C:\Users\ranad\.m2\repository\com\squareup\okio\okio\1.13.0\okio-1.13.0.jar;C:\Users\ranad\.m2\repository\com\relevantcodes\extentreports\2.41.2\extentreports-2.41.2.jar;C:\Users\ranad\.m2\repository\org\jsoup\jsoup\1.8.3\jsoup-1.8.3.jar;C:\Users\ranad\.m2\repository\org\xerial\sqlite-jdbc\3.8.11.1\sqlite-jdbc-3.8.11.1.jar;C:\Users\ranad\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\ranad\.m2\repository\org\mongodb\mongodb-driver\3.0.4\mongodb-driver-3.0.4.jar;C:\Users\ranad\.m2\repository\org\mongodb\mongodb-driver-core\3.0.4\mongodb-driver-core-3.0.4.jar;C:\Users\ranad\.m2\repository\com\aventstack\extentreports\4.0.9\extentreports-4.0.9.jar;C:\Users\ranad\.m2\repository\org\mongodb\bson\3.3.0\bson-3.3.0.jar;C:\Users\ranad\.m2\repository\org\springframework\spring-core\5.1.3.RELEASE\spring-core-5.1.3.RELEASE.jar;C:\Users\ranad\.m2\repository\org\springframework\spring-jcl\5.1.3.RELEASE\spring-jcl-5.1.3.RELEASE.jar;C:\Users\ranad\.m2\repository\org\springframework\spring-context\5.1.3.RELEASE\spring-context-5.1.3.RELEASE.jar;C:\Users\ranad\.m2\repository\org\springframework\spring-aop\5.1.3.RELEASE\spring-aop-5.1.3.RELEASE.jar;C:\Users\ranad\.m2\repository\org\springframework\spring-beans\5.1.3.RELEASE\spring-beans-5.1.3.RELEASE.jar;C:\Users\ranad\.m2\repository\org\springframework\spring-expression\5.1.3.RELEASE\spring-expression-5.1.3.RELEASE.jar;C:\Users\ranad\.m2\repository\org\apache\poi\poi-ooxml\4.0.1\poi-ooxml-4.0.1.jar;C:\Users\ranad\.m2\repository\org\apache\poi\poi\4.0.1\poi-4.0.1.jar;C:\Users\ranad\.m2\repository\org\apache\commons\commons-collections4\4.2\commons-collections4-4.2.jar;C:\Users\ranad\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\ranad\.m2\repository\org\apache\poi\poi-ooxml-schemas\4.0.1\poi-ooxml-schemas-4.0.1.jar;C:\Users\ranad\.m2\repository\org\apache\xmlbeans\xmlbeans\3.0.2\xmlbeans-3.0.2.jar;C:\Users\ranad\.m2\repository\org\apache\commons\commons-compress\1.18\commons-compress-1.18.jar;C:\Users\ranad\.m2\repository\com\github\virtuald\curvesapi\1.05\curvesapi-1.05.jar;C:\Users\ranad\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacv\1.0\javacv-1.0.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp\1.0\javacpp-1.0.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\opencv\3.0.0-1.0\opencv-3.0.0-1.0.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\opencv\3.0.0-1.0\opencv-3.0.0-1.0-windows-x86_64.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\ffmpeg\2.7.1-1.0\ffmpeg-2.7.1-1.0.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\ffmpeg\2.7.1-1.0\ffmpeg-2.7.1-1.0-windows-x86_64.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\flycapture\2.7.3.19-1.0\flycapture-2.7.3.19-1.0.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\flycapture\2.7.3.19-1.0\flycapture-2.7.3.19-1.0-windows-x86_64.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\libdc1394\2.2.3-1.0\libdc1394-2.2.3-1.0.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\libdc1394\2.2.3-1.0\libdc1394-2.2.3-1.0-windows-x86_64.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\libfreenect\0.5.2-1.0\libfreenect-0.5.2-1.0.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\libfreenect\0.5.2-1.0\libfreenect-0.5.2-1.0-windows-x86_64.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\videoinput\0.200-1.0\videoinput-0.200-1.0.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\videoinput\0.200-1.0\videoinput-0.200-1.0-windows-x86_64.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\artoolkitplus\2.3.1-1.0\artoolkitplus-2.3.1-1.0.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\artoolkitplus\2.3.1-1.0\artoolkitplus-2.3.1-1.0-windows-x86_64.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\flandmark\1.07-1.0\flandmark-1.07-1.0.jar;C:\Users\ranad\.m2\repository\org\bytedeco\javacpp-presets\flandmark\1.07-1.0\flandmark-1.07-1.0-windows-x86_64.jar;C:\Users\ranad\.m2\repository\org\apache\maven\surefire\surefire-testng-utils\2.20.1\surefire-testng-utils-2.20.1.jar;C:\Users\ranad\.m2\repository\org\apache\maven\surefire\surefire-grouper\2.20.1\surefire-grouper-2.20.1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\ranad"/>
     <property name="user.language" value="en"/>
@@ -36,14 +36,13 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\ranad\AppData\Local\Temp\surefire6580370366473792466\surefirebooter1704351115839678266.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\ranad\AppData\Local\Temp\surefire962761376318516456\surefirebooter7236373637120731702.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_241\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_241\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="1.8.0_241-b07"/>
     <property name="user.name" value="ranad"/>
     <property name="path.separator" value=";"/>
-    <property name="groups.include" value="essentials"/>
     <property name="os.version" value="10.0"/>
     <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_241\jre\lib\endorsed"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -68,5 +67,437 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="verifyEssentialsOfAllStates" classname="com.ui.testautomation.CovidIndiaUITest" time="23.336"/>
+  <testcase name="checkCaseCalculationsForAllStates" classname="com.ui.testautomation.CovidIndiaUITest" time="58.476">
+    <failure message="Case calculations are not matching expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: Case calculations are not matching expected [true] but found [false]
+	at com.ui.testautomation.CovidIndiaUITest.checkCaseCalculationsForAllStates(CovidIndiaUITest.java:94)
+</failure>
+    <system-out><![CDATA[Fetched properties file on location : D:\git\test-framework-restassured-selenium-spring-00/log4j.properties
+System value 'log4j.overwrite' : true
+Modified properties file with key : log4j.appender.HTML_FILE.Append, Value : true
+Properties file on locationD:\git\test-framework-restassured-selenium-spring-00/log4j.properties updated
+Modified properties file with key : log4j.appender.FILE.Append, Value : true
+Properties file on locationD:\git\test-framework-restassured-selenium-spring-00/log4j.properties updated
+Spring Bean initiation of Rest Call class
+Driver session is active
+Initiating Method : checkCaseCalculationsForAllStates
+Screen shot captured at Covid19IndiaPageInitiator page
+Find the screen shot at : src/test/resources/shots/RDB_00000000_Covid19India_Covid19IndiaPageInitiator.jpg
+Navigated to : http://www.covid19India.org
+Screen shot captured at Covid19IndiaDashboard page
+Find the screen shot at : src/test/resources/shots/RDB_00000001_Covid19India_Covid19IndiaDashboard.jpg
+Screen shot captured at Covid19IndiaDashboard page
+Find the screen shot at : src/test/resources/shots/RDB_00000002_Covid19India_Covid19IndiaDashboard.jpg
+Screen shot captured at Covid19IndiaDashboard page
+Find the screen shot at : src/test/resources/shots/RDB_00000003_Covid19India_Covid19IndiaDashboard.jpg
+State :Maharashtra
+Confirmed : 27524, Active : 20446, Recovered : 6059, Deceased : 1019
+Verified Active Cases : Confirmed - Recovered + deceased
+27524 - 6059 + 1019 = 20446
+Screen shot captured at Covid19IndiaDashboard_Maharashtra_StateScenario page
+Find the screen shot at : src/test/resources/shots/RDB_00000004_Covid19India_Covid19IndiaDashboard_Maharashtra_StateScenario.jpg
+State :Tamil Nadu
+Confirmed : 9674, Active : 7368, Recovered : 2240, Deceased : 66
+Verified Active Cases : Confirmed - Recovered + deceased
+9674 - 2240 + 66 = 7368
+Screen shot captured at Covid19IndiaDashboard_Tamil Nadu_StateScenario page
+Find the screen shot at : src/test/resources/shots/RDB_00000005_Covid19India_Covid19IndiaDashboard_Tamil Nadu_StateScenario.jpg
+State :Gujarat
+Confirmed : 9592, Active : 5253, Recovered : 3753, Deceased : 586
+Verified Active Cases : Confirmed - Recovered + deceased
+9592 - 3753 + 586 = 5253
+Screen shot captured at Covid19IndiaDashboard_Gujarat_StateScenario page
+Find the screen shot at : src/test/resources/shots/RDB_00000006_Covid19India_Covid19IndiaDashboard_Gujarat_StateScenario.jpg
+State :Delhi
+Confirmed : 8470, Active : 5310, Recovered : 3045, Deceased : 115
+Verified Active Cases : Confirmed - Recovered + deceased
+8470 - 3045 + 115 = 5310
+Screen shot captured at Covid19IndiaDashboard_Delhi_StateScenario page
+Find the screen shot at : src/test/resources/shots/RDB_00000007_Covid19India_Covid19IndiaDashboard_Delhi_StateScenario.jpg
+State :Rajasthan
+Confirmed : 4589, Active : 1818, Recovered : 2646, Deceased : 125
+Verified Active Cases : Confirmed - Recovered + deceased
+4589 - 2646 + 125 = 1818
+Screen shot captured at Covid19IndiaDashboard_Rajasthan_StateScenario page
+Find the screen shot at : src/test/resources/shots/RDB_00000008_Covid19India_Covid19IndiaDashboard_Rajasthan_StateScenario.jpg
+State :Madhya Pradesh
+Confirmed : 4426, Active : 2018, Recovered : 2171, Deceased : 237
+Verified Active Cases : Confirmed - Recovered + deceased
+4426 - 2171 + 237 = 2018
+Screen shot captured at Covid19IndiaDashboard_Madhya Pradesh_StateScenario page
+Find the screen shot at : src/test/resources/shots/RDB_00000009_Covid19India_Covid19IndiaDashboard_Madhya Pradesh_StateScenario.jpg
+State :Uttar Pradesh
+Confirmed : 3902, Active : 1742, Recovered : 2072, Deceased : 88
+Verified Active Cases : Confirmed - Recovered + deceased
+3902 - 2072 + 88 = 1742
+Screen shot captured at Covid19IndiaDashboard_Uttar Pradesh_StateScenario page
+Find the screen shot at : src/test/resources/shots/RDB_00000010_Covid19India_Covid19IndiaDashboard_Uttar Pradesh_StateScenario.jpg
+State :West Bengal
+Confirmed : 2377, Active : 1394, Recovered : 768, Deceased : 215
+Verified Active Cases : Confirmed - Recovered + deceased
+2377 - 768 + 215 = 1394
+Screen shot captured at Covid19IndiaDashboard_West Bengal_StateScenario page
+Find the screen shot at : src/test/resources/shots/RDB_00000011_Covid19India_Covid19IndiaDashboard_West Bengal_StateScenario.jpg
+State :Andhra Pradesh
+Confirmed : 2307, Active : 1007, Recovered : 1252, Deceased : 48
+Verified Active Cases : Confirmed - Recovered + deceased
+2307 - 1252 + 48 = 1007
+Screen shot captured at Covid19IndiaDashboard_Andhra Pradesh_StateScenario page
+Find the screen shot at : src/test/resources/shots/RDB_00000012_Covid19India_Covid19IndiaDashboard_Andhra Pradesh_StateScenario.jpg
+State :Punjab
+Confirmed : 1942, Active : 1687, Recovered : 223, Deceased : 32
+Verified Active Cases : Confirmed - Recovered + deceased
+1942 - 223 + 32 = 1687
+Screen shot captured at Covid19IndiaDashboard_Punjab_StateScenario page
+Find the screen shot at : src/test/resources/shots/RDB_00000013_Covid19India_Covid19IndiaDashboard_Punjab_StateScenario.jpg
+State :Telangana
+Confirmed : 1414, Active : 428, Recovered : 952, Deceased : 34
+Verified Active Cases : Confirmed - Recovered + deceased
+1414 - 952 + 34 = 428
+Screen shot captured at Covid19IndiaDashboard_Telangana_StateScenario page
+Find the screen shot at : src/test/resources/shots/RDB_00000014_Covid19India_Covid19IndiaDashboard_Telangana_StateScenario.jpg
+State :Karnataka
+Confirmed : 1032, Active : 520, Recovered : 476, Deceased : 35
+Verified Active Cases : Confirmed - Recovered + deceased
+1032 - 476 + 35 = 521
+Screen shot captured at explicit_failed page
+Find the screen shot at : src/test/resources/shots/RDB_00000015_Covid19India_explicit_failed.jpg
+]]></system-out>
+    <system-err><![CDATA[log4j:WARN No appenders could be found for logger (com.app.testautomation.initiators.TestBaseSteps).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+Starting ChromeDriver 80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}) on port 1409
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1589533132.321][WARNING]: This version of ChromeDriver has not been tested with Chrome version 81.
+[1589533134.361][WARNING]: Timed out connecting to Chrome, retrying...
+[1589533138.371][WARNING]: Timed out connecting to Chrome, retrying...
+May 15, 2020 2:29:00 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+log4j:WARN No such property [maxFileSize] in org.apache.log4j.FileAppender.
+log4j:WARN No such property [maxBackupIndex] in org.apache.log4j.FileAppender.
+May 15, 2020 2:29:02 PM com.app.testautomation.listeners.BasicTestListeners onStart
+INFO: Suite started :Covid19IndiaTestReport
+May 15, 2020 2:29:02 PM com.app.testautomation.listeners.BasicTestListeners onStart
+INFO: Test started at : 15 May 2020 08:59:02 GMT
+May 15, 2020 2:29:02 PM com.app.testautomation.listeners.MethodInterceptorListener intercept
+INFO: Intercepting methods as per group name provided
+May 15, 2020 2:29:02 PM com.app.testautomation.listeners.MethodInterceptorListener intercept
+INFO: As per requested groups : [default]
+May 15, 2020 2:29:02 PM com.app.testautomation.listeners.MethodInterceptorListener intercept
+INFO: checkCaseCalculationsForAllStates to be executed
+May 15, 2020 2:29:02 PM com.app.testautomation.listeners.MethodInterceptorListener intercept
+INFO: As per requested groups : [default]
+May 15, 2020 2:29:02 PM com.app.testautomation.listeners.MethodInterceptorListener intercept
+INFO: checkCaseCalculationsForChandigarh to be executed
+May 15, 2020 2:29:02 PM com.app.testautomation.listeners.MethodInterceptorListener intercept
+INFO: As per requested groups : [default]
+May 15, 2020 2:29:02 PM com.app.testautomation.listeners.MethodInterceptorListener intercept
+INFO: checkCaseCalculationsForDelhi to be executed
+May 15, 2020 2:29:02 PM com.app.testautomation.listeners.MethodInterceptorListener intercept
+INFO: As per requested groups : [default]
+May 15, 2020 2:29:02 PM com.app.testautomation.listeners.MethodInterceptorListener intercept
+INFO: checkCaseCalculationsOfTripuraIsGreaterThan10 to be executed
+May 15, 2020 2:29:02 PM com.app.testautomation.listeners.MethodInterceptorListener intercept
+INFO: As per requested groups : [default]
+May 15, 2020 2:29:02 PM com.app.testautomation.listeners.MethodInterceptorListener intercept
+INFO: checkNoOfConfirmedCasesIsGreaterThan26000 to be executed
+May 15, 2020 2:29:02 PM com.app.testautomation.listeners.MethodInterceptorListener intercept
+INFO: As per requested groups : [default]
+May 15, 2020 2:29:02 PM com.app.testautomation.listeners.MethodInterceptorListener intercept
+INFO: verifyAllCategoriesOfRaipurChhattisgarh to be executed
+May 15, 2020 2:29:02 PM com.app.testautomation.listeners.MethodInterceptorListener intercept
+INFO: As per requested groups : [default]
+May 15, 2020 2:29:02 PM com.app.testautomation.listeners.MethodInterceptorListener intercept
+INFO: verifyAllEssentialsForRandomState to be executed
+May 15, 2020 2:29:02 PM com.app.testautomation.listeners.MethodInterceptorListener intercept
+INFO: As per requested groups : [default]
+May 15, 2020 2:29:02 PM com.app.testautomation.listeners.MethodInterceptorListener intercept
+INFO: verifyCovidTestingLabOfImphal to be executed
+May 15, 2020 2:29:02 PM com.app.testautomation.listeners.MethodInterceptorListener intercept
+INFO: As per requested groups : [default]
+May 15, 2020 2:29:02 PM com.app.testautomation.listeners.MethodInterceptorListener intercept
+INFO: verifyCovidTestingLabOfPune to be executed
+May 15, 2020 2:29:02 PM com.app.testautomation.listeners.MethodInterceptorListener intercept
+INFO: As per requested groups : [default]
+May 15, 2020 2:29:02 PM com.app.testautomation.listeners.MethodInterceptorListener intercept
+INFO: verifyDeliveryCategoriesOfFaridkotPunjab to be executed
+May 15, 2020 2:29:02 PM com.app.testautomation.listeners.MethodInterceptorListener intercept
+INFO: As per requested groups : [default]
+May 15, 2020 2:29:02 PM com.app.testautomation.listeners.MethodInterceptorListener intercept
+INFO: verifyEssentialsRandomly to be executed
+May 15, 2020 2:29:02 PM com.app.testautomation.listeners.MethodInterceptorListener intercept
+INFO: As per requested groups : [default]
+May 15, 2020 2:29:02 PM com.app.testautomation.listeners.MethodInterceptorListener intercept
+INFO: verifyGreenZonesOfAllStates to be executed
+May 15, 2020 2:29:02 PM com.app.testautomation.listeners.MethodInterceptorListener intercept
+INFO: As per requested groups : [default]
+May 15, 2020 2:29:02 PM com.app.testautomation.listeners.MethodInterceptorListener intercept
+INFO: verifyOrangeZonesOfAllStates to be executed
+May 15, 2020 2:29:02 PM com.app.testautomation.listeners.MethodInterceptorListener intercept
+INFO: As per requested groups : [default]
+May 15, 2020 2:29:02 PM com.app.testautomation.listeners.MethodInterceptorListener intercept
+INFO: verifyRedZonesOfAllStates to be executed
+May 15, 2020 2:29:02 PM com.app.testautomation.listeners.MethodInterceptorListener intercept
+INFO: As per requested groups : [default]
+May 15, 2020 2:29:02 PM com.app.testautomation.listeners.MethodInterceptorListener intercept
+INFO: verifyUnDefinedZonesOfAllStates to be executed
+May 15, 2020 2:29:02 PM com.app.testautomation.listeners.MethodInterceptorListener intercept
+INFO: As per requested groups : [default]
+May 15, 2020 2:29:02 PM com.app.testautomation.listeners.MethodInterceptorListener intercept
+INFO: verifyUnknownWhiteZonesOfAllStates to be executed
+May 15, 2020 2:29:02 PM com.app.testautomation.listeners.MethodInvokeListener beforeInvocation
+INFO: Method initiateMethod is not enabled
+[1589533142.604][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589533142.955][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589533144.269][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589533144.400][SEVERE]: Timed out receiving message from renderer: 0.100
+May 15, 2020 2:29:08 PM com.app.testautomation.listeners.BasicTestListeners onTestStart
+INFO: Executiing method : checkCaseCalculationsForAllStates
+May 15, 2020 2:29:08 PM com.app.testautomation.listeners.MethodInvokeListener beforeInvocation
+INFO: Method checkCaseCalculationsForAllStates execution starts on : Fri May 15 14:29:08 IST 2020
+May 15, 2020 2:30:07 PM com.app.testautomation.listeners.MethodInvokeListener afterInvocation
+INFO: MethodcheckCaseCalculationsForAllStates execution completed on : Fri May 15 14:29:08 IST 2020
+]]></system-err>
+  </testcase>
+  <testcase name="checkCaseCalculationsForChandigarh" classname="com.ui.testautomation.CovidIndiaUITest" time="25.075"/>
+  <testcase name="checkCaseCalculationsForDelhi" classname="com.ui.testautomation.CovidIndiaUITest" time="18.85"/>
+  <testcase name="checkCaseCalculationsOfTripuraIsGreaterThan10" classname="com.ui.testautomation.CovidIndiaUITest" time="5.353"/>
+  <testcase name="checkNoOfConfirmedCasesIsGreaterThan26000" classname="com.ui.testautomation.CovidIndiaUITest" time="2.181"/>
+  <testcase name="verifyAllCategoriesOfRaipurChhattisgarh" classname="com.ui.testautomation.CovidIndiaUITest" time="38.225"/>
+  <testcase name="verifyAllEssentialsForRandomState" classname="com.ui.testautomation.CovidIndiaUITest" time="15.798">
+    <failure message="Api doesnot match with UI expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: Api doesnot match with UI expected [true] but found [false]
+	at com.ui.testautomation.CovidIndiaUITest.lambda$null$16(CovidIndiaUITest.java:281)
+	at com.ui.testautomation.CovidIndiaUITest.lambda$verifyAllEssentialsForRandomState$17(CovidIndiaUITest.java:273)
+	at com.ui.testautomation.CovidIndiaUITest.verifyAllEssentialsForRandomState(CovidIndiaUITest.java:264)
+</failure>
+    <system-out><![CDATA[verifyAllCategoriesOfRaipurChhattisgarh executed.
+Driver is closed
+Driver called off
+Driver session is not active
+invalid session id
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'RANADEEP_BANIK', ip: '192.168.1.75', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\ranad\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55353}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a679ef424c284f7b7d894040fe60bf89
+return new ApplicationContextInitiator()
+Application context created and initiated all the beans in Spring bean container
+Default properties/capabilities initiated for CHROME driver
+Default properties/capabilities initiated for FIREFOX driver
+Default properties/capabilities initiated for INTERNET EXPLORER driver
+Default properties/capabilities initiated for FIREFOX driver
+Driver instance is null
+Browser key provided : chrome
+Starting GOOGLE CHROME Driver....
+chrome browser initiated
+Driver implicit wait initiated for 30 SECONDS
+Screen shot captured while driver initiation
+Find the screen shot at : src/test/resources/shots/Abosulute-Driver_0_chrome.jpg
+Screen shot captured while driver initiation
+Find the screen shot at : src/test/resources/shots/Abosulute-Driver_1_chrome.jpg
+Browser window maximized
+WebDriver initiated
+Fetched properties file on location : D:\git\test-framework-restassured-selenium-spring-00/log4j.properties
+System value 'log4j.overwrite' : true
+Modified properties file with key : log4j.appender.HTML_FILE.Append, Value : true
+Properties file on locationD:\git\test-framework-restassured-selenium-spring-00/log4j.properties updated
+Modified properties file with key : log4j.appender.FILE.Append, Value : true
+Properties file on locationD:\git\test-framework-restassured-selenium-spring-00/log4j.properties updated
+Spring Bean initiation of Rest Call class
+Initiating Method : verifyAllEssentialsForRandomState
+Screen shot captured at Covid19IndiaPageInitiator page
+Find the screen shot at : src/test/resources/shots/RDB_00000074_Covid19India_Covid19IndiaPageInitiator.jpg
+Navigated to : http://www.covid19India.org
+Config file initiated
+No Path found
+No configuration setting found for key 'headers'
+No such file found D:\git\test-framework-restassured-selenium-spring-00\src\test\resources\Covid19India\essentials-resources\Headers.properties
+Headers : {accept=application/json, text/plain, */*, user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36}
+Config file initiated
+Fetching config property of : Covid19India
+Fetching config property of : essentials-resources
+Request method:	GET
+Request URI:	https://api.covid19india.org/resources/resources.json
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		accept=application/json, text/plain, */*
+				user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Screen shot captured at Covid19IndiaEssentials page
+Find the screen shot at : src/test/resources/shots/RDB_00000075_Covid19India_Covid19IndiaEssentials.jpg
+Screen shot captured at Covid19IndiaEssentials page
+Find the screen shot at : src/test/resources/shots/RDB_00000076_Covid19India_Covid19IndiaEssentials.jpg
+Screen shot captured at Covid19IndiaEssentials page
+Find the screen shot at : src/test/resources/shots/RDB_00000077_Covid19India_Covid19IndiaEssentials.jpg
+Screen shot captured at Covid19IndiaEssentials page
+Find the screen shot at : src/test/resources/shots/RDB_00000078_Covid19India_Covid19IndiaEssentials.jpg
+Screen shot captured at Covid19IndiaEssentials page
+Find the screen shot at : src/test/resources/shots/RDB_00000079_Covid19India_Covid19IndiaEssentials.jpg
+Screen shot captured at Covid19IndiaEssentials page
+Find the screen shot at : src/test/resources/shots/RDB_00000080_Covid19India_Covid19IndiaEssentials.jpg
+Screen shot captured at Covid19IndiaEssentials page
+Find the screen shot at : src/test/resources/shots/RDB_00000081_Covid19India_Covid19IndiaEssentials.jpg
+Screen shot captured at Covid19IndiaEssentials page
+Find the screen shot at : src/test/resources/shots/RDB_00000082_Covid19India_Covid19IndiaEssentials.jpg
+Screen shot captured at Covid19IndiaEssentials page
+Find the screen shot at : src/test/resources/shots/RDB_00000083_Covid19India_Covid19IndiaEssentials.jpg
+Screen shot captured at Covid19IndiaEssentials page
+Find the screen shot at : src/test/resources/shots/RDB_00000084_Covid19India_Covid19IndiaEssentials.jpg
+Screen shot captured at Covid19IndiaEssentials page
+Find the screen shot at : src/test/resources/shots/RDB_00000085_Covid19India_Covid19IndiaEssentials.jpg
+Screen shot captured at Covid19IndiaEssentials page
+Find the screen shot at : src/test/resources/shots/RDB_00000086_Covid19India_Covid19IndiaEssentials.jpg
+Screen shot captured at Covid19IndiaEssentials page
+Find the screen shot at : src/test/resources/shots/RDB_00000087_Covid19India_Covid19IndiaEssentials.jpg
+Screen shot captured at Covid19IndiaEssentials page
+Find the screen shot at : src/test/resources/shots/RDB_00000088_Covid19India_Covid19IndiaEssentials.jpg
+Screen shot captured at Covid19IndiaEssentials page
+Find the screen shot at : src/test/resources/shots/RDB_00000089_Covid19India_Covid19IndiaEssentials.jpg
+Screen shot captured at Covid19IndiaEssentials page
+Find the screen shot at : src/test/resources/shots/RDB_00000090_Covid19India_Covid19IndiaEssentials.jpg
+Screen shot captured at explicit_failed page
+Find the screen shot at : src/test/resources/shots/RDB_00000091_Covid19India_explicit_failed.jpg
+]]></system-out>
+    <system-err><![CDATA[May 15, 2020 2:33:27 PM com.app.testautomation.listeners.MethodInvokeListener beforeInvocation
+INFO: Method finish is not enabled
+May 15, 2020 2:33:34 PM com.app.testautomation.listeners.MethodInvokeListener beforeInvocation
+INFO: Method initiateMethod is not enabled
+Starting ChromeDriver 80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}) on port 34899
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1589533416.414][WARNING]: This version of ChromeDriver has not been tested with Chrome version 81.
+[1589533418.442][WARNING]: Timed out connecting to Chrome, retrying...
+[1589533422.461][WARNING]: Timed out connecting to Chrome, retrying...
+May 15, 2020 2:33:44 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+log4j:WARN No such property [maxFileSize] in org.apache.log4j.FileAppender.
+log4j:WARN No such property [maxBackupIndex] in org.apache.log4j.FileAppender.
+[1589533425.999][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589533426.406][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589533428.025][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589533428.126][SEVERE]: Timed out receiving message from renderer: 0.100
+May 15, 2020 2:33:52 PM com.app.testautomation.listeners.BasicTestListeners onTestStart
+INFO: Executiing method : verifyAllEssentialsForRandomState
+May 15, 2020 2:33:52 PM com.app.testautomation.listeners.MethodInvokeListener beforeInvocation
+INFO: Method verifyAllEssentialsForRandomState execution starts on : Fri May 15 14:33:52 IST 2020
+May 15, 2020 2:34:08 PM com.app.testautomation.listeners.MethodInvokeListener afterInvocation
+INFO: MethodverifyAllEssentialsForRandomState execution completed on : Fri May 15 14:33:52 IST 2020
+]]></system-err>
+  </testcase>
+  <testcase name="verifyCovidTestingLabOfImphal" classname="com.ui.testautomation.CovidIndiaUITest" time="24.08"/>
+  <testcase name="verifyCovidTestingLabOfPune" classname="com.ui.testautomation.CovidIndiaUITest" time="34.12"/>
+  <testcase name="verifyDeliveryCategoriesOfFaridkotPunjab" classname="com.ui.testautomation.CovidIndiaUITest" time="40.901"/>
+  <testcase name="verifyEssentialsRandomly" classname="com.ui.testautomation.CovidIndiaUITest" time="6.49">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at com.ui.testautomation.CovidIndiaUITest.lambda$verifyEssentialsRandomly$10(CovidIndiaUITest.java:208)
+	at com.ui.testautomation.CovidIndiaUITest.verifyEssentialsRandomly(CovidIndiaUITest.java:205)
+</failure>
+    <system-out><![CDATA[verifyDeliveryCategoriesOfFaridkotPunjab executed.
+Driver is closed
+Driver called off
+Driver session is not active
+invalid session id
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'RANADEEP_BANIK', ip: '192.168.1.75', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\ranad\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55577}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c22a5c872e4ccecf56b5192d0c1ac2be
+return new ApplicationContextInitiator()
+Application context created and initiated all the beans in Spring bean container
+Default properties/capabilities initiated for CHROME driver
+Default properties/capabilities initiated for FIREFOX driver
+Default properties/capabilities initiated for INTERNET EXPLORER driver
+Default properties/capabilities initiated for FIREFOX driver
+Driver instance is null
+Browser key provided : chrome
+Starting GOOGLE CHROME Driver....
+chrome browser initiated
+Driver implicit wait initiated for 30 SECONDS
+Screen shot captured while driver initiation
+Find the screen shot at : src/test/resources/shots/Abosulute-Driver_0_chrome.jpg
+Screen shot captured while driver initiation
+Find the screen shot at : src/test/resources/shots/Abosulute-Driver_1_chrome.jpg
+Browser window maximized
+WebDriver initiated
+Fetched properties file on location : D:\git\test-framework-restassured-selenium-spring-00/log4j.properties
+System value 'log4j.overwrite' : true
+Modified properties file with key : log4j.appender.HTML_FILE.Append, Value : true
+Properties file on locationD:\git\test-framework-restassured-selenium-spring-00/log4j.properties updated
+Modified properties file with key : log4j.appender.FILE.Append, Value : true
+Properties file on locationD:\git\test-framework-restassured-selenium-spring-00/log4j.properties updated
+Spring Bean initiation of Rest Call class
+Initiating Method : verifyEssentialsRandomly
+Screen shot captured at Covid19IndiaPageInitiator page
+Find the screen shot at : src/test/resources/shots/RDB_00000225_Covid19India_Covid19IndiaPageInitiator.jpg
+Navigated to : http://www.covid19India.org
+Screen shot captured at Covid19IndiaEssentials page
+Find the screen shot at : src/test/resources/shots/RDB_00000226_Covid19India_Covid19IndiaEssentials.jpg
+Screen shot captured at Covid19IndiaEssentials page
+Find the screen shot at : src/test/resources/shots/RDB_00000227_Covid19India_Covid19IndiaEssentials.jpg
+Screen shot captured at Covid19IndiaEssentials page
+Find the screen shot at : src/test/resources/shots/RDB_00000228_Covid19India_Covid19IndiaEssentials.jpg
+Screen shot captured at Covid19IndiaEssentials page
+Find the screen shot at : src/test/resources/shots/RDB_00000229_Covid19India_Covid19IndiaEssentials.jpg
+Screen shot captured at Covid19IndiaEssentials page
+Find the screen shot at : src/test/resources/shots/RDB_00000230_Covid19India_Covid19IndiaEssentials.jpg
+Screen shot captured at Covid19IndiaEssentials page
+Find the screen shot at : src/test/resources/shots/RDB_00000231_Covid19India_Covid19IndiaEssentials.jpg
+Screen shot captured at Covid19IndiaEssentials page
+Find the screen shot at : src/test/resources/shots/RDB_00000232_Covid19India_Covid19IndiaEssentials.jpg
+Config file initiated
+No Path found
+No configuration setting found for key 'headers'
+No such file found D:\git\test-framework-restassured-selenium-spring-00\src\test\resources\Covid19India\essentials-resources\Headers.properties
+Headers : {accept=application/json, text/plain, */*, user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36}
+Config file initiated
+Fetching config property of : Covid19India
+Fetching config property of : essentials-resources
+Request method:	GET
+Request URI:	https://api.covid19india.org/resources/resources.json
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		accept=application/json, text/plain, */*
+				user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+]]></system-out>
+    <system-err><![CDATA[May 15, 2020 2:36:58 PM com.app.testautomation.listeners.MethodInvokeListener beforeInvocation
+INFO: Method finish is not enabled
+May 15, 2020 2:37:05 PM com.app.testautomation.listeners.MethodInvokeListener beforeInvocation
+INFO: Method initiateMethod is not enabled
+Starting ChromeDriver 80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}) on port 12687
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1589533628.225][WARNING]: This version of ChromeDriver has not been tested with Chrome version 81.
+[1589533630.265][WARNING]: Timed out connecting to Chrome, retrying...
+[1589533634.292][WARNING]: Timed out connecting to Chrome, retrying...
+May 15, 2020 2:37:16 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+log4j:WARN No such property [maxFileSize] in org.apache.log4j.FileAppender.
+log4j:WARN No such property [maxBackupIndex] in org.apache.log4j.FileAppender.
+[1589533637.710][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589533638.104][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589533639.536][SEVERE]: Timed out receiving message from renderer: 0.100
+May 15, 2020 2:37:24 PM com.app.testautomation.listeners.BasicTestListeners onTestStart
+INFO: Executiing method : verifyEssentialsRandomly
+May 15, 2020 2:37:24 PM com.app.testautomation.listeners.MethodInvokeListener beforeInvocation
+INFO: Method verifyEssentialsRandomly execution starts on : Fri May 15 14:37:24 IST 2020
+May 15, 2020 2:37:30 PM com.app.testautomation.listeners.MethodInvokeListener afterInvocation
+INFO: MethodverifyEssentialsRandomly execution completed on : Fri May 15 14:37:24 IST 2020
+]]></system-err>
+  </testcase>
+  <testcase name="verifyGreenZonesOfAllStates" classname="com.ui.testautomation.CovidIndiaUITest" time="219.62"/>
+  <testcase name="verifyOrangeZonesOfAllStates" classname="com.ui.testautomation.CovidIndiaUITest" time="244.346"/>
+  <testcase name="verifyRedZonesOfAllStates" classname="com.ui.testautomation.CovidIndiaUITest" time="222.552"/>
+  <testcase name="verifyUnDefinedZonesOfAllStates" classname="com.ui.testautomation.CovidIndiaUITest" time="198.387"/>
+  <testcase name="verifyUnknownWhiteZonesOfAllStates" classname="com.ui.testautomation.CovidIndiaUITest" time="199.227"/>
 </testsuite>

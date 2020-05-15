@@ -1,4 +1,19 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 53.965 s - in TestSuite
+Tests run: 16, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 1,754.473 s <<< FAILURE! - in TestSuite
+checkCaseCalculationsForAllStates(com.ui.testautomation.CovidIndiaUITest)  Time elapsed: 58.476 s  <<< FAILURE!
+java.lang.AssertionError: Case calculations are not matching expected [true] but found [false]
+	at com.ui.testautomation.CovidIndiaUITest.checkCaseCalculationsForAllStates(CovidIndiaUITest.java:94)
+
+verifyAllEssentialsForRandomState(com.ui.testautomation.CovidIndiaUITest)  Time elapsed: 15.798 s  <<< FAILURE!
+java.lang.AssertionError: Api doesnot match with UI expected [true] but found [false]
+	at com.ui.testautomation.CovidIndiaUITest.lambda$null$16(CovidIndiaUITest.java:281)
+	at com.ui.testautomation.CovidIndiaUITest.lambda$verifyAllEssentialsForRandomState$17(CovidIndiaUITest.java:273)
+	at com.ui.testautomation.CovidIndiaUITest.verifyAllEssentialsForRandomState(CovidIndiaUITest.java:264)
+
+verifyEssentialsRandomly(com.ui.testautomation.CovidIndiaUITest)  Time elapsed: 6.49 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at com.ui.testautomation.CovidIndiaUITest.lambda$verifyEssentialsRandomly$10(CovidIndiaUITest.java:208)
+	at com.ui.testautomation.CovidIndiaUITest.verifyEssentialsRandomly(CovidIndiaUITest.java:205)
+

@@ -6,7 +6,10 @@ com\app\testautomation\initiators\WebdriverInitiator.class
 com\app\testautomation\utilities\FileUtils.class
 com\ui\testautomation\driverconfigs\FirefoxDriverInitiator.class
 com\app\testautomation\listeners\MethodInvokeListener.class
+com\app\testautomation\exceptions\MultipleValuesReturnedException.class
+com\app\testautomation\pojos\Locations.class
 com\app\testautomation\utilities\Assertions.class
+com\app\testautomation\pojos\State.class
 com\app\testautomation\initiators\TestBaseSteps.class
 com\app\testautomation\utilities\Perform.class
 com\ui\testautomation\pageobjectmodels\Covid19IndiaDashboard.class
@@ -36,3 +39,4 @@ com\ui\testautomation\driverconfigs\SafariDriverInitiator.class
 com\ui\testautomation\pageobjectmodels\Covid19IndiaDatabaseSheet.class
 com\app\testautomation\initiators\Driver.class
 com\app\testautomation\listeners\AnnotationTransformerListener.class
+com\app\testautomation\pojos\City.class

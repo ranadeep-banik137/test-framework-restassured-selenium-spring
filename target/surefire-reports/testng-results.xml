@@ -1,64 +1,614 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="3" ignored="0" total="16" passed="13">
   <reporter-output>
   </reporter-output>
-  <suite name="Covid19IndiaTestReport" duration-ms="40106" started-at="2020-05-06T23:08:15Z" finished-at="2020-05-06T23:08:55Z">
+  <suite name="Covid19IndiaTestReport" duration-ms="1737265" started-at="2020-05-15T08:59:02Z" finished-at="2020-05-15T09:27:59Z">
     <groups>
       <group name="regression">
-        <method signature="CovidIndiaUITest.verifyGreenZonesOfAllStates()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@6475472c]" name="verifyGreenZonesOfAllStates" class="com.ui.testautomation.CovidIndiaUITest"/>
-        <method signature="CovidIndiaUITest.verifyOrangeZonesOfAllStates()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@6475472c]" name="verifyOrangeZonesOfAllStates" class="com.ui.testautomation.CovidIndiaUITest"/>
-        <method signature="CovidIndiaUITest.verifyRedZonesOfAllStates()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@6475472c]" name="verifyRedZonesOfAllStates" class="com.ui.testautomation.CovidIndiaUITest"/>
-        <method signature="CovidIndiaUITest.verifyUnDefinedZonesOfAllStates()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@6475472c]" name="verifyUnDefinedZonesOfAllStates" class="com.ui.testautomation.CovidIndiaUITest"/>
-        <method signature="CovidIndiaUITest.verifyUnknownWhiteZonesOfAllStates()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@6475472c]" name="verifyUnknownWhiteZonesOfAllStates" class="com.ui.testautomation.CovidIndiaUITest"/>
+        <method signature="CovidIndiaUITest.checkCaseCalculationsForAllStates()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="checkCaseCalculationsForAllStates" class="com.ui.testautomation.CovidIndiaUITest"/>
+        <method signature="CovidIndiaUITest.verifyAllEssentialsForRandomState()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="verifyAllEssentialsForRandomState" class="com.ui.testautomation.CovidIndiaUITest"/>
+        <method signature="CovidIndiaUITest.verifyCovidTestingLabOfImphal()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="verifyCovidTestingLabOfImphal" class="com.ui.testautomation.CovidIndiaUITest"/>
+        <method signature="CovidIndiaUITest.verifyDeliveryCategoriesOfFaridkotPunjab()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="verifyDeliveryCategoriesOfFaridkotPunjab" class="com.ui.testautomation.CovidIndiaUITest"/>
+        <method signature="CovidIndiaUITest.verifyEssentialsRandomly()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="verifyEssentialsRandomly" class="com.ui.testautomation.CovidIndiaUITest"/>
+        <method signature="CovidIndiaUITest.verifyGreenZonesOfAllStates()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="verifyGreenZonesOfAllStates" class="com.ui.testautomation.CovidIndiaUITest"/>
+        <method signature="CovidIndiaUITest.verifyOrangeZonesOfAllStates()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="verifyOrangeZonesOfAllStates" class="com.ui.testautomation.CovidIndiaUITest"/>
+        <method signature="CovidIndiaUITest.verifyRedZonesOfAllStates()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="verifyRedZonesOfAllStates" class="com.ui.testautomation.CovidIndiaUITest"/>
+        <method signature="CovidIndiaUITest.verifyUnknownWhiteZonesOfAllStates()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="verifyUnknownWhiteZonesOfAllStates" class="com.ui.testautomation.CovidIndiaUITest"/>
       </group> <!-- regression -->
       <group name="smoke">
-        <method signature="CovidIndiaUITest.checkCaseCalculationsForAllStates()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@6475472c]" name="checkCaseCalculationsForAllStates" class="com.ui.testautomation.CovidIndiaUITest"/>
-        <method signature="CovidIndiaUITest.checkCaseCalculationsForChandigarh()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@6475472c]" name="checkCaseCalculationsForChandigarh" class="com.ui.testautomation.CovidIndiaUITest"/>
-        <method signature="CovidIndiaUITest.verifyRedZonesOfAllStates()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@6475472c]" name="verifyRedZonesOfAllStates" class="com.ui.testautomation.CovidIndiaUITest"/>
+        <method signature="CovidIndiaUITest.checkCaseCalculationsForAllStates()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="checkCaseCalculationsForAllStates" class="com.ui.testautomation.CovidIndiaUITest"/>
+        <method signature="CovidIndiaUITest.checkCaseCalculationsForChandigarh()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="checkCaseCalculationsForChandigarh" class="com.ui.testautomation.CovidIndiaUITest"/>
+        <method signature="CovidIndiaUITest.checkCaseCalculationsOfTripuraIsGreaterThan10()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="checkCaseCalculationsOfTripuraIsGreaterThan10" class="com.ui.testautomation.CovidIndiaUITest"/>
+        <method signature="CovidIndiaUITest.verifyAllCategoriesOfRaipurChhattisgarh()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="verifyAllCategoriesOfRaipurChhattisgarh" class="com.ui.testautomation.CovidIndiaUITest"/>
+        <method signature="CovidIndiaUITest.verifyRedZonesOfAllStates()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="verifyRedZonesOfAllStates" class="com.ui.testautomation.CovidIndiaUITest"/>
+        <method signature="CovidIndiaUITest.verifyUnDefinedZonesOfAllStates()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="verifyUnDefinedZonesOfAllStates" class="com.ui.testautomation.CovidIndiaUITest"/>
       </group> <!-- smoke -->
-      <group name="regression1">
-        <method signature="CovidIndiaUITest.checkCaseCalculationsForAllStates()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@6475472c]" name="checkCaseCalculationsForAllStates" class="com.ui.testautomation.CovidIndiaUITest"/>
-      </group> <!-- regression1 -->
       <group name="sanity">
-        <method signature="CovidIndiaUITest.checkCaseCalculationsForDelhi()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@6475472c]" name="checkCaseCalculationsForDelhi" class="com.ui.testautomation.CovidIndiaUITest"/>
-        <method signature="CovidIndiaUITest.verifyRedZonesOfAllStates()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@6475472c]" name="verifyRedZonesOfAllStates" class="com.ui.testautomation.CovidIndiaUITest"/>
+        <method signature="CovidIndiaUITest.checkCaseCalculationsForDelhi()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="checkCaseCalculationsForDelhi" class="com.ui.testautomation.CovidIndiaUITest"/>
+        <method signature="CovidIndiaUITest.verifyAllCategoriesOfRaipurChhattisgarh()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="verifyAllCategoriesOfRaipurChhattisgarh" class="com.ui.testautomation.CovidIndiaUITest"/>
+        <method signature="CovidIndiaUITest.verifyCovidTestingLabOfImphal()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="verifyCovidTestingLabOfImphal" class="com.ui.testautomation.CovidIndiaUITest"/>
+        <method signature="CovidIndiaUITest.verifyCovidTestingLabOfPune()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="verifyCovidTestingLabOfPune" class="com.ui.testautomation.CovidIndiaUITest"/>
+        <method signature="CovidIndiaUITest.verifyRedZonesOfAllStates()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="verifyRedZonesOfAllStates" class="com.ui.testautomation.CovidIndiaUITest"/>
       </group> <!-- sanity -->
       <group name="essentials">
-        <method signature="CovidIndiaUITest.verifyEssentialsOfAllStates()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@6475472c]" name="verifyEssentialsOfAllStates" class="com.ui.testautomation.CovidIndiaUITest"/>
+        <method signature="CovidIndiaUITest.verifyAllCategoriesOfRaipurChhattisgarh()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="verifyAllCategoriesOfRaipurChhattisgarh" class="com.ui.testautomation.CovidIndiaUITest"/>
+        <method signature="CovidIndiaUITest.verifyAllEssentialsForRandomState()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="verifyAllEssentialsForRandomState" class="com.ui.testautomation.CovidIndiaUITest"/>
+        <method signature="CovidIndiaUITest.verifyCovidTestingLabOfImphal()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="verifyCovidTestingLabOfImphal" class="com.ui.testautomation.CovidIndiaUITest"/>
+        <method signature="CovidIndiaUITest.verifyCovidTestingLabOfPune()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="verifyCovidTestingLabOfPune" class="com.ui.testautomation.CovidIndiaUITest"/>
+        <method signature="CovidIndiaUITest.verifyDeliveryCategoriesOfFaridkotPunjab()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="verifyDeliveryCategoriesOfFaridkotPunjab" class="com.ui.testautomation.CovidIndiaUITest"/>
+        <method signature="CovidIndiaUITest.verifyEssentialsRandomly()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="verifyEssentialsRandomly" class="com.ui.testautomation.CovidIndiaUITest"/>
       </group> <!-- essentials -->
-      <group name="failed">
-        <method signature="CovidIndiaUITest.checkCaseCalculationsOfTripuraIsGreaterThan10()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@6475472c]" name="checkCaseCalculationsOfTripuraIsGreaterThan10" class="com.ui.testautomation.CovidIndiaUITest"/>
-      </group> <!-- failed -->
+      <group name="zones">
+        <method signature="CovidIndiaUITest.verifyGreenZonesOfAllStates()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="verifyGreenZonesOfAllStates" class="com.ui.testautomation.CovidIndiaUITest"/>
+        <method signature="CovidIndiaUITest.verifyOrangeZonesOfAllStates()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="verifyOrangeZonesOfAllStates" class="com.ui.testautomation.CovidIndiaUITest"/>
+        <method signature="CovidIndiaUITest.verifyRedZonesOfAllStates()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="verifyRedZonesOfAllStates" class="com.ui.testautomation.CovidIndiaUITest"/>
+        <method signature="CovidIndiaUITest.verifyUnDefinedZonesOfAllStates()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="verifyUnDefinedZonesOfAllStates" class="com.ui.testautomation.CovidIndiaUITest"/>
+        <method signature="CovidIndiaUITest.verifyUnknownWhiteZonesOfAllStates()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="verifyUnknownWhiteZonesOfAllStates" class="com.ui.testautomation.CovidIndiaUITest"/>
+      </group> <!-- zones -->
+      <group name="dashboard">
+        <method signature="CovidIndiaUITest.checkCaseCalculationsForAllStates()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="checkCaseCalculationsForAllStates" class="com.ui.testautomation.CovidIndiaUITest"/>
+        <method signature="CovidIndiaUITest.checkCaseCalculationsForChandigarh()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="checkCaseCalculationsForChandigarh" class="com.ui.testautomation.CovidIndiaUITest"/>
+        <method signature="CovidIndiaUITest.checkCaseCalculationsForDelhi()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="checkCaseCalculationsForDelhi" class="com.ui.testautomation.CovidIndiaUITest"/>
+        <method signature="CovidIndiaUITest.checkCaseCalculationsOfTripuraIsGreaterThan10()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="checkCaseCalculationsOfTripuraIsGreaterThan10" class="com.ui.testautomation.CovidIndiaUITest"/>
+        <method signature="CovidIndiaUITest.checkNoOfConfirmedCasesIsGreaterThan26000()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="checkNoOfConfirmedCasesIsGreaterThan26000" class="com.ui.testautomation.CovidIndiaUITest"/>
+      </group> <!-- dashboard -->
     </groups>
-    <test name="Test_Framework-Basic_Tests" duration-ms="40106" started-at="2020-05-06T23:08:15Z" finished-at="2020-05-06T23:08:55Z">
+    <test name="Test_Framework-Basic_Tests" duration-ms="1737265" started-at="2020-05-15T08:59:02Z" finished-at="2020-05-15T09:27:59Z">
       <class name="com.ui.testautomation.CovidIndiaUITest">
-        <test-method status="PASS" signature="initiateMethod(java.lang.reflect.Method)[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@6475472c]" name="initiateMethod" is-config="true" duration-ms="6049" started-at="2020-05-07T04:38:15Z" finished-at="2020-05-07T04:38:21Z">
+        <test-method status="PASS" signature="initiateMethod(java.lang.reflect.Method)[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="initiateMethod" is-config="true" duration-ms="6791" started-at="2020-05-15T14:29:02Z" finished-at="2020-05-15T14:29:08Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.ui.testautomation.CovidIndiaUITest.verifyEssentialsOfAllStates()]]>
+                <![CDATA[public void com.ui.testautomation.CovidIndiaUITest.checkCaseCalculationsForAllStates()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiateMethod -->
-        <test-method status="PASS" signature="verifyEssentialsOfAllStates()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@6475472c]" name="verifyEssentialsOfAllStates" duration-ms="23330" started-at="2020-05-07T04:38:21Z" description="Verify the essentials Listed for all states with API call" finished-at="2020-05-07T04:38:44Z">
+        <test-method status="FAIL" signature="checkCaseCalculationsForAllStates()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="checkCaseCalculationsForAllStates" duration-ms="58445" started-at="2020-05-15T14:29:08Z" description="Checks &amp; verify the total case calculation after recovered and death for all 32 states of INDIA" finished-at="2020-05-15T14:30:07Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Case calculations are not matching expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Case calculations are not matching expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.app.testautomation.utilities.Assertions.assertTrue(Assertions.java:24)
+	at com.ui.testautomation.pageobjectmodels.Covid19IndiaDashboard.validateStateUICalculation(Covid19IndiaDashboard.java:129)
+	at com.ui.testautomation.pageobjectmodels.Covid19IndiaDashboard.validateAllStatesCaseCalculation(Covid19IndiaDashboard.java:194)
+	at com.ui.testautomation.CovidIndiaUITest.checkCaseCalculationsForAllStates(CovidIndiaUITest.java:94)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:373)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:334)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:407)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyEssentialsOfAllStates -->
-        <test-method status="PASS" signature="finish(java.lang.reflect.Method)[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@6475472c]" name="finish" is-config="true" duration-ms="10620" started-at="2020-05-07T04:38:44Z" finished-at="2020-05-07T04:38:55Z">
+        </test-method> <!-- checkCaseCalculationsForAllStates -->
+        <test-method status="PASS" signature="finish(java.lang.reflect.Method)[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="finish" is-config="true" duration-ms="19030" started-at="2020-05-15T14:30:07Z" finished-at="2020-05-15T14:30:26Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.ui.testautomation.CovidIndiaUITest.verifyEssentialsOfAllStates()]]>
+                <![CDATA[public void com.ui.testautomation.CovidIndiaUITest.checkCaseCalculationsForAllStates()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- finish -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@6475472c]" name="quit" is-config="true" duration-ms="54" started-at="2020-05-07T04:38:55Z" finished-at="2020-05-07T04:38:55Z">
+        <test-method status="PASS" signature="initiateMethod(java.lang.reflect.Method)[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="initiateMethod" is-config="true" duration-ms="18080" started-at="2020-05-15T14:30:26Z" finished-at="2020-05-15T14:30:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.ui.testautomation.CovidIndiaUITest.checkCaseCalculationsForChandigarh()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateMethod -->
+        <test-method status="PASS" signature="checkCaseCalculationsForChandigarh()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="checkCaseCalculationsForChandigarh" duration-ms="25074" started-at="2020-05-15T14:30:44Z" description="Checks &amp; verify the total case calculation after recovered and death for Chandigarh" finished-at="2020-05-15T14:31:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkCaseCalculationsForChandigarh -->
+        <test-method status="PASS" signature="finish(java.lang.reflect.Method)[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="finish" is-config="true" duration-ms="646" started-at="2020-05-15T14:31:09Z" finished-at="2020-05-15T14:31:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.ui.testautomation.CovidIndiaUITest.checkCaseCalculationsForChandigarh()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finish -->
+        <test-method status="PASS" signature="initiateMethod(java.lang.reflect.Method)[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="initiateMethod" is-config="true" duration-ms="17340" started-at="2020-05-15T14:31:10Z" finished-at="2020-05-15T14:31:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.ui.testautomation.CovidIndiaUITest.checkCaseCalculationsForDelhi()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateMethod -->
+        <test-method status="PASS" signature="checkCaseCalculationsForDelhi()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="checkCaseCalculationsForDelhi" duration-ms="18849" started-at="2020-05-15T14:31:27Z" description="Checks &amp; verify the total case calculation after recovered and death for Maharashtra" finished-at="2020-05-15T14:31:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkCaseCalculationsForDelhi -->
+        <test-method status="PASS" signature="finish(java.lang.reflect.Method)[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="finish" is-config="true" duration-ms="621" started-at="2020-05-15T14:31:46Z" finished-at="2020-05-15T14:31:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.ui.testautomation.CovidIndiaUITest.checkCaseCalculationsForDelhi()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finish -->
+        <test-method status="PASS" signature="initiateMethod(java.lang.reflect.Method)[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="initiateMethod" is-config="true" duration-ms="17282" started-at="2020-05-15T14:31:47Z" finished-at="2020-05-15T14:32:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.ui.testautomation.CovidIndiaUITest.checkCaseCalculationsOfTripuraIsGreaterThan10()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateMethod -->
+        <test-method status="PASS" signature="checkCaseCalculationsOfTripuraIsGreaterThan10()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="checkCaseCalculationsOfTripuraIsGreaterThan10" duration-ms="5352" started-at="2020-05-15T14:32:04Z" description="check case count of Tripura is more than 10" finished-at="2020-05-15T14:32:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkCaseCalculationsOfTripuraIsGreaterThan10 -->
+        <test-method status="PASS" signature="finish(java.lang.reflect.Method)[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="finish" is-config="true" duration-ms="708" started-at="2020-05-15T14:32:09Z" finished-at="2020-05-15T14:32:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.ui.testautomation.CovidIndiaUITest.checkCaseCalculationsOfTripuraIsGreaterThan10()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finish -->
+        <test-method status="PASS" signature="initiateMethod(java.lang.reflect.Method)[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="initiateMethod" is-config="true" duration-ms="17956" started-at="2020-05-15T14:32:10Z" finished-at="2020-05-15T14:32:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.ui.testautomation.CovidIndiaUITest.checkNoOfConfirmedCasesIsGreaterThan26000()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateMethod -->
+        <test-method status="PASS" signature="checkNoOfConfirmedCasesIsGreaterThan26000()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="checkNoOfConfirmedCasesIsGreaterThan26000" duration-ms="2180" started-at="2020-05-15T14:32:28Z" description="validate the number of total confirmed case is greater than 6000 in India" finished-at="2020-05-15T14:32:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkNoOfConfirmedCasesIsGreaterThan26000 -->
+        <test-method status="PASS" signature="finish(java.lang.reflect.Method)[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="finish" is-config="true" duration-ms="489" started-at="2020-05-15T14:32:30Z" finished-at="2020-05-15T14:32:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.ui.testautomation.CovidIndiaUITest.checkNoOfConfirmedCasesIsGreaterThan26000()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finish -->
+        <test-method status="PASS" signature="initiateMethod(java.lang.reflect.Method)[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="initiateMethod" is-config="true" duration-ms="17793" started-at="2020-05-15T14:32:31Z" finished-at="2020-05-15T14:32:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.ui.testautomation.CovidIndiaUITest.verifyAllCategoriesOfRaipurChhattisgarh()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateMethod -->
+        <test-method status="PASS" signature="verifyAllCategoriesOfRaipurChhattisgarh()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="verifyAllCategoriesOfRaipurChhattisgarh" duration-ms="38222" started-at="2020-05-15T14:32:48Z" description="Verify all the categories Listed for Raipur with API call" finished-at="2020-05-15T14:33:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAllCategoriesOfRaipurChhattisgarh -->
+        <test-method status="PASS" signature="finish(java.lang.reflect.Method)[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="finish" is-config="true" duration-ms="7118" started-at="2020-05-15T14:33:27Z" finished-at="2020-05-15T14:33:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.ui.testautomation.CovidIndiaUITest.verifyAllCategoriesOfRaipurChhattisgarh()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finish -->
+        <test-method status="PASS" signature="initiateMethod(java.lang.reflect.Method)[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="initiateMethod" is-config="true" duration-ms="18521" started-at="2020-05-15T14:33:34Z" finished-at="2020-05-15T14:33:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.ui.testautomation.CovidIndiaUITest.verifyAllEssentialsForRandomState()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateMethod -->
+        <test-method status="FAIL" signature="verifyAllEssentialsForRandomState()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="verifyAllEssentialsForRandomState" duration-ms="15792" started-at="2020-05-15T14:33:52Z" description="Verify all essentials for a random state with API call" finished-at="2020-05-15T14:34:08Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Api doesnot match with UI expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Api doesnot match with UI expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.app.testautomation.utilities.Assertions.assertTrue(Assertions.java:24)
+	at com.ui.testautomation.CovidIndiaUITest.lambda$null$16(CovidIndiaUITest.java:281)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.ui.testautomation.CovidIndiaUITest.lambda$verifyAllEssentialsForRandomState$17(CovidIndiaUITest.java:273)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.ui.testautomation.CovidIndiaUITest.verifyAllEssentialsForRandomState(CovidIndiaUITest.java:264)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:373)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:334)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:407)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAllEssentialsForRandomState -->
+        <test-method status="PASS" signature="finish(java.lang.reflect.Method)[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="finish" is-config="true" duration-ms="5951" started-at="2020-05-15T14:34:08Z" finished-at="2020-05-15T14:34:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.ui.testautomation.CovidIndiaUITest.verifyAllEssentialsForRandomState()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finish -->
+        <test-method status="PASS" signature="initiateMethod(java.lang.reflect.Method)[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="initiateMethod" is-config="true" duration-ms="18540" started-at="2020-05-15T14:34:14Z" finished-at="2020-05-15T14:34:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.ui.testautomation.CovidIndiaUITest.verifyCovidTestingLabOfImphal()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateMethod -->
+        <test-method status="PASS" signature="verifyCovidTestingLabOfImphal()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="verifyCovidTestingLabOfImphal" duration-ms="24076" started-at="2020-05-15T14:34:33Z" description="Verify the CoVID-19 Testing Labs Listed for Imphal, Manipur with API call" finished-at="2020-05-15T14:34:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCovidTestingLabOfImphal -->
+        <test-method status="PASS" signature="finish(java.lang.reflect.Method)[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="finish" is-config="true" duration-ms="2746" started-at="2020-05-15T14:34:57Z" finished-at="2020-05-15T14:34:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.ui.testautomation.CovidIndiaUITest.verifyCovidTestingLabOfImphal()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finish -->
+        <test-method status="PASS" signature="initiateMethod(java.lang.reflect.Method)[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="initiateMethod" is-config="true" duration-ms="18001" started-at="2020-05-15T14:34:59Z" finished-at="2020-05-15T14:35:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.ui.testautomation.CovidIndiaUITest.verifyCovidTestingLabOfPune()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateMethod -->
+        <test-method status="PASS" signature="verifyCovidTestingLabOfPune()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="verifyCovidTestingLabOfPune" duration-ms="34118" started-at="2020-05-15T14:35:17Z" description="Verify the CoVID-19 Testing Labs Listed for Pune, Maharashtra with API call" finished-at="2020-05-15T14:35:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCovidTestingLabOfPune -->
+        <test-method status="PASS" signature="finish(java.lang.reflect.Method)[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="finish" is-config="true" duration-ms="7761" started-at="2020-05-15T14:35:51Z" finished-at="2020-05-15T14:35:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.ui.testautomation.CovidIndiaUITest.verifyCovidTestingLabOfPune()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finish -->
+        <test-method status="PASS" signature="initiateMethod(java.lang.reflect.Method)[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="initiateMethod" is-config="true" duration-ms="17964" started-at="2020-05-15T14:35:59Z" finished-at="2020-05-15T14:36:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.ui.testautomation.CovidIndiaUITest.verifyDeliveryCategoriesOfFaridkotPunjab()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateMethod -->
+        <test-method status="PASS" signature="verifyDeliveryCategoriesOfFaridkotPunjab()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="verifyDeliveryCategoriesOfFaridkotPunjab" duration-ms="40900" started-at="2020-05-15T14:36:17Z" description="Verify Delivery categories Listed for faridkot with API call" finished-at="2020-05-15T14:36:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDeliveryCategoriesOfFaridkotPunjab -->
+        <test-method status="PASS" signature="finish(java.lang.reflect.Method)[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="finish" is-config="true" duration-ms="7359" started-at="2020-05-15T14:36:58Z" finished-at="2020-05-15T14:37:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.ui.testautomation.CovidIndiaUITest.verifyDeliveryCategoriesOfFaridkotPunjab()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finish -->
+        <test-method status="PASS" signature="initiateMethod(java.lang.reflect.Method)[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="initiateMethod" is-config="true" duration-ms="18120" started-at="2020-05-15T14:37:05Z" finished-at="2020-05-15T14:37:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.ui.testautomation.CovidIndiaUITest.verifyEssentialsRandomly()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateMethod -->
+        <test-method status="FAIL" signature="verifyEssentialsRandomly()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="verifyEssentialsRandomly" duration-ms="6486" started-at="2020-05-15T14:37:24Z" description="Verify random essentials listed with API call" finished-at="2020-05-15T14:37:30Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.ui.testautomation.CovidIndiaUITest.lambda$verifyEssentialsRandomly$10(CovidIndiaUITest.java:208)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.ui.testautomation.CovidIndiaUITest.verifyEssentialsRandomly(CovidIndiaUITest.java:205)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:373)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:334)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:407)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEssentialsRandomly -->
+        <test-method status="PASS" signature="finish(java.lang.reflect.Method)[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="finish" is-config="true" duration-ms="767" started-at="2020-05-15T14:37:30Z" finished-at="2020-05-15T14:37:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.ui.testautomation.CovidIndiaUITest.verifyEssentialsRandomly()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finish -->
+        <test-method status="PASS" signature="initiateMethod(java.lang.reflect.Method)[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="initiateMethod" is-config="true" duration-ms="18007" started-at="2020-05-15T14:37:31Z" finished-at="2020-05-15T14:37:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.ui.testautomation.CovidIndiaUITest.verifyGreenZonesOfAllStates()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateMethod -->
+        <test-method status="PASS" signature="verifyGreenZonesOfAllStates()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="verifyGreenZonesOfAllStates" duration-ms="219618" started-at="2020-05-15T14:37:49Z" description="Check the Green zones of all states" finished-at="2020-05-15T14:41:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGreenZonesOfAllStates -->
+        <test-method status="PASS" signature="finish(java.lang.reflect.Method)[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="finish" is-config="true" duration-ms="9777" started-at="2020-05-15T14:41:28Z" finished-at="2020-05-15T14:41:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.ui.testautomation.CovidIndiaUITest.verifyGreenZonesOfAllStates()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finish -->
+        <test-method status="PASS" signature="initiateMethod(java.lang.reflect.Method)[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="initiateMethod" is-config="true" duration-ms="18015" started-at="2020-05-15T14:41:38Z" finished-at="2020-05-15T14:41:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.ui.testautomation.CovidIndiaUITest.verifyOrangeZonesOfAllStates()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateMethod -->
+        <test-method status="PASS" signature="verifyOrangeZonesOfAllStates()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="verifyOrangeZonesOfAllStates" duration-ms="244344" started-at="2020-05-15T14:41:56Z" description="Check the Orange zones of all states" finished-at="2020-05-15T14:46:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyOrangeZonesOfAllStates -->
+        <test-method status="PASS" signature="finish(java.lang.reflect.Method)[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="finish" is-config="true" duration-ms="10677" started-at="2020-05-15T14:46:01Z" finished-at="2020-05-15T14:46:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.ui.testautomation.CovidIndiaUITest.verifyOrangeZonesOfAllStates()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finish -->
+        <test-method status="PASS" signature="initiateMethod(java.lang.reflect.Method)[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="initiateMethod" is-config="true" duration-ms="18076" started-at="2020-05-15T14:46:11Z" finished-at="2020-05-15T14:46:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.ui.testautomation.CovidIndiaUITest.verifyRedZonesOfAllStates()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateMethod -->
+        <test-method status="PASS" signature="verifyRedZonesOfAllStates()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="verifyRedZonesOfAllStates" duration-ms="222551" started-at="2020-05-15T14:46:29Z" description="Check the Red zones of all states" finished-at="2020-05-15T14:50:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRedZonesOfAllStates -->
+        <test-method status="PASS" signature="finish(java.lang.reflect.Method)[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="finish" is-config="true" duration-ms="13515" started-at="2020-05-15T14:50:12Z" finished-at="2020-05-15T14:50:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.ui.testautomation.CovidIndiaUITest.verifyRedZonesOfAllStates()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finish -->
+        <test-method status="PASS" signature="initiateMethod(java.lang.reflect.Method)[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="initiateMethod" is-config="true" duration-ms="18931" started-at="2020-05-15T14:50:25Z" finished-at="2020-05-15T14:50:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.ui.testautomation.CovidIndiaUITest.verifyUnDefinedZonesOfAllStates()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateMethod -->
+        <test-method status="PASS" signature="verifyUnDefinedZonesOfAllStates()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="verifyUnDefinedZonesOfAllStates" duration-ms="198384" started-at="2020-05-15T14:50:44Z" description="Check the unknown undefined zones of all states" finished-at="2020-05-15T14:54:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUnDefinedZonesOfAllStates -->
+        <test-method status="PASS" signature="finish(java.lang.reflect.Method)[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="finish" is-config="true" duration-ms="9557" started-at="2020-05-15T14:54:03Z" finished-at="2020-05-15T14:54:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.ui.testautomation.CovidIndiaUITest.verifyUnDefinedZonesOfAllStates()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finish -->
+        <test-method status="PASS" signature="initiateMethod(java.lang.reflect.Method)[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="initiateMethod" is-config="true" duration-ms="17740" started-at="2020-05-15T14:54:12Z" finished-at="2020-05-15T14:54:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.ui.testautomation.CovidIndiaUITest.verifyUnknownWhiteZonesOfAllStates()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateMethod -->
+        <test-method status="PASS" signature="verifyUnknownWhiteZonesOfAllStates()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="verifyUnknownWhiteZonesOfAllStates" duration-ms="199227" started-at="2020-05-15T14:54:30Z" description="Check the White unknown zones of all states" finished-at="2020-05-15T14:57:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUnknownWhiteZonesOfAllStates -->
+        <test-method status="PASS" signature="finish(java.lang.reflect.Method)[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="finish" is-config="true" duration-ms="9371" started-at="2020-05-15T14:57:49Z" finished-at="2020-05-15T14:57:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.ui.testautomation.CovidIndiaUITest.verifyUnknownWhiteZonesOfAllStates()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finish -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.ui.testautomation.CovidIndiaUITest@3d3ba765]" name="quit" is-config="true" duration-ms="181" started-at="2020-05-15T14:57:59Z" finished-at="2020-05-15T14:57:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->

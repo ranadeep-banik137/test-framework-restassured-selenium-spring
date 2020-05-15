@@ -15,6 +15,7 @@ import org.testng.log4testng.Logger;
 import com.aventstack.extentreports.ExtentReporter;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
@@ -83,7 +84,7 @@ public class ReportGenerator2 {
 				for (String screen : failedScreens) {
 					try {
 						screen = FileUtils.copyFileToTarget(screen);
-						test.addScreenCaptureFromPath(screen);
+						test.fail("ScreenShot : 'file://'" + screen, MediaEntityBuilder.createScreenCaptureFromPath(screen).build());
 					} catch (IOException exception) {
 						LOGGER.fatal(exception.getMessage());
 					}
